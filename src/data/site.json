@@ -1,0 +1,16 @@
+{
+  "name": "Veora",
+  "brand": {
+    "text": "Veora",
+    "suffix": ".",
+    "ariaLabel": "Veora — на главную"
+  },
+  "navigationLabel": "Основная навигация",
+  "navigation": [
+    { "id": "home", "href": "/", "label": "Главная" },
+    { "id": "about", "href": "/about/", "label": "О проекте" }
+  ],
+  "footer": {
+    "tagline": "Сделано на Vite"
+  }
+}

@@ -1,0 +1,27 @@
+@use '../../styles/tokens' as *;
+
+.content {
+  max-width: 70rem;
+  padding-block: 16rem;
+
+  &__eyebrow { margin: 0 0 1.8rem; color: $accent; font-size: 1.28rem; font-weight: 700; letter-spacing: .154rem; text-transform: uppercase; }
+  &__title { margin: 0 0 2.4rem; font-size: 8rem; line-height: 1.08; letter-spacing: -.4rem; }
+  &__paragraph { max-width: 66rem; color: $muted; font-size: 1.92rem; line-height: 1.7; }
+}
+
+@media (max-width: 1200px) {
+  .content { padding-block: 14.4rem; }
+  .content__title { font-size: 7.2rem; }
+}
+
+@media (max-width: 900px) {
+  .content { padding-block: 11rem; }
+  .content__title { font-size: 5.4rem; letter-spacing: -.3rem; }
+  .content__paragraph { font-size: 1.8rem; }
+}
+
+@media (max-width: 600px) {
+  .content { padding-block: 7.2rem; }
+  .content__title { font-size: 4rem; letter-spacing: -.22rem; }
+  .content__paragraph { font-size: 1.6rem; }
+}

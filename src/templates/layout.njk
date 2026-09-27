@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{ page.description }}" />
+    <title>{{ page.title }} — {{ site.name }}</title>
+  </head>
+  <body>
+    {% include "components/site-header/site-header.njk" %}
+    <main class="page container">
+      {% block content %}{% endblock %}
+    </main>
+    {% include "components/site-footer/site-footer.njk" %}
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

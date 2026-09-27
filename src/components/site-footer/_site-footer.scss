@@ -1,0 +1,11 @@
+@use '../../styles/tokens' as *;
+
+.site-footer {
+  border-top: 1px solid $line;
+
+  &__inner { min-height: 8rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; color: $muted; font-size: 1.44rem; }
+}
+
+@media (max-width: 600px) {
+  .site-footer__inner { min-height: 7.2rem; }
+}

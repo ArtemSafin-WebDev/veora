@@ -1,0 +1,7 @@
+<section class="hero">
+  <p class="hero__eyebrow">{{ page.hero.eyebrow }}</p>
+  <h1 class="hero__title">{{ page.hero.title }}</h1>
+  <p class="hero__text">{{ page.hero.text }}</p>
+  {% set button = page.hero.button %}
+  {% include "components/button/button.njk" %}
+</section>
