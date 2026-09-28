@@ -1,0 +1,124 @@
+@use 'swiper/css';
+
+.gallery {
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 7rem;
+  color: #495249;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    inset-block: 0;
+    left: 50%;
+    width: 100vw;
+    background: #fff;
+    content: '';
+    transform: translateX(-50%);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3.7rem;
+  }
+
+  &__title {
+    flex: 0 0 78rem;
+    margin: 0;
+    font-size: 6.4rem;
+    font-weight: 400;
+    line-height: 6.4rem;
+    letter-spacing: -.448rem;
+  }
+
+  &__divider {
+    flex: 0 0 24.6rem;
+    height: 1px;
+    background: #99a29a;
+  }
+
+  &__controls,
+  &__arrows { display: flex; align-items: center; }
+  &__controls { gap: 1.6rem; }
+  &__arrows { gap: .2rem; }
+
+  &__all-link,
+  &__mobile-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    padding: 0 2.4rem;
+    border: 1px solid #b2b8b2;
+    border-radius: .8rem;
+    color: #495249;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    letter-spacing: -.056rem;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  &__all-link:hover,
+  &__mobile-link:hover { background: #f5f7f4; }
+
+  &__arrow {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+
+    &-icon { display: block; width: 3rem; height: 3rem; }
+    &-icon--disabled { display: none; }
+
+    &--prev .gallery__arrow-icon--enabled,
+    &--next .gallery__arrow-icon--disabled { transform: rotate(180deg); }
+
+    &.swiper-button-disabled {
+      cursor: default;
+      .gallery__arrow-icon--enabled { display: none; }
+      .gallery__arrow-icon--disabled { display: block; }
+    }
+  }
+
+  &__slider { overflow: visible; }
+  &__slide { width: auto; }
+  &__mobile-link { display: none; }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    margin-bottom: 7.8rem;
+
+    &__header { margin-bottom: 2.4rem; }
+    &__title {
+      flex: 1 1 auto;
+      font-size: 4rem;
+      line-height: 4rem;
+      letter-spacing: -.24rem;
+    }
+    &__divider,
+    &__controls { display: none; }
+    &__mobile-link {
+      display: flex;
+      width: max-content;
+      height: 3.4rem;
+      margin: 4rem auto 0;
+      padding: 0 1.6rem;
+      border-color: #c8cdc8;
+      border-radius: .6rem;
+      color: #576258;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+      letter-spacing: -.048rem;
+    }
+  }
+}

@@ -2,13 +2,109 @@
   "title": "Главная",
   "description": "Стартовая страница сайта Veora",
   "activePage": "home",
-  "hero": {
-    "eyebrow": "Vite · SCSS · TypeScript · Nunjucks",
-    "title": "Основа для многостраничного сайта",
-    "text": "Редактируйте страницы, общие шаблоны и стили — Vite сразу покажет изменения в браузере.",
-    "button": {
-      "href": "/about/",
-      "label": "Посмотреть вторую страницу"
+  "intro": {
+    "image": "/assets/intro/landscape.jpg",
+    "logo": "/assets/intro/logo.svg",
+    "logoAlt": "Веора",
+    "nextHref": "#news",
+    "nextLabel": "Перейти к новостям"
+  },
+  "gallery": {
+    "title": "Галерея",
+    "allLink": {
+      "href": "/gallery/",
+      "label": "Вся галерея"
+    },
+    "items": [
+      {
+        "title": "Южный",
+        "image": "/assets/gallery/south.png",
+        "alt": "Зелёные холмы и солнечная долина",
+        "size": "wide"
+      },
+      {
+        "title": "Золотые пески",
+        "image": "/assets/gallery/golden.png",
+        "mobileImage": "/assets/gallery/baltic.png",
+        "alt": "Бирюзовая река среди гор",
+        "size": "medium"
+      },
+      {
+        "title": "Балтийские пески",
+        "image": "/assets/gallery/baltic.png",
+        "mobileImage": "/assets/gallery/golden.png",
+        "alt": "Озеро у зелёных гор",
+        "size": "narrow"
+      },
+      {
+        "title": "Золотые пески",
+        "image": "/assets/gallery/golden.png",
+        "mobileImage": "/assets/gallery/fourth.png",
+        "alt": "Река среди гор",
+        "size": "medium"
+      }
+    ]
+  },
+  "news": {
+    "title": "Новости",
+    "readMoreLabel": "Подробнее",
+    "allLink": {
+      "href": "/news/",
+      "label": "Все новости"
+    },
+    "items": [
+      {
+        "category": "Золотые пески",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "Солнечный городок предлагает новую СПА – процедуру",
+        "href": "/news/spa-procedure/"
+      },
+      {
+        "category": "Светлогорск",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "Открытие летней веранды в ресторане «Южного»",
+        "titleLines": ["Открытие летней веранды", "в ресторане «Южного»"],
+        "href": "/news/summer-terrace/"
+      },
+      {
+        "category": "Бриз",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "«Полюс» готовится к приему детей в детский лагерь",
+        "href": "/news/children-camp/"
+      }
+    ]
+  },
+  "services": {
+    "title": "Услуги",
+    "allLink": { "href": "/services/", "label": "Все услуги" },
+    "tabs": [
+      { "id": "all", "label": "Все" },
+      { "id": "family", "label": "Семейные и детские" },
+      { "id": "entertainment", "label": "Развлечения" },
+      { "id": "excursions", "label": "Экскурсии" }
+    ],
+    "items": [
+      { "title": "Бассейн", "label": "Активный отдых", "paid": true, "image": "/assets/services/pool.png", "href": "/services/pool/", "categories": ["family", "entertainment"] },
+      { "title": "Пейнтбол", "label": "Активный отдых", "image": "/assets/services/paintball.jpg", "href": "/services/paintball/", "categories": ["entertainment"] },
+      { "title": "Детская площадка", "label": "Активный отдых", "image": "/assets/services/playground.jpg", "href": "/services/playground/", "categories": ["family"] },
+      { "title": "Терренкур", "label": "Активный отдых", "paid": true, "image": "/assets/services/trail.jpg", "href": "/services/trail/", "categories": ["excursions"] },
+      { "title": "Тренажерный зал", "label": "Активный отдых", "image": "/assets/services/gym.jpg", "href": "/services/gym/", "categories": ["entertainment"] },
+      { "title": "Караоке", "label": "Активный отдых", "paid": true, "image": "/assets/services/karaoke.jpg", "href": "/services/karaoke/", "categories": ["entertainment"] },
+      { "title": "Теннисный корт", "label": "Активный отдых", "image": "/assets/services/tennis.jpg", "href": "/services/tennis/", "categories": ["family", "entertainment"] },
+      { "title": "Сауна", "label": "Спокойный отдых", "image": "/assets/services/sauna.jpg", "href": "/services/sauna/", "categories": ["family"] }
+    ],
+    "offers": {
+      "title": "Специальные предложения",
+      "allLink": { "href": "/offers/", "label": "Смотреть все" },
+      "readMoreLabel": "Подробнее",
+      "items": [
+        { "title": "Здравница «Золотые Пески» открывает SPA-комплекс под открытым небом", "place": "Золотые пески", "date": "2026-09-09", "dateLabel": "9 сентября 2026", "image": "/assets/offers/spa.jpg", "href": "/offers/spa-complex/" },
+        { "title": "«Светлогорск» приглашает на летние заезды: отдых у моря с пользой для здоровья", "place": "Светлогорск", "date": "2026-09-09", "dateLabel": "9 сентября 2026", "image": "/assets/offers/summer.jpg", "href": "/offers/summer-arrivals/" },
+        { "title": "«Бриз» запускает курс дыхательной терапии — дышите свободно!", "place": "Бриз", "date": "2026-09-09", "dateLabel": "9 сентября 2026", "image": "/assets/offers/breathing.jpg", "href": "/offers/breathing-therapy/" }
+      ]
     }
   }
 }

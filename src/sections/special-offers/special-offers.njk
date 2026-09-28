@@ -1,0 +1,16 @@
+<section class="special-offers" id="special-offers" aria-labelledby="special-offers-title">
+  <div class="special-offers__header">
+    <h2 class="special-offers__title" id="special-offers-title">{{ page.services.offers.title }}</h2>
+    <a class="special-offers__all-link" href="{{ page.services.offers.allLink.href }}">{{ page.services.offers.allLink.label }}</a>
+  </div>
+  <div class="special-offers__slider swiper" data-offers-slider>
+    <div class="special-offers__track swiper-wrapper">
+      {% for offer in page.services.offers.items %}
+        <div class="special-offers__slide swiper-slide">
+          {% include "components/offer-card/offer-card.njk" %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <a class="special-offers__mobile-link" href="{{ page.services.offers.allLink.href }}">{{ page.services.offers.allLink.label }}</a>
+</section>

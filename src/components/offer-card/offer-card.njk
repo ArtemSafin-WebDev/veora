@@ -1,0 +1,14 @@
+<article class="offer-card">
+  <a class="offer-card__media" href="{{ offer.href }}" aria-label="{{ offer.title }}">
+    <img class="offer-card__image" src="{{ offer.image }}" alt="" loading="lazy" />
+    <span class="offer-card__shade" aria-hidden="true"></span>
+    <span class="offer-card__meta">
+      <span class="offer-card__place">{{ offer.place }}</span>
+      <time class="offer-card__date" datetime="{{ offer.date }}">{{ offer.dateLabel }}</time>
+    </span>
+  </a>
+  <div class="offer-card__body">
+    <h3 class="offer-card__title">{{ offer.title }}</h3>
+    <a class="offer-card__link" href="{{ offer.href }}">{{ page.services.offers.readMoreLabel }}</a>
+  </div>
+</article>

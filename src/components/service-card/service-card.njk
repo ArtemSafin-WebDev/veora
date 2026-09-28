@@ -1,0 +1,11 @@
+<a class="service-card" href="{{ card.href }}" aria-label="{{ card.title }}">
+  <img class="service-card__image" src="{{ card.image }}" alt="" loading="lazy" />
+  <span class="service-card__shade" aria-hidden="true"></span>
+  <span class="service-card__content">
+    <span class="service-card__badges">
+      <span class="service-card__badge">{{ card.label }}</span>
+      {% if card.paid %}<span class="service-card__badge service-card__badge--price" aria-label="Платная услуга">₽</span>{% endif %}
+    </span>
+    <span class="service-card__title">{{ card.title }}</span>
+  </span>
+</a>

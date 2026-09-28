@@ -11,6 +11,69 @@
     { "id": "about", "href": "/about/", "label": "О проекте" }
   ],
   "footer": {
-    "tagline": "Сделано на Vite"
+    "navigation": [
+      {
+        "title": "Территория моря",
+        "links": [
+          { "href": "/territory/sea/yuzhny/", "label": "Южный" },
+          { "href": "/territory/sea/golden-sands/", "label": "Золотые Пески" },
+          { "href": "/territory/sea/baltic-sands/", "label": "Балтийские Пески" }
+        ]
+      },
+      {
+        "title": "Территория отдыха",
+        "links": [
+          { "href": "/territory/rest/sunny-town/", "label": "Солнечный городок" },
+          { "href": "/territory/rest/polyus/", "label": "Полюс" }
+        ]
+      },
+      {
+        "title": "Территория детства",
+        "links": [
+          { "href": "/territory/childhood/polyus/", "label": "Полюс" }
+        ]
+      },
+      {
+        "title": "О нас",
+        "links": [
+          { "href": "/news/", "label": "Новости" },
+          { "href": "/legal/", "label": "Правовая информация" },
+          { "href": "/faq/", "label": "Часто задаваемые вопросы" },
+          { "href": "/contacts/", "label": "Контакты" }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          { "href": "/offers/", "label": "Специальные предложения" },
+          { "href": "/services/", "label": "Услуги и развлечения" },
+          { "href": "/events/", "label": "Афиша" },
+          { "href": "/gallery/", "label": "Галерея" },
+          { "href": "/activities/", "label": "Мероприятия" }
+        ]
+      }
+    ],
+    "booking": [
+      { "variant": "staff", "title": "Сотрудникам организации", "cta": "Забронировать", "href": "mailto:sozvezdie@s.ru?subject=Бронирование%20для%20сотрудников" },
+      { "variant": "guest", "title": "Внешним гостям", "cta": "Забронировать", "href": "mailto:sozvezdie@s.ru?subject=Бронирование%20для%20гостей" }
+    ],
+    "socials": [
+      { "label": "Telegram", "href": "https://t.me/", "icon": "telegram" },
+      { "label": "Написать в WhatsApp", "href": "https://wa.me/74951234567", "icon": "whatsapp" }
+    ],
+    "address": { "label": "Центральный офис:", "value": "Москва, ул. Примерная, д. 1" },
+    "hours": { "label": "Время работы:", "days": "Пн–Пт:", "time": "09:00 – 18:00" },
+    "contacts": {
+      "label": "Контакты для связи:",
+      "phone": "+7 495 123-45-67",
+      "phoneHref": "tel:+74951234567",
+      "callbackLabel": "заказать звонок",
+      "callbackHref": "tel:+74951234567",
+      "email": "sozvezdie@s.ru"
+    },
+    "copyrightIntro": "официальный сайт",
+    "copyrightOrganization": "ЧУ «Здоровье и отдых»",
+    "privacy": { "label": "Политика конфиденциальности", "href": "/privacy/" },
+    "credit": { "label": "Creative Team — создание сайтов" }
   }
 }

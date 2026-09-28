@@ -1,6 +1,81 @@
 <footer class="site-footer">
-  <div class="container site-footer__inner">
-    <span>© <span data-current-year>{{ currentYear }}</span> {{ site.name }}</span>
-    <span>{{ site.footer.tagline }}</span>
+  <div class="site-footer__surface">
+    <div class="site-footer__inner container">
+      <a class="site-footer__mark" href="/" aria-label="{{ site.brand.ariaLabel }}">
+        <picture>
+          <source media="(max-width: 600px)" srcset="/assets/footer/brand-mark-mobile.svg">
+          <img src="/assets/footer/brand-mark.svg" alt="" width="65" height="62">
+        </picture>
+      </a>
+
+      <div class="site-footer__brand" aria-label="Веора">
+        <picture>
+          <source media="(max-width: 600px)" srcset="/assets/footer/wordmark.svg">
+          <img src="/assets/footer/brand-heading.svg" alt="" width="1284" height="32">
+        </picture>
+      </div>
+
+      <div class="site-footer__main">
+        <nav class="site-footer__navigation" aria-label="Навигация в подвале">
+          {% for group in site.footer.navigation %}
+            <div class="site-footer__nav-group">
+              <h2 class="site-footer__label">{{ group.title }}</h2>
+              <ul class="site-footer__links">
+                {% for link in group.links %}
+                  <li><a href="{{ link.href }}">{{ link.label }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endfor %}
+        </nav>
+
+        <div class="site-footer__actions">
+          <div class="site-footer__booking">
+            {% for item in site.footer.booking %}
+              <a class="site-footer__booking-card site-footer__booking-card--{{ item.variant }}" href="{{ item.href }}">
+                <span class="site-footer__booking-title">{{ item.title }}</span>
+                <span class="site-footer__booking-cta">{{ item.cta }}</span>
+              </a>
+            {% endfor %}
+          </div>
+          <div class="site-footer__socials" aria-label="Мессенджеры">
+            {% for item in site.footer.socials %}
+              <a href="{{ item.href }}" aria-label="{{ item.label }}" rel="noopener noreferrer" target="_blank">
+                <svg class="site-footer__social-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 40">
+                  <use href="#icon-{{ item.icon }}"></use>
+                </svg>
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__details">
+        <div class="site-footer__detail site-footer__detail--address">
+          <h2 class="site-footer__label">{{ site.footer.address.label }}</h2>
+          <p class="site-footer__detail-value">{{ site.footer.address.value }}</p>
+        </div>
+        <div class="site-footer__detail site-footer__detail--hours">
+          <h2 class="site-footer__label">{{ site.footer.hours.label }}</h2>
+          <p class="site-footer__detail-value">{{ site.footer.hours.days }}<br>{{ site.footer.hours.time }}</p>
+        </div>
+        <div class="site-footer__detail site-footer__detail--contacts">
+          <h2 class="site-footer__label">{{ site.footer.contacts.label }}</h2>
+          <div class="site-footer__phone">
+            <a class="site-footer__detail-value" href="{{ site.footer.contacts.phoneHref }}">{{ site.footer.contacts.phone }}</a>
+            <a class="site-footer__callback" href="{{ site.footer.contacts.callbackHref }}">{{ site.footer.contacts.callbackLabel }}</a>
+          </div>
+          <a class="site-footer__detail-value site-footer__email" href="mailto:{{ site.footer.contacts.email }}">{{ site.footer.contacts.email }}</a>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">© <span data-current-year>{{ currentYear }}</span> — {{ site.footer.copyrightIntro }} <span>{{ site.footer.copyrightOrganization }}</span></p>
+        <a class="site-footer__privacy" href="{{ site.footer.privacy.href }}">{{ site.footer.privacy.label }}</a>
+        <span class="site-footer__credit">
+          <img src="/assets/footer/creative-team.svg" alt="{{ site.footer.credit.label }}" width="120" height="26">
+        </span>
+      </div>
+    </div>
   </div>
 </footer>

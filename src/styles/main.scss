@@ -1,6 +1,13 @@
 @use 'base';
-@use '../components/site-header/site-header';
+@use '../components/icon-sprite/icon-sprite';
 @use '../components/site-footer/site-footer';
-@use '../components/button/button';
-@use '../sections/hero/hero';
+@use '../components/gallery-card/gallery-card';
+@use '../components/news-card/news-card';
+@use '../components/service-card/service-card';
+@use '../components/offer-card/offer-card';
+@use '../sections/gallery/gallery';
+@use '../sections/news/news';
+@use '../sections/services/services';
+@use '../sections/special-offers/special-offers';
+@use '../sections/intro/intro';
 @use '../sections/content/content';

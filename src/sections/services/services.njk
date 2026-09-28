@@ -1,0 +1,31 @@
+<section class="services" id="services" data-services aria-labelledby="services-title">
+  <div class="services__header">
+    <div class="services__ornament" aria-hidden="true">
+      <span class="services__rule"></span>
+      <span class="services__mark services__mark--desktop"><img src="/assets/services/brand-mark.svg" alt="" /></span>
+      <span class="services__mark services__mark--mobile"><img src="/assets/services/brand-mark-mobile.svg" alt="" /></span>
+      <span class="services__rule"></span>
+    </div>
+    <h2 class="services__title" id="services-title">{{ page.services.title }}</h2>
+    <div class="services__tabs" role="tablist" aria-label="Категории услуг">
+      {% for tab in page.services.tabs %}
+        <button class="services__tab{% if loop.first %} services__tab--active{% endif %}" type="button" role="tab" id="services-tab-{{ tab.id }}" aria-controls="services-panel-{{ tab.id }}" aria-selected="{% if loop.first %}true{% else %}false{% endif %}" tabindex="{% if loop.first %}0{% else %}-1{% endif %}" data-services-tab="{{ tab.id }}">{{ tab.label }}</button>
+      {% endfor %}
+    </div>
+  </div>
+
+  {% for tab in page.services.tabs %}
+    <div class="services__panel" id="services-panel-{{ tab.id }}" role="tabpanel" aria-labelledby="services-tab-{{ tab.id }}" tabindex="0"{% if not loop.first %} hidden{% endif %}>
+      <div class="services__grid">
+        {% for card in page.services.items %}
+          {% if tab.id == 'all' or tab.id in card.categories %}
+            {% include "components/service-card/service-card.njk" %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+
+  <a class="services__all-link" href="{{ page.services.allLink.href }}">{{ page.services.allLink.label }}</a>
+  {% include "sections/special-offers/special-offers.njk" %}
+</section>

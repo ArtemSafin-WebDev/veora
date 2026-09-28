@@ -1,0 +1,16 @@
+<section class="news" id="news" data-news aria-labelledby="news-title">
+  <div class="news__header">
+    <h2 class="news__title" id="news-title">{{ page.news.title }}</h2>
+    <a class="news__all-link" href="{{ page.news.allLink.href }}">{{ page.news.allLink.label }}</a>
+  </div>
+  <div class="news__slider swiper">
+    <div class="news__track swiper-wrapper">
+      {% for card in page.news.items %}
+        <div class="news__slide swiper-slide">
+          {% include "components/news-card/news-card.njk" %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <a class="news__mobile-link" href="{{ page.news.allLink.href }}">{{ page.news.allLink.label }}</a>
+</section>
