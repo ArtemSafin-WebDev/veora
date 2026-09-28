@@ -72,7 +72,7 @@ export class CustomSelect {
 
   private positionPopover(): void {
     const rect = this.trigger.getBoundingClientRect();
-    const width = Math.min(Math.max(rect.width, 220), window.innerWidth - 24);
+    const width = Math.min(Math.max(rect.width, this.keepOpen ? 300 : 220), window.innerWidth - 24);
     const left = Math.max(12, Math.min(rect.left, window.innerWidth - width - 12));
     const height = this.popover.getBoundingClientRect().height;
     const below = rect.bottom + 8;

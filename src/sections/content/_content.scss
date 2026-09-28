@@ -1,9 +1,9 @@
 @use '../../styles/tokens' as *;
 
 .content {
-  max-width: 70rem;
   padding-block: 16rem;
 
+  &__inner { max-width: 70rem; }
   &__eyebrow { margin: 0 0 1.8rem; color: $accent; font-size: 1.28rem; font-weight: 700; letter-spacing: .154rem; text-transform: uppercase; }
   &__title { margin: 0 0 2.4rem; font-size: 8rem; line-height: 1.08; letter-spacing: -.4rem; }
   &__paragraph { max-width: 66rem; color: $muted; font-size: 1.92rem; line-height: 1.7; }

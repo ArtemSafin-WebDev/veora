@@ -1,6 +1,4 @@
 .hero {
-  width: 100vw;
-  margin: 0 0 0 calc(50% - 50vw);
   overflow: hidden;
   background: url('/assets/hero/texture.png') center 72.5rem / 148.2rem 98.8rem no-repeat;
 
@@ -48,10 +46,7 @@
     grid-template-columns: minmax(0, 1fr) 42.2rem;
     align-items: end;
     gap: 2rem;
-    width: 100%;
-    max-width: 136.6rem;
-    margin-inline: auto;
-    padding: 0 4rem 29rem;
+    padding-bottom: 29rem;
     color: #fff;
   }
 
@@ -78,8 +73,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: calc(100% - 8rem);
-    max-width: 128.4rem;
     height: 13rem;
   }
 
@@ -177,7 +170,7 @@
       align-items: stretch;
       justify-content: flex-end;
       gap: 2.1rem;
-      padding: 0 1.2rem 8.9rem;
+      padding-bottom: 8.9rem;
     }
 
     &__title {
@@ -189,7 +182,7 @@
     }
 
     &__details { margin-top: -3.6rem; padding-bottom: 6rem; }
-    &__brand-row { width: calc(100% - 2.4rem); height: 7.2rem; }
+    &__brand-row { height: 7.2rem; }
     &__mark { width: 7.8rem; height: 7.2rem; }
 
     &__description {

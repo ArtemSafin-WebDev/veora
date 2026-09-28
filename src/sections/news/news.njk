@@ -1,6 +1,6 @@
 {% from "components/button/button.njk" import button %}
 {% from "components/section-title/section-title.njk" import sectionTitle %}
-<section class="news" id="news" data-news aria-labelledby="news-title">
+<section class="news container" id="news" data-news aria-labelledby="news-title">
   <div class="news__header">
     {{ sectionTitle(page.news.title, 'news-title', 'news__title') }}
     {{ button(page.news.allLink.label, page.news.allLink.href, 'news__all-link', 'light', true, true) }}

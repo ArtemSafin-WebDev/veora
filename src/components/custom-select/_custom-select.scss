@@ -87,6 +87,8 @@
 
   &__option:hover { background: #faf7ee; }
 
+  &__option span { white-space: nowrap; }
+
   &__option input {
     flex: 0 0 1.6rem;
     width: 1.6rem;

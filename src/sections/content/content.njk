@@ -1,7 +1,9 @@
-<section class="content">
-  <p class="content__eyebrow">{{ page.content.eyebrow }}</p>
-  <h1 class="content__title">{{ page.content.title }}</h1>
-  {% for paragraph in page.content.paragraphs %}
-    <p class="content__paragraph">{{ paragraph }}</p>
-  {% endfor %}
+<section class="content container">
+  <div class="content__inner">
+    <p class="content__eyebrow">{{ page.content.eyebrow }}</p>
+    <h1 class="content__title">{{ page.content.title }}</h1>
+    {% for paragraph in page.content.paragraphs %}
+      <p class="content__paragraph">{{ paragraph }}</p>
+    {% endfor %}
+  </div>
 </section>
