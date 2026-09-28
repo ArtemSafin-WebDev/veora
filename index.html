@@ -1,7 +1,11 @@
 {% extends "layout.njk" %}
 {% block content %}
   {% include "sections/intro/intro.njk" %}
-  {% include "sections/services/services.njk" %}
+  {% include "sections/resorts/resorts.njk" %}
+  <div class="services-area">
+    {% include "sections/services/services.njk" %}
+    {% include "sections/special-offers/special-offers.njk" %}
+  </div>
   {% include "sections/news/news.njk" %}
   {% include "sections/gallery/gallery.njk" %}
 {% endblock %}

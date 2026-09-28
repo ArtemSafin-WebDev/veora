@@ -1,3 +1,4 @@
+{% from "components/button/button.njk" import button %}
 <article class="offer-card">
   <a class="offer-card__media" href="{{ offer.href }}" aria-label="{{ offer.title }}">
     <img class="offer-card__image" src="{{ offer.image }}" alt="" loading="lazy" />
@@ -9,6 +10,6 @@
   </a>
   <div class="offer-card__body">
     <h3 class="offer-card__title">{{ offer.title }}</h3>
-    <a class="offer-card__link" href="{{ offer.href }}">{{ page.services.offers.readMoreLabel }}</a>
+    {{ button(specialOffers.readMoreLabel, offer.href, 'offer-card__link', 'dark') }}
   </div>
 </article>

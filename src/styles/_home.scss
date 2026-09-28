@@ -1,0 +1,64 @@
+.services-area {
+  position: relative;
+  isolation: isolate;
+  display: flow-root;
+
+  .special-offers::before { display: none; }
+
+  &::before {
+    --arch-left: calc(50% - 100.75rem);
+
+    position: absolute;
+    z-index: -1;
+    top: 6.3rem;
+    bottom: 10rem;
+    left: 50%;
+    width: max(100vw, 201.5rem);
+    background-color: #576258;
+    background-image: url('/assets/services/glow-right.svg'), url('/assets/services/glow-left.svg');
+    background-position: calc(50% + 45.65rem) -15.5rem, calc(50% - 68.3rem) 12.2rem;
+    background-repeat: no-repeat;
+    background-size: 173.1rem 173.1rem, 219.1rem 219.1rem;
+    clip-path: shape(
+      from 100% 104.1007rem,
+      line to calc(var(--arch-left) + 201.5rem) 104.1007rem,
+      curve to calc(var(--arch-left) + 193.83086rem) 62.225rem with calc(var(--arch-left) + 201.5rem) 90.8634rem / calc(var(--arch-left) + 198.89402rem) 74.455rem,
+      curve to calc(var(--arch-left) + 171.991rem) 29.523rem with calc(var(--arch-left) + 188.7677rem) 49.995rem / calc(var(--arch-left) + 181.3465rem) 38.883rem,
+      curve to calc(var(--arch-left) + 139.3054rem) 7.673rem with calc(var(--arch-left) + 162.6355rem) 20.163rem / calc(var(--arch-left) + 151.5289rem) 12.738rem,
+      curve to calc(var(--arch-left) + 100.75rem) 0 with calc(var(--arch-left) + 127.0818rem) 2.607rem / calc(var(--arch-left) + 113.9807rem) 0,
+      curve to calc(var(--arch-left) + 62.195rem) 7.673rem with calc(var(--arch-left) + 87.519rem) 0 / calc(var(--arch-left) + 74.418rem) 2.607rem,
+      curve to calc(var(--arch-left) + 29.509rem) 29.523rem with calc(var(--arch-left) + 49.971rem) 12.738rem / calc(var(--arch-left) + 38.864rem) 20.163rem,
+      curve to calc(var(--arch-left) + 7.669rem) 62.225rem with calc(var(--arch-left) + 20.153rem) 38.883rem / calc(var(--arch-left) + 12.732rem) 49.995rem,
+      curve to var(--arch-left) 104.1007rem with calc(var(--arch-left) + 2.606rem) 74.455rem / var(--arch-left) 90.8634rem,
+      line to 0 104.1007rem,
+      line to 0 100%,
+      line to 100% 100%,
+      close
+    );
+    content: '';
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-area {
+    &::before {
+      --arch-left: calc(50% - 18.1rem);
+
+      top: 3.6rem;
+      bottom: 6.6rem;
+      width: max(100vw, 36.2rem);
+      background: #576258;
+      clip-path: shape(
+        from 0 7.1rem,
+        line to calc(var(--arch-left) + .04746rem) 7.1rem,
+        curve to 50% 0 with calc(var(--arch-left) + 4.77937rem) 2.69479rem / calc(var(--arch-left) + 11.125rem) 0,
+        curve to calc(var(--arch-left) + 36.15254rem) 7.1rem with calc(var(--arch-left) + 25.075rem) 0 / calc(var(--arch-left) + 31.4206rem) 2.69479rem,
+        line to 100% 7.1rem,
+        line to 100% 100%,
+        line to 0 100%,
+        close
+      );
+    }
+  }
+}

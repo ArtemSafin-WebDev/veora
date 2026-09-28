@@ -1,0 +1,121 @@
+.resorts {
+  margin-bottom: 9.6rem;
+  color: #495249;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-bottom: 2.4rem;
+
+    &::after { width: 30rem; height: 1px; background: #c8cdc8; content: ''; }
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2.4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #c8cdc8;
+  }
+
+  &__description { max-width: 63.8rem; margin: 0; color: #7f8a80; font-size: 1.6rem; line-height: 2rem; letter-spacing: -.032rem; }
+  &__modes { display: flex; flex: 0 0 auto; }
+  &__control {
+    flex: 0 0 auto;
+    min-height: 4rem;
+    padding: 0 1.8rem;
+    border: 0;
+    border-radius: 1.2rem;
+    background: transparent;
+    color: #576258;
+    font: inherit;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    letter-spacing: -.056rem;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:hover { background: #eff0ef; }
+    &[aria-selected='true'], &[aria-pressed='true'] { background: #576258; color: #fff; }
+  }
+
+  &__body { position: relative; display: flow-root; padding-top: 3.1rem; }
+  &__filters {
+    position: absolute;
+    z-index: 1;
+    top: 1.4rem;
+    left: -.2rem;
+    display: flex;
+    max-width: calc(100% + .2rem);
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar { display: none; }
+  }
+
+  &__viewport { overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; }
+  &__viewport::-webkit-scrollbar { display: none; }
+  &__map { position: relative; width: 100%; }
+  &__map-image { display: block; width: 100%; height: auto; }
+  &__pin {
+    position: absolute;
+    left: var(--pin-x);
+    top: var(--pin-y);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #484848;
+    font: inherit;
+    cursor: pointer;
+    transform: translate(-50%, calc(-100% + 1rem));
+
+    &:hover .resorts__pin-label { background: #eff0ef; }
+    &[aria-expanded='true'] .resorts__pin-label { visibility: hidden; }
+  }
+
+  &__pin-label {
+    display: block;
+    min-height: 3.2rem;
+    padding: .9rem 1.1rem;
+    border: 1px solid #b2b8b2;
+    border-radius: 1.2rem;
+    background: #fff;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: -.048rem;
+    white-space: nowrap;
+  }
+
+  &__pin-dot { display: block; width: 2rem; height: 2rem; }
+  &__list { padding-top: 6.3rem; }
+  & [hidden] { display: none; }
+  & :is(button, a, [tabindex]):focus-visible { outline: .2rem solid #576258; outline-offset: .3rem; }
+}
+
+@media (max-width: 600px) {
+  .resorts {
+    margin-bottom: 8rem;
+
+    &__heading { margin-bottom: 2rem; }
+    &__heading::after { display: none; }
+    &__header { flex-direction: column; gap: 2.4rem; }
+    &__description { max-width: none; font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.014rem; }
+    &__modes { width: 100%; }
+    &__modes .resorts__control { flex: 1; }
+    &__body { padding-top: 0; }
+    &__filters { top: 1.9rem; left: 0; max-width: calc(100% + 1.2rem); }
+    &__map-panel { margin-top: -2.1rem; }
+    &__viewport { margin-right: -1.2rem; }
+    &__map { width: max-content; }
+    &__map-image { width: auto; height: 59.3rem; max-width: none; }
+    &__list { padding-top: 7.9rem; }
+  }
+}

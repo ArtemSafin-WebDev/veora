@@ -1,5 +1,6 @@
 import '@fontsource-variable/inter/wght.css';
 import './styles/main.scss';
+import './sections/resorts/resorts';
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 

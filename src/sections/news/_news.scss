@@ -34,31 +34,6 @@
 
   &__title {
     flex: 0 1 78rem;
-    margin: 0;
-    font-size: 6.4rem;
-    font-weight: 400;
-    line-height: 6.4rem;
-    letter-spacing: -.448rem;
-  }
-
-  &__all-link,
-  &__mobile-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 4rem;
-    padding-inline: 1.8rem;
-    border: 1px solid #c8cdc8;
-    border-radius: 1.2rem;
-    color: #495249;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.2rem;
-    letter-spacing: -.056rem;
-    text-decoration: none;
-    white-space: nowrap;
-
-    &:hover { background: #eff0ef; }
   }
 
   &__all-link { order: 2; }
@@ -82,23 +57,13 @@
     &__header::after, &__all-link { display: none; }
     &__title {
       flex: 1 1 auto;
-      font-size: 4rem;
-      line-height: 4rem;
-      letter-spacing: -.24rem;
     }
     &__track { display: flex; gap: 0; }
     &__slide { flex: 0 0 25rem; width: 25rem; }
     &__mobile-link {
       display: flex;
       width: max-content;
-      min-height: 3.4rem;
       margin: 4rem auto 0;
-      padding-inline: 1.6rem;
-      border-radius: .6rem;
-      color: #576258;
-      font-size: 1.2rem;
-      line-height: 1.4rem;
-      letter-spacing: -.048rem;
     }
   }
 }

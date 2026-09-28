@@ -1,0 +1,8 @@
+{% macro button(label, href, className='', variant='light', rounded=false, compact=false, disabled=false) %}
+  {% set classes = 'button button--' + variant %}
+  {% if rounded %}{% set classes = classes + ' button--rounded' %}{% endif %}
+  {% if compact %}{% set classes = classes + ' button--compact' %}{% endif %}
+  {% if disabled %}{% set classes = classes + ' button--disabled' %}{% endif %}
+  {% if className %}{% set classes = classes + ' ' + className %}{% endif %}
+  {% if disabled %}<span class="{{ classes }}" aria-disabled="true">{{ label }}</span>{% elif href %}<a class="{{ classes }}" href="{{ href }}">{{ label }}</a>{% else %}<span class="{{ classes }}">{{ label }}</span>{% endif %}
+{% endmacro %}

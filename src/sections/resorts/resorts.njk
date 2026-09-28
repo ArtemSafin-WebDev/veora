@@ -1,0 +1,42 @@
+{% from "components/section-title/section-title.njk" import sectionTitle %}
+<section class="resorts" id="resorts" data-resorts aria-labelledby="resorts-title">
+  <div class="resorts__heading">
+    {{ sectionTitle(page.resorts.title, 'resorts-title') }}
+  </div>
+  <div class="resorts__header">
+    <p class="resorts__description">{{ page.resorts.description }}</p>
+    <div class="resorts__modes" role="tablist" aria-label="{{ page.resorts.modeLabel }}">
+      {% for mode in page.resorts.modes %}
+        <button class="resorts__control" type="button" role="tab" id="resorts-tab-{{ mode.id }}" aria-selected="{{ 'true' if loop.first else 'false' }}" aria-controls="resorts-{{ mode.id }}" tabindex="{{ '0' if loop.first else '-1' }}" data-resorts-mode="{{ mode.id }}">{{ mode.label }}</button>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="resorts__body">
+    <div class="resorts__filters" role="group" aria-label="{{ page.resorts.filterLabel }}">
+      {% for filter in page.resorts.filters %}
+        <button class="resorts__control" type="button" aria-pressed="{{ 'true' if loop.first else 'false' }}" data-resorts-filter="{{ filter.id }}">{{ filter.label }}</button>
+      {% endfor %}
+    </div>
+    <div class="resorts__map-panel" id="resorts-map" role="tabpanel" aria-labelledby="resorts-tab-map">
+      <div class="resorts__viewport" tabindex="0" role="region" aria-label="{{ page.resorts.mapLabel }}" data-resorts-viewport>
+        <div class="resorts__map">
+          <img class="resorts__map-image" src="{{ page.resorts.mapImage }}" alt="{{ page.resorts.mapAlt }}" width="1286" height="593" />
+          {% for resort in page.resorts.items %}
+            <button class="resorts__pin" type="button" style="--pin-x: {{ resort.pin.x }}%; --pin-y: {{ resort.pin.y }}%" data-resort-pin="{{ resort.id }}" data-category="{{ resort.category }}" data-pin-group="{{ resort.pin.group }}" popovertarget="resort-popover-{{ resort.id }}" aria-label="{{ resort.title }}" aria-haspopup="dialog" aria-expanded="false" aria-controls="resort-popover-{{ resort.id }}"{% if resort.pin.hiddenInitially %} hidden{% endif %}>
+              <span class="resorts__pin-label">{{ resort.title }}</span>
+              <img class="resorts__pin-dot" src="{{ page.resorts.pinImage }}" alt="" width="20" height="20" style="anchor-name: --resort-{{ resort.id }}" />
+            </button>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="resorts__list" id="resorts-list" role="tabpanel" aria-labelledby="resorts-tab-list" tabindex="0" hidden>
+      {% for resort in page.resorts.items %}
+        {% include "components/resort-card/resort-card.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+  {% for resort in page.resorts.items %}
+    {% include "components/resort-popover/resort-popover.njk" %}
+  {% endfor %}
+</section>

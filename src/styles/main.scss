@@ -1,4 +1,7 @@
 @use 'base';
+@use 'home';
+@use '../components/button/button';
+@use '../components/section-title/section-title';
 @use '../components/icon-sprite/icon-sprite';
 @use '../components/site-footer/site-footer';
 @use '../components/gallery-card/gallery-card';
@@ -11,3 +14,6 @@
 @use '../sections/special-offers/special-offers';
 @use '../sections/intro/intro';
 @use '../sections/content/content';
+@use '../components/resort-card/resort-card';
+@use '../components/resort-popover/resort-popover';
+@use '../sections/resorts/resorts';

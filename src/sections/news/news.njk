@@ -1,7 +1,9 @@
+{% from "components/button/button.njk" import button %}
+{% from "components/section-title/section-title.njk" import sectionTitle %}
 <section class="news" id="news" data-news aria-labelledby="news-title">
   <div class="news__header">
-    <h2 class="news__title" id="news-title">{{ page.news.title }}</h2>
-    <a class="news__all-link" href="{{ page.news.allLink.href }}">{{ page.news.allLink.label }}</a>
+    {{ sectionTitle(page.news.title, 'news-title', 'news__title') }}
+    {{ button(page.news.allLink.label, page.news.allLink.href, 'news__all-link', 'light', true, true) }}
   </div>
   <div class="news__slider swiper">
     <div class="news__track swiper-wrapper">
@@ -12,5 +14,5 @@
       {% endfor %}
     </div>
   </div>
-  <a class="news__mobile-link" href="{{ page.news.allLink.href }}">{{ page.news.allLink.label }}</a>
+  {{ button(page.news.allLink.label, page.news.allLink.href, 'news__mobile-link', 'light', true, true) }}
 </section>

@@ -1,9 +1,11 @@
+{% from "components/button/button.njk" import button %}
+{% from "components/section-title/section-title.njk" import sectionTitle %}
 <section class="gallery" id="gallery" data-gallery aria-labelledby="gallery-title">
   <div class="gallery__header">
-    <h2 class="gallery__title" id="gallery-title">{{ page.gallery.title }}</h2>
+    {{ sectionTitle(page.gallery.title, 'gallery-title', 'gallery__title') }}
     <span class="gallery__divider" aria-hidden="true"></span>
     <div class="gallery__controls">
-      <a class="gallery__all-link" href="{{ page.gallery.allLink.href }}">{{ page.gallery.allLink.label }}</a>
+      {{ button(page.gallery.allLink.label, page.gallery.allLink.href, 'gallery__all-link', 'gallery') }}
       <div class="gallery__arrows">
         <button class="gallery__arrow gallery__arrow--prev" type="button" aria-label="Предыдущие фотографии">
           <svg class="gallery__arrow-icon gallery__arrow-icon--enabled" aria-hidden="true" focusable="false" viewBox="0 0 30 30"><use href="#icon-gallery-next"></use></svg>
@@ -26,5 +28,5 @@
       {% endfor %}
     </div>
   </div>
-  <a class="gallery__mobile-link" href="{{ page.gallery.allLink.href }}">{{ page.gallery.allLink.label }}</a>
+  {{ button(page.gallery.allLink.label, page.gallery.allLink.href, 'gallery__mobile-link', 'gallery') }}
 </section>

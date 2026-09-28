@@ -1,0 +1,13 @@
+{% from "components/button/button.njk" import button %}
+<article class="resort-card resort-card--{{ resort.category }}" data-resort-card data-category="{{ resort.category }}">
+  <img class="resort-card__image" src="{{ resort.image }}" alt="{{ resort.imageAlt }}" width="164" height="164" loading="lazy" />
+  <div class="resort-card__heading">
+    <h3 class="resort-card__title">{% for line in resort.titleLines %}<span>{{ line }}</span>{% if not loop.last %} {% endif %}{% endfor %}</h3>
+  </div>
+  <div class="resort-card__labels">
+    <span class="resort-card__label">{{ resort.categoryLabel }}</span>
+    <span class="resort-card__label">{{ resort.region }}</span>
+  </div>
+  <p class="resort-card__description"><span class="resort-card__desktop-description">{{ resort.description }}</span><span class="resort-card__mobile-description">{{ resort.mobileDescription }}</span></p>
+  {{ button(page.resorts.readMoreLabel, resort.href, 'resort-card__link', 'muted', true, true) }}
+</article>

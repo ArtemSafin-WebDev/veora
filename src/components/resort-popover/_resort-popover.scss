@@ -1,0 +1,36 @@
+.resort-popover {
+  position: fixed;
+  inset: auto;
+  width: 30rem;
+  max-width: calc(100vw - 2.4rem);
+  max-height: calc(100dvh - 2.4rem);
+  margin: 0;
+  padding: .6rem .6rem 1.2rem;
+  border: 0;
+  border-radius: 1rem;
+  background: #fff;
+  color: #495249;
+  overflow: auto;
+  box-shadow: 0 10rem 4rem rgb(0 0 0 / 7%), 0 4.1778rem 1.6711rem rgb(0 0 0 / 5%), 0 2.2336rem .8935rem rgb(0 0 0 / 4%), 0 1.2522rem .5009rem rgb(0 0 0 / 4%), 0 .665rem .266rem rgb(0 0 0 / 3%), 0 .2767rem .1107rem rgb(0 0 0 / 2%);
+
+  // The dot (not its label) is the anchor, including inside the scrolling map.
+  left: clamp(1.2rem, calc(anchor(center) - 15rem), calc(100vw - 31.2rem));
+  bottom: calc(anchor(top) + .7rem);
+  position-try-fallbacks: flip-block;
+
+  &--fallback { left: var(--popover-left); top: var(--popover-top); bottom: auto; position-anchor: auto !important; }
+  &--legacy { display: none; z-index: 100; }
+  &--legacy-open { display: block; }
+  &::backdrop { background: transparent; }
+  &__media { position: relative; }
+  &__image { display: block; width: 100%; height: 18.7rem; object-fit: cover; border-radius: .8rem; }
+  &__region { position: absolute; top: .6rem; left: .6rem; max-width: calc(100% - 4.8rem); padding: .2rem .6rem; border-radius: .6rem; background: #fff; color: #24292f; font-size: 1rem; line-height: 1.8rem; letter-spacing: -.01rem; }
+  &__close { position: absolute; top: 0; right: 0; display: grid; place-items: center; width: 3.6rem; height: 3.6rem; padding: .8rem; border: 0; border-radius: 50%; background: transparent; cursor: pointer; }
+  &__close:hover { background: rgb(0 0 0 / 15%); }
+  &__body { display: flex; flex-direction: column; justify-content: space-between; min-height: 13.8rem; margin-top: 1rem; padding: 1.2rem 1.4rem; gap: 2.8rem; }
+  &__title { margin: 0 0 .4rem; color: #7f8a80; font-size: 1.6rem; font-weight: 400; line-height: 2rem; letter-spacing: -.032rem; }
+  &__description { margin: 0; font-size: 1.2rem; line-height: 1.6rem; letter-spacing: -.024rem; }
+  &__link { display: inline-flex; align-items: center; align-self: flex-start; gap: 1rem; color: #657266; font-size: 1.2rem; font-weight: 500; line-height: 1.2rem; letter-spacing: -.048rem; text-decoration: none; }
+  &__link:hover { text-decoration: underline; }
+  & :is(button, a):focus-visible { outline: .2rem solid #576258; outline-offset: .2rem; }
+}

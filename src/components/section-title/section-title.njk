@@ -1,0 +1,3 @@
+{% macro sectionTitle(label, id, className='') %}
+  <h2 class="section-title{% if className %} {{ className }}{% endif %}" id="{{ id }}">{{ label }}</h2>
+{% endmacro %}
