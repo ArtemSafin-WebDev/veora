@@ -2,6 +2,63 @@
   "title": "Главная",
   "description": "Стартовая страница сайта Veora",
   "activePage": "home",
+  "hero": {
+    "title": "Наслаждение оздоровлением",
+    "image": "/assets/hero/wellness.png",
+    "brandMark": "/assets/hero/brand-mark.svg",
+    "brandMarkMobile": "/assets/hero/brand-mark-mobile.svg",
+    "divider": "/assets/hero/divider.svg",
+    "dividerMobile": "/assets/hero/divider-mobile.svg",
+    "description": "Уникальные природные локации, медицинский персонал высшей категории и широкий спектр оздоровительных программ для любого возраста.",
+    "statsLabel": "Веора в цифрах",
+    "stats": [
+      { "value": "5", "label": "здравниц в уникальных природно-климатических локациях" },
+      { "value": "1", "label": "детских оздоровительных лагеря" }
+    ],
+    "booking": {
+      "label": "Подбор отдыха",
+      "resortSelect": {
+        "id": "booking-resort",
+        "label": "Размещение",
+        "groups": [{
+          "label": "Здравница",
+          "name": "resort",
+          "options": [
+            { "value": "", "label": "Выберите здравницу", "summary": "Выберите здравницу", "selected": true },
+            { "value": "Балтийские пески", "label": "Балтийские пески", "summary": "Балтийские пески" },
+            { "value": "Золотые пески", "label": "Золотые пески", "summary": "Золотые пески" },
+            { "value": "Полюс", "label": "Полюс", "summary": "Полюс" },
+            { "value": "Солнечный городок", "label": "Солнечный городок", "summary": "Солнечный городок" },
+            { "value": "Южный", "label": "Южный", "summary": "Южный" }
+          ]
+        }]
+      },
+      "datesLabel": "Заезд и выезд",
+      "datesValue": "01.05.25 - 02.05.25",
+      "arrivalValue": "2025-05-01",
+      "departureValue": "2025-05-02",
+      "guestSelect": {
+        "id": "booking-guests",
+        "label": "Гости",
+        "keepOpen": true,
+        "groups": [
+          { "label": "Взрослые", "name": "adults", "options": [
+            { "value": "1", "label": "1 взрослый", "summary": "1 взрослый" },
+            { "value": "2", "label": "2 взрослых", "summary": "2 взрослых", "selected": true },
+            { "value": "3", "label": "3 взрослых", "summary": "3 взрослых" },
+            { "value": "4", "label": "4 взрослых", "summary": "4 взрослых" }
+          ]},
+          { "label": "Дети", "name": "children", "options": [
+            { "value": "0", "label": "Без детей", "summary": "" },
+            { "value": "1", "label": "1 ребенок", "summary": "1 ребенок", "selected": true },
+            { "value": "2", "label": "2 ребенка", "summary": "2 ребенка" },
+            { "value": "3", "label": "3 ребенка", "summary": "3 ребенка" }
+          ]}
+        ]
+      },
+      "chevron": "/assets/hero/chevron.svg"
+    }
+  },
   "intro": {
     "image": "/assets/intro/landscape.jpg",
     "logo": "/assets/intro/logo.svg",

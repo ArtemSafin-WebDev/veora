@@ -1,6 +1,9 @@
 import '@fontsource-variable/inter/wght.css';
+import '@fontsource-variable/golos-text/wght.css';
 import './styles/main.scss';
 import './sections/resorts/resorts';
+import './components/custom-select/custom-select';
+import './components/booking-search/booking-search';
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 

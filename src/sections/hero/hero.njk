@@ -1,0 +1,28 @@
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__stage">
+    <div class="hero__visual" aria-hidden="true">
+      <img class="hero__image" src="{{ page.hero.image }}" alt="" />
+    </div>
+    <div class="hero__lead">
+      <h1 class="hero__title" id="hero-title">{{ page.hero.title }}</h1>
+      {% from "components/booking-search/booking-search.njk" import bookingSearch %}
+      {{ bookingSearch(page.hero.booking, site.footer.booking) }}
+    </div>
+  </div>
+  <div class="hero__details">
+    <div class="hero__brand-row" aria-hidden="true">
+      <picture class="hero__divider"><source media="(max-width: 600px)" srcset="{{ page.hero.dividerMobile }}" /><img src="{{ page.hero.divider }}" alt="" /></picture>
+      <span class="hero__mark"><picture><source media="(max-width: 600px)" srcset="{{ page.hero.brandMarkMobile }}" /><img src="{{ page.hero.brandMark }}" alt="" /></picture></span>
+      <picture class="hero__divider"><source media="(max-width: 600px)" srcset="{{ page.hero.dividerMobile }}" /><img src="{{ page.hero.divider }}" alt="" /></picture>
+    </div>
+    <p class="hero__description">{{ page.hero.description }}</p>
+    <div class="hero__stats" aria-label="{{ page.hero.statsLabel }}">
+      {% for stat in page.hero.stats %}
+        <div class="hero__stat">
+          <strong class="hero__stat-number">{{ stat.value }}</strong>
+          <span class="hero__stat-label">{{ stat.label }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

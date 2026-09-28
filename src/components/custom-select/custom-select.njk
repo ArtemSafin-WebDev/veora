@@ -1,0 +1,24 @@
+{% macro customSelect(config, chevron) %}
+<div class="custom-select{% if config.keepOpen %} custom-select--multiple{% endif %}" data-custom-select data-select-keep-open="{{ 'true' if config.keepOpen else 'false' }}">
+  <button class="custom-select__trigger" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="{{ config.id }}-options" data-select-trigger>
+    <span class="custom-select__label">{{ config.label }}</span>
+    <span class="custom-select__value" data-select-value></span>
+    <img class="custom-select__chevron" src="{{ chevron }}" alt="" />
+  </button>
+  <div class="custom-select__popover" id="{{ config.id }}-options" popover="manual" role="dialog" aria-label="{{ config.label }}" data-select-popover>
+    {% for group in config.groups %}
+      <fieldset class="custom-select__group">
+        <legend class="custom-select__legend">{{ group.label }}</legend>
+        <div class="custom-select__options">
+          {% for option in group.options %}
+            <label class="custom-select__option">
+              <input type="radio" name="{{ group.name }}" value="{{ option.value }}" data-select-label="{{ option.summary }}" {% if option.selected %}checked{% endif %} />
+              <span>{{ option.label }}</span>
+            </label>
+          {% endfor %}
+        </div>
+      </fieldset>
+    {% endfor %}
+  </div>
+</div>
+{% endmacro %}

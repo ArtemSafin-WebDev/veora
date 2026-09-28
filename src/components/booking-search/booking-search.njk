@@ -1,0 +1,22 @@
+{% from "components/custom-select/custom-select.njk" import customSelect %}
+{% macro bookingSearch(config, actions) %}
+<form class="booking-search" aria-label="{{ config.label }}" data-booking-search>
+  {{ customSelect(config.resortSelect, config.chevron) }}
+  <div class="booking-search__row">
+    <label class="booking-search__dates">
+      <span class="booking-search__label">{{ config.datesLabel }}</span>
+      <input class="booking-search__dates-input" type="text" name="dates" value="{{ config.datesValue }}" data-start-date="{{ config.arrivalValue }}" data-end-date="{{ config.departureValue }}" data-booking-dates readonly />
+      <img class="booking-search__chevron" src="{{ config.chevron }}" alt="" />
+    </label>
+    {{ customSelect(config.guestSelect, config.chevron) }}
+  </div>
+  <div class="booking-search__actions">
+    {% for item in actions %}
+      <a class="booking-search__action booking-search__action--{{ item.variant }}" href="{{ item.href }}">
+        <span class="booking-search__action-title">{{ item.title }}</span>
+        <span class="booking-search__action-cta">{{ item.cta }}</span>
+      </a>
+    {% endfor %}
+  </div>
+</form>
+{% endmacro %}
