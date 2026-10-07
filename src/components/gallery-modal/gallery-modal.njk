@@ -1,4 +1,5 @@
 {% from "components/modal/modal.njk" import modal %}
+{% from "components/icon/icon.njk" import icon %}
 {% call modal(page.gallery.modal.id, page.gallery.title, site.modal.closeLabel, 'gallery-modal') %}
   <div class="gallery-modal__slider swiper" data-gallery-modal-slider>
     <div class="gallery-modal__track swiper-wrapper">
@@ -17,10 +18,10 @@
   </div>
   <div class="gallery-modal__navigation">
     <button class="gallery-modal__arrow gallery-modal__arrow--prev" type="button" aria-label="{{ page.gallery.modal.previousLabel }}">
-      <img src="/assets/modal/previous.svg" alt="" />
+      {{ icon('modal-arrow', 'gallery-modal__arrow-icon', 3) }}
     </button>
     <button class="gallery-modal__arrow gallery-modal__arrow--next" type="button" aria-label="{{ page.gallery.modal.nextLabel }}">
-      <img src="/assets/modal/next.svg" alt="" />
+      {{ icon('modal-arrow', 'gallery-modal__arrow-icon', 3) }}
     </button>
   </div>
 {% endcall %}

@@ -1,7 +1,10 @@
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero__stage">
     <div class="hero__visual" aria-hidden="true">
-      <img class="hero__image" src="{{ page.hero.image }}" alt="" />
+      <picture class="hero__picture">
+        {% if page.hero.mobileImage %}<source media="(max-width: 600px)" srcset="{{ page.hero.mobileImage }}" />{% endif %}
+        <img class="hero__image" src="{{ page.hero.image }}" alt="" />
+      </picture>
     </div>
     <div class="hero__lead container">
       <h1 class="hero__title" id="hero-title">{{ page.hero.title }}</h1>

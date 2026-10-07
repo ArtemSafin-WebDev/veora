@@ -7,6 +7,9 @@
   background: #495249;
 
   &--overlay { position: absolute; inset: 0 0 auto; background: transparent; }
+  &--banner &__nav-toggle--directions { background: #fff; color: #657266; }
+  &--banner &__nav-toggle--directions &__chevron-light { display: none; }
+  &--banner &__nav-toggle--directions &__chevron-green { display: block; }
   [hidden] { display: none !important; }
   a { text-decoration: none; }
   :where(button) { padding: 0; border: 0; font: inherit; color: inherit; cursor: pointer; }

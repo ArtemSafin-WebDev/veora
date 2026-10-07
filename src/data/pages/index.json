@@ -144,7 +144,7 @@
   },
   "services": {
     "title": "Услуги",
-    "allLink": { "href": "/services/", "label": "Все услуги" },
+    "allLink": { "href": "/services.html", "label": "Все услуги" },
     "tabs": [
       { "id": "all", "label": "Все" },
       { "id": "family", "label": "Семейные и детские" },

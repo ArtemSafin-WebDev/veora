@@ -17,7 +17,7 @@
     </div>
   </div>
 {% endmacro %}
-<header class="site-header{% if page.hero %} site-header--overlay{% endif %}" data-site-header aria-label="{{ header.label }}">
+<header class="site-header{% if page.hero or page.banner %} site-header--overlay{% endif %}{% if page.banner %} site-header--banner{% endif %}" data-site-header aria-label="{{ header.label }}">
   <div class="site-header__backdrop" data-header-backdrop hidden></div>
   <div class="site-header__container">
   <div class="site-header__bar">

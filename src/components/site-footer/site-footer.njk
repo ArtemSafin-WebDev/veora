@@ -40,7 +40,7 @@
           </div>
           <div class="site-footer__socials" aria-label="Мессенджеры">
             {% for item in site.footer.socials %}
-              <a href="{{ item.href }}" aria-label="{{ item.label }}" rel="noopener noreferrer" target="_blank">
+              <a class="site-footer__social-link" href="{{ item.href }}" aria-label="{{ item.label }}" rel="noopener noreferrer" target="_blank">
                 <svg class="site-footer__social-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 40">
                   <use href="#icon-{{ item.icon }}"></use>
                 </svg>

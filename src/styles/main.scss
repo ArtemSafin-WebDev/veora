@@ -5,6 +5,7 @@
 @use '../components/section-title/section-title';
 @use '../components/icon-sprite/icon-sprite';
 @use '../components/icon/icon';
+@use '../components/breadcrumbs/breadcrumbs';
 @use '../components/site-footer/site-footer';
 @use '../components/site-header/site-header';
 @use '../components/gallery-card/gallery-card';
@@ -25,3 +26,7 @@
 @use '../components/custom-select/custom-select';
 @use '../components/booking-search/booking-search';
 @use '../sections/hero/hero';
+@use '../sections/page-banner/page-banner';
+@use '../components/filters/filters';
+@use '../components/pagination/pagination';
+@use '../sections/service-catalog/service-catalog';

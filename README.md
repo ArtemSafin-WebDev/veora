@@ -26,7 +26,7 @@ npm run dev
 
 ## Новая страница
 
-Создайте `contacts/index.html` с наследованием layout и подключением секции:
+Создайте `contacts.html` в корне проекта рядом с `index.html` с наследованием layout и подключением секции:
 
 ```html
 {% extends "layout.njk" %}
@@ -35,8 +35,23 @@ npm run dev
 {% endblock %}
 ```
 
-Создайте данные `src/data/pages/contacts/index.json` с `title`, `description`, `activePage` и данными секции. Добавьте секцию в `src/sections/contacts/` с файлами `contacts.njk` и `_contacts.scss`; подключите SCSS в `src/styles/main.scss`. Для ссылки в навигации дополните `src/data/site.json`.
+Создайте данные `src/data/pages/contacts.json` с `title`, `description`, `activePage` и данными секции. Добавьте секцию в `src/sections/contacts/` с файлами `contacts.njk` и `_contacts.scss`; подключите SCSS в `src/styles/main.scss`. Для ссылки в навигации дополните `src/data/site.json`.
 
-Страница будет доступна по `/contacts/` и автоматически попадёт в `dist/contacts/index.html`. Путь к JSON повторяет путь к HTML-странице внутри `src/data/pages/`.
+Страница будет доступна по `/contacts.html` и автоматически попадёт в `dist/contacts.html`. Путь к JSON повторяет путь к HTML-странице внутри `src/data/pages/`.
 
 Файлы из `public/` (если папка нужна) Vite копирует в сборку без обработки. Импортируемые из TypeScript и SCSS ресурсы Vite обрабатывает и хеширует.
+
+## Страница услуг
+
+`/services.html` — каталог по desktop-макету 1366 и мобильному макету 360. Данные находятся в `src/data/pages/services.json`. В сборке страница доступна в `dist/services.html`.
+
+- `breadcrumbs(items, label)` из `src/components/breadcrumbs/breadcrumbs.njk` — самостоятельный БЭМ-блок хлебных крошек без дополнительных классов секций. Принимает массив `{ label, href? }` и название навигации для `aria-label`. Элемент без `href` обозначает текущую страницу; пустой массив не выводит навигацию. Цвет наследуется от окружения.
+- `pageBanner(banner)` из `src/sections/page-banner/page-banner.njk` — самостоятельная верхняя секция. Принимает `id`, `title`, `image`, `imageAlt`, `breadcrumbsLabel`, `breadcrumbs`; хлебные крошки выводит через общий компонент `breadcrumbs`. Необязательный `mobileImage` подключается через `<source>` в `<picture>`. Изображение заполняет всю ширину и высоту секции через `object-fit: cover`, без смещений и параметров геометрии. Шапка накладывается на секцию при наличии `page.banner`.
+- `filters(config)` из `src/components/filters/filters.njk` — группы с произвольными названиями и вариантами. У каждой группы есть уникальный `id`, `title`, `options` и `defaultOpen` (по умолчанию `false`). Значения изначально не выбраны. `option.all: true` обозначает вариант «Все»/«Любой», исключающий конкретные варианты внутри своей группы.
+- На мобильном одна и та же форма переносится в нативный `dialog`; состояния сохраняются. Прокручивается весь диалог, закрытие доступно кнопкой, по Escape и нажатием на фон. Аккордеоны анимируются через `grid-template-rows: 0fr / 1fr`; закрытое содержимое имеет `inert`.
+- После изменения форма отправляет всплывающее событие `filters:change`, `event.detail.values` содержит объект массивов значений по ID групп. Это точка подключения фильтрации каталога в Битрикс24; демонстрационная статическая выдача сама не фильтруется.
+- `pagination(config)` из `src/components/pagination/pagination.njk` принимает `baseUrl`, `currentPage`, `totalPages`, `items` (номера и строка `ellipsis`), подписи и имена иконок стрелок в спрайте. Троеточие — ссылка на первую скрытую страницу после предыдущего номера; `ellipsisLabel` задаёт подпись перехода для `aria-label`. Ссылки используют `?page=N`; клиентский код обновляет активный номер, ссылку троеточия и доступность стрелок из URL, сохраняя остальные параметры. Данные выдачи для страниц подключаются в Битрикс24.
+
+Иконки выводятся через макрос `icon(name, className, width, height)` в `src/components/icon/icon.njk` и SVG-спрайт `src/components/icon-sprite/icon-sprite.njk`. В `filters.assets` и `pagination.assets` передаются имена иконок в спрайте, а не пути к файлам. Для иконок `<img>` не используется.
+
+Цветовая схема выбирается `page.theme: "beige"` или `"dark-blue"` через класс на `body`. Новые компоненты используют БЭМ, собственные SCSS рядом с шаблонами и общие локальные ресурсы.

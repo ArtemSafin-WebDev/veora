@@ -6,6 +6,8 @@ import './sections/resorts/resorts';
 import './components/custom-select/custom-select';
 import './components/booking-search/booking-search';
 import './sections/gallery/gallery';
+import './components/filters/filters';
+import './components/pagination/pagination';
 import Swiper from 'swiper';
 
 const newsSlider = document.querySelector<HTMLElement>('[data-news] .news__slider');

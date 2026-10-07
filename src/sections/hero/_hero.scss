@@ -1,5 +1,6 @@
 .hero {
   overflow: hidden;
+  // Decorative texture behind the section details.
   background: url('/assets/hero/texture.png') center 72.5rem / 148.2rem 98.8rem no-repeat;
 
   &__stage {
@@ -30,14 +31,13 @@
     }
   }
 
+  &__picture { position: absolute; inset: 0; display: block; }
+
   &__image {
     display: block;
     width: 100%;
-    height: calc(100% + 7rem);
-    margin-top: -7rem;
+    height: 100%;
     object-fit: cover;
-    object-position: 25% center;
-    transform: scaleX(-1);
   }
 
   &__lead {
@@ -161,8 +161,6 @@
         close
       );
     }
-
-    &__image { height: calc(100% + 6rem); margin-top: -6rem; object-position: 35% center; }
 
     &__lead {
       display: flex;

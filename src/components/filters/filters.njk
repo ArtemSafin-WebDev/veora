@@ -1,0 +1,26 @@
+{% from "components/icon/icon.njk" import icon %}
+{% macro filters(config) %}
+<div class="filters" data-filters>
+  <button class="filters__trigger" type="button" data-modal-open="{{ config.id }}-modal" aria-haspopup="dialog" aria-controls="{{ config.id }}-modal"><span>{{ config.title }}</span><span class="filters__trigger-caption">{{ config.triggerLabel }}</span></button>
+  <div class="filters__desktop" data-filters-desktop>
+    <form class="filters__form" data-filters-form aria-label="{{ config.title }}">
+      {% for group in config.groups %}
+      <div class="filters__group{% if group.defaultOpen %} filters__group--open{% endif %}" data-filter-group>
+        <h2 class="filters__heading"><button class="filters__toggle" type="button" id="{{ config.id }}-{{ group.id }}-toggle" data-filter-toggle aria-expanded="{{ 'true' if group.defaultOpen else 'false' }}" aria-controls="{{ config.id }}-{{ group.id }}-panel">{{ group.title }}{{ icon(config.assets.chevron, 'filters__toggle-icon', 2) }}</button></h2>
+        <div class="filters__panel" id="{{ config.id }}-{{ group.id }}-panel" role="group" aria-labelledby="{{ config.id }}-{{ group.id }}-toggle"{% if not group.defaultOpen %} inert{% endif %}>
+          <div class="filters__clip"><div class="filters__options">
+            {% for option in group.options %}
+            <label class="filters__option"><input class="filters__checkbox" type="checkbox" name="{{ group.id }}" value="{{ option.value }}"{% if option.all %} data-filter-all{% endif %} /><span class="filters__box" aria-hidden="true">{{ icon(config.assets.check, 'filters__check', 1.6) }}</span><span>{{ option.label }}</span></label>
+            {% endfor %}
+          </div></div>
+        </div>
+      </div>
+      {% endfor %}
+    </form>
+  </div>
+  <dialog class="filters__modal" id="{{ config.id }}-modal" aria-label="{{ config.title }}" data-modal>
+    <button class="filters__close" type="button" data-modal-close aria-label="{{ config.closeLabel }}" autofocus>{{ icon(config.assets.close, 'filters__close-icon', 3) }}</button>
+    <div class="filters__sheet" data-filters-mobile></div>
+  </dialog>
+</div>
+{% endmacro %}

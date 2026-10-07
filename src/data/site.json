@@ -49,7 +49,7 @@
         "title": "Дополнительно",
         "links": [
           { "href": "/offers/", "label": "Специальные предложения" },
-          { "href": "/services/", "label": "Услуги и развлечения" },
+          { "href": "/services.html", "label": "Услуги и развлечения" },
           { "href": "/events/", "label": "Афиша" },
           { "href": "/gallery/", "label": "Галерея" },
           { "href": "/activities/", "label": "Мероприятия" }

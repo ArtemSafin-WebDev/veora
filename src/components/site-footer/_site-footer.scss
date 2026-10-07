@@ -93,7 +93,9 @@
   &__booking-card:hover &__booking-cta, &__booking-card:focus-visible &__booking-cta { text-decoration: underline; }
 
   &__socials { display: flex; gap: 1.6rem; margin-top: 3.6rem; }
-  &__socials a, &__social-icon { display: block; width: 4rem; height: 4rem; }
+  &__social-link, &__social-icon { display: block; width: 4rem; height: 4rem; }
+  &__social-link { color: #b2b8b2; transition: color 0.2s ease; }
+  &__social-link:hover, &__social-link:focus-visible { color: #fff; }
 
   &__details {
     display: flex;
@@ -140,6 +142,10 @@
   &__privacy:hover, &__privacy:focus-visible { text-decoration: underline; }
   &__credit { justify-self: end; }
   &__credit img { display: block; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-footer__social-link { transition: none; }
 }
 
 @media (max-width: 600px) {

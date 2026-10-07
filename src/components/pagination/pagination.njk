@@ -1,0 +1,13 @@
+{% from "components/icon/icon.njk" import icon %}
+{% macro pagination(config) %}
+<nav class="pagination" aria-label="{{ config.label }}" data-pagination data-current-page="{{ config.currentPage }}" data-total-pages="{{ config.totalPages }}">
+  <a class="pagination__link pagination__link--step" href="{{ config.baseUrl }}?page={{ config.currentPage - 1 if config.currentPage > 1 else 1 }}" aria-label="{{ config.previousLabel }}" data-page-step="-1">{{ icon(config.assets.previous, 'pagination__icon', 2) }}</a>
+  {% for item in config.items %}
+    {% if item == 'ellipsis' %}
+    {% set hiddenPage = config.items[loop.index0 - 1] + 1 if loop.index0 > 0 and config.items[loop.index0 - 1] != 'ellipsis' else 1 %}
+    <a class="pagination__link" href="{{ config.baseUrl }}?page={{ hiddenPage }}" aria-label="{{ config.ellipsisLabel }} {{ hiddenPage }}" data-page-ellipsis data-page-label="{{ config.ellipsisLabel }}">…</a>
+    {% else %}<a class="pagination__link{% if item == config.currentPage %} pagination__link--current{% endif %}" href="{{ config.baseUrl }}?page={{ item }}" data-page="{{ item }}"{% if item == config.currentPage %} aria-current="page"{% endif %}>{{ item }}</a>{% endif %}
+  {% endfor %}
+  <a class="pagination__link pagination__link--step" href="{{ config.baseUrl }}?page={{ config.currentPage + 1 if config.currentPage < config.totalPages else config.totalPages }}" aria-label="{{ config.nextLabel }}" data-page-step="1">{{ icon(config.assets.next, 'pagination__icon', 2) }}</a>
+</nav>
+{% endmacro %}

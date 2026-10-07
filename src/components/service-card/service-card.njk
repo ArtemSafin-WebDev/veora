@@ -6,6 +6,6 @@
       <span class="service-card__badge">{{ card.label }}</span>
       {% if card.paid %}<span class="service-card__badge service-card__badge--price" aria-label="Платная услуга">₽</span>{% endif %}
     </span>
-    <span class="service-card__title">{{ card.title }}</span>
+    <span class="service-card__title">{% if card.titleLines %}{% for line in card.titleLines %}{{ line }}{% if not loop.last %}<br />{% endif %}{% endfor %}{% else %}{{ card.title }}{% endif %}</span>
   </span>
 </a>

@@ -1,0 +1,312 @@
+{
+  "title": "Услуги и развлечения",
+  "description": "Услуги и развлечения в здравницах Веора: активный отдых, спорт и оздоровление.",
+  "activePage": "services",
+  "theme": "beige",
+  "banner": {
+    "id": "services-banner",
+    "title": "Услуги и развлечения",
+    "image": "/assets/catalog/hero.png",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/"
+      },
+      {
+        "label": "Услуги и развлечения"
+      }
+    ]
+  },
+  "catalog": {
+    "label": "Каталог услуг и развлечений",
+    "mobilePageSize": 8,
+    "filters": {
+      "id": "services-filters",
+      "title": "Фильтры",
+      "triggerLabel": "Настроить",
+      "closeLabel": "Закрыть фильтры",
+      "assets": {
+        "chevron": "filters-chevron",
+        "check": "filters-check",
+        "close": "modal-close"
+      },
+      "groups": [
+        {
+          "id": "resort",
+          "title": "Здравница",
+          "defaultOpen": false,
+          "options": [
+            {
+              "value": "all",
+              "label": "Все",
+              "all": true
+            },
+            {
+              "value": "sunny",
+              "label": "Солнечный городок"
+            },
+            {
+              "value": "baltic",
+              "label": "Балтийские пески"
+            },
+            {
+              "value": "polyus",
+              "label": "Полюс"
+            },
+            {
+              "value": "south",
+              "label": "Южный"
+            },
+            {
+              "value": "golden",
+              "label": "Золотые пески"
+            }
+          ]
+        },
+        {
+          "id": "direction",
+          "title": "Направление услуги",
+          "defaultOpen": false,
+          "options": [
+            {
+              "value": "all",
+              "label": "Любое",
+              "all": true
+            },
+            {
+              "value": "medicine",
+              "label": "Медицина"
+            },
+            {
+              "value": "spa",
+              "label": "СПА"
+            },
+            {
+              "value": "cosmetology",
+              "label": "Косметология"
+            }
+          ]
+        },
+        {
+          "id": "audience",
+          "title": "Кому",
+          "defaultOpen": false,
+          "options": [
+            {
+              "value": "all",
+              "label": "Всем",
+              "all": true
+            },
+            {
+              "value": "children",
+              "label": "Дети"
+            },
+            {
+              "value": "adults",
+              "label": "Взрослые"
+            }
+          ]
+        },
+        {
+          "id": "package",
+          "title": "Пакеты",
+          "defaultOpen": false,
+          "options": [
+            {
+              "value": "all",
+              "label": "Любые",
+              "all": true
+            },
+            {
+              "value": "package",
+              "label": "Пакетные"
+            },
+            {
+              "value": "individual",
+              "label": "Индивидуальные"
+            }
+          ]
+        },
+        {
+          "id": "activity",
+          "title": "Тип отдыха",
+          "defaultOpen": false,
+          "options": [
+            {
+              "value": "all",
+              "label": "Любой",
+              "all": true
+            },
+            {
+              "value": "water",
+              "label": "Водный отдых"
+            },
+            {
+              "value": "entertainment",
+              "label": "Досуг и развлечения"
+            },
+            {
+              "value": "sports",
+              "label": "Спортивные активности"
+            },
+            {
+              "value": "children",
+              "label": "Отдых с детьми"
+            },
+            {
+              "value": "transport",
+              "label": "Транспортные услуги"
+            },
+            {
+              "value": "excursions",
+              "label": "Экскурсии"
+            }
+          ]
+        }
+      ]
+    },
+    "cards": [
+      {
+        "href": "/services/pool/",
+        "title": "Бассейн",
+        "image": "/assets/services/pool.png",
+        "label": "Активный отдых",
+        "paid": true
+      },
+      {
+        "href": "/services/paintball/",
+        "title": "Пейнтбол",
+        "image": "/assets/services/paintball.jpg",
+        "label": "Активный отдых",
+        "paid": false
+      },
+      {
+        "href": "/services/playground/",
+        "title": "Детская площадка",
+        "image": "/assets/services/playground.jpg",
+        "label": "Активный отдых",
+        "paid": false
+      },
+      {
+        "href": "/services/trail/",
+        "title": "Терренкур",
+        "image": "/assets/services/trail.jpg",
+        "label": "Активный отдых",
+        "paid": false
+      },
+      {
+        "href": "/services/gym/",
+        "title": "Тренажерный зал",
+        "image": "/assets/services/gym.jpg",
+        "label": "Активный отдых",
+        "paid": false,
+        "titleLines": [
+          "Тренажерный",
+          "зал"
+        ]
+      },
+      {
+        "href": "/services/karaoke/",
+        "title": "Караоке",
+        "image": "/assets/services/karaoke.jpg",
+        "label": "Активный отдых",
+        "paid": true
+      },
+      {
+        "href": "/services/tennis/",
+        "title": "Теннисный корт",
+        "image": "/assets/services/tennis.jpg",
+        "label": "Активный отдых",
+        "paid": false
+      },
+      {
+        "href": "/services/sauna/",
+        "title": "Сауна",
+        "image": "/assets/services/sauna.jpg",
+        "label": "Спокойный отдых",
+        "paid": false
+      },
+      {
+        "href": "/services/pool/",
+        "title": "Бассейн",
+        "image": "/assets/services/pool.png",
+        "label": "Активный отдых",
+        "paid": true
+      },
+      {
+        "href": "/services/paintball/",
+        "title": "Пейнтбол",
+        "image": "/assets/services/paintball.jpg",
+        "label": "Активный отдых",
+        "paid": false
+      },
+      {
+        "href": "/services/playground/",
+        "title": "Детская площадка",
+        "image": "/assets/services/playground.jpg",
+        "label": "Активный отдых",
+        "paid": false
+      },
+      {
+        "href": "/services/trail/",
+        "title": "Терренкур",
+        "image": "/assets/services/trail.jpg",
+        "label": "Активный отдых",
+        "paid": false
+      },
+      {
+        "href": "/services/tennis/",
+        "title": "Теннисный корт",
+        "image": "/assets/services/tennis.jpg",
+        "label": "Активный отдых",
+        "paid": false
+      },
+      {
+        "href": "/services/gym/",
+        "title": "Тренажерный зал",
+        "image": "/assets/services/gym.jpg",
+        "label": "Активный отдых",
+        "paid": false,
+        "titleLines": [
+          "Тренажерный",
+          "зал"
+        ]
+      },
+      {
+        "href": "/services/karaoke/",
+        "title": "Караоке",
+        "image": "/assets/services/karaoke.jpg",
+        "label": "Активный отдых",
+        "paid": true
+      },
+      {
+        "href": "/services/sauna/",
+        "title": "Сауна",
+        "image": "/assets/services/sauna.jpg",
+        "label": "Спокойный отдых",
+        "paid": false
+      }
+    ],
+    "pagination": {
+      "label": "Страницы каталога",
+      "currentPage": 2,
+      "totalPages": 9,
+      "items": [
+        1,
+        2,
+        "ellipsis",
+        8,
+        9
+      ],
+      "baseUrl": "/services.html",
+      "previousLabel": "Предыдущая страница",
+      "nextLabel": "Следующая страница",
+      "ellipsisLabel": "Перейти на страницу",
+      "assets": {
+        "previous": "pagination-previous",
+        "next": "pagination-next"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs %}
+{% macro pageBanner(banner) %}
+<section class="page-banner" aria-labelledby="{{ banner.id }}-title">
+  <picture class="page-banner__picture">
+    {% if banner.mobileImage %}<source media="(max-width: 600px)" srcset="{{ banner.mobileImage }}" />{% endif %}
+    <img class="page-banner__image" src="{{ banner.image }}" alt="{{ banner.imageAlt or '' }}" fetchpriority="high" />
+  </picture>
+  <div class="page-banner__shade" aria-hidden="true"></div>
+  <div class="page-banner__container container">
+    {{ breadcrumbs(banner.breadcrumbs, banner.breadcrumbsLabel) }}
+    <h1 class="page-banner__title" id="{{ banner.id }}-title">{{ banner.title }}</h1>
+  </div>
+</section>
+{% endmacro %}

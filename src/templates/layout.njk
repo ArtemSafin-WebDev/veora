@@ -6,7 +6,7 @@
     <meta name="description" content="{{ page.description }}" />
     <title>{{ page.title }} — {{ site.name }}</title>
   </head>
-  <body>
+  <body class="theme-{{ page.theme or 'beige' }}">
     {% include "components/icon-sprite/icon-sprite.njk" %}
     {% include "components/site-header/site-header.njk" %}
     <main class="page">

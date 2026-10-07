@@ -18,6 +18,8 @@
 }
 
 body { min-width: 32rem; min-height: 100vh; margin: 0; display: flex; flex-direction: column; overflow-x: clip; }
+body.theme-beige { background: #fefefc; color: $ink; }
+body.theme-dark-blue { background: #182641; color: #fff; }
 a { color: inherit; }
 .container {
   width: 100%;
