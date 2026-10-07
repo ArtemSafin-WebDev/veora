@@ -1,0 +1,22 @@
+.catalog-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 42.2rem) minmax(0, 1fr);
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 8rem;
+
+  &--compact { grid-template-columns: 20.8rem minmax(0, 1fr); column-gap: 11.6rem; }
+  &__sidebar { position: sticky; top: 2.4rem; }
+  &--compact &__sidebar { padding-top: .9rem; }
+  &__content { min-width: 0; }
+  [hidden] { display: none; }
+}
+
+@media (max-width: 600px) {
+  .catalog-layout {
+    display: block;
+
+    &__sidebar { position: static; margin-bottom: 2rem; }
+    &--compact &__sidebar { padding-top: 0; }
+  }
+}

@@ -1,6 +1,6 @@
 {% from "components/button/button.njk" import button %}
 {% set readMoreLabel = offer.readMoreLabel or specialOffers.readMoreLabel %}
-<a class="offer-card{% if offer.catalog %} offer-card--catalog{% endif %}{% if offer.featured %} offer-card--featured{% endif %}{% if offer.related %} offer-card--related{% endif %}" href="{{ offer.href }}" aria-label="{{ offer.title }}"{% if offer.resorts %} data-offer-resorts="{{ offer.resorts | join(' ') }}"{% endif %}>
+<a class="offer-card{% if offer.catalog %} offer-card--catalog{% endif %}{% if offer.featured %} offer-card--featured{% endif %}{% if offer.related %} offer-card--related{% endif %}" href="{{ offer.href }}" aria-label="{{ offer.title }}"{% if offer.resorts %} data-catalog-resorts="{{ offer.resorts | join(' ') }}"{% endif %}>
   {% if offer.featured %}
   <div class="offer-card__media">
     <img class="offer-card__image" src="{{ offer.image }}" alt="" loading="lazy" />

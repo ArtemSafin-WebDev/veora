@@ -51,7 +51,7 @@
           { "href": "/offers.html", "label": "Специальные предложения" },
           { "href": "/services.html", "label": "Услуги и развлечения" },
           { "href": "/events/", "label": "Афиша" },
-          { "href": "/gallery/", "label": "Галерея" },
+          { "href": "/gallery.html", "label": "Галерея" },
           { "href": "/activities/", "label": "Мероприятия" }
         ]
       }

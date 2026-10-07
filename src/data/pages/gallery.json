@@ -1,0 +1,111 @@
+{
+  "title": "Галерея",
+  "description": "Фотогалерея здравниц Веора: бассейн, ресторан, детский клуб и пляж.",
+  "activePage": "gallery",
+  "theme": "beige",
+  "banner": {
+    "id": "gallery-banner",
+    "title": "Галерея",
+    "image": "/assets/gallery-catalog/hero.png",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/"
+      },
+      {
+        "label": "Галерея"
+      }
+    ]
+  },
+  "catalog": {
+    "label": "Фотогалерея",
+    "navigation": {
+      "id": "gallery-resorts",
+      "label": "Галерея по здравницам",
+      "filtersLabel": "Фильтры",
+      "triggerLabel": "Настроить",
+      "closeLabel": "Закрыть фильтры",
+      "items": [
+        {
+          "value": "all",
+          "label": "Все фотографии"
+        },
+        {
+          "value": "south",
+          "label": "Южный"
+        },
+        {
+          "value": "golden",
+          "label": "Золотые пески"
+        },
+        {
+          "value": "baltic",
+          "label": "Балтийские Пески"
+        },
+        {
+          "value": "sunny",
+          "label": "Солнечный городок"
+        },
+        {
+          "value": "polyus",
+          "label": "Полюс"
+        },
+        {
+          "value": "polyus-camp",
+          "label": "Полюс ДОЛ"
+        }
+      ]
+    },
+    "emptyLabel": "В этой категории пока нет фотографий."
+  },
+  "gallery": {
+    "title": "Галерея",
+    "items": [
+      {
+        "title": "Бассейн",
+        "image": "/assets/gallery-catalog/pool.png",
+        "alt": "Крытый бассейн с панорамными окнами",
+        "size": "wide",
+        "catalog": true,
+        "resorts": [
+          "all"
+        ],
+        "href": "/gallery-pool.html"
+      },
+      {
+        "title": "Ресторан",
+        "image": "/assets/gallery-catalog/restaurant.png",
+        "alt": "Светлый зал ресторана",
+        "size": "medium",
+        "catalog": true,
+        "resorts": [
+          "all"
+        ],
+        "href": "/gallery/restaurant/"
+      },
+      {
+        "title": "Детский клуб",
+        "image": "/assets/gallery-catalog/kids-club.png",
+        "alt": "Детская игровая площадка среди деревьев",
+        "size": "medium",
+        "catalog": true,
+        "resorts": [
+          "all"
+        ],
+        "href": "/gallery/kids-club/"
+      },
+      {
+        "title": "Пляж",
+        "image": "/assets/gallery-catalog/beach.png",
+        "alt": "Песчаный пляж на берегу моря",
+        "size": "wide",
+        "catalog": true,
+        "resorts": [
+          "all"
+        ],
+        "href": "/gallery/beach/"
+      }
+    ]
+  }
+}

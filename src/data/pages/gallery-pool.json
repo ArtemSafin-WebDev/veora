@@ -1,0 +1,62 @@
+{
+  "title": "Бассейн",
+  "description": "Фотоальбом «Бассейн» в галерее Веора.",
+  "activePage": "gallery",
+  "theme": "beige",
+  "gallery": {
+    "title": "Бассейн",
+    "mobileTitle": "Галерея",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/"
+      },
+      {
+        "label": "Галерея",
+        "href": "/gallery.html"
+      },
+      {
+        "label": "Бассейн"
+      }
+    ],
+    "modal": {
+      "id": "gallery-pool-modal",
+      "openLabel": "Открыть фотографию",
+      "previousLabel": "Предыдущая фотография",
+      "nextLabel": "Следующая фотография"
+    },
+    "items": [
+      {
+        "image": "/assets/gallery/south.png",
+        "alt": "Зелёные холмы и солнечная долина",
+        "columns": 5
+      },
+      {
+        "image": "/assets/gallery/golden.png",
+        "alt": "Бирюзовая река среди гор",
+        "columns": 4
+      },
+      {
+        "image": "/assets/gallery/baltic.png",
+        "alt": "Озеро у зелёных гор",
+        "columns": 3
+      },
+      {
+        "image": "/assets/gallery/golden.png",
+        "alt": "Река и рафты среди гор",
+        "columns": 4
+      },
+      {
+        "image": "/assets/gallery/baltic.png",
+        "alt": "Каменная набережная у озера",
+        "columns": 3
+      },
+      {
+        "image": "/assets/gallery/south.png",
+        "alt": "Солнечный луг и хвойный лес",
+        "columns": 5
+      }
+    ]
+  }
+}

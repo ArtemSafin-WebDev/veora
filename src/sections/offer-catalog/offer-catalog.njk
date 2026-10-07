@@ -1,13 +1,10 @@
-{% from "components/resort-navigation/resort-navigation.njk" import resortNavigation %}
+{% from "components/catalog-layout/catalog-layout.njk" import catalogLayout %}
 {% from "components/pagination/pagination.njk" import pagination %}
-<section class="offer-catalog container" aria-label="{{ page.catalog.label }}" data-offer-catalog>
-  <aside class="offer-catalog__sidebar">{{ resortNavigation(page.catalog.navigation) }}</aside>
-  <div class="offer-catalog__content">
+{% call catalogLayout(page.catalog.navigation, 'offer-catalog', page.catalog.label) %}
     <div class="offer-catalog__grid" aria-live="polite">
       {% for offer in page.catalog.cards %}
         {% include "components/offer-card/offer-card.njk" %}
       {% endfor %}
     </div>
     {{ pagination(page.catalog.pagination) }}
-  </div>
-</section>
+{% endcall %}

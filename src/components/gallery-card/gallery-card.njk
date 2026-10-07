@@ -1,7 +1,16 @@
-<button class="gallery-card gallery-card--{{ card.size }}" type="button" data-modal-open="{{ page.gallery.modal.id }}" data-gallery-index="{{ loop.index0 }}" aria-haspopup="dialog" aria-controls="{{ page.gallery.modal.id }}" aria-label="{{ page.gallery.modal.openLabel }}: {{ card.alt }}">
+{% from "components/icon/icon.njk" import icon %}
+{% set photo = galleryCardVariant == 'photo' %}
+{% set columns = card.columns | default(4) | int %}
+{% if columns < 1 %}{% set columns = 1 %}{% endif %}
+{% if columns > 12 %}{% set columns = 12 %}{% endif %}
+{% if card.catalog %}
+<a class="gallery-card gallery-card--{{ card.size }} gallery-card--catalog" href="{{ card.href }}" data-catalog-resorts="{{ card.resorts | join(' ') }}" aria-label="{{ card.title }}">
+{% else %}
+<button class="gallery-card{% if photo %} gallery-card--photo gallery-card--columns-{{ columns }}{% else %} gallery-card--{{ card.size }}{% endif %}" type="button" data-modal-open="{{ page.gallery.modal.id }}" data-gallery-index="{{ loop.index0 }}" aria-haspopup="dialog" aria-controls="{{ page.gallery.modal.id }}" aria-label="{{ page.gallery.modal.openLabel }}: {{ card.alt }}">
+{% endif %}
   <picture class="gallery-card__picture">
     {% if card.mobileImage %}<source media="(max-width: 600px)" srcset="{{ card.mobileImage }}" />{% endif %}
     <img class="gallery-card__image" src="{{ card.image }}" alt="{{ card.alt }}" loading="lazy" />
   </picture>
-  <span class="gallery-card__label">{{ card.title }}</span>
-</button>
+  {% if not photo %}<span class="gallery-card__label">{{ card.title }}{% if card.catalog %}{{ icon('gallery-catalog-arrow', 'gallery-card__arrow', 2.4) }}{% endif %}</span>{% endif %}
+{% if card.catalog %}</a>{% else %}</button>{% endif %}

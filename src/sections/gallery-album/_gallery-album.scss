@@ -1,0 +1,39 @@
+.gallery-album {
+  margin-bottom: 8rem;
+  padding-top: 2rem;
+  color: #657266;
+
+  .breadcrumbs__current { color: #b2b8b2; opacity: 1; }
+
+  &__title {
+    margin: 5rem 0 3rem;
+    color: #495249;
+    font-size: 6.4rem;
+    font-weight: 400;
+    line-height: 6.4rem;
+    letter-spacing: -.448rem;
+  }
+
+  &__title-mobile { display: none; }
+  &__grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 1rem; }
+
+  // Grid chooses each position in DOM order; only the width comes from page data.
+  @for $columns from 1 through 12 {
+    .gallery-card--columns-#{$columns} { grid-column: span $columns; }
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-album {
+    padding-top: 1.2rem;
+    color: #b2b8b2;
+
+    .breadcrumbs__current { color: #7f8a80; }
+    .breadcrumbs__item + .breadcrumbs__item::before { opacity: 1; }
+    &__title { margin: 3.2rem 0; font-size: 4rem; line-height: 4.4rem; letter-spacing: -.2rem; }
+    &__title-desktop { display: none; }
+    &__title-mobile { display: inline; }
+    &__grid { grid-template-columns: minmax(0, 1fr); }
+    .gallery-card--photo { grid-column: 1 / -1; }
+  }
+}

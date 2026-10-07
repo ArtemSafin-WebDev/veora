@@ -75,7 +75,7 @@
       "nextLabel": "Следующая фотография"
     },
     "allLink": {
-      "href": "/gallery/",
+      "href": "/gallery.html",
       "label": "Вся галерея"
     },
     "items": [

@@ -10,7 +10,7 @@
               {% if card.mobileModalImage or card.mobileImage %}<source media="(max-width: 600px)" srcset="{{ card.mobileModalImage or card.mobileImage }}" />{% endif %}
               <img class="gallery-modal__image" src="{{ card.modalImage or card.image }}" alt="{{ card.alt }}" loading="lazy" />
             </picture>
-            <figcaption class="gallery-modal__label">{{ card.title }}</figcaption>
+            {% if card.title %}<figcaption class="gallery-modal__label">{{ card.title }}</figcaption>{% endif %}
           </figure>
         </div>
       {% endfor %}

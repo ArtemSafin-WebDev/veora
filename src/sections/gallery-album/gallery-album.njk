@@ -1,0 +1,19 @@
+{% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs %}
+<section class="gallery-album container" aria-labelledby="gallery-album-title">
+  {{ breadcrumbs(page.gallery.breadcrumbs, page.gallery.breadcrumbsLabel) }}
+  <h1 class="gallery-album__title" id="gallery-album-title">
+    {% if page.gallery.mobileTitle %}
+      <span class="gallery-album__title-desktop">{{ page.gallery.title }}</span>
+      <span class="gallery-album__title-mobile">{{ page.gallery.mobileTitle }}</span>
+    {% else %}
+      {{ page.gallery.title }}
+    {% endif %}
+  </h1>
+  <div class="gallery-album__grid">
+    {% for card in page.gallery.items %}
+      {% set galleryCardVariant = 'photo' %}
+      {% include "components/gallery-card/gallery-card.njk" %}
+    {% endfor %}
+  </div>
+</section>
+{% include "components/gallery-modal/gallery-modal.njk" %}

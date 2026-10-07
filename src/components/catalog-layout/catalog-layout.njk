@@ -1,0 +1,7 @@
+{% from "components/resort-navigation/resort-navigation.njk" import resortNavigation %}
+{% macro catalogLayout(navigation, className='', label='', variant='') %}
+<section class="catalog-layout container{% if variant %} catalog-layout--{{ variant }}{% endif %}{% if className %} {{ className }}{% endif %}" aria-label="{{ label }}" data-catalog-layout>
+  <aside class="catalog-layout__sidebar">{{ resortNavigation(navigation) }}</aside>
+  <div class="catalog-layout__content">{{ caller() }}</div>
+</section>
+{% endmacro %}

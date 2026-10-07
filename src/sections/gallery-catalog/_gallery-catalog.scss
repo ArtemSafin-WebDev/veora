@@ -1,0 +1,20 @@
+.gallery-catalog {
+  margin-top: -.9rem;
+  margin-bottom: 8rem;
+
+  &__grid { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 1rem; }
+  .gallery-card { grid-column: span 4; }
+  .gallery-card--wide { grid-column: span 5; }
+  &__empty { margin: 0; color: #576258; font-size: 1.6rem; line-height: 2.4rem; }
+}
+
+@media (max-width: 600px) {
+  .gallery-catalog {
+    margin-top: 0;
+    margin-bottom: 8rem;
+
+    .catalog-layout__sidebar { margin-bottom: 3.2rem; }
+    &__grid { grid-template-columns: minmax(0, 1fr); }
+    .gallery-card { grid-column: auto; }
+  }
+}
