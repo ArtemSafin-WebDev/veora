@@ -1,7 +1,7 @@
-<article class="gallery-card gallery-card--{{ card.size }}">
+<button class="gallery-card gallery-card--{{ card.size }}" type="button" data-modal-open="{{ page.gallery.modal.id }}" data-gallery-index="{{ loop.index0 }}" aria-haspopup="dialog" aria-controls="{{ page.gallery.modal.id }}" aria-label="{{ page.gallery.modal.openLabel }}: {{ card.alt }}">
   <picture class="gallery-card__picture">
     {% if card.mobileImage %}<source media="(max-width: 600px)" srcset="{{ card.mobileImage }}" />{% endif %}
     <img class="gallery-card__image" src="{{ card.image }}" alt="{{ card.alt }}" loading="lazy" />
   </picture>
   <span class="gallery-card__label">{{ card.title }}</span>
-</article>
+</button>

@@ -1,0 +1,26 @@
+{% from "components/modal/modal.njk" import modal %}
+{% call modal(page.gallery.modal.id, page.gallery.title, site.modal.closeLabel, 'gallery-modal') %}
+  <div class="gallery-modal__slider swiper" data-gallery-modal-slider>
+    <div class="gallery-modal__track swiper-wrapper">
+      {% for card in page.gallery.items %}
+        <div class="gallery-modal__slide swiper-slide">
+          <figure class="gallery-modal__figure">
+            <picture class="gallery-modal__picture">
+              {% if card.mobileModalImage or card.mobileImage %}<source media="(max-width: 600px)" srcset="{{ card.mobileModalImage or card.mobileImage }}" />{% endif %}
+              <img class="gallery-modal__image" src="{{ card.modalImage or card.image }}" alt="{{ card.alt }}" loading="lazy" />
+            </picture>
+            <figcaption class="gallery-modal__label">{{ card.title }}</figcaption>
+          </figure>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="gallery-modal__navigation">
+    <button class="gallery-modal__arrow gallery-modal__arrow--prev" type="button" aria-label="{{ page.gallery.modal.previousLabel }}">
+      <img src="/assets/modal/previous.svg" alt="" />
+    </button>
+    <button class="gallery-modal__arrow gallery-modal__arrow--next" type="button" aria-label="{{ page.gallery.modal.nextLabel }}">
+      <img src="/assets/modal/next.svg" alt="" />
+    </button>
+  </div>
+{% endcall %}

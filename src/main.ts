@@ -1,27 +1,12 @@
 import '@fontsource-variable/inter/wght.css';
 import '@fontsource-variable/golos-text/wght.css';
 import './styles/main.scss';
+import './components/site-header/site-header';
 import './sections/resorts/resorts';
 import './components/custom-select/custom-select';
 import './components/booking-search/booking-search';
+import './sections/gallery/gallery';
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
-
-document.querySelectorAll<HTMLElement>('[data-gallery]').forEach((gallery) => {
-  const slider = gallery.querySelector<HTMLElement>('.gallery__slider');
-  const previous = gallery.querySelector<HTMLElement>('.gallery__arrow--prev');
-  const next = gallery.querySelector<HTMLElement>('.gallery__arrow--next');
-
-  if (slider && previous && next) {
-    new Swiper(slider, {
-      modules: [Navigation],
-      slidesPerView: 'auto',
-      spaceBetween: 10,
-      navigation: { prevEl: previous, nextEl: next },
-      breakpoints: { 0: { spaceBetween: 7 }, 601: { spaceBetween: 10 } },
-    });
-  }
-});
 
 const newsSlider = document.querySelector<HTMLElement>('[data-news] .news__slider');
 

@@ -1,9 +1,10 @@
+{% from "components/icon/icon.njk" import icon %}
 <div class="resort-popover" id="resort-popover-{{ resort.id }}" popover="auto" role="dialog" aria-labelledby="resort-popover-title-{{ resort.id }}" style="position-anchor: --resort-{{ resort.id }}" data-resort-popover>
   <div class="resort-popover__media">
     <img class="resort-popover__image" src="{{ resort.popover.image }}" alt="{{ resort.popover.imageAlt }}" width="288" height="187" />
     <span class="resort-popover__region">{{ resort.popover.region }}</span>
     <button class="resort-popover__close" type="button" popovertarget="resort-popover-{{ resort.id }}" popovertargetaction="hide" aria-label="{{ page.resorts.closeLabel }}" data-popover-close>
-      <img src="{{ page.resorts.closeIcon }}" alt="" width="15" height="15" />
+      {{ icon(page.resorts.closeIcon, '', 1.5) }}
     </button>
   </div>
   <div class="resort-popover__body">
@@ -11,6 +12,6 @@
       <h3 class="resort-popover__title" id="resort-popover-title-{{ resort.id }}">{{ resort.title }}</h3>
       <p class="resort-popover__description">{{ resort.popover.description }}</p>
     </div>
-    <a class="resort-popover__link" href="{{ resort.popover.href }}">{{ page.resorts.visitLabel }}<img src="{{ page.resorts.linkIcon }}" alt="" width="12" height="12" /></a>
+    <a class="resort-popover__link" href="{{ resort.popover.href }}">{{ page.resorts.visitLabel }}{{ icon(page.resorts.linkIcon, '', 1.2) }}</a>
   </div>
 </div>

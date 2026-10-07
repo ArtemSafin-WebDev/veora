@@ -1,0 +1,3 @@
+{% macro icon(name, className='', width=2.4, height=width, style='') %}
+<svg class="icon{% if className %} {{ className }}{% endif %}" width="{{ width }}rem" height="{{ height }}rem" aria-hidden="true" focusable="false"{% if style %} style="{{ style }}"{% endif %}><use href="#icon-{{ name }}"></use></svg>
+{% endmacro %}

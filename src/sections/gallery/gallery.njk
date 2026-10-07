@@ -1,6 +1,6 @@
 {% from "components/button/button.njk" import button %}
 {% from "components/section-title/section-title.njk" import sectionTitle %}
-<section class="gallery container" id="gallery" data-gallery aria-labelledby="gallery-title">
+<section class="gallery container" id="gallery" data-gallery data-gallery-modal="{{ page.gallery.modal.id }}" aria-labelledby="gallery-title">
   <div class="gallery__header">
     {{ sectionTitle(page.gallery.title, 'gallery-title', 'gallery__title') }}
     <span class="gallery__divider" aria-hidden="true"></span>
@@ -30,3 +30,4 @@
   </div>
   {{ button(page.gallery.allLink.label, page.gallery.allLink.href, 'gallery__mobile-link', 'gallery') }}
 </section>
+{% include "components/gallery-modal/gallery-modal.njk" %}

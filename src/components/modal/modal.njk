@@ -1,0 +1,10 @@
+{% macro modal(id, label, closeLabel, className='') %}
+<dialog class="modal{% if className %} {{ className }}{% endif %}" id="{{ id }}" aria-label="{{ label }}" data-modal>
+  <div class="modal__content" data-modal-content>
+    {{ caller() }}
+  </div>
+  <button class="modal__close" type="button" aria-label="{{ closeLabel }}" data-modal-close autofocus>
+    <img src="/assets/modal/close.svg" alt="" />
+  </button>
+</dialog>
+{% endmacro %}

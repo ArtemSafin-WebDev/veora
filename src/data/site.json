@@ -1,5 +1,8 @@
 {
   "name": "Veora",
+  "modal": {
+    "closeLabel": "Закрыть окно"
+  },
   "brand": {
     "text": "Veora",
     "suffix": ".",
@@ -75,5 +78,52 @@
     "copyrightOrganization": "ЧУ «Здоровье и отдых»",
     "privacy": { "label": "Политика конфиденциальности", "href": "/privacy/" },
     "credit": { "label": "Creative Team — создание сайтов" }
+  },
+  "header": {
+    "label": "Шапка сайта",
+    "logoLabel": "Веора — на главную",
+    "menuLabel": "Меню сайта",
+    "openMenuLabel": "Открыть меню",
+    "closeMenuLabel": "Закрыть меню",
+    "directionsLabel": "Направления отдыха",
+    "aboutLabel": "О нас",
+    "extraLabel": "Дополнительно",
+    "links": [
+      {
+        "label": "Контакты",
+        "href": "/contacts/"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities/"
+      }
+    ],
+    "bookingLabel": "Начать отдых",
+    "search": {
+      "label": "Поиск по сайту",
+      "href": "/search/"
+    },
+    "login": {
+      "label": "Войти",
+      "href": "/personal/"
+    },
+    "assets": {
+      "logoLight": "/assets/header/logo-light.svg",
+      "logoDark": "/assets/header/logo-dark.svg",
+      "logoMobile": "/assets/header/logo-mobile.svg",
+      "chevronGreen": "header-chevron-green",
+      "chevronLight": "header-chevron-light",
+      "searchLight": "header-search-light",
+      "userLight": "header-user-light",
+      "bookingArrow": "header-booking-arrow",
+      "burger": "header-burger",
+      "burgerMobile": "header-burger-mobile",
+      "closeMobile": "header-close-mobile",
+      "searchDark": "header-search-dark",
+      "userDark": "header-user-dark",
+      "chevronMobile": "header-chevron-mobile",
+      "chevronMuted": "header-chevron-muted",
+      "chevronSecondary": "header-chevron-secondary"
+    }
   }
 }

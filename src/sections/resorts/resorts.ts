@@ -1,6 +1,6 @@
 type ResortPopover = {
   pin: HTMLButtonElement;
-  dot: HTMLImageElement;
+  dot: SVGSVGElement;
   popover: HTMLElement;
 };
 
@@ -75,7 +75,7 @@ document.querySelectorAll<HTMLElement>('[data-resorts]').forEach((section) => {
 
   pins.forEach((pin) => {
     const popover = document.getElementById(pin.getAttribute('popovertarget') ?? '');
-    const dot = pin.querySelector<HTMLImageElement>('.resorts__pin-dot');
+    const dot = pin.querySelector<SVGSVGElement>('.resorts__pin-dot');
     if (!popover || !dot) return;
     const entry = { pin, dot, popover };
 

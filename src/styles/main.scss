@@ -1,10 +1,15 @@
+@use 'swiper/css';
 @use 'base';
 @use 'home';
 @use '../components/button/button';
 @use '../components/section-title/section-title';
 @use '../components/icon-sprite/icon-sprite';
+@use '../components/icon/icon';
 @use '../components/site-footer/site-footer';
+@use '../components/site-header/site-header';
 @use '../components/gallery-card/gallery-card';
+@use '../components/modal/modal';
+@use '../components/gallery-modal/gallery-modal';
 @use '../components/news-card/news-card';
 @use '../components/service-card/service-card';
 @use '../components/offer-card/offer-card';

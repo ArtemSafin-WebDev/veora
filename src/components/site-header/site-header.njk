@@ -1,0 +1,80 @@
+{% from "components/icon/icon.njk" import icon %}
+{% set header = site.header %}
+{% macro navigationGroup(group) %}
+  <div class="site-header__group">
+    <h3 class="site-header__group-title">{{ group.title }}</h3>
+    <ul class="site-header__links">
+      {% for link in group.links %}<li><a href="{{ link.href }}">{{ link.label }}</a></li>{% endfor %}
+    </ul>
+  </div>
+{% endmacro %}
+{% macro account(header, contacts, mobile=false) %}
+  <div class="site-header__account{% if mobile %} site-header__account--mobile{% endif %}">
+    <a class="site-header__phone" href="{{ contacts.phoneHref }}">{{ contacts.phone }}</a>
+    <div class="site-header__account-actions">
+      <a class="site-header__search" href="{{ header.search.href }}" aria-label="{{ header.search.label }}">{{ icon(header.assets.searchDark if mobile else header.assets.searchLight, '', 2.4) }}</a>
+      <a class="site-header__login" href="{{ header.login.href }}">{{ icon(header.assets.userDark if mobile else header.assets.userLight, '', 2.4) }}<span>{{ header.login.label }}</span></a>
+    </div>
+  </div>
+{% endmacro %}
+<header class="site-header{% if page.hero %} site-header--overlay{% endif %}" data-site-header aria-label="{{ header.label }}">
+  <div class="site-header__backdrop" data-header-backdrop hidden></div>
+  <div class="site-header__container">
+  <div class="site-header__bar">
+    <div class="site-header__primary">
+      <a class="site-header__logo" href="/" aria-label="{{ header.logoLabel }}">
+        <picture><source media="(max-width: 600px)" srcset="{{ header.assets.logoMobile }}" /><img src="{{ header.assets.logoLight }}" alt="" /></picture>
+      </a>
+      <nav class="site-header__navigation" aria-label="{{ site.navigationLabel }}">
+        <button class="site-header__nav-toggle site-header__nav-toggle--directions" type="button" data-header-toggle="directions" aria-expanded="false" aria-controls="header-directions">
+          {{ header.directionsLabel }}<span class="site-header__chevron">{{ icon(header.assets.chevronLight, 'site-header__chevron-light', 1.4) }}{{ icon(header.assets.chevronGreen, 'site-header__chevron-green', 1.3) }}</span>
+        </button>
+        <button class="site-header__nav-toggle site-header__nav-toggle--about" type="button" data-header-toggle="about" aria-expanded="false" aria-controls="header-about">
+          {{ header.aboutLabel }}<span class="site-header__chevron">{{ icon(header.assets.chevronLight, 'site-header__chevron-light', 1.4) }}{{ icon(header.assets.chevronGreen, 'site-header__chevron-green', 1.3) }}</span>
+        </button>
+        {% for link in header.links %}<a class="site-header__nav-link" href="{{ link.href }}">{{ link.label }}</a>{% endfor %}
+      </nav>
+    </div>
+    <div class="site-header__actions">
+      {{ account(header, site.footer.contacts) }}
+      <button class="site-header__booking" type="button" data-header-toggle="booking" aria-expanded="false" aria-controls="header-booking">{{ header.bookingLabel }}{{ icon(header.assets.bookingArrow, '', 2) }}</button>
+      <button class="site-header__burger" type="button" data-header-toggle="menu" aria-expanded="false" aria-controls="header-menu" aria-label="{{ header.openMenuLabel }}" data-open-label="{{ header.openMenuLabel }}" data-close-label="{{ header.closeMenuLabel }}">
+        {{ icon(header.assets.burger, 'site-header__burger-icon site-header__burger-icon--desktop', 3.6) }}{{ icon(header.assets.burgerMobile, 'site-header__burger-icon site-header__burger-icon--mobile', 4) }}
+      </button>
+    </div>
+  </div>
+  <nav class="site-header__panel site-header__panel--directions" id="header-directions" data-header-panel="directions" aria-label="{{ header.directionsLabel }}" hidden>
+    {% for group in site.footer.navigation %}{% if loop.index <= 3 %}{{ navigationGroup(group) }}{% endif %}{% endfor %}
+  </nav>
+  <nav class="site-header__panel site-header__panel--about" id="header-about" data-header-panel="about" aria-label="{{ header.aboutLabel }}" hidden>
+    {{ navigationGroup(site.footer.navigation[3]) }}
+  </nav>
+  <div class="site-header__panel site-header__panel--menu" id="header-menu" data-header-panel="menu" aria-label="{{ header.menuLabel }}" hidden>
+    <div class="site-header__mobile-top">
+      <a href="/" aria-label="{{ header.logoLabel }}"><img src="{{ header.assets.logoDark }}" alt="" /></a>
+      <button class="site-header__close" type="button" data-header-close aria-label="{{ header.closeMenuLabel }}">{{ icon(header.assets.closeMobile, '', 4) }}</button>
+    </div>
+    <nav class="site-header__menu-navigation" aria-label="{{ header.menuLabel }}">
+      {% for section in ['directions', 'about', 'extra'] %}
+        <div class="site-header__accordion site-header__accordion--{{ section }}" data-header-accordion>
+          <h2 class="site-header__accordion-heading"><button class="site-header__accordion-toggle" type="button" id="header-{{ section }}-toggle" aria-expanded="false" aria-controls="header-{{ section }}-content" data-accordion-toggle>
+            {{ header.directionsLabel if section == 'directions' else (header.aboutLabel if section == 'about' else header.extraLabel) }}
+            <span class="site-header__accordion-icon">{{ icon(header.assets.chevronMobile, 'site-header__accordion-arrow', 2.4) }}{{ icon(header.assets.chevronMuted, 'site-header__accordion-muted', 2.4) }}{{ icon(header.assets.chevronSecondary, 'site-header__accordion-secondary', 2.4) }}</span>
+          </button></h2>
+          <div class="site-header__accordion-panel" id="header-{{ section }}-content" aria-labelledby="header-{{ section }}-toggle">
+            <div class="site-header__accordion-clip"><div class="site-header__accordion-content">
+              {% for group in site.footer.navigation %}
+                {% if (section == 'directions' and loop.index <= 3) or (section == 'about' and loop.index == 4) or (section == 'extra' and loop.index == 5) %}{{ navigationGroup(group) }}{% endif %}
+              {% endfor %}
+            </div></div>
+          </div>
+        </div>
+      {% endfor %}
+    </nav>
+    {{ account(header, site.footer.contacts, true) }}
+  </div>
+  <div class="site-header__panel site-header__panel--booking" id="header-booking" data-header-panel="booking" hidden>
+    {% for item in site.footer.booking %}<a class="site-header__booking-option" href="{{ item.href }}"><span>{{ item.title }}</span><span class="site-header__booking-caption">{{ item.cta }}</span></a>{% endfor %}
+  </div>
+  </div>
+</header>

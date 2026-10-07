@@ -1,9 +1,10 @@
+{% from "components/icon/icon.njk" import icon %}
 {% macro customSelect(config, chevron) %}
 <div class="custom-select{% if config.keepOpen %} custom-select--multiple{% endif %}" data-custom-select data-select-keep-open="{{ 'true' if config.keepOpen else 'false' }}">
   <button class="custom-select__trigger" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="{{ config.id }}-options" data-select-trigger>
     <span class="custom-select__label">{{ config.label }}</span>
     <span class="custom-select__value" data-select-value></span>
-    <img class="custom-select__chevron" src="{{ chevron }}" alt="" />
+    {{ icon(chevron, 'custom-select__chevron', 1.10142, 0.621421) }}
   </button>
   <div class="custom-select__popover" id="{{ config.id }}-options" popover="manual" role="dialog" aria-label="{{ config.label }}" data-select-popover>
     {% for group in config.groups %}

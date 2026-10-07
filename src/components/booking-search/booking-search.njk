@@ -1,3 +1,4 @@
+{% from "components/icon/icon.njk" import icon %}
 {% from "components/custom-select/custom-select.njk" import customSelect %}
 {% macro bookingSearch(config, actions) %}
 <form class="booking-search" aria-label="{{ config.label }}" data-booking-search>
@@ -6,7 +7,7 @@
     <label class="booking-search__dates">
       <span class="booking-search__label">{{ config.datesLabel }}</span>
       <input class="booking-search__dates-input" type="text" name="dates" value="{{ config.datesValue }}" data-start-date="{{ config.arrivalValue }}" data-end-date="{{ config.departureValue }}" data-booking-dates readonly />
-      <img class="booking-search__chevron" src="{{ config.chevron }}" alt="" />
+      {{ icon(config.chevron, 'booking-search__chevron', 1.10142, 0.621421) }}
     </label>
     {{ customSelect(config.guestSelect, config.chevron) }}
   </div>

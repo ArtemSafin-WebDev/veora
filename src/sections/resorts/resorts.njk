@@ -1,3 +1,4 @@
+{% from "components/icon/icon.njk" import icon %}
 {% from "components/section-title/section-title.njk" import sectionTitle %}
 <section class="resorts container" id="resorts" data-resorts aria-labelledby="resorts-title">
   <div class="resorts__heading">
@@ -24,7 +25,7 @@
           {% for resort in page.resorts.items %}
             <button class="resorts__pin" type="button" style="--pin-x: {{ resort.pin.x }}%; --pin-y: {{ resort.pin.y }}%" data-resort-pin="{{ resort.id }}" data-category="{{ resort.category }}" data-pin-group="{{ resort.pin.group }}" popovertarget="resort-popover-{{ resort.id }}" aria-label="{{ resort.title }}" aria-haspopup="dialog" aria-expanded="false" aria-controls="resort-popover-{{ resort.id }}"{% if resort.pin.hiddenInitially %} hidden{% endif %}>
               <span class="resorts__pin-label">{{ resort.title }}</span>
-              <img class="resorts__pin-dot" src="{{ page.resorts.pinImage }}" alt="" width="20" height="20" style="anchor-name: --resort-{{ resort.id }}" />
+              {{ icon(page.resorts.pinIcon, 'resorts__pin-dot', 2, 2, 'anchor-name: --resort-' + resort.id) }}
             </button>
           {% endfor %}
         </div>

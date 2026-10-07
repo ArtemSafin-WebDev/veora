@@ -1,0 +1,98 @@
+@use 'swiper/css/effect-fade';
+
+.gallery-modal {
+  .modal__content {
+    width: min(100%, 106.6rem);
+    overflow: visible;
+    pointer-events: none;
+  }
+
+  &__slider {
+    width: calc(100% - 21.2rem);
+    max-width: 85.4rem;
+    height: min(64.4rem, calc(100dvh - 12.4rem));
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  &__track { align-items: center; }
+  &__slide { display: grid; place-items: center; height: 100%; }
+  &__slide.swiper-slide { pointer-events: none; }
+  &__slide:not(.swiper-slide-active) &__figure { pointer-events: none; }
+
+  &__figure {
+    position: relative;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0;
+    pointer-events: auto;
+  }
+
+  &__picture { display: block; }
+
+  &__image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: min(64.4rem, calc(100dvh - 12.4rem));
+    margin-inline: auto;
+    border-radius: 1.2rem;
+    object-fit: contain;
+  }
+
+  &__label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    max-width: calc(100% - 2rem);
+    padding: 1.1rem 1.4rem 1.2rem;
+    border-radius: 10rem;
+    background: #fff;
+    color: #617365;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    letter-spacing: -.056rem;
+  }
+
+  &__navigation {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+
+  &__arrow {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    pointer-events: auto;
+
+    img { display: block; }
+    &--prev img { transform: rotate(180deg); }
+    &:focus-visible { outline: 1px solid #fff; outline-offset: .4rem; }
+    &:disabled { opacity: .35; cursor: default; }
+    &.swiper-button-lock { display: none; }
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-modal {
+    .modal__content { position: static; }
+    & .modal__content,
+    &[data-modal-visible] .modal__content { transform: none; }
+    &__slider { width: 100%; height: calc(100dvh - 16rem); }
+    &__image { max-height: calc(100dvh - 16rem); }
+    &__label { display: none; }
+    &__navigation { inset: auto 0 3.2rem; justify-content: center; gap: .4rem; }
+  }
+}
