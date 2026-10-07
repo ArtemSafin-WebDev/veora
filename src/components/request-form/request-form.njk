@@ -1,0 +1,32 @@
+{% from "components/icon/icon.njk" import icon %}
+{% macro requestForm(config) %}
+<div class="request-form">
+  <div class="request-form__intro">
+    <h2 class="request-form__title" id="{{ config.id }}-title">{{ config.title }}</h2>
+    {% if config.description %}<p class="request-form__description">{{ config.description }}</p>{% endif %}
+  </div>
+  <form class="request-form__form" id="{{ config.id }}"{% if config.action %} action="{{ config.action }}"{% endif %} method="post" aria-labelledby="{{ config.id }}-title" data-request-form data-unavailable-message="{{ config.unavailableMessage }}" data-success-message="{{ config.successMessage }}">
+    {% for item in config.hiddenFields %}<input type="hidden" name="{{ item.name }}" value="{{ item.value }}" />{% endfor %}
+    <div class="request-form__fields">
+      {% for field in config.fields %}
+      <label class="request-form__field">
+        <span class="request-form__field-label">{{ field.label }}</span>
+        <input class="request-form__input" type="{{ field.type or 'text' }}" name="{{ field.name }}" placeholder="{{ field.label }}"{% if field.autocomplete %} autocomplete="{{ field.autocomplete }}"{% endif %}{% if field.required %} required{% endif %}{% if field.maxLength %} maxlength="{{ field.maxLength }}"{% endif %} />
+      </label>
+      {% endfor %}
+    </div>
+    <label class="request-form__consent">
+      <span class="request-form__control">
+        <input class="request-form__checkbox" type="checkbox" name="consent" value="Y" required />
+        <span class="request-form__mark" aria-hidden="true">
+          {{ icon('offer-consent') }}
+          {{ icon('radio-dot', 'request-form__dot') }}
+        </span>
+      </span>
+      <span>{{ config.consent.label }}{% if config.consent.link %} <a href="{{ config.consent.link.href }}">{{ config.consent.link.label }}</a>{% endif %}</span>
+    </label>
+    <button class="button request-form__submit" type="submit">{{ config.submitLabel }}</button>
+    <p class="request-form__status" role="status" data-request-status hidden></p>
+  </form>
+</div>
+{% endmacro %}

@@ -1,0 +1,17 @@
+{% from "components/icon/icon.njk" import icon %}
+{% macro resortNavigation(config) %}
+<div class="resort-navigation" data-resort-navigation>
+  <button class="resort-navigation__trigger" type="button" data-modal-open="{{ config.id }}-modal" aria-haspopup="dialog" aria-controls="{{ config.id }}-modal"><span>{{ config.filtersLabel }}</span><span class="resort-navigation__caption">{{ config.triggerLabel }}</span></button>
+  <div class="resort-navigation__desktop" data-resort-navigation-desktop>
+    <form class="resort-navigation__form" aria-label="{{ config.label }}" data-resort-navigation-form>
+      {% for item in config.items %}
+        <label class="resort-navigation__option"><input class="resort-navigation__input" type="radio" name="resort" value="{{ item.value }}"{% if loop.first %} checked{% endif %} /><span class="resort-navigation__text">{{ item.label }}</span></label>
+      {% endfor %}
+    </form>
+  </div>
+  <dialog class="resort-navigation__modal" id="{{ config.id }}-modal" aria-label="{{ config.filtersLabel }}" data-modal>
+    <button class="resort-navigation__close" type="button" data-modal-close aria-label="{{ config.closeLabel }}" autofocus>{{ icon('modal-close', 'resort-navigation__close-icon', 3) }}</button>
+    <div class="resort-navigation__sheet" data-resort-navigation-mobile></div>
+  </dialog>
+</div>
+{% endmacro %}

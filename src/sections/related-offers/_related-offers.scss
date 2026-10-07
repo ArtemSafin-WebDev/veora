@@ -1,0 +1,24 @@
+.related-offers {
+  margin-bottom: 8rem;
+  color: #495249;
+
+  &__header { display: flex; align-items: center; gap: 3.2rem; margin-bottom: 3.2rem; }
+  &__header::after { order: 1; flex: 1; min-width: 0; height: 1px; background: #c8cdc8; content: ''; }
+  &__title { flex: 0 1 auto; max-width: 78rem; }
+  &__all-link { order: 2; flex: none; white-space: normal; text-align: center; }
+  &__mobile-link { display: none; }
+  &__slider { overflow: visible; }
+  &__track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .9rem; }
+  &__slide { min-width: 0; width: auto; height: auto; }
+}
+
+@media (max-width: 600px) {
+  .related-offers {
+    margin-bottom: 8rem;
+    &__header { margin-bottom: 2.2rem; }
+    &__header::after, &__all-link { display: none; }
+    &__track { display: flex; gap: 0; }
+    &__slide { flex: 0 0 24.9rem; width: 24.9rem; }
+    &__mobile-link { display: flex; width: fit-content; margin: 3rem auto 0; white-space: normal; text-align: center; }
+  }
+}

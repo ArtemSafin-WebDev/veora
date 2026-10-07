@@ -1,0 +1,34 @@
+{% set content = page.offerContent %}
+<section class="offer-content container" aria-label="{{ content.label }}">
+  <div class="offer-content__body">
+    {% for block in content.blocks %}
+      {% if block.type == 'lead' %}
+        <p class="offer-content__lead">{{ block.text }}</p>
+      {% elif block.type == 'benefits' %}
+        <div class="offer-content__block">
+          {% if block.title %}<h2 class="offer-content__heading">{{ block.title }}</h2>{% endif %}
+          <ul class="offer-content__benefits">
+            {% for item in block.items %}<li class="offer-content__benefit"><span>{{ item }}</span></li>{% endfor %}
+          </ul>
+        </div>
+      {% elif block.type == 'list' %}
+        <div class="offer-content__block">
+          {% if block.title %}<h2 class="offer-content__heading offer-content__heading--list">{{ block.title }}</h2>{% endif %}
+          <ul class="offer-content__list">
+            {% for item in block.items %}<li>{{ item }}</li>{% endfor %}
+          </ul>
+        </div>
+      {% elif block.type == 'image' %}
+        <figure class="offer-content__figure">
+          <picture class="offer-content__media">
+            {% if block.mobileImage %}<source media="(max-width: 600px)" srcset="{{ block.mobileImage }}" />{% endif %}
+            <img class="offer-content__image" src="{{ block.image }}" alt="{{ block.imageAlt }}" loading="lazy" />
+          </picture>
+          {% if block.caption %}<figcaption class="offer-content__caption">{{ block.caption }}</figcaption>{% endif %}
+        </figure>
+      {% elif block.type == 'html' %}
+        <div class="offer-content__text">{{ block.html | safe }}</div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

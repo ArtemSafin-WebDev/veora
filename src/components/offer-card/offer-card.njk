@@ -1,15 +1,31 @@
 {% from "components/button/button.njk" import button %}
-<article class="offer-card">
-  <a class="offer-card__media" href="{{ offer.href }}" aria-label="{{ offer.title }}">
+{% set readMoreLabel = offer.readMoreLabel or specialOffers.readMoreLabel %}
+<a class="offer-card{% if offer.catalog %} offer-card--catalog{% endif %}{% if offer.featured %} offer-card--featured{% endif %}{% if offer.related %} offer-card--related{% endif %}" href="{{ offer.href }}" aria-label="{{ offer.title }}"{% if offer.resorts %} data-offer-resorts="{{ offer.resorts | join(' ') }}"{% endif %}>
+  {% if offer.featured %}
+  <div class="offer-card__media">
+    <img class="offer-card__image" src="{{ offer.image }}" alt="" loading="lazy" />
+    <span class="offer-card__shade" aria-hidden="true"></span>
+    <div class="offer-card__featured-content">
+      <time class="offer-card__date" datetime="{{ offer.date }}">{{ offer.dateLabel }}</time>
+      <div class="offer-card__body">
+        <h2 class="offer-card__title">{{ offer.title }}</h2>
+        {{ button(readMoreLabel, '', 'offer-card__link', 'dark') }}
+      </div>
+    </div>
+  </div>
+  {% else %}
+  <div class="offer-card__media">
     <img class="offer-card__image" src="{{ offer.image }}" alt="" loading="lazy" />
     <span class="offer-card__shade" aria-hidden="true"></span>
     <span class="offer-card__meta">
-      <span class="offer-card__place">{{ offer.place }}</span>
+      <span class="offer-card__place{% if offer.mobileLabel %} offer-card__place--desktop{% endif %}">{{ offer.place }}</span>
+      {% if offer.mobileLabel %}<span class="offer-card__place offer-card__place--mobile">{{ offer.mobileLabel }}</span>{% endif %}
       <time class="offer-card__date" datetime="{{ offer.date }}">{{ offer.dateLabel }}</time>
     </span>
-  </a>
+  </div>
   <div class="offer-card__body">
     <h3 class="offer-card__title">{{ offer.title }}</h3>
-    {{ button(specialOffers.readMoreLabel, offer.href, 'offer-card__link', 'dark') }}
+    {{ button(readMoreLabel, '', 'offer-card__link', 'light' if offer.catalog else 'dark') }}
   </div>
-</article>
+  {% endif %}
+</a>

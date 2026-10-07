@@ -1,0 +1,23 @@
+.offer-catalog {
+  display: grid;
+  grid-template-columns: minmax(0, 42.2rem) minmax(0, 1fr);
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 8rem;
+
+  &__sidebar { position: sticky; top: 2.4rem; }
+  &__content { min-width: 0; }
+  &__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 2.4rem .9rem; }
+  [hidden] { display: none; }
+}
+
+@media (max-width: 600px) {
+  .offer-catalog {
+    display: block;
+
+    &__sidebar { position: static; margin-bottom: 2rem; }
+    &__grid { grid-template-columns: minmax(0, 1fr); row-gap: 2.4rem; }
+    .offer-card--featured { margin-bottom: -1.4rem; }
+    .pagination { margin-top: 4rem; }
+  }
+}

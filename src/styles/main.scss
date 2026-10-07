@@ -37,3 +37,10 @@
 @use '../sections/service-hero/service-hero';
 @use '../sections/service-content/service-content';
 @use '../sections/related-services/related-services';
+@use '../components/resort-navigation/resort-navigation';
+@use '../sections/offer-catalog/offer-catalog';
+@use '../sections/offer-intro/offer-intro';
+@use '../sections/offer-content/offer-content';
+@use '../components/request-form/request-form';
+@use '../sections/offer-request/offer-request';
+@use '../sections/related-offers/related-offers';

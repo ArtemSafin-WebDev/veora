@@ -1,13 +1,13 @@
 .page-banner {
   position: relative;
-  height: 50rem;
+  min-height: 50rem;
   overflow: hidden;
   margin-bottom: 4.8rem;
   color: #fff;
   &__picture { position: absolute; inset: 0; display: block; }
   &__image { display: block; width: 100%; height: 100%; object-fit: cover; }
   &__shade { position: absolute; inset: 0; background: linear-gradient(to bottom, rgb(0 0 0 / 60%), transparent 16rem), rgb(0 0 0 / 40%); }
-  &__container { position: relative; display: flex; flex-direction: column; justify-content: space-between; height: 100%; padding-top: 11.2rem; padding-bottom: 5rem; }
+  &__container { position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 3.2rem; min-height: inherit; padding-top: 11.2rem; padding-bottom: 5rem; }
   &__title { max-width: 78rem; margin: 0 0 0 -.5rem; font-size: 6.4rem; font-weight: 400; line-height: 6.4rem; letter-spacing: -.448rem; }
 }
 @media (max-width: 600px) {

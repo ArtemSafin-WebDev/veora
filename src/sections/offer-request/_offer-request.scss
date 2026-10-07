@@ -1,0 +1,9 @@
+.offer-request {
+  margin-bottom: 12.6rem;
+  scroll-margin-top: 2.4rem;
+  .request-form { max-width: 85.5rem; margin-inline: auto; }
+}
+
+@media (max-width: 600px) {
+  .offer-request { margin-bottom: 6.4rem; }
+}

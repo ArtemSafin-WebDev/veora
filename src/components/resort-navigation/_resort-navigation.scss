@@ -1,0 +1,33 @@
+.resort-navigation {
+  color: #576258;
+
+  &__trigger { display: none; }
+  &__form { display: flex; flex-direction: column; align-items: flex-start; margin: 0; }
+  &__option { position: relative; max-width: 100%; cursor: pointer; }
+  &__input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+  &__text { display: block; min-height: 4rem; padding: 1.2rem 2.4rem; border-radius: .8rem; font-size: 1.4rem; font-weight: 500; line-height: 1.6rem; letter-spacing: -.056rem; overflow-wrap: anywhere; transition: background-color .2s ease, color .2s ease; }
+  &__input:checked + &__text { background: #576258; color: #fff; }
+  &__input:not(:checked):hover + &__text, &__input:not(:checked):focus-visible + &__text { background: #ebede8; }
+
+  &__modal { position: fixed; inset: 0; width: 100%; max-width: none; height: 100dvh; max-height: none; margin: 0; padding: 7rem 0 0; border: 0; background: transparent; color: inherit; opacity: 0; transition: opacity .25s ease; }
+  &__modal[open] { display: flex; flex-direction: column; justify-content: flex-end; }
+  &__modal[data-modal-visible] { opacity: 1; }
+  &__modal::backdrop { background: rgb(0 0 0 / 60%); backdrop-filter: blur(1.5rem); opacity: 0; transition: opacity .25s ease; }
+  &__modal[data-modal-visible]::backdrop { opacity: 1; }
+  &__close { position: absolute; top: 2rem; left: calc(50% - 1.5rem); display: grid; place-items: center; width: 3rem; height: 3rem; padding: 0; border: 0; border-radius: 50%; background: #fff; cursor: pointer; }
+  &__sheet { flex: 0 1 auto; width: 100%; min-height: 0; padding: 1.2rem 1.2rem 4rem; border-radius: 1.2rem 1.2rem 0 0; background: #fff; overflow-y: auto; overscroll-behavior: contain; }
+}
+
+@media (max-width: 600px) {
+  .resort-navigation {
+    &__desktop { display: none; }
+    &__trigger { display: flex; align-items: center; justify-content: space-between; gap: 1.6rem; width: 100%; min-height: 4.8rem; padding: 1.2rem 1.6rem; border: 0; border-radius: .8rem; background: #ebede8; color: #495249; font: inherit; font-size: 1.4rem; font-weight: 500; text-align: left; cursor: pointer; }
+    &__caption { font-size: 1.2rem; font-weight: 400; }
+    &__form { align-items: stretch; }
+    &__text { display: flex; align-items: center; background: #fefefc; line-height: 1.2rem; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .resort-navigation__text, .resort-navigation__modal, .resort-navigation__modal::backdrop { transition: none; }
+}

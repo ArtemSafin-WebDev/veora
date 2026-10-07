@@ -8,6 +8,10 @@ import './components/booking-search/booking-search';
 import './sections/gallery/gallery';
 import './components/filters/filters';
 import './components/pagination/pagination';
+import './components/resort-navigation/resort-navigation';
+import './sections/offer-intro/offer-intro';
+import './components/request-form/request-form';
+import './sections/related-offers/related-offers';
 import Swiper from 'swiper';
 
 const newsSlider = document.querySelector<HTMLElement>('[data-news] .news__slider');

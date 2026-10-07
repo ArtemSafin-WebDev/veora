@@ -164,7 +164,7 @@
   },
   "specialOffers": {
     "title": "Специальные предложения",
-    "allLink": { "href": "/offers/", "label": "Смотреть все" },
+    "allLink": { "href": "/offers.html", "label": "Смотреть все" },
     "readMoreLabel": "Подробнее",
     "items": [
       { "title": "Здравница «Золотые Пески» открывает SPA-комплекс под открытым небом", "place": "Золотые пески", "date": "2026-09-09", "dateLabel": "9 сентября 2026", "image": "/assets/offers/spa.jpg", "href": "/offers/spa-complex/" },

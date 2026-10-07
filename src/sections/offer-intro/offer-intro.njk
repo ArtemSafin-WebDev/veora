@@ -1,0 +1,32 @@
+{% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs %}
+{% from "components/button/button.njk" import button %}
+{% from "components/icon/icon.njk" import icon %}
+{% set intro = page.offerIntro %}
+<section class="offer-intro container" aria-labelledby="offer-title" data-offer-intro>
+  {{ breadcrumbs(intro.breadcrumbs, intro.breadcrumbsLabel) }}
+  <div class="offer-intro__content">
+    <div class="offer-intro__meta">
+      {% if intro.place %}<span class="offer-intro__place">{{ intro.place }}</span>{% endif %}
+      {% if intro.period %}<p class="offer-intro__period">{{ intro.period }}</p>{% endif %}
+      <div class="offer-intro__tools">
+        <button class="offer-intro__tool" type="button" aria-label="{{ intro.shareLabel }}" data-offer-share>{{ icon('offer-share') }}</button>
+        <button class="offer-intro__tool" type="button" aria-label="{{ intro.printLabel }}" data-offer-print>{{ icon('offer-print') }}</button>
+      </div>
+    </div>
+    <h1 class="offer-intro__title" id="offer-title">{{ intro.title }}</h1>
+    {% if intro.actions.length %}
+    <div class="offer-intro__actions">
+      {% for action in intro.actions %}
+        {{ button(action.label, action.href, 'offer-intro__action offer-intro__action--' + action.variant) }}
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if intro.image %}
+    <picture class="offer-intro__media">
+      {% if intro.mobileImage %}<source media="(max-width: 600px)" srcset="{{ intro.mobileImage }}" />{% endif %}
+      <img class="offer-intro__image" src="{{ intro.image }}" alt="{{ intro.imageAlt }}" fetchpriority="high" />
+    </picture>
+    {% endif %}
+    <p class="offer-intro__status" role="status" data-offer-status hidden data-copied-message="{{ intro.copiedMessage }}" data-share-error="{{ intro.shareError }}"></p>
+  </div>
+</section>
