@@ -1,0 +1,14 @@
+{% extends "layout.njk" %}
+{% from "sections/news-intro/news-intro.njk" import newsIntro %}
+{% from "sections/offer-content/offer-content.njk" import offerContent %}
+{% from "sections/news-subscription/news-subscription.njk" import newsSubscription %}
+{% block content %}
+  <article aria-labelledby="afisha-detail-title">
+    {{ newsIntro(page.eventIntro, 'afisha-detail-title') }}
+    {% if page.eventContent %}{{ offerContent(page.eventContent) }}{% endif %}
+    {% if page.subscription %}{{ newsSubscription(page.subscription) }}{% endif %}
+  </article>
+  {% if page.relatedEvents and page.relatedEvents.items.length %}
+    {% include "sections/related-events/related-events.njk" %}
+  {% endif %}
+{% endblock %}

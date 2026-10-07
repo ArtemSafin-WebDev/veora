@@ -11,9 +11,13 @@ import './components/filters/filters';
 import './components/pagination/pagination';
 import './components/resort-navigation/resort-navigation';
 import './components/catalog-layout/catalog-layout';
+import './sections/afisha-catalog/afisha-catalog';
 import './sections/offer-intro/offer-intro';
 import './components/request-form/request-form';
 import './sections/related-offers/related-offers';
+import './sections/news-intro/news-intro';
+import './sections/related-news/related-news';
+import './sections/related-events/related-events';
 import Swiper from 'swiper';
 
 const newsSlider = document.querySelector<HTMLElement>('[data-news] .news__slider');

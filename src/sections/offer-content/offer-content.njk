@@ -1,9 +1,12 @@
-{% set content = page.offerContent %}
+{% macro offerContent(content) %}
 <section class="offer-content container" aria-label="{{ content.label }}">
   <div class="offer-content__body">
     {% for block in content.blocks %}
       {% if block.type == 'lead' %}
-        <p class="offer-content__lead">{{ block.text }}</p>
+        <div class="offer-content__intro">
+          <p class="offer-content__lead">{{ block.text }}</p>
+          {% if block.description %}<p class="offer-content__description">{{ block.description }}</p>{% endif %}
+        </div>
       {% elif block.type == 'benefits' %}
         <div class="offer-content__block">
           {% if block.title %}<h2 class="offer-content__heading">{{ block.title }}</h2>{% endif %}
@@ -32,3 +35,5 @@
     {% endfor %}
   </div>
 </section>
+{% endmacro %}
+{{ offerContent(page.offerContent) }}

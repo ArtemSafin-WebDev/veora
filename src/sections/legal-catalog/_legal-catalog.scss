@@ -1,0 +1,15 @@
+.legal-catalog {
+  margin-bottom: 6rem;
+
+  &__navigation { margin-bottom: 6rem; }
+  &__content { min-width: 0; }
+  [hidden] { display: none; }
+}
+
+@media (max-width: 600px) {
+  .legal-catalog {
+    margin-bottom: 5.6rem;
+
+    &__navigation { margin-bottom: 3.2rem; }
+  }
+}

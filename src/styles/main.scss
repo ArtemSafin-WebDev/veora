@@ -16,6 +16,7 @@
 @use '../components/offer-card/offer-card';
 @use '../sections/gallery/gallery';
 @use '../sections/news/news';
+@use '../sections/news-catalog/news-catalog';
 @use '../sections/services/services';
 @use '../sections/special-offers/special-offers';
 @use '../sections/intro/intro';
@@ -39,6 +40,7 @@
 @use '../sections/related-services/related-services';
 @use '../components/resort-navigation/resort-navigation';
 @use '../sections/offer-catalog/offer-catalog';
+@use '../sections/afisha-catalog/afisha-catalog';
 @use '../sections/offer-intro/offer-intro';
 @use '../sections/offer-content/offer-content';
 @use '../components/request-form/request-form';
@@ -47,3 +49,11 @@
 @use '../components/catalog-layout/catalog-layout';
 @use '../sections/gallery-catalog/gallery-catalog';
 @use '../sections/gallery-album/gallery-album';
+@use '../sections/news-intro/news-intro';
+@use '../sections/news-content/news-content';
+@use '../sections/news-subscription/news-subscription';
+@use '../sections/related-news/related-news';
+@use '../sections/related-events/related-events';
+@use '../components/legal-documents/legal-documents';
+@use '../sections/legal-catalog/legal-catalog';
+@use '../sections/legal-detail/legal-detail';

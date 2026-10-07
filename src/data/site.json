@@ -39,8 +39,8 @@
       {
         "title": "О нас",
         "links": [
-          { "href": "/news/", "label": "Новости" },
-          { "href": "/legal/", "label": "Правовая информация" },
+          { "href": "/news.html", "label": "Новости" },
+          { "href": "/legal.html", "label": "Правовая информация" },
           { "href": "/faq/", "label": "Часто задаваемые вопросы" },
           { "href": "/contacts/", "label": "Контакты" }
         ]
@@ -50,7 +50,7 @@
         "links": [
           { "href": "/offers.html", "label": "Специальные предложения" },
           { "href": "/services.html", "label": "Услуги и развлечения" },
-          { "href": "/events/", "label": "Афиша" },
+          { "href": "/afisha.html", "label": "Афиша" },
           { "href": "/gallery.html", "label": "Галерея" },
           { "href": "/activities/", "label": "Мероприятия" }
         ]

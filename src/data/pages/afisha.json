@@ -1,0 +1,106 @@
+{
+  "title": "Афиша",
+  "description": "Афиша Веора: оздоровительные программы, семейные встречи, пикники и события в наших здравницах.",
+  "activePage": "afisha",
+  "theme": "beige",
+  "banner": {
+    "id": "afisha-banner",
+    "title": "Афиша",
+    "image": "/assets/afisha/hero.png",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      { "label": "Главная", "href": "/" },
+      { "label": "Афиша" }
+    ],
+    "action": {
+      "label": "Прошедшие мероприятия",
+      "upcomingLabel": "Предстоящие мероприятия",
+      "href": "/afisha.html?archive=1"
+    }
+  },
+  "catalog": {
+    "label": "Каталог мероприятий",
+    "emptyLabel": "В этой здравнице пока нет мероприятий.",
+    "archiveEmptyLabel": "В архиве пока нет мероприятий.",
+    "navigation": {
+      "id": "afisha-resorts",
+      "label": "Мероприятия по здравницам",
+      "filtersLabel": "Фильтры",
+      "triggerLabel": "Настроить",
+      "closeLabel": "Закрыть фильтры",
+      "items": [
+        { "value": "all", "label": "Все мероприятия" },
+        { "value": "sunny", "label": "Солнечный городок" },
+        { "value": "baltic", "label": "Балтийские Пески" },
+        { "value": "polyus", "label": "Полюс" },
+        { "value": "south", "label": "Южный" },
+        { "value": "golden", "label": "Золотые пески" }
+      ]
+    },
+    "cards": [
+      {
+        "title": "Wellness неделя в Солнечном городке",
+        "place": "Солнечный городок",
+        "resorts": ["sunny"],
+        "image": "/assets/afisha/wellness.png",
+        "href": "/events/wellness-week/",
+        "date": "2026-05-16T12:00",
+        "dateLabel": "16 мая | Начало в 12:00",
+        "readMoreLabel": "Подробнее",
+        "catalog": true,
+        "event": true,
+        "archived": false
+      },
+      {
+        "title": "Золотые пески: Кавказская семейная трапеза",
+        "place": "Золотые пески",
+        "resorts": ["golden"],
+        "image": "/assets/afisha/family-hike.png",
+        "href": "/events/family-meal/",
+        "date": "2026-05-18T12:00",
+        "dateLabel": "18 мая | Начало в 12:00",
+        "readMoreLabel": "Подробнее",
+        "catalog": true,
+        "event": true,
+        "archived": false
+      },
+      {
+        "title": "Балтийские пески: пикник на пляже 25 мая",
+        "place": "Балтийские пески",
+        "resorts": ["baltic"],
+        "image": "/assets/afisha/picnic.jpg",
+        "href": "/afisha-detail.html",
+        "date": "2026-05-25T12:00",
+        "dateLabel": "25 мая | Начало в 12:00",
+        "readMoreLabel": "Подробнее",
+        "catalog": true,
+        "event": true,
+        "archived": false
+      },
+      {
+        "title": "Первая смена в детском лагере Полюс 7 июня",
+        "place": "Полюс",
+        "resorts": ["polyus"],
+        "image": "/assets/afisha/camp.png",
+        "href": "/events/camp-first-session/",
+        "date": "2026-05-28T12:00",
+        "dateLabel": "28 мая | Начало в 12:00",
+        "readMoreLabel": "Подробнее",
+        "catalog": true,
+        "event": true,
+        "archived": false
+      }
+    ],
+    "pagination": {
+      "label": "Страницы мероприятий",
+      "currentPage": 2,
+      "totalPages": 9,
+      "items": [1, 2, "ellipsis", 8, 9],
+      "baseUrl": "/afisha.html",
+      "previousLabel": "Предыдущая страница",
+      "nextLabel": "Следующая страница",
+      "ellipsisLabel": "Перейти на страницу",
+      "assets": { "previous": "pagination-previous", "next": "pagination-next" }
+    }
+  }
+}

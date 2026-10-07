@@ -1,0 +1,10 @@
+{% from "components/resort-navigation/resort-navigation.njk" import resortNavigation %}
+{% from "components/legal-documents/legal-documents.njk" import legalDocuments %}
+<div class="legal-catalog container" data-catalog-layout>
+  <div class="legal-catalog__navigation">{{ resortNavigation(page.catalog.navigation) }}</div>
+  <div class="legal-catalog__content" aria-live="polite">
+    {% for group in page.catalog.groups %}
+      {{ legalDocuments(group, page.catalog.moreLabel) }}
+    {% endfor %}
+  </div>
+</div>

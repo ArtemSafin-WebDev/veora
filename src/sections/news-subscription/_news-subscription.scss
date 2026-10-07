@@ -1,0 +1,18 @@
+.news-subscription {
+  margin-bottom: 9.9rem;
+  .request-form { max-width: 85.5rem; margin-inline: auto; border-radius: 2.4rem; }
+  .request-form__consent a { text-decoration: none; }
+  .request-form__consent a:hover, .request-form__consent a:focus-visible { text-decoration: underline; }
+  .request-form__submit { padding-inline: 2.4rem; }
+}
+
+@media (max-width: 600px) {
+  .news-subscription {
+    margin-bottom: 7.9rem;
+    .request-form { border-radius: 1.2rem; }
+  }
+}
+
+@media print {
+  .news-subscription { display: none; }
+}

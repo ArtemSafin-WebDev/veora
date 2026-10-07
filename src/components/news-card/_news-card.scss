@@ -8,6 +8,10 @@
   text-decoration: none;
 
   &:hover .news-card__link { background: #eff0ef; color: #657266; }
+  &:focus-visible .news-card__link { background: #eff0ef; color: #657266; }
+
+  &--catalog { min-height: 40.4rem; border-color: #dee1df; }
+  &--catalog::before { display: none; }
 
   &::before {
     grid-area: stack;
@@ -74,6 +78,7 @@
 
 @media (max-width: 600px) {
   .news-card {
+    &--catalog { min-height: 25rem; border-color: #ddd7d4; }
     &::before { padding-bottom: 100%; }
     &__inner { padding: 1rem; }
     &__date { color: #7f8a80; }

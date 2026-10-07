@@ -1,0 +1,11 @@
+{% from "components/catalog-layout/catalog-layout.njk" import catalogLayout %}
+{% from "components/pagination/pagination.njk" import pagination %}
+{% call catalogLayout(page.catalog.navigation, 'news-catalog', page.catalog.label, 'compact') %}
+  <div class="news-catalog__grid" aria-live="polite">
+    {% for card in page.catalog.cards %}
+      {% include "components/news-card/news-card.njk" %}
+    {% endfor %}
+    <p class="news-catalog__empty" data-catalog-empty hidden>{{ page.catalog.emptyLabel }}</p>
+  </div>
+  {{ pagination(page.catalog.pagination) }}
+{% endcall %}

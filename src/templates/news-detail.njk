@@ -1,0 +1,11 @@
+{% extends "layout.njk" %}
+{% block content %}
+  <article aria-labelledby="news-detail-title">
+    {% include "sections/news-intro/news-intro.njk" %}
+    {% if page.newsContent %}{% include "sections/news-content/news-content.njk" %}{% endif %}
+    {% if page.newsSubscription %}{% include "sections/news-subscription/news-subscription.njk" %}{% endif %}
+  </article>
+  {% if page.relatedNews and page.relatedNews.items.length %}
+    {% include "sections/related-news/related-news.njk" %}
+  {% endif %}
+{% endblock %}

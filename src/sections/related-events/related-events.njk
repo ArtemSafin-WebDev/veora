@@ -1,0 +1,24 @@
+{% from "components/section-title/section-title.njk" import sectionTitle %}
+{% from "components/button/button.njk" import button %}
+{% set related = page.relatedEvents %}
+<section class="related-events container" aria-labelledby="{{ related.id }}-title">
+  <div class="related-events__header">
+    {{ sectionTitle(related.title, related.id + '-title', 'related-events__title') }}
+    {% if related.allLink %}{{ button(related.allLink.label, related.allLink.href, 'related-events__all-link') }}{% endif %}
+  </div>
+  {% if related.mobileItems.length %}
+  <div class="related-events__grid">
+    {% for offer in related.items %}{% include "components/offer-card/offer-card.njk" %}{% endfor %}
+  </div>
+  {% endif %}
+  <div class="related-events__slider{% if related.mobileItems.length %} related-events__slider--mobile{% endif %} swiper" data-related-events-slider>
+    <div class="related-events__track swiper-wrapper">
+      {% for offer in related.mobileItems or related.items %}
+      <div class="related-events__slide swiper-slide">
+        {% include "components/offer-card/offer-card.njk" %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% if related.allLink %}{{ button(related.allLink.label, related.allLink.href, 'related-events__mobile-link') }}{% endif %}
+</section>

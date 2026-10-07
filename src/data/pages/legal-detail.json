@@ -1,0 +1,28 @@
+{
+  "title": "Правила проживания",
+  "description": "Правила проживания в Веора: основные правила и порядок заселения.",
+  "activePage": "legal",
+  "theme": "beige",
+  "legalDetail": {
+    "title": "Правила проживания",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/"
+      },
+      {
+        "label": "Правовая информация",
+        "href": "/legal.html"
+      },
+      {
+        "label": "Правила проживания"
+      }
+    ],
+    "download": {
+      "label": "Скачать pdf",
+      "href": "/assets/legal-detail/rules.pdf",
+      "filename": "pravila-prozhivaniya.pdf"
+    }
+  }
+}

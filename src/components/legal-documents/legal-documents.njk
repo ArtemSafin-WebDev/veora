@@ -1,0 +1,19 @@
+{% macro legalDocuments(group, moreLabel) %}
+<section class="legal-documents" aria-labelledby="legal-{{ group.id }}-title" data-catalog-resorts="{{ group.id }}">
+  <div class="legal-documents__heading">
+    <h2 class="legal-documents__title" id="legal-{{ group.id }}-title">{% if group.titleLines %}{% for line in group.titleLines %}{{ line }}{% if not loop.last %}<br />{% endif %}{% endfor %}{% else %}{{ group.title }}{% endif %}</h2>
+    <picture class="legal-documents__divider" aria-hidden="true">
+      <source media="(max-width: 600px)" srcset="/assets/legal/divider-mobile.svg" />
+      <img src="/assets/legal/divider-desktop.svg" alt="" />
+    </picture>
+  </div>
+  <ul class="legal-documents__list">
+    {% for document in group.documents %}
+    <li class="legal-documents__item">
+      <p class="legal-documents__name">{{ document.title }}</p>
+      <a class="button button--muted legal-documents__link" href="{{ document.href }}" aria-label="{{ moreLabel }}: {{ document.title }}">{{ moreLabel }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endmacro %}

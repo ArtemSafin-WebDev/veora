@@ -1,0 +1,155 @@
+{
+  "title": "Правовая информация",
+  "description": "Правовая информация Веора: сведения об организации, документы, деятельность, услуги и доступная среда.",
+  "activePage": "legal",
+  "theme": "beige",
+  "banner": {
+    "id": "legal-banner",
+    "variant": "legal",
+    "title": "Правовая информация",
+    "image": "/assets/legal/hero.jpg",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/"
+      },
+      {
+        "label": "Правовая информация"
+      }
+    ]
+  },
+  "catalog": {
+    "moreLabel": "Подробнее",
+    "navigation": {
+      "id": "legal-categories",
+      "label": "Категории документов",
+      "filtersLabel": "Фильтры",
+      "triggerLabel": "Настроить",
+      "closeLabel": "Закрыть категории",
+      "links": true,
+      "parameter": "category",
+      "variant": "horizontal",
+      "items": [
+        {
+          "value": "all",
+          "label": "Все документы",
+          "href": "/legal.html"
+        },
+        {
+          "value": "organization",
+          "label": "Об организации отдыха детей и их оздоровления",
+          "href": "/legal.html?category=organization"
+        },
+        {
+          "value": "activity",
+          "label": "Деятельность",
+          "href": "/legal.html?category=activity"
+        },
+        {
+          "value": "facilities",
+          "label": "Материально-техническое обеспечение и оснащенность организации",
+          "href": "/legal.html?category=facilities",
+          "labelLines": [
+            "Материально-техническое обеспечение",
+            "и оснащенность организации"
+          ]
+        },
+        {
+          "value": "services",
+          "label": "Услуги",
+          "href": "/legal.html?category=services"
+        },
+        {
+          "value": "accessibility",
+          "label": "Доступная среда",
+          "href": "/legal.html?category=accessibility"
+        }
+      ]
+    },
+    "groups": [
+      {
+        "id": "organization",
+        "title": "Об организации отдыха детей и их оздоровления",
+        "documents": [
+          {
+            "title": "Подраздел 1. Основные сведения",
+            "href": "/legal/basic/"
+          },
+          {
+            "title": "Подраздел 2. Документы. Правила нахождения на территории",
+            "href": "/legal-detail.html"
+          },
+          {
+            "title": "Подраздел 2. Документы. Программа воспитательной работы",
+            "href": "/legal/education/"
+          },
+          {
+            "title": "Подраздел 2. Документы. Устав",
+            "href": "/legal/charter/"
+          },
+          {
+            "title": "Подраздел 3. Руководство",
+            "href": "/legal/management/"
+          },
+          {
+            "title": "Подраздел 4. Педагогический и вожатский состав",
+            "href": "/legal/staff/"
+          },
+          {
+            "title": "Подраздел 5. Контакты",
+            "href": "/legal/contacts/"
+          },
+          {
+            "title": "Подраздел 6. Договор. Лето 2026",
+            "href": "/legal/agreement/"
+          }
+        ],
+        "titleLines": [
+          "Об организации отдыха детей",
+          "и их оздоровления"
+        ]
+      },
+      {
+        "id": "activity",
+        "title": "Деятельность",
+        "documents": [
+          {
+            "title": "Подраздел 1. Деятельность",
+            "href": "/legal/activity/"
+          }
+        ]
+      },
+      {
+        "id": "facilities",
+        "title": "Материально-техническое обеспечение и оснащенность организации",
+        "documents": [
+          {
+            "title": "Подраздел 1. Материально-техническое обеспечение и оснащенность организации отдыха детей",
+            "href": "/legal/facilities/"
+          }
+        ]
+      },
+      {
+        "id": "services",
+        "title": "Услуги",
+        "documents": [
+          {
+            "title": "Подраздел 1. Услуги, в том числе платные, предоставляемые организацией отдыха детей и их оздоровления",
+            "href": "/legal/services/"
+          }
+        ]
+      },
+      {
+        "id": "accessibility",
+        "title": "Доступная среда",
+        "documents": [
+          {
+            "title": "Подраздел 1. Доступная среда",
+            "href": "/legal/accessibility/"
+          }
+        ]
+      }
+    ]
+  }
+}

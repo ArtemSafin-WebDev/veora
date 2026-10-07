@@ -1,0 +1,121 @@
+{
+  "title": "Открытие летней веранды в ресторане «Южного»",
+  "description": "Открытие летней веранды в ресторане комплекса «Южный»: пицца, мороженое и летние напитки с видом на море.",
+  "activePage": "news",
+  "theme": "beige",
+  "newsIntro": {
+    "title": "Открытие летней веранды в ресторане «Южного»",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/"
+      },
+      {
+        "label": "Новости",
+        "href": "/news.html"
+      },
+      {
+        "label": "Открытие летней веранды в ресторане «Южного»"
+      }
+    ],
+    "place": "Все здравницы",
+    "period": "постоянно (межсезонный период)",
+    "shareLabel": "Поделиться новостью",
+    "printLabel": "Распечатать новость",
+    "copiedMessage": "Ссылка на новость скопирована.",
+    "shareError": "Не удалось поделиться ссылкой. Скопируйте адрес страницы из браузера.",
+    "image": "/assets/news-detail/hero-desktop.png",
+    "mobileImage": "/assets/news-detail/hero-mobile.png",
+    "imageAlt": "Отдых в бассейне с видом на море"
+  },
+  "newsContent": {
+    "label": "Текст новости",
+    "html": "<h2>Мы рады сообщить об открытии летней веранды<br>в ресторане комплекса «Южный»!</h2>\n<p>Вкуснейшая пицца, мороженое, летние напитки с живописным видом на море обязательно подарят Вам хорошее настроение!</p>"
+  },
+  "newsSubscription": {
+    "id": "news-subscription",
+    "form": {
+      "id": "news-subscription-form",
+      "title": "Подпишитесь на новости и будьте в курсе всех событий компании",
+      "description": "Присылаем только самое полезное",
+      "action": "",
+      "fields": [
+        {
+          "name": "email",
+          "type": "email",
+          "label": "Email",
+          "autocomplete": "email",
+          "required": true,
+          "maxLength": 254
+        }
+      ],
+      "hiddenFields": [
+        {
+          "name": "subscription_type",
+          "value": "news"
+        }
+      ],
+      "consent": {
+        "label": "Принимаю условия",
+        "link": {
+          "label": "обработки персональных данных",
+          "href": "/privacy/"
+        }
+      },
+      "submitLabel": "Отправить",
+      "successMessage": "Спасибо! Вы подписались на новости Веора.",
+      "unavailableMessage": "Сейчас оформить подписку не удалось. Попробуйте позже."
+    }
+  },
+  "relatedNews": {
+    "id": "related-news",
+    "title": "Другие новости",
+    "allLink": {
+      "label": "Все новости",
+      "href": "/news.html"
+    },
+    "items": [
+      {
+        "category": "Золотые пески",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "Солнечный городок предлагает новую СПА – процедуру",
+        "href": "/news/spa-procedure/",
+        "resorts": [
+          "sunny"
+        ],
+        "catalog": true,
+        "readMoreLabel": "Подробнее"
+      },
+      {
+        "category": "Светлогорск",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "Открытие летней веранды в ресторане «Южного»",
+        "titleLines": [
+          "Открытие летней веранды",
+          "в ресторане «Южного»"
+        ],
+        "href": "/news-detail.html",
+        "resorts": [
+          "south"
+        ],
+        "catalog": true,
+        "readMoreLabel": "Подробнее"
+      },
+      {
+        "category": "Бриз",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "«Полюс» готовится к приему детей в детский лагерь",
+        "href": "/news/children-camp/",
+        "resorts": [
+          "polyus"
+        ],
+        "catalog": true,
+        "readMoreLabel": "Подробнее"
+      }
+    ]
+  }
+}

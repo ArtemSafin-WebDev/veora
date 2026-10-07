@@ -1,0 +1,11 @@
+{% from "components/catalog-layout/catalog-layout.njk" import catalogLayout %}
+{% from "components/pagination/pagination.njk" import pagination %}
+{% call catalogLayout(page.catalog.navigation, 'afisha-catalog', page.catalog.label) %}
+  <div class="afisha-catalog__grid" aria-live="polite" data-afisha-catalog data-empty-label="{{ page.catalog.emptyLabel }}" data-archive-empty-label="{{ page.catalog.archiveEmptyLabel }}">
+    {% for offer in page.catalog.cards %}
+      {% include "components/offer-card/offer-card.njk" %}
+    {% endfor %}
+    <p class="afisha-catalog__empty" data-catalog-empty hidden>{{ page.catalog.emptyLabel }}</p>
+  </div>
+  {{ pagination(page.catalog.pagination) }}
+{% endcall %}

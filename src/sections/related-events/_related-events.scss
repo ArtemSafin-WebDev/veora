@@ -1,0 +1,37 @@
+.related-events {
+  margin-bottom: 8rem;
+  color: #495249;
+
+  &__header { display: flex; align-items: center; gap: 3.2rem; margin-bottom: 3.2rem; }
+  &__header::after { order: 1; flex: 0 1 30rem; min-width: 0; height: 1px; background: #c8cdc8; content: ''; }
+  &__title { flex: 1; }
+  &__all-link { order: 2; flex: none; padding: 1.4rem 1.8rem; border-radius: 1.2rem; font-size: 1.4rem; line-height: 1.2rem; letter-spacing: -.056rem; }
+  &__grid, &__track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: .9rem; }
+  &__slider { overflow: visible; }
+  &__slider--mobile, &__mobile-link { display: none; }
+  &__slide { min-width: 0; width: auto; height: auto; }
+
+  // Let each image determine the card height, including images supplied by Bitrix.
+  .offer-card__media::before { display: none; }
+  .offer-card__image { position: static; display: block; width: 100%; height: auto; }
+  .offer-card__meta { align-self: stretch; }
+  .offer-card__link { min-height: 4rem; padding: 1.1rem 2.4rem; line-height: 1.6rem; }
+}
+
+@media (max-width: 600px) {
+  .related-events {
+    margin-bottom: 8rem;
+    &__header { margin-bottom: 2.2rem; }
+    &__header::after, &__all-link, &__grid { display: none; }
+    &__title { max-width: 25rem; }
+    &__slider--mobile { display: block; }
+    &__track { display: flex; gap: 0; }
+    &__slide { flex: 0 0 24.9rem; width: 24.9rem; }
+    &__mobile-link { display: flex; width: fit-content; margin: 3rem auto 0; }
+    .offer-card__link { min-height: 3.4rem; padding: .9rem 1.6rem; line-height: 1.4rem; }
+  }
+}
+
+@media print {
+  .related-events { display: none; }
+}

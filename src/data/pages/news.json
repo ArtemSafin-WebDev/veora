@@ -1,0 +1,110 @@
+{
+  "title": "Новости",
+  "description": "Новости Веора: события, новые услуги и возможности отдыха в наших здравницах.",
+  "activePage": "news",
+  "theme": "beige",
+  "banner": {
+    "id": "news-banner",
+    "title": "Новости",
+    "image": "/assets/news-catalog/hero.jpg",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      { "label": "Главная", "href": "/" },
+      { "label": "Новости" }
+    ]
+  },
+  "catalog": {
+    "label": "Каталог новостей",
+    "emptyLabel": "В этой категории пока нет новостей.",
+    "navigation": {
+      "id": "news-resorts",
+      "label": "Новости по здравницам",
+      "filtersLabel": "Фильтры",
+      "triggerLabel": "Настроить",
+      "closeLabel": "Закрыть фильтры",
+      "items": [
+        { "value": "all", "label": "Все новости" },
+        { "value": "brand", "label": "Новости Веора/новости бренда" },
+        { "value": "sunny", "label": "Солнечный городок" },
+        { "value": "baltic", "label": "Балтийские Пески" },
+        { "value": "polyus", "label": "Полюс" },
+        { "value": "south", "label": "Южный" },
+        { "value": "golden", "label": "Золотые пески" }
+      ]
+    },
+    "cards": [
+      {
+        "category": "Золотые пески",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "Солнечный городок предлагает новую СПА – процедуру",
+        "href": "/news/spa-procedure/",
+        "resorts": ["sunny"],
+        "catalog": true,
+        "readMoreLabel": "Подробнее"
+      },
+      {
+        "category": "Светлогорск",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "Открытие летней веранды в ресторане «Южного»",
+        "titleLines": ["Открытие летней веранды", "в ресторане «Южного»"],
+        "href": "/news-detail.html",
+        "resorts": ["south"],
+        "catalog": true,
+        "readMoreLabel": "Подробнее"
+      },
+      {
+        "category": "Бриз",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "«Полюс» готовится к приему детей в детский лагерь",
+        "href": "/news/children-camp/",
+        "resorts": ["polyus"],
+        "catalog": true,
+        "readMoreLabel": "Подробнее"
+      },
+      {
+        "category": "Бриз",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "В «Золотых песках» открылся уличный бассейн",
+        "href": "/news/outdoor-pool/",
+        "resorts": ["golden"],
+        "catalog": true,
+        "readMoreLabel": "Подробнее"
+      },
+      {
+        "category": "Бриз",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "«Бриз» запускает курс дыхательной терапии — дышите свободно!",
+        "href": "/news/breathing-therapy/",
+        "resorts": ["brand"],
+        "catalog": true,
+        "readMoreLabel": "Подробнее"
+      },
+      {
+        "category": "Бриз",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "«Бриз» запускает курс дыхательной терапии — дышите свободно!",
+        "href": "/news/breathing-therapy/",
+        "resorts": ["brand"],
+        "catalog": true,
+        "readMoreLabel": "Подробнее"
+      }
+    ],
+    "pagination": {
+      "label": "Страницы новостей",
+      "currentPage": 2,
+      "totalPages": 9,
+      "items": [1, 2, "ellipsis", 8, 9],
+      "baseUrl": "/news.html",
+      "previousLabel": "Предыдущая страница",
+      "nextLabel": "Следующая страница",
+      "ellipsisLabel": "Перейти на страницу",
+      "assets": { "previous": "pagination-previous", "next": "pagination-next" }
+    }
+  }
+}
