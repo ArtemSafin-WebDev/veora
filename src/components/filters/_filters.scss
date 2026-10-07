@@ -16,8 +16,6 @@
   &__check { opacity: 0; transition: opacity .2s ease; }
   &__checkbox:checked + &__box { border-color: #576258; background: #576258; }
   &__checkbox:checked + &__box &__check { opacity: 1; }
-  :is(button, input):focus-visible { outline: .2rem solid #ba9166; outline-offset: .4rem; }
-  &__checkbox:focus-visible + &__box { outline: .2rem solid #ba9166; outline-offset: .4rem; }
   &__modal { position: fixed; inset: 0; width: 100%; max-width: none; height: 100dvh; max-height: none; margin: 0; padding: 2rem 0 0; border: 0; background: transparent; color: inherit; overflow-y: auto; overscroll-behavior: contain; opacity: 0; transition: opacity .25s ease; }
   &__modal[data-modal-visible] { opacity: 1; }
   &__modal::backdrop { background: rgb(0 0 0 / 60%); backdrop-filter: blur(1.5rem); opacity: 0; transition: opacity .25s ease; }

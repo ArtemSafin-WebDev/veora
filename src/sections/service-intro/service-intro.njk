@@ -1,0 +1,11 @@
+{% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs %}
+{% from "components/service-tags/service-tags.njk" import serviceTags %}
+{% set intro = page.serviceIntro %}
+<section class="service-intro container" aria-labelledby="{{ intro.id }}-title">
+  {{ breadcrumbs(intro.breadcrumbs, intro.breadcrumbsLabel) }}
+  <div class="service-intro__content">
+    <h1 class="service-intro__title" id="{{ intro.id }}-title">{{ intro.title }}</h1>
+    <p class="service-intro__description">{{ intro.description }}</p>
+    {{ serviceTags(intro.tags, intro.tagsLabel) }}
+  </div>
+</section>

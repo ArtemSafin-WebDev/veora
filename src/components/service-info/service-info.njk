@@ -1,0 +1,19 @@
+{% macro serviceInfo(info) %}
+<div class="service-info">
+  <dl class="service-info__fields">
+    {% for field in info.fields %}
+    <div class="service-info__field">
+      <dt class="service-info__label">{{ field.label }}</dt>
+      <dd class="service-info__value">{{ field.value }}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+  {% if info.instructor %}
+  <dl class="service-info__instructor">
+    <dt class="service-info__label">{{ info.instructor.label }}</dt>
+    <dd class="service-info__value">{{ info.instructor.value }}</dd>
+    {% if info.instructor.description %}<dd class="service-info__note">{{ info.instructor.description }}</dd>{% endif %}
+  </dl>
+  {% endif %}
+</div>
+{% endmacro %}

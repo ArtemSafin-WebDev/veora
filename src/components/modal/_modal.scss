@@ -53,10 +53,6 @@
 
   }
 
-  &__close:focus-visible {
-    outline: 1px solid #fff;
-    outline-offset: .4rem;
-  }
 }
 
 html.modal-scroll-locked,

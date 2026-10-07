@@ -1,0 +1,11 @@
+{% from "components/service-feature/service-feature.njk" import serviceFeature %}
+{% set content = page.serviceContent %}
+<section class="service-content container" aria-label="{{ content.label }}">
+  <div class="service-content__inner">
+    <p class="service-content__lead">{{ content.lead }}</p>
+    <div class="service-content__features">
+      {% for feature in content.features %}{{ serviceFeature(feature) }}{% endfor %}
+    </div>
+    <img class="service-content__image" src="{{ content.image }}" alt="{{ content.imageAlt }}" loading="lazy" />
+  </div>
+</section>

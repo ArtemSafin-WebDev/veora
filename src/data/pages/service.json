@@ -1,0 +1,140 @@
+{
+  "title": "Тренажерный зал",
+  "description": "Современный тренажерный зал в здравнице «Южный»: кардиозона, свободные веса, силовые тренажеры и помощь инструктора.",
+  "activePage": "services",
+  "theme": "beige",
+  "serviceIntro": {
+    "id": "gym",
+    "title": "Тренажерный зал",
+    "description": "Просторный зал укомплектован современным оборудованием, которое удовлетворит запросы даже самых требовательных гостей. Пространство продумано для разных видов тренировок.",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/"
+      },
+      {
+        "label": "Услуги",
+        "href": "/services.html"
+      },
+      {
+        "label": "Тренажерный зал"
+      }
+    ],
+    "tagsLabel": "Характеристики услуги",
+    "tags": [
+      "Активный отдых",
+      "Платно",
+      "Взрослым"
+    ]
+  },
+  "serviceHero": {
+    "label": "Тренажерный зал: расположение и режим работы",
+    "image": "/assets/service-detail/gym.png",
+    "imageAlt": "Тренажеры в просторном зале здравницы «Южный»",
+    "info": {
+      "fields": [
+        {
+          "label": "Режим работы",
+          "value": "зал открыт круглосуточно"
+        },
+        {
+          "label": "Расположение",
+          "value": "-1 этаж главного корпуса «Южный 2»"
+        }
+      ],
+      "instructor": {
+        "label": "Время работы инструктора",
+        "value": "ежедневно с 08:00 до 20:00",
+        "description": "В эти часы вы можете получить профессиональную консультацию и помощь в тренировках."
+      }
+    }
+  },
+  "serviceContent": {
+    "label": "Оснащение тренажерного зала",
+    "lead": "Просторный зал укомплектован современным оборудованием, которое удовлетворит запросы даже самых требовательных гостей. Пространство продумано для разных видов тренировок.",
+    "features": [
+      {
+        "title": "Кардиозона",
+        "items": [
+          "Беговые дорожки",
+          "Эллиптические тренажеры",
+          "Велотренажеры"
+        ]
+      },
+      {
+        "title": "Зона свободных весов",
+        "items": [
+          "Гантельный ряд от 1 до 40 кг",
+          "Штанги и скамьи для жима"
+        ]
+      },
+      {
+        "title": "Силовая зона",
+        "wide": true,
+        "items": [
+          "Комплекс тренажеров для проработки всех групп мышц"
+        ],
+        "description": "По вашему запросу инструктор поможет подобрать упражнения для эффективной тренировки. Регулярные занятия укрепят мышечный корсет, разовьют выносливость и сделают здоровый образ жизни неотъемлемой частью вашего дня."
+      }
+    ],
+    "image": "/assets/service-detail/running.jpg",
+    "imageAlt": "Пробежка по дорожке среди деревьев на закате"
+  },
+  "relatedServices": {
+    "id": "related-services",
+    "title": "Другие услуги",
+    "allLink": {
+      "label": "Все услуги",
+      "href": "/services.html"
+    },
+    "cards": [
+      {
+        "href": "/services/pool/",
+        "title": "Бассейн",
+        "image": "/assets/services/pool.png",
+        "label": "Активный отдых",
+        "paid": true
+      },
+      {
+        "href": "/services/paintball/",
+        "title": "Пейнтбол",
+        "image": "/assets/services/paintball.jpg",
+        "label": "Активный отдых",
+        "paid": false
+      },
+      {
+        "href": "/services/tennis/",
+        "title": "Теннисный корт",
+        "image": "/assets/services/tennis.jpg",
+        "label": "Активный отдых",
+        "paid": false,
+        "desktopOnly": true
+      },
+      {
+        "href": "/services/sauna/",
+        "title": "Сауна",
+        "image": "/assets/services/sauna.jpg",
+        "label": "Спокойный отдых",
+        "paid": false,
+        "desktopOnly": true
+      },
+      {
+        "href": "/services/playground/",
+        "title": "Детская площадка",
+        "image": "/assets/services/playground.jpg",
+        "label": "Активный отдых",
+        "paid": false,
+        "mobileOnly": true
+      },
+      {
+        "href": "/services/trail/",
+        "title": "Терренкур",
+        "image": "/assets/services/trail.jpg",
+        "label": "Активный отдых",
+        "paid": true,
+        "mobileOnly": true
+      }
+    ]
+  }
+}

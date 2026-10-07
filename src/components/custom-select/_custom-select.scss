@@ -103,9 +103,6 @@
 
   &__option input:checked { border-color: #657266; box-shadow: inset 0 0 0 .35rem #fff; background: #657266; }
   &__option:has(input:checked) { background: #f2f3ef; color: #495249; }
-  &__trigger:focus-visible,
-  &__option input:focus-visible { outline: .2rem solid #fff; outline-offset: .2rem; }
-  &__option input:focus-visible { outline-color: #657266; }
 }
 
 @media (max-width: 600px) {

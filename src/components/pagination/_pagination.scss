@@ -13,7 +13,6 @@
   &__link:last-child { border-right: 0; }
   &__link--step { background: #fff; }
   &__link--current, &__link:hover { background: #dee1df; }
-  &__link:focus-visible { outline: .2rem solid #ba9166; outline-offset: -.3rem; }
   &__link[aria-disabled='true'] { opacity: .4; pointer-events: none; }
 }
 

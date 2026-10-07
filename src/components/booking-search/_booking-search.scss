@@ -94,7 +94,6 @@
   &__action--guest &__action-cta { color: #f9f5e9; }
 
   &__dates:focus-within,
-  &__action:focus-visible { outline: .2rem solid #fff; outline-offset: .2rem; }
   &__action:hover &__action-cta { text-decoration: underline; }
 }
 

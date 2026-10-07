@@ -1,5 +1,6 @@
 {% from "components/icon/icon.njk" import icon %}
 {% set header = site.header %}
+{% set headerOnLight = page.theme != 'dark-blue' and not (page.hero or page.banner) %}
 {% macro navigationGroup(group) %}
   <div class="site-header__group">
     <h3 class="site-header__group-title">{{ group.title }}</h3>
@@ -8,12 +9,12 @@
     </ul>
   </div>
 {% endmacro %}
-{% macro account(header, contacts, mobile=false) %}
+{% macro account(header, contacts, mobile=false, onLight=false) %}
   <div class="site-header__account{% if mobile %} site-header__account--mobile{% endif %}">
     <a class="site-header__phone" href="{{ contacts.phoneHref }}">{{ contacts.phone }}</a>
     <div class="site-header__account-actions">
-      <a class="site-header__search" href="{{ header.search.href }}" aria-label="{{ header.search.label }}">{{ icon(header.assets.searchDark if mobile else header.assets.searchLight, '', 2.4) }}</a>
-      <a class="site-header__login" href="{{ header.login.href }}">{{ icon(header.assets.userDark if mobile else header.assets.userLight, '', 2.4) }}<span>{{ header.login.label }}</span></a>
+      <a class="site-header__search" href="{{ header.search.href }}" aria-label="{{ header.search.label }}"{% if onLight %} data-header-open-icon="{{ header.assets.searchLight }}"{% endif %}>{{ icon(header.assets.searchDark if mobile else (header.assets.searchSurface if onLight else header.assets.searchLight), '', 2.4) }}</a>
+      <a class="site-header__login" href="{{ header.login.href }}"{% if onLight %} data-header-open-icon="{{ header.assets.userLight }}"{% endif %}>{{ icon(header.assets.userDark if mobile else (header.assets.userSurface if onLight else header.assets.userLight), '', 2.4) }}<span>{{ header.login.label }}</span></a>
     </div>
   </div>
 {% endmacro %}
@@ -23,23 +24,23 @@
   <div class="site-header__bar">
     <div class="site-header__primary">
       <a class="site-header__logo" href="/" aria-label="{{ header.logoLabel }}">
-        <picture><source media="(max-width: 600px)" srcset="{{ header.assets.logoMobile }}" /><img src="{{ header.assets.logoLight }}" alt="" /></picture>
+        <picture><source media="(max-width: 600px)" srcset="{{ header.assets.logoMobileSurface if headerOnLight else header.assets.logoMobile }}"{% if headerOnLight %} data-header-open-srcset="{{ header.assets.logoMobile }}"{% endif %} /><img src="{{ header.assets.logoSurface if headerOnLight else header.assets.logoLight }}"{% if headerOnLight %} data-header-open-src="{{ header.assets.logoLight }}"{% endif %} alt="" /></picture>
       </a>
       <nav class="site-header__navigation" aria-label="{{ site.navigationLabel }}">
         <button class="site-header__nav-toggle site-header__nav-toggle--directions" type="button" data-header-toggle="directions" aria-expanded="false" aria-controls="header-directions">
-          {{ header.directionsLabel }}<span class="site-header__chevron">{{ icon(header.assets.chevronLight, 'site-header__chevron-light', 1.4) }}{{ icon(header.assets.chevronGreen, 'site-header__chevron-green', 1.3) }}</span>
+          {{ header.directionsLabel }}<span class="site-header__chevron"{% if headerOnLight %} data-header-open-icon="{{ header.assets.chevronDirectionsSurface }}"{% endif %}>{{ icon(header.assets.chevronGreen if headerOnLight else header.assets.chevronLight, 'site-header__chevron-default', 1.3 if headerOnLight else 1.4) }}{{ icon(header.assets.chevronDirectionsSurface if headerOnLight else header.assets.chevronGreen, 'site-header__chevron-active', 1.3) }}</span>
         </button>
         <button class="site-header__nav-toggle site-header__nav-toggle--about" type="button" data-header-toggle="about" aria-expanded="false" aria-controls="header-about">
-          {{ header.aboutLabel }}<span class="site-header__chevron">{{ icon(header.assets.chevronLight, 'site-header__chevron-light', 1.4) }}{{ icon(header.assets.chevronGreen, 'site-header__chevron-green', 1.3) }}</span>
+          {{ header.aboutLabel }}<span class="site-header__chevron"{% if headerOnLight %} data-header-open-icon="{{ header.assets.chevronDirectionsSurface }}"{% endif %}>{{ icon(header.assets.chevronSurface if headerOnLight else header.assets.chevronLight, 'site-header__chevron-default', 1.4) }}{{ icon(header.assets.chevronGreen, 'site-header__chevron-active', 1.3) }}</span>
         </button>
         {% for link in header.links %}<a class="site-header__nav-link" href="{{ link.href }}">{{ link.label }}</a>{% endfor %}
       </nav>
     </div>
     <div class="site-header__actions">
-      {{ account(header, site.footer.contacts) }}
-      <button class="site-header__booking" type="button" data-header-toggle="booking" aria-expanded="false" aria-controls="header-booking">{{ header.bookingLabel }}{{ icon(header.assets.bookingArrow, '', 2) }}</button>
+      {{ account(header, site.footer.contacts, false, headerOnLight) }}
+      <button class="site-header__booking" type="button" data-header-toggle="booking" aria-expanded="false" aria-controls="header-booking">{{ header.bookingLabel }}{{ icon(header.assets.bookingArrowSurface if headerOnLight else header.assets.bookingArrow, '', 2) }}</button>
       <button class="site-header__burger" type="button" data-header-toggle="menu" aria-expanded="false" aria-controls="header-menu" aria-label="{{ header.openMenuLabel }}" data-open-label="{{ header.openMenuLabel }}" data-close-label="{{ header.closeMenuLabel }}">
-        {{ icon(header.assets.burger, 'site-header__burger-icon site-header__burger-icon--desktop', 3.6) }}{{ icon(header.assets.burgerMobile, 'site-header__burger-icon site-header__burger-icon--mobile', 4) }}
+        <span{% if headerOnLight %} data-header-open-icon="{{ header.assets.burger }}"{% endif %}>{{ icon(header.assets.burgerSurface if headerOnLight else header.assets.burger, 'site-header__burger-icon site-header__burger-icon--desktop', 3.6) }}</span><span{% if headerOnLight %} data-header-open-icon="{{ header.assets.burgerMobile }}"{% endif %}>{{ icon(header.assets.burgerMobileSurface if headerOnLight else header.assets.burgerMobile, 'site-header__burger-icon site-header__burger-icon--mobile', 4) }}</span>
       </button>
     </div>
   </div>

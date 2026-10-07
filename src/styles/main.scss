@@ -30,3 +30,10 @@
 @use '../components/filters/filters';
 @use '../components/pagination/pagination';
 @use '../sections/service-catalog/service-catalog';
+@use '../components/service-tags/service-tags';
+@use '../components/service-info/service-info';
+@use '../components/service-feature/service-feature';
+@use '../sections/service-intro/service-intro';
+@use '../sections/service-hero/service-hero';
+@use '../sections/service-content/service-content';
+@use '../sections/related-services/related-services';

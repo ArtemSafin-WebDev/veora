@@ -196,7 +196,7 @@
         "paid": false
       },
       {
-        "href": "/services/gym/",
+        "href": "/service.html",
         "title": "Тренажерный зал",
         "image": "/assets/services/gym.jpg",
         "label": "Активный отдых",
@@ -263,7 +263,7 @@
         "paid": false
       },
       {
-        "href": "/services/gym/",
+        "href": "/service.html",
         "title": "Тренажерный зал",
         "image": "/assets/services/gym.jpg",
         "label": "Активный отдых",

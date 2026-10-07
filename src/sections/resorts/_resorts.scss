@@ -97,7 +97,6 @@
   &__pin-dot { display: block; width: 2rem; height: 2rem; }
   &__list { padding-top: 6.3rem; }
   & [hidden] { display: none; }
-  & :is(button, a, [tabindex]):focus-visible { outline: .2rem solid #576258; outline-offset: .3rem; }
 }
 
 @media (max-width: 600px) {

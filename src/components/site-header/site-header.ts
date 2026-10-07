@@ -9,6 +9,19 @@ if (header) {
   const bar = header.querySelector<HTMLElement>('.site-header__bar')!;
   const menuNavigation = header.querySelector<HTMLElement>('.site-header__menu-navigation')!;
   const background = Array.from(document.querySelectorAll<HTMLElement>('body > main, body > footer'));
+  const openAssets = [
+    ...Array.from(header.querySelectorAll<HTMLElement>('[data-header-open-src], [data-header-open-srcset]')).map((element) => {
+      const attribute = element.hasAttribute('data-header-open-src') ? 'src' : 'srcset';
+      return { element, attribute, closed: element.getAttribute(attribute)!, opened: element.getAttribute(`data-header-open-${attribute}`)! };
+    }),
+    ...Array.from(header.querySelectorAll<SVGUseElement>('[data-header-open-icon] use')).map((element) => ({
+      element, attribute: 'href', closed: element.getAttribute('href')!, opened: `#icon-${element.closest<HTMLElement>('[data-header-open-icon]')!.dataset.headerOpenIcon}`,
+    })),
+  ];
+  const setOpenAppearance = (expanded: boolean) => {
+    header.classList.toggle('site-header--expanded', expanded);
+    openAssets.forEach(({ element, attribute, opened, closed }) => element.setAttribute(attribute, expanded ? opened : closed));
+  };
   let active: string | undefined;
   let opener: HTMLButtonElement | undefined;
   let savedInert: boolean[] = [];
@@ -29,6 +42,7 @@ if (header) {
   const close = (restoreFocus = false) => {
     if (!active) return;
     active = undefined;
+    setOpenAppearance(false);
     panels.forEach((panel) => {
       panel.hidden = true;
       panel.removeAttribute('role');
@@ -54,6 +68,7 @@ if (header) {
     const panel = panels.find((item) => item.dataset.headerPanel === name);
     if (!panel) return;
     active = name;
+    setOpenAppearance(true);
     opener = toggle;
     savedInert = background.map((element) => element.inert);
     background.forEach((element) => { element.inert = true; });

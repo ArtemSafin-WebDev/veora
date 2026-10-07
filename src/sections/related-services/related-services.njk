@@ -1,0 +1,17 @@
+{% from "components/section-title/section-title.njk" import sectionTitle %}
+{% from "components/button/button.njk" import button %}
+{% set related = page.relatedServices %}
+<section class="related-services container" aria-labelledby="{{ related.id }}-title">
+  <div class="related-services__header">
+    {{ sectionTitle(related.title, related.id + '-title', 'related-services__title') }}
+    <span class="related-services__rule" aria-hidden="true"></span>
+    {{ button(related.allLink.label, related.allLink.href, 'related-services__all-link', 'light', true, true) }}
+  </div>
+  <div class="related-services__grid">
+    {% for card in related.cards %}
+    <div class="related-services__item{% if card.mobileOnly %} related-services__item--mobile{% elif card.desktopOnly %} related-services__item--desktop{% endif %}">
+      {% include "components/service-card/service-card.njk" %}
+    </div>
+    {% endfor %}
+  </div>
+</section>

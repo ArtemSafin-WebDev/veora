@@ -11,7 +11,6 @@
   text-align: left;
   cursor: pointer;
 
-  &:focus-visible { outline: 1px solid #617365; outline-offset: .4rem; }
 
   &--wide { --gallery-image-ratio: 530 / 366; }
   &--medium { --gallery-image-ratio: 422 / 366; }

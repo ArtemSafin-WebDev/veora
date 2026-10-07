@@ -78,7 +78,6 @@
     pointer-events: auto;
 
     &--prev .gallery-modal__arrow-icon { transform: rotate(180deg); }
-    &:focus-visible { outline: 1px solid #fff; outline-offset: .4rem; }
     &:disabled { opacity: .35; cursor: default; }
     &.swiper-button-lock { display: none; }
   }

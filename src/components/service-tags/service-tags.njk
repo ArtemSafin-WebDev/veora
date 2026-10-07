@@ -1,0 +1,5 @@
+{% macro serviceTags(items, label) %}
+<ul class="service-tags" aria-label="{{ label }}">
+  {% for item in items %}<li class="service-tags__item">{{ item }}</li>{% endfor %}
+</ul>
+{% endmacro %}

@@ -156,7 +156,7 @@
       { "title": "Пейнтбол", "label": "Активный отдых", "image": "/assets/services/paintball.jpg", "href": "/services/paintball/", "categories": ["entertainment"] },
       { "title": "Детская площадка", "label": "Активный отдых", "image": "/assets/services/playground.jpg", "href": "/services/playground/", "categories": ["family"] },
       { "title": "Терренкур", "label": "Активный отдых", "paid": true, "image": "/assets/services/trail.jpg", "href": "/services/trail/", "categories": ["excursions"] },
-      { "title": "Тренажерный зал", "label": "Активный отдых", "image": "/assets/services/gym.jpg", "href": "/services/gym/", "categories": ["entertainment"] },
+      { "title": "Тренажерный зал", "label": "Активный отдых", "image": "/assets/services/gym.jpg", "href": "/service.html", "categories": ["entertainment"] },
       { "title": "Караоке", "label": "Активный отдых", "paid": true, "image": "/assets/services/karaoke.jpg", "href": "/services/karaoke/", "categories": ["entertainment"] },
       { "title": "Теннисный корт", "label": "Активный отдых", "image": "/assets/services/tennis.jpg", "href": "/services/tennis/", "categories": ["family", "entertainment"] },
       { "title": "Сауна", "label": "Спокойный отдых", "image": "/assets/services/sauna.jpg", "href": "/services/sauna/", "categories": ["family"] }

@@ -1,0 +1,18 @@
+.service-content {
+  margin-bottom: 13.3rem;
+  color: #495249;
+
+  &__inner { display: flex; flex-direction: column; gap: 7rem; max-width: 85.4rem; margin-inline: auto; }
+  &__lead { margin: 0; font-size: 3.2rem; line-height: 3.4rem; letter-spacing: -.128rem; }
+  &__features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; }
+  &__image { display: block; width: 100%; height: auto; border-radius: 1.2rem; }
+}
+
+@media (max-width: 600px) {
+  .service-content {
+    margin-bottom: 7.4rem;
+    &__inner { gap: 4.8rem; }
+    &__lead { font-size: 2rem; line-height: 2.4rem; letter-spacing: -.12rem; }
+    &__features { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  }
+}

@@ -1,0 +1,11 @@
+{% macro serviceFeature(feature) %}
+<article class="service-feature{% if feature.wide %} service-feature--wide{% endif %}">
+  <h2 class="service-feature__title">{{ feature.title }}</h2>
+  <div class="service-feature__content">
+    <ul>
+      {% for item in feature.items %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+    {% if feature.description %}<p>{{ feature.description }}</p>{% endif %}
+  </div>
+</article>
+{% endmacro %}

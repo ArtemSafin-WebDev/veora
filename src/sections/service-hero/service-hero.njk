@@ -1,0 +1,14 @@
+{% from "components/service-info/service-info.njk" import serviceInfo %}
+{% set hero = page.serviceHero %}
+<section class="service-hero" aria-label="{{ hero.label }}">
+  <div class="service-hero__media">
+    <picture class="service-hero__picture">
+      {% if hero.mobileImage %}<source media="(max-width: 600px)" srcset="{{ hero.mobileImage }}" />{% endif %}
+      <img class="service-hero__image" src="{{ hero.image }}" alt="{{ hero.imageAlt }}" fetchpriority="high" />
+    </picture>
+    <div class="service-hero__shade" aria-hidden="true"></div>
+  </div>
+  <div class="service-hero__container container">
+    {{ serviceInfo(hero.info) }}
+  </div>
+</section>
