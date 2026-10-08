@@ -1,0 +1,63 @@
+.accordion {
+  padding: 2.4rem;
+  border-radius: 1.2rem;
+  background: #fff;
+  color: #495249;
+
+  &__heading { margin: 0; font: inherit; }
+  &__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    letter-spacing: -.08rem;
+    text-align: left;
+    cursor: pointer;
+  }
+  &__toggle:focus-visible &__question { text-decoration: underline; text-underline-offset: .3rem; }
+  &__question { min-width: 0; }
+  &__mobile-question { display: none; }
+  &__icons { display: grid; flex: none; width: 4rem; height: 4rem; }
+  &__icon { grid-area: 1 / 1; transform: rotate(-90deg); transition: opacity .3s ease; }
+  &__icon--minus { opacity: 0; }
+  &__icon--mobile { display: none; }
+  &--open &__icon--plus { opacity: 0; }
+  &--open &__icon--minus { opacity: 1; }
+
+  &__panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    visibility: hidden;
+    transition: grid-template-rows .3s ease, visibility .3s;
+  }
+  &--open &__panel { grid-template-rows: 1fr; visibility: visible; }
+  &__clip { min-height: 0; overflow: hidden; }
+  &__answer { padding-top: 3rem; font-size: 1.4rem; font-weight: 400; line-height: 1.8rem; letter-spacing: -.028rem; }
+  &__answer p { margin: 0; }
+  &__answer p + p { margin-top: 1.6rem; }
+}
+
+@media (max-width: 600px) {
+  .accordion {
+    &__toggle { font-size: 1.6rem; line-height: 1.8rem; letter-spacing: -.064rem; }
+    &__desktop-question { display: none; }
+    &__mobile-question, &__mobile-question span { display: block; }
+    &__icons { width: 2.4rem; height: 2.4rem; }
+    &__icon--desktop { display: none; }
+    &__icon--mobile { display: block; }
+    &__answer { font-size: 1.2rem; font-weight: 600; line-height: 1.6rem; letter-spacing: -.024rem; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accordion__panel, .accordion__icon { transition: none; }
+}

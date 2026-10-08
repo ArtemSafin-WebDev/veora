@@ -1,0 +1,33 @@
+{
+  "title": "Лицензия №1",
+  "description": "Лицензия №1: изображение документа и PDF для скачивания.",
+  "activePage": "legal",
+  "theme": "beige",
+  "license": {
+    "title": "Лицензия №1",
+    "mobileTitle": "Лицензия",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/"
+      },
+      {
+        "label": "Правовая информация",
+        "href": "/legal.html"
+      },
+      {
+        "label": "Лицензия №1"
+      }
+    ],
+    "image": {
+      "src": "/assets/license/license.png",
+      "alt": "Скан лицензии №1"
+    },
+    "download": {
+      "label": "Скачать pdf",
+      "href": "/assets/license/license.pdf",
+      "filename": "license-1.pdf"
+    }
+  }
+}

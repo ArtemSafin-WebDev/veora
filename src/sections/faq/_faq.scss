@@ -1,0 +1,15 @@
+body.theme-beige.page-faq {
+  background: #eff0ef;
+
+  .site-footer { background: #eff0ef; }
+}
+
+.faq {
+  margin-bottom: 8rem;
+
+  &__list { display: flex; flex-direction: column; gap: 1rem; max-width: 107rem; margin-inline: auto; }
+}
+
+@media (max-width: 600px) {
+  .faq { margin-bottom: 3.8rem; }
+}

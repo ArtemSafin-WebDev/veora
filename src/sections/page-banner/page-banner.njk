@@ -14,7 +14,7 @@
       <a class="button button--dark page-banner__action" href="{{ banner.action.href }}"{% if banner.action.upcomingLabel %} data-banner-archive data-upcoming-label="{{ banner.action.upcomingLabel }}"{% endif %}>{{ banner.action.label }}</a>
     </div>
     {% else %}
-    <h1 class="page-banner__title" id="{{ banner.id }}-title">{{ banner.title }}</h1>
+    <h1 class="page-banner__title" id="{{ banner.id }}-title">{% if banner.mobileTitleLines %}<span class="page-banner__desktop-title">{{ banner.title }}</span><span class="page-banner__mobile-title">{% for line in banner.mobileTitleLines %}<span>{{ line }}</span>{% endfor %}</span>{% else %}{{ banner.title }}{% endif %}</h1>
     {% endif %}
   </div>
 </section>

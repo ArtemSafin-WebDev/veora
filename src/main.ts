@@ -2,6 +2,7 @@ import '@fontsource-variable/inter/wght.css';
 import '@fontsource-variable/golos-text/wght.css';
 import './styles/main.scss';
 import './components/site-header/site-header';
+import './components/accordion/accordion';
 import './sections/resorts/resorts';
 import './components/custom-select/custom-select';
 import './components/booking-search/booking-search';

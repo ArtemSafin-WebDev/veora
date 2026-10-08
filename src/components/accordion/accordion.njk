@@ -1,0 +1,25 @@
+{% from "components/icon/icon.njk" import icon %}
+{% macro accordion(item) %}
+<article class="accordion{% if item.defaultOpen %} accordion--open{% endif %}" data-accordion>
+  <h2 class="accordion__heading">
+    <button class="accordion__toggle" id="{{ item.id }}-toggle" type="button" aria-expanded="{{ 'true' if item.defaultOpen else 'false' }}" aria-controls="{{ item.id }}-panel" data-accordion-toggle>
+      <span class="accordion__question">{% if item.mobileQuestionLines %}<span class="accordion__desktop-question">{{ item.question }}</span><span class="accordion__mobile-question">{% for line in item.mobileQuestionLines %}<span>{{ line }}</span>{% endfor %}</span>{% else %}{{ item.question }}{% endif %}</span>
+      <span class="accordion__icons">
+        {{ icon('accordion-plus', 'accordion__icon accordion__icon--plus accordion__icon--desktop', 4) }}
+        {{ icon('accordion-minus', 'accordion__icon accordion__icon--minus accordion__icon--desktop', 4) }}
+        {{ icon('accordion-plus-mobile', 'accordion__icon accordion__icon--plus accordion__icon--mobile', 2.4) }}
+        {{ icon('accordion-minus-mobile', 'accordion__icon accordion__icon--minus accordion__icon--mobile', 2.4) }}
+      </span>
+    </button>
+  </h2>
+  <div class="accordion__panel" id="{{ item.id }}-panel" aria-labelledby="{{ item.id }}-toggle"{% if not item.defaultOpen %} inert{% endif %} data-accordion-panel>
+    <div class="accordion__clip">
+      <div class="accordion__answer">
+        {% for paragraph in item.answer %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</article>
+{% endmacro %}

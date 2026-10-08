@@ -1,0 +1,27 @@
+{% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs %}
+{% from "components/icon/icon.njk" import icon %}
+{% set license = page.license %}
+<section class="license" aria-labelledby="license-title">
+  <div class="license__breadcrumbs">
+    {{ breadcrumbs(license.breadcrumbs, license.breadcrumbsLabel) }}
+  </div>
+  <div class="license__content">
+    <div class="license__header">
+      <h1 class="license__title" id="license-title">
+        {% if license.mobileTitle %}
+        <span class="license__title-desktop">{{ license.title }}</span>
+        <span class="license__title-mobile">{{ license.mobileTitle }}</span>
+        {% else %}
+        {{ license.title }}
+        {% endif %}
+      </h1>
+      {% if license.download and license.download.href %}
+      <a class="license__download" href="{{ license.download.href }}" download="{{ license.download.filename }}">
+        {{ icon('legal-download') }}
+        <span>{{ license.download.label }}</span>
+      </a>
+      {% endif %}
+    </div>
+    <img class="license__image" src="{{ license.image.src }}" alt="{{ license.image.alt }}" />
+  </div>
+</section>

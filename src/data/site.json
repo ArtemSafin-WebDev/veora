@@ -41,7 +41,7 @@
         "links": [
           { "href": "/news.html", "label": "Новости" },
           { "href": "/legal.html", "label": "Правовая информация" },
-          { "href": "/faq/", "label": "Часто задаваемые вопросы" },
+          { "href": "/faq.html", "label": "Часто задаваемые вопросы" },
           { "href": "/contacts/", "label": "Контакты" }
         ]
       },

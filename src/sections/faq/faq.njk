@@ -1,0 +1,10 @@
+{% from "components/accordion/accordion.njk" import accordion %}
+<section class="faq" aria-label="{{ page.faq.label }}">
+  <div class="faq__container container">
+    <div class="faq__list">
+      {% for item in page.faq.items %}
+        {{ accordion(item) }}
+      {% endfor %}
+    </div>
+  </div>
+</section>
