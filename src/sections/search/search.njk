@@ -1,0 +1,12 @@
+{% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs %}
+{% from "components/search-form/search-form.njk" import searchForm %}
+<section class="search{% if page.search.variant %} search--{{ page.search.variant }}{% endif %}" aria-label="{{ page.search.label }}">
+  <div class="search__container container">
+    <div class="search__breadcrumbs">
+      {{ breadcrumbs(page.search.breadcrumbs, page.search.breadcrumbsLabel) }}
+    </div>
+    <div class="search__form">
+      {{ searchForm(page.search.form) }}
+    </div>
+  </div>
+</section>

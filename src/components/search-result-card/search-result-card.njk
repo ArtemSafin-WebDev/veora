@@ -1,0 +1,13 @@
+{% from "components/button/button.njk" import button %}
+{% macro searchResultCard(item, buttonLabel) %}
+<a class="search-result-card{% if item.mobileLabelAfterTitle %} search-result-card--label-after-title{% endif %}" href="{{ item.href }}" data-search-result-category="{{ item.category }}">
+  <div class="search-result-card__content">
+    <div class="search-result-card__heading">
+      <h2 class="search-result-card__title">{{ item.title }}</h2>
+      <span class="search-result-card__label">{{ item.categoryLabel }}</span>
+    </div>
+    <p class="search-result-card__description">{{ item.description }}</p>
+  </div>
+  {{ button(buttonLabel, '', 'search-result-card__button', 'muted') }}
+</a>
+{% endmacro %}

@@ -1,0 +1,24 @@
+.search-empty {
+  min-height: 53.7rem;
+  margin-bottom: 0;
+  padding-top: 20.4rem;
+  color: #495249;
+
+  &__message {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    letter-spacing: -.08rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .search-empty {
+    min-height: 60.2rem;
+    padding-top: 24rem;
+
+    &__message { max-width: 24.4rem; margin-inline: auto; }
+  }
+}

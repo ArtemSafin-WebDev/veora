@@ -19,6 +19,9 @@ import './sections/related-offers/related-offers';
 import './sections/news-intro/news-intro';
 import './sections/related-news/related-news';
 import './sections/related-events/related-events';
+import './sections/contacts-map/contacts-map';
+import './components/search-form/search-form';
+import './sections/search-results/search-results';
 import Swiper from 'swiper';
 
 const newsSlider = document.querySelector<HTMLElement>('[data-news] .news__slider');

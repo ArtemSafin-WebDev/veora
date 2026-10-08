@@ -1,0 +1,150 @@
+- generic [ref=e1]:
+  - banner "Шапка сайта" [ref=e2]:
+    - generic [ref=e4]:
+      - link "Веора — на главную" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e19]:
+        - button "Начать отдых" [ref=e30] [cursor=pointer]
+        - button "Открыть меню" [ref=e33] [cursor=pointer]
+  - main [ref=e37]:
+    - region "Поиск по сайту" [ref=e38]:
+      - generic [ref=e39]:
+        - navigation "Хлебные крошки" [ref=e41]:
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "Главная" [ref=e44] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e45]: / Поиск
+        - search [ref=e47]:
+          - searchbox "Поисковый запрос" [ref=e48]: Курорт
+          - button "Найти" [ref=e49] [cursor=pointer]
+    - region "Результаты поиска" [ref=e52]:
+      - form "Категории результатов поиска" [ref=e54]:
+        - generic [ref=e55] [cursor=pointer]:
+          - radio "Все 25" [ref=e56]
+          - generic [ref=e57]:
+            - generic [ref=e58]: Все
+            - generic [ref=e59]: "25"
+        - generic [ref=e60] [cursor=pointer]:
+          - radio "Новости 10" [ref=e61]
+          - generic [ref=e62]:
+            - generic [ref=e63]: Новости
+            - generic [ref=e64]: "10"
+        - generic [ref=e65] [cursor=pointer]:
+          - radio "Направления 3" [ref=e66]
+          - generic [ref=e67]:
+            - generic [ref=e68]: Направления
+            - generic [ref=e69]: "3"
+        - generic [ref=e70] [cursor=pointer]:
+          - radio "Спецпредложения 5" [checked] [active] [ref=e71]
+          - generic [ref=e72]:
+            - generic [ref=e73]: Спецпредложения
+            - generic [ref=e74]: "5"
+        - generic [ref=e75] [cursor=pointer]:
+          - radio "Правила 1" [ref=e76]
+          - generic [ref=e77]:
+            - generic [ref=e78]: Правила
+            - generic [ref=e79]: "1"
+        - generic [ref=e80] [cursor=pointer]:
+          - radio "Оздоровление 7" [ref=e81]
+          - generic [ref=e82]:
+            - generic [ref=e83]: Оздоровление
+            - generic [ref=e84]: "7"
+      - paragraph [ref=e208]: По вашему запросу ничего не найдено.
+  - contentinfo [ref=e115]:
+    - generic [ref=e117]:
+      - link "Veora — на главную" [ref=e118] [cursor=pointer]:
+        - /url: /
+      - generic "Веора" [ref=e120]
+      - generic [ref=e122]:
+        - navigation "Навигация в подвале" [ref=e123]:
+          - generic [ref=e124]:
+            - heading "Территория моря" [level=2] [ref=e125]
+            - list [ref=e126]:
+              - listitem [ref=e127]:
+                - link "Южный" [ref=e128] [cursor=pointer]:
+                  - /url: /territory/sea/yuzhny/
+              - listitem [ref=e129]:
+                - link "Золотые Пески" [ref=e130] [cursor=pointer]:
+                  - /url: /territory/sea/golden-sands/
+              - listitem [ref=e131]:
+                - link "Балтийские Пески" [ref=e132] [cursor=pointer]:
+                  - /url: /territory/sea/baltic-sands/
+          - generic [ref=e133]:
+            - heading "Территория отдыха" [level=2] [ref=e134]
+            - list [ref=e135]:
+              - listitem [ref=e136]:
+                - link "Солнечный городок" [ref=e137] [cursor=pointer]:
+                  - /url: /territory/rest/sunny-town/
+              - listitem [ref=e138]:
+                - link "Полюс" [ref=e139] [cursor=pointer]:
+                  - /url: /territory/rest/polyus/
+          - generic [ref=e140]:
+            - heading "Территория детства" [level=2] [ref=e141]
+            - list [ref=e142]:
+              - listitem [ref=e143]:
+                - link "Полюс" [ref=e144] [cursor=pointer]:
+                  - /url: /territory/childhood/polyus/
+          - generic [ref=e145]:
+            - heading "О нас" [level=2] [ref=e146]
+            - list [ref=e147]:
+              - listitem [ref=e148]:
+                - link "Новости" [ref=e149] [cursor=pointer]:
+                  - /url: /news.html
+              - listitem [ref=e150]:
+                - link "Правовая информация" [ref=e151] [cursor=pointer]:
+                  - /url: /legal.html
+              - listitem [ref=e152]:
+                - link "Часто задаваемые вопросы" [ref=e153] [cursor=pointer]:
+                  - /url: /faq.html
+              - listitem [ref=e154]:
+                - link "Контакты" [ref=e155] [cursor=pointer]:
+                  - /url: /contacts.html
+          - generic [ref=e156]:
+            - heading "Дополнительно" [level=2] [ref=e157]
+            - list [ref=e158]:
+              - listitem [ref=e159]:
+                - link "Специальные предложения" [ref=e160] [cursor=pointer]:
+                  - /url: /offers.html
+              - listitem [ref=e161]:
+                - link "Услуги и развлечения" [ref=e162] [cursor=pointer]:
+                  - /url: /services.html
+              - listitem [ref=e163]:
+                - link "Афиша" [ref=e164] [cursor=pointer]:
+                  - /url: /afisha.html
+              - listitem [ref=e165]:
+                - link "Галерея" [ref=e166] [cursor=pointer]:
+                  - /url: /gallery.html
+              - listitem [ref=e167]:
+                - link "Мероприятия" [ref=e168] [cursor=pointer]:
+                  - /url: /activities/
+        - generic [ref=e170]:
+          - link "Сотрудникам организации Забронировать" [ref=e171] [cursor=pointer]:
+            - /url: mailto:sozvezdie@s.ru?subject=Бронирование%20для%20сотрудников
+            - generic [ref=e172]: Сотрудникам организации
+            - generic [ref=e173]: Забронировать
+          - link "Внешним гостям Забронировать" [ref=e174] [cursor=pointer]:
+            - /url: mailto:sozvezdie@s.ru?subject=Бронирование%20для%20гостей
+            - generic [ref=e175]: Внешним гостям
+            - generic [ref=e176]: Забронировать
+      - generic [ref=e184]:
+        - generic [ref=e185]:
+          - heading "Центральный офис:" [level=2] [ref=e186]
+          - paragraph [ref=e187]: Москва, ул. Примерная, д. 1
+        - generic [ref=e188]:
+          - heading "Время работы:" [level=2] [ref=e189]
+          - paragraph [ref=e190]: Пн–Пт:09:00 – 18:00
+        - generic [ref=e191]:
+          - heading "Контакты для связи:" [level=2] [ref=e192]
+          - generic [ref=e193]:
+            - link "+7 495 123-45-67" [ref=e194] [cursor=pointer]:
+              - /url: tel:+74951234567
+            - link "заказать звонок" [ref=e195] [cursor=pointer]:
+              - /url: tel:+74951234567
+          - link "sozvezdie@s.ru" [ref=e196] [cursor=pointer]:
+            - /url: mailto:sozvezdie@s.ru
+      - generic [ref=e197]:
+        - paragraph [ref=e198]: © 2026 — официальный сайт ЧУ «Здоровье и отдых»
+        - link "Политика конфиденциальности" [ref=e200] [cursor=pointer]:
+          - /url: /privacy/
+        - img "Creative Team — создание сайтов" [ref=e202]

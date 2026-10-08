@@ -1,0 +1,11 @@
+<section class="contacts-map" aria-label="{{ page.map.label }}" data-contacts-map data-api-key="{{ page.map.apiKey }}" data-longitude="{{ page.map.coordinates[0] }}" data-latitude="{{ page.map.coordinates[1] }}" data-zoom="{{ page.map.zoom }}">
+  <div class="contacts-map__container container">
+    <div class="contacts-map__frame">
+      <div class="contacts-map__canvas" data-map-canvas aria-label="{{ page.map.label }}"></div>
+      <div class="contacts-map__fallback" data-map-fallback>
+        <p class="contacts-map__status" role="status" data-map-status data-loading-label="{{ page.map.loadingLabel }}" data-error-label="{{ page.map.errorLabel }}"></p>
+        <a href="{{ page.map.href }}" target="_blank" rel="noopener noreferrer">{{ page.map.linkLabel }}</a>
+      </div>
+    </div>
+  </div>
+</section>

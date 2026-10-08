@@ -1,0 +1,18 @@
+.search-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 2.1rem;
+  width: 100%;
+  max-width: 31.4rem;
+  margin: 0;
+
+  &__option { position: relative; cursor: pointer; }
+  &__input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+  &__text { display: flex; justify-content: space-between; gap: 1rem; color: #99a29a; font-size: 1.4rem; font-weight: 600; line-height: 1.6rem; letter-spacing: -.028rem; }
+  &__input:checked + &__text { color: #495249; }
+  &__input:is(:hover, :focus-visible) + &__text { color: #495249; }
+}
+
+@media (max-width: 600px) {
+  .search-categories { gap: 1rem; max-width: none; }
+}

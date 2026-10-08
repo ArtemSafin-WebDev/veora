@@ -1,0 +1,13 @@
+{% from "components/search-categories/search-categories.njk" import searchCategories %}
+{% from "components/search-result-card/search-result-card.njk" import searchResultCard %}
+<section class="search-results container" aria-label="{{ page.searchResults.label }}" data-search-results>
+  <div class="search-results__categories">{{ searchCategories(page.searchResults.categories) }}</div>
+  <div class="search-results__content" aria-live="polite">
+    <div class="search-results__list">
+      {% for item in page.searchResults.items %}
+        {{ searchResultCard(item, page.searchResults.buttonLabel) }}
+      {% endfor %}
+    </div>
+    <p class="search-results__empty" hidden>{{ page.searchResults.emptyLabel }}</p>
+  </div>
+</section>

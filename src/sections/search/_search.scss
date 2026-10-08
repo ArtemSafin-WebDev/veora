@@ -1,0 +1,31 @@
+body.theme-beige.page-search,
+body.theme-beige.page-search-results,
+body.theme-beige.page-search-empty { background: #fff; }
+
+.search {
+  min-height: 67.6rem;
+  margin-bottom: 0;
+  padding-top: 2rem;
+  color: #657266;
+
+  &__breadcrumbs { margin-inline: -1rem; }
+  &__form { margin-top: 3.7rem; }
+  &--results { min-height: 0; margin-bottom: 4rem; }
+  &--empty { min-height: 0; }
+}
+
+@media (max-width: 600px) {
+  body.theme-beige.page-search,
+  body.theme-beige.page-search-results,
+  body.theme-beige.page-search-empty { background: #fefefc; }
+
+  .search {
+    min-height: 70.2rem;
+    padding-top: 1.2rem;
+
+    &__breadcrumbs { margin-inline: 0; }
+    &__form { margin-top: 3.5rem; }
+    &--results { min-height: 0; margin-bottom: 1.9rem; }
+    &--empty { min-height: 0; }
+  }
+}

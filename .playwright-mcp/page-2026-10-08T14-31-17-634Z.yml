@@ -1,0 +1,182 @@
+- generic [active] [ref=f4e1]:
+  - banner "Шапка сайта" [ref=f4e2]:
+    - generic [ref=f4e4]:
+      - link "Веора — на главную" [ref=f4e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f4e8]:
+        - button "Начать отдых" [ref=f4e9] [cursor=pointer]
+        - button "Открыть меню" [ref=f4e12] [cursor=pointer]
+  - main [ref=f4e16]:
+    - region "Поиск по сайту" [ref=f4e17]:
+      - generic [ref=f4e18]:
+        - navigation "Хлебные крошки" [ref=f4e20]:
+          - list [ref=f4e21]:
+            - listitem [ref=f4e22]:
+              - link "Главная" [ref=f4e23] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f4e24]: / Поиск
+        - search [ref=f4e26]:
+          - searchbox "Поисковый запрос" [ref=f4e27]: Курорт
+          - button "Найти" [ref=f4e28] [cursor=pointer]
+    - region "Результаты поиска" [ref=f4e31]:
+      - form "Категории результатов поиска" [ref=f4e33]:
+        - generic [ref=f4e34] [cursor=pointer]:
+          - radio "Все 25" [checked] [ref=f4e35]
+          - generic [ref=f4e36]:
+            - generic [ref=f4e37]: Все
+            - generic [ref=f4e38]: "25"
+        - generic [ref=f4e39] [cursor=pointer]:
+          - radio "Новости 10" [ref=f4e40]
+          - generic [ref=f4e41]:
+            - generic [ref=f4e42]: Новости
+            - generic [ref=f4e43]: "10"
+        - generic [ref=f4e44] [cursor=pointer]:
+          - radio "Направления 3" [ref=f4e45]
+          - generic [ref=f4e46]:
+            - generic [ref=f4e47]: Направления
+            - generic [ref=f4e48]: "3"
+        - generic [ref=f4e49] [cursor=pointer]:
+          - radio "Спецпредложения 5" [ref=f4e50]
+          - generic [ref=f4e51]:
+            - generic [ref=f4e52]: Спецпредложения
+            - generic [ref=f4e53]: "5"
+        - generic [ref=f4e54] [cursor=pointer]:
+          - radio "Правила 1" [ref=f4e55]
+          - generic [ref=f4e56]:
+            - generic [ref=f4e57]: Правила
+            - generic [ref=f4e58]: "1"
+        - generic [ref=f4e59] [cursor=pointer]:
+          - radio "Оздоровление 7" [ref=f4e60]
+          - generic [ref=f4e61]:
+            - generic [ref=f4e62]: Оздоровление
+            - generic [ref=f4e63]: "7"
+      - generic [ref=f4e65]:
+        - link "Оздоровительные программы Новости Комплексные решения для восстановления организма, снижения стресса, нормализации сна и профилактики хронических заболеваний. Программы разрабатываются индивидуально, с учётом рекомендаций врачей и диагностики. Подробнее" [ref=f4e66] [cursor=pointer]:
+          - /url: /news.html
+          - generic [ref=f4e67]:
+            - generic [ref=f4e68]:
+              - heading "Оздоровительные программы" [level=2] [ref=f4e69]
+              - generic [ref=f4e70]: Новости
+            - paragraph [ref=f4e71]: Комплексные решения для восстановления организма, снижения стресса, нормализации сна и профилактики хронических заболеваний. Программы разрабатываются индивидуально, с учётом рекомендаций врачей и диагностики.
+          - generic [ref=f4e72]: Подробнее
+        - 'link "Wellness / SPA Направления Погрузитесь в мир покоя и расслабления: массажи, обёртывания, ароматерапия, термальные процедуры и многое другое. Подробнее" [ref=f4e73] [cursor=pointer]':
+          - /url: /services.html
+          - generic [ref=f4e74]:
+            - generic [ref=f4e75]:
+              - heading "Wellness / SPA" [level=2] [ref=f4e76]
+              - generic [ref=f4e77]: Направления
+            - paragraph [ref=f4e78]: "Погрузитесь в мир покоя и расслабления: массажи, обёртывания, ароматерапия, термальные процедуры и многое другое."
+          - generic [ref=f4e79]: Подробнее
+        - 'link "Карта здоровья Правила Первый шаг к осознанному оздоровлению — полное обследование: лабораторные анализы, функциональные тесты, консультации с врачами. Индивидуальный план восстановления на основе вашей личной «карты здоровья». Подробнее" [ref=f4e80] [cursor=pointer]':
+          - /url: /legal.html
+          - generic [ref=f4e81]:
+            - generic [ref=f4e82]:
+              - heading "Карта здоровья" [level=2] [ref=f4e83]
+              - generic [ref=f4e84]: Правила
+            - paragraph [ref=f4e85]: "Первый шаг к осознанному оздоровлению — полное обследование: лабораторные анализы, функциональные тесты, консультации с врачами. Индивидуальный план восстановления на основе вашей личной «карты здоровья»."
+          - generic [ref=f4e86]: Подробнее
+        - link "Косметология Оздоровление Профессиональный уход за кожей лица и тела. Антиэйдж, восстановление после стрессов, интенсивное увлажнение, а также эстетические процедуры. Подробнее" [ref=f4e87] [cursor=pointer]:
+          - /url: /services.html
+          - generic [ref=f4e88]:
+            - generic [ref=f4e89]:
+              - heading "Косметология" [level=2] [ref=f4e90]
+              - generic [ref=f4e91]: Оздоровление
+            - paragraph [ref=f4e92]: Профессиональный уход за кожей лица и тела. Антиэйдж, восстановление после стрессов, интенсивное увлажнение, а также эстетические процедуры.
+          - generic [ref=f4e93]: Подробнее
+  - contentinfo [ref=f4e94]:
+    - generic [ref=f4e96]:
+      - link "Veora — на главную" [ref=f4e97] [cursor=pointer]:
+        - /url: /
+      - generic "Веора" [ref=f4e99]
+      - generic [ref=f4e101]:
+        - navigation "Навигация в подвале" [ref=f4e102]:
+          - generic [ref=f4e103]:
+            - heading "Территория моря" [level=2] [ref=f4e104]
+            - list [ref=f4e105]:
+              - listitem [ref=f4e106]:
+                - link "Южный" [ref=f4e107] [cursor=pointer]:
+                  - /url: /territory/sea/yuzhny/
+              - listitem [ref=f4e108]:
+                - link "Золотые Пески" [ref=f4e109] [cursor=pointer]:
+                  - /url: /territory/sea/golden-sands/
+              - listitem [ref=f4e110]:
+                - link "Балтийские Пески" [ref=f4e111] [cursor=pointer]:
+                  - /url: /territory/sea/baltic-sands/
+          - generic [ref=f4e112]:
+            - heading "Территория отдыха" [level=2] [ref=f4e113]
+            - list [ref=f4e114]:
+              - listitem [ref=f4e115]:
+                - link "Солнечный городок" [ref=f4e116] [cursor=pointer]:
+                  - /url: /territory/rest/sunny-town/
+              - listitem [ref=f4e117]:
+                - link "Полюс" [ref=f4e118] [cursor=pointer]:
+                  - /url: /territory/rest/polyus/
+          - generic [ref=f4e119]:
+            - heading "Территория детства" [level=2] [ref=f4e120]
+            - list [ref=f4e121]:
+              - listitem [ref=f4e122]:
+                - link "Полюс" [ref=f4e123] [cursor=pointer]:
+                  - /url: /territory/childhood/polyus/
+          - generic [ref=f4e124]:
+            - heading "О нас" [level=2] [ref=f4e125]
+            - list [ref=f4e126]:
+              - listitem [ref=f4e127]:
+                - link "Новости" [ref=f4e128] [cursor=pointer]:
+                  - /url: /news.html
+              - listitem [ref=f4e129]:
+                - link "Правовая информация" [ref=f4e130] [cursor=pointer]:
+                  - /url: /legal.html
+              - listitem [ref=f4e131]:
+                - link "Часто задаваемые вопросы" [ref=f4e132] [cursor=pointer]:
+                  - /url: /faq.html
+              - listitem [ref=f4e133]:
+                - link "Контакты" [ref=f4e134] [cursor=pointer]:
+                  - /url: /contacts.html
+          - generic [ref=f4e135]:
+            - heading "Дополнительно" [level=2] [ref=f4e136]
+            - list [ref=f4e137]:
+              - listitem [ref=f4e138]:
+                - link "Специальные предложения" [ref=f4e139] [cursor=pointer]:
+                  - /url: /offers.html
+              - listitem [ref=f4e140]:
+                - link "Услуги и развлечения" [ref=f4e141] [cursor=pointer]:
+                  - /url: /services.html
+              - listitem [ref=f4e142]:
+                - link "Афиша" [ref=f4e143] [cursor=pointer]:
+                  - /url: /afisha.html
+              - listitem [ref=f4e144]:
+                - link "Галерея" [ref=f4e145] [cursor=pointer]:
+                  - /url: /gallery.html
+              - listitem [ref=f4e146]:
+                - link "Мероприятия" [ref=f4e147] [cursor=pointer]:
+                  - /url: /activities/
+        - generic [ref=f4e149]:
+          - link "Сотрудникам организации Забронировать" [ref=f4e150] [cursor=pointer]:
+            - /url: mailto:sozvezdie@s.ru?subject=Бронирование%20для%20сотрудников
+            - generic [ref=f4e151]: Сотрудникам организации
+            - generic [ref=f4e152]: Забронировать
+          - link "Внешним гостям Забронировать" [ref=f4e153] [cursor=pointer]:
+            - /url: mailto:sozvezdie@s.ru?subject=Бронирование%20для%20гостей
+            - generic [ref=f4e154]: Внешним гостям
+            - generic [ref=f4e155]: Забронировать
+      - generic [ref=f4e156]:
+        - generic [ref=f4e157]:
+          - heading "Центральный офис:" [level=2] [ref=f4e158]
+          - paragraph [ref=f4e159]: Москва, ул. Примерная, д. 1
+        - generic [ref=f4e160]:
+          - heading "Время работы:" [level=2] [ref=f4e161]
+          - paragraph [ref=f4e162]: Пн–Пт:09:00 – 18:00
+        - generic [ref=f4e163]:
+          - heading "Контакты для связи:" [level=2] [ref=f4e164]
+          - generic [ref=f4e165]:
+            - link "+7 495 123-45-67" [ref=f4e166] [cursor=pointer]:
+              - /url: tel:+74951234567
+            - link "заказать звонок" [ref=f4e167] [cursor=pointer]:
+              - /url: tel:+74951234567
+          - link "sozvezdie@s.ru" [ref=f4e168] [cursor=pointer]:
+            - /url: mailto:sozvezdie@s.ru
+      - generic [ref=f4e169]:
+        - paragraph [ref=f4e170]: © 2026 — официальный сайт ЧУ «Здоровье и отдых»
+        - link "Политика конфиденциальности" [ref=f4e171] [cursor=pointer]:
+          - /url: /privacy/
+        - img "Creative Team — создание сайтов" [ref=f4e173]

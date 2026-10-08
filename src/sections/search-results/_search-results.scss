@@ -1,0 +1,22 @@
+.search-results {
+  display: grid;
+  grid-template-columns: minmax(0, 42.2rem) minmax(0, 1fr);
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 8rem;
+
+  &__content { min-width: 0; }
+  &__list { display: flex; flex-direction: column; gap: 1rem; }
+  &__empty { margin: 0; color: #7f8a80; font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; }
+  [hidden] { display: none; }
+}
+
+@media (max-width: 600px) {
+  .search-results {
+    display: flex;
+    flex-direction: column;
+    gap: 4.2rem;
+
+    &__categories, &__content { width: 100%; }
+  }
+}

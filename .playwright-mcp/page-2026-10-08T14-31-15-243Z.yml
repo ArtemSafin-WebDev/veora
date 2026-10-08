@@ -1,0 +1,117 @@
+- generic [active] [ref=f1e1]:
+  - banner "Шапка сайта" [ref=f1e2]:
+    - generic [ref=f1e4]:
+      - link "Веора — на главную" [ref=f1e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f1e8]:
+        - button "Начать отдых" [ref=f1e9] [cursor=pointer]
+        - button "Открыть меню" [ref=f1e12] [cursor=pointer]
+  - main [ref=f1e16]:
+    - region "Поиск по сайту" [ref=f1e17]:
+      - generic [ref=f1e18]:
+        - navigation "Хлебные крошки" [ref=f1e20]:
+          - list [ref=f1e21]:
+            - listitem [ref=f1e22]:
+              - link "Главная" [ref=f1e23] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f1e24]: / Поиск
+        - search [ref=f1e26]:
+          - searchbox "Поисковый запрос" [ref=f1e27]
+          - button "Найти" [ref=f1e28] [cursor=pointer]
+  - contentinfo [ref=f1e31]:
+    - generic [ref=f1e33]:
+      - link "Veora — на главную" [ref=f1e34] [cursor=pointer]:
+        - /url: /
+      - generic "Веора" [ref=f1e36]
+      - generic [ref=f1e38]:
+        - navigation "Навигация в подвале" [ref=f1e39]:
+          - generic [ref=f1e40]:
+            - heading "Территория моря" [level=2] [ref=f1e41]
+            - list [ref=f1e42]:
+              - listitem [ref=f1e43]:
+                - link "Южный" [ref=f1e44] [cursor=pointer]:
+                  - /url: /territory/sea/yuzhny/
+              - listitem [ref=f1e45]:
+                - link "Золотые Пески" [ref=f1e46] [cursor=pointer]:
+                  - /url: /territory/sea/golden-sands/
+              - listitem [ref=f1e47]:
+                - link "Балтийские Пески" [ref=f1e48] [cursor=pointer]:
+                  - /url: /territory/sea/baltic-sands/
+          - generic [ref=f1e49]:
+            - heading "Территория отдыха" [level=2] [ref=f1e50]
+            - list [ref=f1e51]:
+              - listitem [ref=f1e52]:
+                - link "Солнечный городок" [ref=f1e53] [cursor=pointer]:
+                  - /url: /territory/rest/sunny-town/
+              - listitem [ref=f1e54]:
+                - link "Полюс" [ref=f1e55] [cursor=pointer]:
+                  - /url: /territory/rest/polyus/
+          - generic [ref=f1e56]:
+            - heading "Территория детства" [level=2] [ref=f1e57]
+            - list [ref=f1e58]:
+              - listitem [ref=f1e59]:
+                - link "Полюс" [ref=f1e60] [cursor=pointer]:
+                  - /url: /territory/childhood/polyus/
+          - generic [ref=f1e61]:
+            - heading "О нас" [level=2] [ref=f1e62]
+            - list [ref=f1e63]:
+              - listitem [ref=f1e64]:
+                - link "Новости" [ref=f1e65] [cursor=pointer]:
+                  - /url: /news.html
+              - listitem [ref=f1e66]:
+                - link "Правовая информация" [ref=f1e67] [cursor=pointer]:
+                  - /url: /legal.html
+              - listitem [ref=f1e68]:
+                - link "Часто задаваемые вопросы" [ref=f1e69] [cursor=pointer]:
+                  - /url: /faq.html
+              - listitem [ref=f1e70]:
+                - link "Контакты" [ref=f1e71] [cursor=pointer]:
+                  - /url: /contacts.html
+          - generic [ref=f1e72]:
+            - heading "Дополнительно" [level=2] [ref=f1e73]
+            - list [ref=f1e74]:
+              - listitem [ref=f1e75]:
+                - link "Специальные предложения" [ref=f1e76] [cursor=pointer]:
+                  - /url: /offers.html
+              - listitem [ref=f1e77]:
+                - link "Услуги и развлечения" [ref=f1e78] [cursor=pointer]:
+                  - /url: /services.html
+              - listitem [ref=f1e79]:
+                - link "Афиша" [ref=f1e80] [cursor=pointer]:
+                  - /url: /afisha.html
+              - listitem [ref=f1e81]:
+                - link "Галерея" [ref=f1e82] [cursor=pointer]:
+                  - /url: /gallery.html
+              - listitem [ref=f1e83]:
+                - link "Мероприятия" [ref=f1e84] [cursor=pointer]:
+                  - /url: /activities/
+        - generic [ref=f1e86]:
+          - link "Сотрудникам организации Забронировать" [ref=f1e87] [cursor=pointer]:
+            - /url: mailto:sozvezdie@s.ru?subject=Бронирование%20для%20сотрудников
+            - generic [ref=f1e88]: Сотрудникам организации
+            - generic [ref=f1e89]: Забронировать
+          - link "Внешним гостям Забронировать" [ref=f1e90] [cursor=pointer]:
+            - /url: mailto:sozvezdie@s.ru?subject=Бронирование%20для%20гостей
+            - generic [ref=f1e91]: Внешним гостям
+            - generic [ref=f1e92]: Забронировать
+      - generic [ref=f1e93]:
+        - generic [ref=f1e94]:
+          - heading "Центральный офис:" [level=2] [ref=f1e95]
+          - paragraph [ref=f1e96]: Москва, ул. Примерная, д. 1
+        - generic [ref=f1e97]:
+          - heading "Время работы:" [level=2] [ref=f1e98]
+          - paragraph [ref=f1e99]: Пн–Пт:09:00 – 18:00
+        - generic [ref=f1e100]:
+          - heading "Контакты для связи:" [level=2] [ref=f1e101]
+          - generic [ref=f1e102]:
+            - link "+7 495 123-45-67" [ref=f1e103] [cursor=pointer]:
+              - /url: tel:+74951234567
+            - link "заказать звонок" [ref=f1e104] [cursor=pointer]:
+              - /url: tel:+74951234567
+          - link "sozvezdie@s.ru" [ref=f1e105] [cursor=pointer]:
+            - /url: mailto:sozvezdie@s.ru
+      - generic [ref=f1e106]:
+        - paragraph [ref=f1e107]: © 2026 — официальный сайт ЧУ «Здоровье и отдых»
+        - link "Политика конфиденциальности" [ref=f1e108] [cursor=pointer]:
+          - /url: /privacy/
+        - img "Creative Team — создание сайтов" [ref=f1e110]

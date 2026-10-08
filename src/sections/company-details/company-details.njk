@@ -1,0 +1,10 @@
+<section class="company-details" aria-labelledby="company-details-title">
+  <div class="container">
+    <h2 class="company-details__title" id="company-details-title">{{ page.companyDetails.title }}</h2>
+    <div class="company-details__content">
+      <p>{{ page.contacts.organization }}</p>
+      <p>{{ page.contacts.address }}</p>
+      {% for item in page.companyDetails.items %}<p>{{ item }}</p>{% endfor %}
+    </div>
+  </div>
+</section>

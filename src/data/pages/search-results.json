@@ -1,0 +1,77 @@
+{
+  "title": "Результаты поиска",
+  "description": "Результаты поиска по сайту Веора.",
+  "activePage": "search",
+  "theme": "beige",
+  "bodyClass": "page-search-results",
+  "search": {
+    "label": "Поиск по сайту",
+    "variant": "results",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      { "label": "Главная", "href": "/" },
+      { "label": "Поиск" }
+    ],
+    "form": {
+      "action": "/search-results.html",
+      "method": "get",
+      "name": "q",
+      "value": "Курорт",
+      "label": "Поисковый запрос",
+      "placeholder": "Начните поиск",
+      "submitLabel": "Найти",
+      "assets": {
+        "desktop": "search-desktop",
+        "mobile": "search-mobile"
+      }
+    }
+  },
+  "searchResults": {
+    "label": "Результаты поиска",
+    "buttonLabel": "Подробнее",
+    "emptyLabel": "По вашему запросу ничего не найдено.",
+    "categories": {
+      "label": "Категории результатов поиска",
+      "parameter": "category",
+      "items": [
+        { "value": "all", "label": "Все", "count": 25 },
+        { "value": "news", "label": "Новости", "count": 10 },
+        { "value": "directions", "label": "Направления", "count": 3 },
+        { "value": "offers", "label": "Спецпредложения", "count": 5 },
+        { "value": "rules", "label": "Правила", "count": 1 },
+        { "value": "wellness", "label": "Оздоровление", "count": 7 }
+      ]
+    },
+    "items": [
+      {
+        "title": "Оздоровительные программы",
+        "description": "Комплексные решения для восстановления организма, снижения стресса, нормализации сна и профилактики хронических заболеваний. Программы разрабатываются индивидуально, с учётом рекомендаций врачей и диагностики.",
+        "category": "news",
+        "categoryLabel": "Новости",
+        "href": "/news.html"
+      },
+      {
+        "title": "Wellness / SPA",
+        "description": "Погрузитесь в мир покоя и расслабления: массажи, обёртывания, ароматерапия, термальные процедуры и многое другое.",
+        "category": "directions",
+        "categoryLabel": "Направления",
+        "href": "/services.html"
+      },
+      {
+        "title": "Карта здоровья",
+        "description": "Первый шаг к осознанному оздоровлению — полное обследование: лабораторные анализы, функциональные тесты, консультации с врачами. Индивидуальный план восстановления на основе вашей личной «карты здоровья».",
+        "category": "rules",
+        "categoryLabel": "Правила",
+        "href": "/legal.html"
+      },
+      {
+        "title": "Косметология",
+        "description": "Профессиональный уход за кожей лица и тела. Антиэйдж, восстановление после стрессов, интенсивное увлажнение, а также эстетические процедуры.",
+        "category": "wellness",
+        "categoryLabel": "Оздоровление",
+        "href": "/services.html",
+        "mobileLabelAfterTitle": true
+      }
+    ]
+  }
+}

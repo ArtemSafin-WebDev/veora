@@ -1,0 +1,10 @@
+{% macro searchCategories(config) %}
+<form class="search-categories" aria-label="{{ config.label }}" data-search-categories data-search-category-param="{{ config.parameter }}">
+  {% for item in config.items %}
+    <label class="search-categories__option">
+      <input class="search-categories__input" type="radio" name="{{ config.parameter }}" value="{{ item.value }}"{% if loop.first %} checked{% endif %} />
+      <span class="search-categories__text"><span>{{ item.label }}</span><span>{{ item.count }}</span></span>
+    </label>
+  {% endfor %}
+</form>
+{% endmacro %}

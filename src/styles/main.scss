@@ -60,3 +60,12 @@
 @use '../sections/license/license';
 @use '../components/accordion/accordion';
 @use '../sections/faq/faq';
+@use '../sections/contacts-info/contacts-info';
+@use '../sections/contacts-map/contacts-map';
+@use '../sections/company-details/company-details';
+@use '../components/search-form/search-form';
+@use '../sections/search/search';
+@use '../components/search-result-card/search-result-card';
+@use '../components/search-categories/search-categories';
+@use '../sections/search-results/search-results';
+@use '../sections/search-empty/search-empty';

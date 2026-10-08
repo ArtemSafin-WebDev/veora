@@ -1,0 +1,28 @@
+{
+  "title": "Поиск",
+  "description": "Поиск по сайту Веора.",
+  "activePage": "search",
+  "theme": "beige",
+  "bodyClass": "page-search",
+  "search": {
+    "label": "Поиск по сайту",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      { "label": "Главная", "href": "/" },
+      { "label": "Поиск" }
+    ],
+    "form": {
+      "action": "/search-results.html",
+      "method": "get",
+      "name": "q",
+      "value": "",
+      "label": "Поисковый запрос",
+      "placeholder": "Начните поиск",
+      "submitLabel": "Найти",
+      "assets": {
+        "desktop": "search-desktop",
+        "mobile": "search-mobile"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Ничего не найдено",
+  "description": "По вашему запросу ничего не найдено. Попробуйте изменить поисковый запрос.",
+  "activePage": "search",
+  "theme": "beige",
+  "bodyClass": "page-search-empty",
+  "search": {
+    "label": "Поиск по сайту",
+    "variant": "empty",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      { "label": "Главная", "href": "/" },
+      { "label": "Поиск" }
+    ],
+    "form": {
+      "action": "/search-results.html",
+      "method": "get",
+      "name": "q",
+      "value": "Уникальный",
+      "label": "Поисковый запрос",
+      "placeholder": "Начните поиск",
+      "submitLabel": "Найти",
+      "assets": {
+        "desktop": "search-desktop",
+        "mobile": "search-mobile"
+      }
+    }
+  },
+  "searchEmpty": {
+    "label": "Результаты поиска",
+    "message": "по вашему запросу ничего не найдено"
+  }
+}

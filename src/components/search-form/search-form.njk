@@ -1,0 +1,10 @@
+{% from "components/icon/icon.njk" import icon %}
+{% macro searchForm(config) %}
+<form class="search-form" role="search" action="{{ config.action }}" method="{{ config.method }}" data-search-form>
+  <input class="search-form__input" type="search" name="{{ config.name }}" value="{{ config.value }}" placeholder="{{ config.placeholder }}" aria-label="{{ config.label }}" />
+  <button class="search-form__submit" type="submit" aria-label="{{ config.submitLabel }}">
+    {{ icon(config.assets.desktop, 'search-form__icon search-form__icon--desktop', 4.4) }}
+    {{ icon(config.assets.mobile, 'search-form__icon search-form__icon--mobile', 2.8) }}
+  </button>
+</form>
+{% endmacro %}

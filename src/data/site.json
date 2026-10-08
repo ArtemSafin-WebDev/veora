@@ -42,7 +42,7 @@
           { "href": "/news.html", "label": "Новости" },
           { "href": "/legal.html", "label": "Правовая информация" },
           { "href": "/faq.html", "label": "Часто задаваемые вопросы" },
-          { "href": "/contacts/", "label": "Контакты" }
+          { "href": "/contacts.html", "label": "Контакты" }
         ]
       },
       {
@@ -91,7 +91,7 @@
     "links": [
       {
         "label": "Контакты",
-        "href": "/contacts/"
+        "href": "/contacts.html"
       },
       {
         "label": "Мероприятия",
@@ -101,7 +101,7 @@
     "bookingLabel": "Начать отдых",
     "search": {
       "label": "Поиск по сайту",
-      "href": "/search/"
+      "href": "/search.html"
     },
     "login": {
       "label": "Войти",

@@ -1,0 +1,23 @@
+<section class="contacts-info" aria-label="{{ page.contacts.label }}">
+  <div class="contacts-info__container container">
+    <div class="contacts-info__office">
+      <h2 class="contacts-info__label">{{ page.contacts.officeLabel }}</h2>
+      <address class="contacts-info__value">
+        {{ page.contacts.organization }}<br />
+        {{ page.contacts.address }}
+      </address>
+    </div>
+    <div class="contacts-info__hours">
+      <h2 class="contacts-info__label">{{ page.contacts.hours.label }}</h2>
+      <p class="contacts-info__value">{{ page.contacts.hours.days }}<br />{{ page.contacts.hours.time }}</p>
+    </div>
+    <div class="contacts-info__communication">
+      <h2 class="contacts-info__label">{{ page.contacts.communication.label }}</h2>
+      <div class="contacts-info__phone">
+        <a class="contacts-info__value" href="{{ page.contacts.communication.phoneHref }}">{{ page.contacts.communication.phone }}</a>
+        <a class="contacts-info__callback" href="{{ page.contacts.communication.callbackHref }}">{{ page.contacts.communication.callbackLabel }}</a>
+      </div>
+      <a class="contacts-info__value" href="mailto:{{ page.contacts.communication.email }}">{{ page.contacts.communication.email }}</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,192 @@
+- generic [active] [ref=f3e1]:
+  - banner "Шапка сайта" [ref=f3e2]:
+    - generic [ref=f3e4]:
+      - link "Веора — на главную" [ref=f3e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f3e8]:
+        - button "Начать отдых" [ref=f3e9] [cursor=pointer]
+        - button "Открыть меню" [ref=f3e12] [cursor=pointer]
+  - main [ref=f3e16]:
+    - region [ref=f3e17]:
+      - generic [ref=f3e20]:
+        - navigation "Хлебные крошки" [ref=f3e21]:
+          - list [ref=f3e22]:
+            - listitem [ref=f3e23]:
+              - link "Главная" [ref=f3e24] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f3e25]: / Новости
+        - heading "Новости" [level=1] [ref=f3e26]
+    - region "Каталог новостей" [ref=f3e27]:
+      - complementary [ref=f3e28]:
+        - button "Фильтры Настроить" [ref=f3e30] [cursor=pointer]:
+          - generic [ref=f3e31]: Фильтры
+          - generic [ref=f3e32]: Настроить
+      - generic [ref=f3e33]:
+        - generic [ref=f3e34]:
+          - link "Золотые пески 9 сентября 2026 Солнечный городок предлагает новую СПА – процедуру Подробнее" [ref=f3e35] [cursor=pointer]:
+            - /url: /news/spa-procedure/
+            - generic [ref=f3e36]:
+              - generic [ref=f3e37]:
+                - generic [ref=f3e38]: Золотые пески
+                - time [ref=f3e39]: 9 сентября 2026
+              - generic [ref=f3e40]:
+                - heading "Солнечный городок предлагает новую СПА – процедуру" [level=3] [ref=f3e41]
+                - generic [ref=f3e42]: Подробнее
+          - link "Светлогорск 9 сентября 2026 Открытие летней веранды в ресторане «Южного» Подробнее" [ref=f3e43] [cursor=pointer]:
+            - /url: /news-detail.html
+            - generic [ref=f3e44]:
+              - generic [ref=f3e45]:
+                - generic [ref=f3e46]: Светлогорск
+                - time [ref=f3e47]: 9 сентября 2026
+              - generic [ref=f3e48]:
+                - heading "Открытие летней веранды в ресторане «Южного»" [level=3] [ref=f3e49]: Открытие летней верандыв ресторане «Южного»
+                - generic [ref=f3e50]: Подробнее
+          - link "Бриз 9 сентября 2026 «Полюс» готовится к приему детей в детский лагерь Подробнее" [ref=f3e51] [cursor=pointer]:
+            - /url: /news/children-camp/
+            - generic [ref=f3e52]:
+              - generic [ref=f3e53]:
+                - generic [ref=f3e54]: Бриз
+                - time [ref=f3e55]: 9 сентября 2026
+              - generic [ref=f3e56]:
+                - heading "«Полюс» готовится к приему детей в детский лагерь" [level=3] [ref=f3e57]
+                - generic [ref=f3e58]: Подробнее
+          - link "Бриз 9 сентября 2026 В «Золотых песках» открылся уличный бассейн Подробнее" [ref=f3e59] [cursor=pointer]:
+            - /url: /news/outdoor-pool/
+            - generic [ref=f3e60]:
+              - generic [ref=f3e61]:
+                - generic [ref=f3e62]: Бриз
+                - time [ref=f3e63]: 9 сентября 2026
+              - generic [ref=f3e64]:
+                - heading "В «Золотых песках» открылся уличный бассейн" [level=3] [ref=f3e65]
+                - generic [ref=f3e66]: Подробнее
+          - link "Бриз 9 сентября 2026 «Бриз» запускает курс дыхательной терапии — дышите свободно! Подробнее" [ref=f3e67] [cursor=pointer]:
+            - /url: /news/breathing-therapy/
+            - generic [ref=f3e68]:
+              - generic [ref=f3e69]:
+                - generic [ref=f3e70]: Бриз
+                - time [ref=f3e71]: 9 сентября 2026
+              - generic [ref=f3e72]:
+                - heading "«Бриз» запускает курс дыхательной терапии — дышите свободно!" [level=3] [ref=f3e73]
+                - generic [ref=f3e74]: Подробнее
+          - link "Бриз 9 сентября 2026 «Бриз» запускает курс дыхательной терапии — дышите свободно! Подробнее" [ref=f3e75] [cursor=pointer]:
+            - /url: /news/breathing-therapy/
+            - generic [ref=f3e76]:
+              - generic [ref=f3e77]:
+                - generic [ref=f3e78]: Бриз
+                - time [ref=f3e79]: 9 сентября 2026
+              - generic [ref=f3e80]:
+                - heading "«Бриз» запускает курс дыхательной терапии — дышите свободно!" [level=3] [ref=f3e81]
+                - generic [ref=f3e82]: Подробнее
+        - navigation "Страницы новостей" [ref=f3e83]:
+          - link "Предыдущая страница" [ref=f3e84] [cursor=pointer]:
+            - /url: http://127.0.0.1:5175/news.html?page=1
+          - link "1" [ref=f3e87] [cursor=pointer]:
+            - /url: http://127.0.0.1:5175/news.html?page=1
+          - link "2" [ref=f3e88] [cursor=pointer]:
+            - /url: http://127.0.0.1:5175/news.html?page=2
+          - link "Перейти на страницу 3" [ref=f3e89] [cursor=pointer]:
+            - /url: http://127.0.0.1:5175/news.html?page=3
+            - text: …
+          - link "8" [ref=f3e90] [cursor=pointer]:
+            - /url: http://127.0.0.1:5175/news.html?page=8
+          - link "9" [ref=f3e91] [cursor=pointer]:
+            - /url: http://127.0.0.1:5175/news.html?page=9
+          - link "Следующая страница" [ref=f3e92] [cursor=pointer]:
+            - /url: http://127.0.0.1:5175/news.html?page=3
+  - contentinfo [ref=f3e95]:
+    - generic [ref=f3e97]:
+      - link "Veora — на главную" [ref=f3e98] [cursor=pointer]:
+        - /url: /
+      - generic "Веора" [ref=f3e100]
+      - generic [ref=f3e102]:
+        - navigation "Навигация в подвале" [ref=f3e103]:
+          - generic [ref=f3e104]:
+            - heading "Территория моря" [level=2] [ref=f3e105]
+            - list [ref=f3e106]:
+              - listitem [ref=f3e107]:
+                - link "Южный" [ref=f3e108] [cursor=pointer]:
+                  - /url: /territory/sea/yuzhny/
+              - listitem [ref=f3e109]:
+                - link "Золотые Пески" [ref=f3e110] [cursor=pointer]:
+                  - /url: /territory/sea/golden-sands/
+              - listitem [ref=f3e111]:
+                - link "Балтийские Пески" [ref=f3e112] [cursor=pointer]:
+                  - /url: /territory/sea/baltic-sands/
+          - generic [ref=f3e113]:
+            - heading "Территория отдыха" [level=2] [ref=f3e114]
+            - list [ref=f3e115]:
+              - listitem [ref=f3e116]:
+                - link "Солнечный городок" [ref=f3e117] [cursor=pointer]:
+                  - /url: /territory/rest/sunny-town/
+              - listitem [ref=f3e118]:
+                - link "Полюс" [ref=f3e119] [cursor=pointer]:
+                  - /url: /territory/rest/polyus/
+          - generic [ref=f3e120]:
+            - heading "Территория детства" [level=2] [ref=f3e121]
+            - list [ref=f3e122]:
+              - listitem [ref=f3e123]:
+                - link "Полюс" [ref=f3e124] [cursor=pointer]:
+                  - /url: /territory/childhood/polyus/
+          - generic [ref=f3e125]:
+            - heading "О нас" [level=2] [ref=f3e126]
+            - list [ref=f3e127]:
+              - listitem [ref=f3e128]:
+                - link "Новости" [ref=f3e129] [cursor=pointer]:
+                  - /url: /news.html
+              - listitem [ref=f3e130]:
+                - link "Правовая информация" [ref=f3e131] [cursor=pointer]:
+                  - /url: /legal.html
+              - listitem [ref=f3e132]:
+                - link "Часто задаваемые вопросы" [ref=f3e133] [cursor=pointer]:
+                  - /url: /faq.html
+              - listitem [ref=f3e134]:
+                - link "Контакты" [ref=f3e135] [cursor=pointer]:
+                  - /url: /contacts.html
+          - generic [ref=f3e136]:
+            - heading "Дополнительно" [level=2] [ref=f3e137]
+            - list [ref=f3e138]:
+              - listitem [ref=f3e139]:
+                - link "Специальные предложения" [ref=f3e140] [cursor=pointer]:
+                  - /url: /offers.html
+              - listitem [ref=f3e141]:
+                - link "Услуги и развлечения" [ref=f3e142] [cursor=pointer]:
+                  - /url: /services.html
+              - listitem [ref=f3e143]:
+                - link "Афиша" [ref=f3e144] [cursor=pointer]:
+                  - /url: /afisha.html
+              - listitem [ref=f3e145]:
+                - link "Галерея" [ref=f3e146] [cursor=pointer]:
+                  - /url: /gallery.html
+              - listitem [ref=f3e147]:
+                - link "Мероприятия" [ref=f3e148] [cursor=pointer]:
+                  - /url: /activities/
+        - generic [ref=f3e150]:
+          - link "Сотрудникам организации Забронировать" [ref=f3e151] [cursor=pointer]:
+            - /url: mailto:sozvezdie@s.ru?subject=Бронирование%20для%20сотрудников
+            - generic [ref=f3e152]: Сотрудникам организации
+            - generic [ref=f3e153]: Забронировать
+          - link "Внешним гостям Забронировать" [ref=f3e154] [cursor=pointer]:
+            - /url: mailto:sozvezdie@s.ru?subject=Бронирование%20для%20гостей
+            - generic [ref=f3e155]: Внешним гостям
+            - generic [ref=f3e156]: Забронировать
+      - generic [ref=f3e157]:
+        - generic [ref=f3e158]:
+          - heading "Центральный офис:" [level=2] [ref=f3e159]
+          - paragraph [ref=f3e160]: Москва, ул. Примерная, д. 1
+        - generic [ref=f3e161]:
+          - heading "Время работы:" [level=2] [ref=f3e162]
+          - paragraph [ref=f3e163]: Пн–Пт:09:00 – 18:00
+        - generic [ref=f3e164]:
+          - heading "Контакты для связи:" [level=2] [ref=f3e165]
+          - generic [ref=f3e166]:
+            - link "+7 495 123-45-67" [ref=f3e167] [cursor=pointer]:
+              - /url: tel:+74951234567
+            - link "заказать звонок" [ref=f3e168] [cursor=pointer]:
+              - /url: tel:+74951234567
+          - link "sozvezdie@s.ru" [ref=f3e169] [cursor=pointer]:
+            - /url: mailto:sozvezdie@s.ru
+      - generic [ref=f3e170]:
+        - paragraph [ref=f3e171]: © 2026 — официальный сайт ЧУ «Здоровье и отдых»
+        - link "Политика конфиденциальности" [ref=f3e172] [cursor=pointer]:
+          - /url: /privacy/
+        - img "Creative Team — создание сайтов" [ref=f3e174]

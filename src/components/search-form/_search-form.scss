@@ -1,0 +1,58 @@
+.search-form {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-bottom: 1.7rem;
+  border-bottom: 1px solid #cfcfcf;
+
+  &__input {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    height: 5rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    appearance: none;
+    background: transparent;
+    color: #495249;
+    font: inherit;
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 5rem;
+    letter-spacing: -.288rem;
+  }
+
+  &__input::placeholder { color: #c8cdc8; opacity: 1; }
+  &__input::-webkit-search-decoration,
+  &__input::-webkit-search-cancel-button { appearance: none; }
+
+  &__submit {
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &__submit:hover { opacity: .7; }
+  &__icon--mobile { display: none; }
+}
+
+@media (max-width: 600px) {
+  .search-form {
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom-color: rgb(207 207 207 / 60%);
+
+    &__input { height: 2.8rem; font-size: 2.4rem; line-height: 2.8rem; letter-spacing: -.144rem; }
+    &__submit { width: 2.8rem; height: 2.8rem; }
+    &__icon--desktop { display: none; }
+    &__icon--mobile { display: block; }
+  }
+}
