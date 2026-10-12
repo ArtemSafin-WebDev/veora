@@ -76,7 +76,13 @@
     &__rule { width: 8rem; }
     &__mark--desktop { display: none; }
     &__mark--mobile { display: grid; width: 7.8rem; height: 7.2rem; background: #fefefc; }
-    &__tabs { align-self: stretch; margin-right: -1.2rem; }
+    &__tabs {
+      align-self: stretch;
+      max-width: none;
+      margin-inline: -1.2rem;
+      padding-inline: 1.2rem;
+    }
+    &__tab { flex: 0 0 auto; }
     &__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
     &__all-link { margin-top: 3rem; }
   }

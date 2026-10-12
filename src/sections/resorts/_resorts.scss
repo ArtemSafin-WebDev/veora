@@ -110,10 +110,10 @@
     &__modes { width: 100%; }
     &__modes .resorts__control { flex: 1; }
     &__body { padding-top: 0; }
-    &__filters { top: 1.9rem; left: 0; max-width: calc(100% + 1.2rem); }
+    &__filters { top: 1.9rem; left: -1.2rem; max-width: calc(100% + 2.4rem); padding-inline: 1.2rem; }
     &__map-panel { margin-top: -2.1rem; }
-    &__viewport { margin-right: -1.2rem; }
-    &__map { width: max-content; }
+    &__viewport { display: flex; margin-inline: -1.2rem; padding-inline: 1.2rem; }
+    &__map { flex: 0 0 auto; width: max-content; }
     &__map-image { width: auto; height: 59.3rem; max-width: none; }
     &__list { padding-top: 7.9rem; }
   }

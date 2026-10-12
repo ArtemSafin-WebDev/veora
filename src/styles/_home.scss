@@ -43,18 +43,14 @@
 @media (max-width: 600px) {
   .services-area {
     &::before {
-      --arch-left: calc(50% - 18.1rem);
-
       top: 3.6rem;
       bottom: 6.6rem;
-      width: max(100vw, 36.2rem);
+      width: 100%;
       background: #576258;
       clip-path: shape(
         from 0 7.1rem,
-        line to calc(var(--arch-left) + .04746rem) 7.1rem,
-        curve to 50% 0 with calc(var(--arch-left) + 4.77937rem) 2.69479rem / calc(var(--arch-left) + 11.125rem) 0,
-        curve to calc(var(--arch-left) + 36.15254rem) 7.1rem with calc(var(--arch-left) + 25.075rem) 0 / calc(var(--arch-left) + 31.4206rem) 2.69479rem,
-        line to 100% 7.1rem,
+        curve to 50% 0 with 13.1% 2.69479rem / 30.7% 0,
+        curve to 100% 7.1rem with 69.3% 0 / 86.9% 2.69479rem,
         line to 100% 100%,
         line to 0 100%,
         close

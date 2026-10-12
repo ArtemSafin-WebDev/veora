@@ -1,3 +1,4 @@
+{% from "components/icon/icon.njk" import icon %}
 <section class="intro" aria-label="{{ page.intro.logoAlt }}">
   <img class="intro__image" src="{{ page.intro.image }}" alt="" />
   <div class="intro__overlay" aria-hidden="true"></div>
@@ -5,6 +6,6 @@
     <img class="intro__logo" src="{{ page.intro.logo }}" alt="{{ page.intro.logoAlt }}" />
   </div>
   <a class="intro__next" href="{{ page.intro.nextHref }}" aria-label="{{ page.intro.nextLabel }}">
-    <svg class="intro__next-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 40"><use href="#icon-scroll-next"></use></svg>
+    {{ icon('scroll-next', 'intro__next-icon', 4) }}
   </a>
 </section>

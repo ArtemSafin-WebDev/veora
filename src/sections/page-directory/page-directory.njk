@@ -1,0 +1,27 @@
+{% from "components/icon/icon.njk" import icon %}
+<section class="page-directory container" aria-labelledby="page-directory-title">
+  <div class="page-directory__heading">
+    <h1 class="page-directory__title" id="page-directory-title">{{ page.directory.title }}</h1>
+    <p class="page-directory__count">{{ page.directory.countLabel }} <strong>{{ page.directory.pages | length }}</strong></p>
+  </div>
+  <p class="page-directory__description">{{ page.directory.description }}</p>
+  <nav aria-label="{{ page.directory.navigationLabel }}">
+    <ul class="page-directory__list">
+      {% for item in page.directory.pages %}
+        <li class="page-directory__item">
+          <a class="page-directory__link" href="{{ item.href }}"{% if item.current %} aria-current="page"{% endif %}>
+            <span class="page-directory__text">
+              <span class="page-directory__name">{{ item.title }}</span>
+              <span class="page-directory__path">{{ item.href }}</span>
+            </span>
+            {% if item.current %}
+              <span class="page-directory__current">{{ page.directory.currentLabel }}</span>
+            {% else %}
+              {{ icon('pagination-next', 'page-directory__arrow', 2) }}
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</section>
