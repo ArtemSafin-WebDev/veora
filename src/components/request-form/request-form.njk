@@ -20,8 +20,7 @@
       <span class="request-form__control">
         <input class="request-form__checkbox" type="checkbox" name="consent" value="Y" required data-validation-required="{{ site.formValidation.consent }}" />
         <span class="request-form__mark" aria-hidden="true">
-          {{ icon('offer-consent') }}
-          {{ icon('radio-dot', 'request-form__dot') }}
+          {{ icon('radio-dot', 'request-form__dot', 2) }}
         </span>
       </span>
       <span>{{ config.consent.label }}{% if config.consent.link %} <a href="{{ config.consent.link.href }}">{{ config.consent.link.label }}</a>{% endif %}</span>

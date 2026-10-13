@@ -18,20 +18,24 @@
   &__input[aria-invalid='true'] { border-bottom-color: #ff5c5c; }
   &__error { display: block; margin: .8rem 0 0; color: #ff5c5c; font-size: 1.2rem; line-height: 1.6rem; }
   &__error--consent { margin: -1.6rem 0 2.4rem; }
-  &__consent { display: flex; align-items: center; gap: 1.3rem; margin-bottom: 2.4rem; font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; cursor: pointer; }
-  &__control { position: relative; display: grid; place-items: center; flex: none; width: 2.4rem; height: 2.4rem; }
+  &__consent { display: flex; align-items: center; gap: 1rem; margin-bottom: 2.4rem; font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; cursor: pointer; }
+  &__control { position: relative; display: grid; place-items: center; flex: none; width: 2rem; height: 2rem; }
   &__checkbox { position: absolute; z-index: 1; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
-  &__mark { display: grid; place-items: center; border-radius: 50%; color: #fff; }
-  &__mark .icon { grid-area: 1 / 1; }
-  &__dot { color: #495249; opacity: 0; }
+  &__mark { display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; border: 1px solid #e4e4e7; border-radius: 50%; background: #fff; transition: background-color .2s ease, border-color .2s ease; }
+  &__dot { color: #657266; opacity: 0; transition: opacity .2s ease; }
+  &__consent:hover &__mark, &__checkbox:focus-visible + &__mark { border-color: #a1a1aa; background: #f4f4f5; }
+  &__checkbox:checked + &__mark { background: #fff; }
   &__checkbox:checked + &__mark &__dot { opacity: 1; }
-  &__checkbox[aria-invalid='true'] + &__mark { --icon-stroke: #ff5c5c; }
-  &__checkbox:focus-visible + &__mark { box-shadow: 0 0 0 1px #fff; }
+  &__checkbox[aria-invalid='true'] + &__mark { border-color: #ff5c5c; }
   &__submit { min-height: 4rem; border-color: #fff; border-radius: .8rem; background: #fff; color: #576258; font-family: inherit; font-size: 1.4rem; line-height: 1.6rem; letter-spacing: -.056rem; cursor: pointer; white-space: normal; }
   &__submit:hover, &__submit:focus-visible { background: #eff0ef; }
   &__submit:disabled { opacity: .65; cursor: wait; }
   &__status { margin: 2rem 0 0; font-size: 1.4rem; line-height: 1.8rem; }
   [hidden] { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .request-form__mark, .request-form__dot { transition: none; }
 }
 
 @media (max-width: 600px) {

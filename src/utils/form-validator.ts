@@ -13,6 +13,7 @@ export class FormValidator {
   private readonly serverErrors = new Map<ValidationField, string>();
   private readonly displayedFields = new Set<ValidationField>();
   private readonly validateOnSubmit: boolean;
+  private hasSubmitted = false;
 
   static getInstance(form: HTMLFormElement): FormValidator | undefined {
     return this.instances.get(form);
@@ -37,6 +38,7 @@ export class FormValidator {
 
   /** Returns false on errors. Focuses the first invalid field unless disabled. */
   validate({ focus = true }: { focus?: boolean } = {}): boolean {
+    this.hasSubmitted = true;
     let firstInvalid: ValidationField | undefined;
     for (const field of this.fields) {
       if (!this.validateField(field) && !firstInvalid) firstInvalid = field;
@@ -55,6 +57,7 @@ export class FormValidator {
   /** Bitrix errors keyed by the input's actual name, e.g. { 'EMAIL': '…' }. */
   setErrors(errors: Record<string, string>): void {
     this.reset();
+    this.hasSubmitted = true;
     for (const field of this.fields) {
       if (!field.willValidate || !Object.hasOwn(errors, field.name) || !errors[field.name]) continue;
       this.serverErrors.set(field, errors[field.name]);
@@ -64,6 +67,7 @@ export class FormValidator {
 
   /** Clears validation errors only. Use form.reset() to reset field values. */
   reset(): void {
+    this.hasSubmitted = false;
     this.serverErrors.clear();
     for (const field of [...this.displayedFields]) this.showError(field, '');
   }
@@ -137,16 +141,19 @@ export class FormValidator {
   };
 
   private onBlur = (event: FocusEvent): void => {
-    if (this.isField(event.target)) this.validateField(event.target);
+    if (!this.hasSubmitted || !this.isField(event.target)) return;
+    // Check these controls on change, after the browser updates their value.
+    if (event.target instanceof HTMLInputElement && ['checkbox', 'radio'].includes(event.target.type)) return;
+    this.validateField(event.target);
   };
 
   private onInput = (event: Event): void => {
-    if (!this.isField(event.target)) return;
+    if (!this.hasSubmitted || !this.isField(event.target)) return;
     // Clear the server error for the edited field (including a radio group).
     for (const field of this.fields) {
       if (field !== event.target && (!field.name || field.name !== event.target.name)) continue;
       this.serverErrors.delete(field);
-      if (this.displayedFields.has(field)) this.validateField(field);
+      this.validateField(field);
     }
   };
 
