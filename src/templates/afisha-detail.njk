@@ -1,7 +1,7 @@
 {% extends "layout.njk" %}
 {% from "sections/news-intro/news-intro.njk" import newsIntro %}
 {% from "sections/offer-content/offer-content.njk" import offerContent %}
-{% from "sections/news-subscription/news-subscription.njk" import newsSubscription %}
+{% from "sections/news-subscription/news-subscription.njk" import newsSubscription with context %}
 {% block content %}
   <article aria-labelledby="afisha-detail-title">
     {{ newsIntro(page.eventIntro, 'afisha-detail-title') }}

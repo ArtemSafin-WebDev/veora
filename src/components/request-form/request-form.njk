@@ -5,19 +5,20 @@
     <h2 class="request-form__title" id="{{ config.id }}-title">{{ config.title }}</h2>
     {% if config.description %}<p class="request-form__description">{{ config.description }}</p>{% endif %}
   </div>
-  <form class="request-form__form" id="{{ config.id }}"{% if config.action %} action="{{ config.action }}"{% endif %} method="post" aria-labelledby="{{ config.id }}-title" data-request-form data-unavailable-message="{{ config.unavailableMessage }}" data-success-message="{{ config.successMessage }}">
+  <form class="request-form__form" id="{{ config.id }}"{% if config.action %} action="{{ config.action }}"{% endif %} method="post" aria-labelledby="{{ config.id }}-title" data-request-form data-validation-required="{{ site.formValidation.required }}" data-validation-email="{{ site.formValidation.email }}" data-validation-invalid="{{ site.formValidation.invalid }}" data-validation-pattern="{{ site.formValidation.pattern }}" data-validation-too-short="{{ site.formValidation.tooShort }}" data-validation-too-long="{{ site.formValidation.tooLong }}">
     {% for item in config.hiddenFields %}<input type="hidden" name="{{ item.name }}" value="{{ item.value }}" />{% endfor %}
     <div class="request-form__fields">
       {% for field in config.fields %}
       <label class="request-form__field">
         <span class="request-form__field-label">{{ field.label }}</span>
-        <input class="request-form__input" type="{{ field.type or 'text' }}" name="{{ field.name }}" placeholder="{{ field.label }}"{% if field.autocomplete %} autocomplete="{{ field.autocomplete }}"{% endif %}{% if field.required %} required{% endif %}{% if field.maxLength %} maxlength="{{ field.maxLength }}"{% endif %} />
+        <input class="request-form__input" type="{{ field.type or 'text' }}" name="{{ field.name }}" placeholder="{{ field.label }}"{% if field.autocomplete %} autocomplete="{{ field.autocomplete }}"{% endif %}{% if field.required %} required{% endif %}{% if field.minLength %} minlength="{{ field.minLength }}"{% endif %}{% if field.maxLength %} maxlength="{{ field.maxLength }}"{% endif %}{% if field.pattern %} pattern="{{ field.pattern }}"{% endif %} />
+        <span class="request-form__error" id="{{ config.id }}-{{ loop.index }}-error" data-validation-error-for="{{ field.name }}" aria-live="polite" hidden></span>
       </label>
       {% endfor %}
     </div>
     <label class="request-form__consent">
       <span class="request-form__control">
-        <input class="request-form__checkbox" type="checkbox" name="consent" value="Y" required />
+        <input class="request-form__checkbox" type="checkbox" name="consent" value="Y" required data-validation-required="{{ site.formValidation.consent }}" />
         <span class="request-form__mark" aria-hidden="true">
           {{ icon('offer-consent') }}
           {{ icon('radio-dot', 'request-form__dot') }}
@@ -25,6 +26,7 @@
       </span>
       <span>{{ config.consent.label }}{% if config.consent.link %} <a href="{{ config.consent.link.href }}">{{ config.consent.link.label }}</a>{% endif %}</span>
     </label>
+    <p class="request-form__error request-form__error--consent" id="{{ config.id }}-consent-error" data-validation-error-for="consent" aria-live="polite" hidden></p>
     <button class="button request-form__submit" type="submit">{{ config.submitLabel }}</button>
     <p class="request-form__status" role="status" data-request-status hidden></p>
   </form>

@@ -4,7 +4,10 @@
   align-items: start;
   column-gap: 11.8rem;
   margin-bottom: 9.8rem;
-  &__sidebar { position: sticky; top: 2.4rem; }
+  &__sidebar {
+    position: sticky;
+    top: min(2.4rem, calc(100dvh - var(--service-catalog-sidebar-height, 0rem) - 2.4rem));
+  }
   &__content { min-width: 0; }
   &__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
   .service-card__badge { min-height: 3.4rem; border: 1px solid #fff; border-radius: .6rem; }

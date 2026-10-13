@@ -4,7 +4,7 @@
   "activePage": "home",
   "hero": {
     "title": "Наслаждение оздоровлением",
-    "image": "/assets/hero/wellness.png",
+    "image": "/assets/hero/wellness.webp",
     "mobileImage": "/assets/hero/wellness-mobile.png",
     "brandMark": "/assets/hero/brand-mark.svg",
     "brandMarkMobile": "/assets/hero/brand-mark-mobile.svg",
@@ -61,7 +61,7 @@
     }
   },
   "intro": {
-    "image": "/assets/intro/landscape.jpg",
+    "image": "/assets/intro/landscape.webp",
     "logo": "/assets/intro/logo.svg",
     "logoAlt": "Веора",
     "nextHref": "#news",
@@ -82,30 +82,30 @@
     "items": [
       {
         "title": "Южный",
-        "image": "/assets/gallery/south.png",
+        "image": "/assets/gallery/south.webp",
         "alt": "Зелёные холмы и солнечная долина",
         "size": "wide"
       },
       {
         "title": "Золотые пески",
-        "image": "/assets/gallery/golden.png",
-        "mobileImage": "/assets/gallery/baltic.png",
-        "mobileModalImage": "/assets/gallery/baltic-portrait.png",
+        "image": "/assets/gallery/golden.webp",
+        "mobileImage": "/assets/gallery/baltic.webp",
+        "mobileModalImage": "/assets/gallery/baltic-portrait.webp",
         "alt": "Бирюзовая река среди гор",
         "size": "medium"
       },
       {
         "title": "Балтийские пески",
-        "image": "/assets/gallery/baltic.png",
-        "mobileImage": "/assets/gallery/golden.png",
-        "modalImage": "/assets/gallery/baltic-portrait.png",
+        "image": "/assets/gallery/baltic.webp",
+        "mobileImage": "/assets/gallery/golden.webp",
+        "modalImage": "/assets/gallery/baltic-portrait.webp",
         "alt": "Озеро у зелёных гор",
         "size": "narrow"
       },
       {
         "title": "Золотые пески",
-        "image": "/assets/gallery/golden.png",
-        "mobileImage": "/assets/gallery/fourth.png",
+        "image": "/assets/gallery/golden.webp",
+        "mobileImage": "/assets/gallery/fourth.webp",
         "alt": "Река среди гор",
         "size": "medium"
       }
@@ -153,7 +153,7 @@
       { "id": "excursions", "label": "Экскурсии" }
     ],
     "items": [
-      { "title": "Бассейн", "label": "Активный отдых", "paid": true, "image": "/assets/services/pool.png", "href": "/services/pool/", "categories": ["family", "entertainment"] },
+      { "title": "Бассейн", "label": "Активный отдых", "paid": true, "image": "/assets/services/pool.webp", "href": "/services/pool/", "categories": ["family", "entertainment"] },
       { "title": "Пейнтбол", "label": "Активный отдых", "image": "/assets/services/paintball.jpg", "href": "/services/paintball/", "categories": ["entertainment"] },
       { "title": "Детская площадка", "label": "Активный отдых", "image": "/assets/services/playground.jpg", "href": "/services/playground/", "categories": ["family"] },
       { "title": "Терренкур", "label": "Активный отдых", "paid": true, "image": "/assets/services/trail.jpg", "href": "/services/trail/", "categories": ["excursions"] },
@@ -226,7 +226,7 @@
         "categoryLabel": "Территория моря",
         "labelColor": "#5c6c89",
         "region": "Светлогорск",
-        "image": "/assets/resorts/pool-mirrored.png",
+        "image": "/assets/resorts/pool-mirrored.webp",
         "imageAlt": "Бассейн и шезлонги на территории курорта",
         "description": "Погрузитесь в атмосферу беззаботного отдыха, где вода дарит прохладу в летний зной и расслабление в любой сезон. В «Солнечном городке» созданы все условия для того, чтобы плавание приносило радость и пользу, независимо от возраста и уровня подготовки.",
         "mobileDescription": "Погрузитесь в атмосферу беззаботного отдыха, где вода дарит прохладу в летний зной и расслабление в любой сезон.",
@@ -238,7 +238,7 @@
           "hiddenInitially": false
         },
         "popover": {
-          "image": "/assets/resorts/south.png",
+          "image": "/assets/resorts/south.webp",
           "imageAlt": "Корпус курорта и открытый бассейн",
           "region": "Алтайский край",
           "description": "Возьмите лучшее: классический южный отдых и современный подход к оздоровлению.",
@@ -256,7 +256,7 @@
         "categoryLabel": "Территория моря",
         "labelColor": "#5c6c89",
         "region": "Светлогорск",
-        "image": "/assets/resorts/pool-mirrored.png",
+        "image": "/assets/resorts/pool-mirrored.webp",
         "imageAlt": "Бассейн и шезлонги на территории курорта",
         "description": "Погрузитесь в атмосферу беззаботного отдыха, где вода дарит прохладу в летний зной и расслабление в любой сезон. В «Солнечном городке» созданы все условия для того, чтобы плавание приносило радость и пользу, независимо от возраста и уровня подготовки.",
         "mobileDescription": "Погрузитесь в атмосферу беззаботного отдыха, где вода дарит прохладу в летний зной и расслабление в любой сезон.",
@@ -268,7 +268,7 @@
           "hiddenInitially": false
         },
         "popover": {
-          "image": "/assets/services/pool.png",
+          "image": "/assets/services/pool.webp",
           "imageAlt": "Бассейн на территории курорта",
           "region": "Светлогорск",
           "description": "Погрузитесь в атмосферу беззаботного отдыха, где вода дарит прохладу в летний зной и расслабление в любой сезон.",
@@ -286,7 +286,7 @@
         "categoryLabel": "Территория моря",
         "labelColor": "#5c6c89",
         "region": "Светлогорск",
-        "image": "/assets/resorts/pool-mirrored.png",
+        "image": "/assets/resorts/pool-mirrored.webp",
         "imageAlt": "Бассейн и шезлонги на территории курорта",
         "description": "Погрузитесь в атмосферу беззаботного отдыха, где вода дарит прохладу в летний зной и расслабление в любой сезон. В «Солнечном городке» созданы все условия для того, чтобы плавание приносило радость и пользу, независимо от возраста и уровня подготовки.",
         "mobileDescription": "Погрузитесь в атмосферу беззаботного отдыха, где вода дарит прохладу в летний зной и расслабление в любой сезон.",
@@ -298,7 +298,7 @@
           "hiddenInitially": false
         },
         "popover": {
-          "image": "/assets/services/pool.png",
+          "image": "/assets/services/pool.webp",
           "imageAlt": "Бассейн на территории курорта",
           "region": "Светлогорск",
           "description": "Погрузитесь в атмосферу беззаботного отдыха, где вода дарит прохладу в летний зной и расслабление в любой сезон.",
@@ -316,7 +316,7 @@
         "categoryLabel": "Территория отдыха",
         "labelColor": "#73484d",
         "region": "Подмосковье",
-        "image": "/assets/resorts/pool-mirrored.png",
+        "image": "/assets/resorts/pool-mirrored.webp",
         "imageAlt": "Бассейн и шезлонги на территории курорта",
         "description": "Погрузитесь в атмосферу беззаботного отдыха, где вода дарит прохладу в летний зной и расслабление в любой сезон. В «Солнечном городке» созданы все условия для того, чтобы плавание приносило радость и пользу, независимо от возраста и уровня подготовки.",
         "mobileDescription": "Погрузитесь в атмосферу беззаботного отдыха, где вода дарит прохладу в летний зной и расслабление в любой сезон.",
@@ -328,7 +328,7 @@
           "hiddenInitially": false
         },
         "popover": {
-          "image": "/assets/services/pool.png",
+          "image": "/assets/services/pool.webp",
           "imageAlt": "Бассейн на территории курорта",
           "region": "Подмосковье",
           "description": "Погрузитесь в атмосферу беззаботного отдыха, где вода дарит прохладу в летний зной и расслабление в любой сезон.",
@@ -345,7 +345,7 @@
         "categoryLabel": "Территория отдыха",
         "labelColor": "#73484d",
         "region": "Светлогорск",
-        "image": "/assets/resorts/pool-mirrored.png",
+        "image": "/assets/resorts/pool-mirrored.webp",
         "imageAlt": "Бассейн и шезлонги на территории курорта",
         "description": "Даже когда за окном прохладно или пасмурно, вас ждут просторные крытые бассейны с подогревом и панорамными стеклянными крышами. Здесь можно плавать круглый год, наслаждаясь мягким естественным светом и ощущением простора.",
         "mobileDescription": "Погрузитесь в атмосферу беззаботного отдыха, где вода дарит прохладу в летний зной и расслабление в любой сезон.",
@@ -357,7 +357,7 @@
           "hiddenInitially": false
         },
         "popover": {
-          "image": "/assets/services/pool.png",
+          "image": "/assets/services/pool.webp",
           "imageAlt": "Бассейн на территории курорта",
           "region": "Светлогорск",
           "description": "Погрузитесь в атмосферу беззаботного отдыха, где вода дарит прохладу в летний зной и расслабление в любой сезон.",
@@ -374,7 +374,7 @@
         "categoryLabel": "Территория детства",
         "labelColor": "#bb683d",
         "region": "Светлогорск",
-        "image": "/assets/resorts/pool-mirrored.png",
+        "image": "/assets/resorts/pool-mirrored.webp",
         "imageAlt": "Бассейн и шезлонги на территории курорта",
         "description": "Даже когда за окном прохладно или пасмурно, вас ждут просторные крытые бассейны с подогревом и панорамными стеклянными крышами. Здесь можно плавать круглый год, наслаждаясь мягким естественным светом и ощущением простора.",
         "mobileDescription": "Погрузитесь в атмосферу беззаботного отдыха, где вода дарит прохладу в летний зной и расслабление в любой сезон.",
@@ -386,7 +386,7 @@
           "hiddenInitially": true
         },
         "popover": {
-          "image": "/assets/services/pool.png",
+          "image": "/assets/services/pool.webp",
           "imageAlt": "Бассейн на территории курорта",
           "region": "Светлогорск",
           "description": "Погрузитесь в атмосферу беззаботного отдыха, где вода дарит прохладу в летний зной и расслабление в любой сезон.",

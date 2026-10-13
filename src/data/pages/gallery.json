@@ -6,7 +6,7 @@
   "banner": {
     "id": "gallery-banner",
     "title": "Галерея",
-    "image": "/assets/gallery-catalog/hero.png",
+    "image": "/assets/gallery-catalog/hero.webp",
     "breadcrumbsLabel": "Хлебные крошки",
     "breadcrumbs": [
       {
@@ -64,7 +64,7 @@
     "items": [
       {
         "title": "Бассейн",
-        "image": "/assets/gallery-catalog/pool.png",
+        "image": "/assets/gallery-catalog/pool.webp",
         "alt": "Крытый бассейн с панорамными окнами",
         "size": "wide",
         "catalog": true,

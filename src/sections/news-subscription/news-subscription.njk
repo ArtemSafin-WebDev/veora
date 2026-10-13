@@ -1,4 +1,4 @@
-{% from "components/request-form/request-form.njk" import requestForm %}
+{% from "components/request-form/request-form.njk" import requestForm with context %}
 {% macro newsSubscription(subscription) %}
 <section class="news-subscription container" id="{{ subscription.id }}" aria-labelledby="{{ subscription.form.id }}-title">
   {{ requestForm(subscription.form) }}

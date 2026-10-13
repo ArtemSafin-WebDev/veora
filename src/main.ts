@@ -9,6 +9,7 @@ import './components/booking-search/booking-search';
 import './sections/gallery/gallery';
 import './components/gallery-modal/gallery-modal';
 import './components/filters/filters';
+import './sections/service-catalog/service-catalog';
 import './components/pagination/pagination';
 import './components/resort-navigation/resort-navigation';
 import './components/catalog-layout/catalog-layout';

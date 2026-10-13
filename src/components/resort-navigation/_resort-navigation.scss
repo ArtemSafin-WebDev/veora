@@ -21,7 +21,7 @@
   &__modal::backdrop { background: rgb(0 0 0 / 60%); backdrop-filter: blur(1.5rem); opacity: 0; transition: opacity .25s ease; }
   &__modal[data-modal-visible]::backdrop { opacity: 1; }
   &__close { position: absolute; top: 2rem; left: calc(50% - 1.5rem); display: grid; place-items: center; width: 3rem; height: 3rem; padding: 0; border: 0; border-radius: 50%; background: #fff; cursor: pointer; }
-  &__sheet { flex: 0 1 auto; width: 100%; min-height: 0; padding: 1.2rem 1.2rem 4rem; border-radius: 1.2rem 1.2rem 0 0; background: #fff; overflow-y: auto; overscroll-behavior: contain; }
+  &__sheet { flex: 0 1 auto; width: 100%; min-height: 0; padding: 1.2rem 1.2rem 4rem; border-radius: 1.2rem 1.2rem 0 0; background: #fff; overflow-y: auto; overscroll-behavior: none; }
 }
 
 @media (max-width: 600px) {

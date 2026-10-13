@@ -28,32 +28,32 @@
     },
     "items": [
       {
-        "image": "/assets/gallery/south.png",
+        "image": "/assets/gallery/south.webp",
         "alt": "Зелёные холмы и солнечная долина",
         "columns": 5
       },
       {
-        "image": "/assets/gallery/golden.png",
+        "image": "/assets/gallery/golden.webp",
         "alt": "Бирюзовая река среди гор",
         "columns": 4
       },
       {
-        "image": "/assets/gallery/baltic.png",
+        "image": "/assets/gallery/baltic.webp",
         "alt": "Озеро у зелёных гор",
         "columns": 3
       },
       {
-        "image": "/assets/gallery/golden.png",
+        "image": "/assets/gallery/golden.webp",
         "alt": "Река и рафты среди гор",
         "columns": 4
       },
       {
-        "image": "/assets/gallery/baltic.png",
+        "image": "/assets/gallery/baltic.webp",
         "alt": "Каменная набережная у озера",
         "columns": 3
       },
       {
-        "image": "/assets/gallery/south.png",
+        "image": "/assets/gallery/south.webp",
         "alt": "Солнечный луг и хвойный лес",
         "columns": 5
       }

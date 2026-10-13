@@ -74,7 +74,7 @@
   &__burger[aria-expanded='true'] { background: rgba(255, 255, 255, .2); }
 
   &__backdrop { position: fixed; inset: 0; background: rgba(0, 0, 0, .6); backdrop-filter: blur(1.5rem); }
-  &__panel { position: absolute; z-index: 2; top: 100%; left: 0; right: 0; display: flex; gap: 10rem; max-height: calc(100dvh - 11.6rem); overflow-y: auto; padding: 2.4rem; border-radius: 2.4rem; background: #fff; color: #576258; }
+  &__panel { position: absolute; z-index: 2; top: 100%; left: 0; right: 0; display: flex; gap: 10rem; max-height: calc(100dvh - 11.6rem); overflow-y: auto; overscroll-behavior: none; padding: 2.4rem; border-radius: 2.4rem; background: #fff; color: #576258; }
   &__backdrop,
   &__panel {
     opacity: 1;
@@ -126,7 +126,7 @@
     &__burger-icon--desktop { display: none; }
     &__burger-icon--mobile { display: block; }
     &__panel--directions, &__panel--about { display: none; }
-    &__panel--menu { position: fixed; inset: 0; display: flex; flex-direction: column; gap: 0; width: 100%; height: 100dvh; max-height: none; padding: 2rem 1.2rem; border-radius: 0; overscroll-behavior: contain; background: #fff; color: #495249; }
+    &__panel--menu { position: fixed; inset: 0; display: flex; flex-direction: column; gap: 0; width: 100%; height: 100dvh; max-height: none; padding: 2rem 1.2rem; border-radius: 0; overscroll-behavior: none; background: #fff; color: #495249; }
     &__mobile-top { display: flex; flex: none; align-items: center; justify-content: space-between; }
     &__close { background: transparent; }
     &__menu-navigation { display: flex; flex: 1 0 auto; flex-direction: column; justify-content: flex-start; gap: 2rem; margin-top: 8rem; padding-bottom: 4rem; }

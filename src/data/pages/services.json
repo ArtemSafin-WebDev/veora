@@ -6,7 +6,7 @@
   "banner": {
     "id": "services-banner",
     "title": "Услуги и развлечения",
-    "image": "/assets/catalog/hero.png",
+    "image": "/assets/catalog/hero.webp",
     "breadcrumbsLabel": "Хлебные крошки",
     "breadcrumbs": [
       {
@@ -170,7 +170,7 @@
       {
         "href": "/services/pool/",
         "title": "Бассейн",
-        "image": "/assets/services/pool.png",
+        "image": "/assets/services/pool.webp",
         "label": "Активный отдых",
         "paid": true
       },
@@ -230,7 +230,7 @@
       {
         "href": "/services/pool/",
         "title": "Бассейн",
-        "image": "/assets/services/pool.png",
+        "image": "/assets/services/pool.webp",
         "label": "Активный отдых",
         "paid": true
       },

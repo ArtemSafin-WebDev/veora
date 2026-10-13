@@ -1,4 +1,4 @@
-{% from "components/request-form/request-form.njk" import requestForm %}
+{% from "components/request-form/request-form.njk" import requestForm with context %}
 <section class="offer-request container" id="{{ page.offerRequest.id }}" aria-labelledby="{{ page.offerRequest.form.id }}-title">
   {{ requestForm(page.offerRequest.form) }}
 </section>
