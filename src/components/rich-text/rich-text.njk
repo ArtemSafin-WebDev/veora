@@ -1,0 +1,6 @@
+{% macro richText(html = '', className = '') %}
+{# Trusted HTML from the Bitrix visual editor; its elements need no component classes. #}
+<div class="rich-text{% if className %} {{ className }}{% endif %}">
+  {{ html | safe }}
+</div>
+{% endmacro %}

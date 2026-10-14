@@ -1,28 +1,8 @@
 .news-content {
   margin-bottom: 7rem;
-  color: #7f8a80;
-
-  &__body { max-width: 85.5rem; margin-inline: auto; font-size: 1.4rem; font-weight: 600; line-height: 1.6rem; letter-spacing: -.028rem; overflow-wrap: anywhere; }
-  &__body > * { margin-top: 0; margin-bottom: 1rem; }
-  &__body > :last-child { margin-bottom: 0; }
-  &__body p { letter-spacing: -.04rem; }
-  &__body :where(h2, h3, h4) { color: #495249; font-weight: 400; }
-  &__body h2 { font-size: 3.2rem; line-height: 3.4rem; letter-spacing: -.128rem; }
-  &__body h3 { font-size: 2.4rem; line-height: 2.8rem; letter-spacing: -.096rem; }
-  &__body h4 { font-size: 2rem; line-height: 2.4rem; letter-spacing: -.08rem; }
-  &__body :where(ul, ol) { padding-left: 2rem; }
-  &__body li + li { margin-top: .6rem; }
-  &__body a { text-underline-offset: .2rem; }
-  &__body img { display: block; width: 100%; height: auto; border-radius: 1.2rem; }
-  &__body blockquote { margin-inline: 0; padding-left: 2rem; border-left: 1px solid #c8cdc8; }
+  &__body { max-width: 85.5rem; margin-inline: auto; }
 }
 
 @media (max-width: 600px) {
-  .news-content {
-    margin-bottom: 4rem;
-    &__body p { letter-spacing: -.028rem; }
-    &__body h2 { font-size: 2rem; line-height: 2.4rem; letter-spacing: -.12rem; }
-    &__body h3 { font-size: 1.8rem; line-height: 2.2rem; letter-spacing: -.072rem; }
-    &__body h4 { font-size: 1.6rem; line-height: 2rem; letter-spacing: -.064rem; }
-  }
+  .news-content { margin-bottom: 4rem; }
 }

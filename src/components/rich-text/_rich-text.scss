@@ -1,0 +1,37 @@
+.rich-text {
+  color: #7f8a80;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  letter-spacing: -.028rem;
+  overflow-wrap: anywhere;
+
+  > * { margin-block: 0; }
+  > * + * { margin-top: 1rem; }
+  :where(p) { letter-spacing: -.04rem; }
+  :where(h2, h3, h4) { color: #495249; font-weight: 400; }
+  :where(h2) { font-size: 3.2rem; line-height: 3.4rem; letter-spacing: -.128rem; }
+  :where(h3) { font-size: 2.4rem; line-height: 2.8rem; letter-spacing: -.096rem; }
+  :where(h4) { font-size: 2rem; line-height: 2.4rem; letter-spacing: -.08rem; }
+  :where(h4):has(+ :where(ul, ol)) { font-weight: 500; }
+  :where(h4) + :where(ul, ol) { margin-top: 3rem; }
+  :where(ul, ol) { padding-left: 2.1rem; }
+  :where(ul) { list-style-type: disc; }
+  :where(ol) { list-style-type: decimal; }
+  :where(li) + :where(li) { margin-top: 2rem; }
+  :where(li) > :where(ul, ol) { margin: 0; margin-top: 2rem; }
+  :where(a) { text-underline-offset: .2rem; }
+  :where(img) { display: block; width: 100%; height: auto; border-radius: 1.2rem; }
+  :where(video) { max-width: 100%; height: auto; }
+  :where(blockquote) { margin-inline: 0; padding-left: 2rem; border-left: 1px solid #c8cdc8; }
+}
+
+@media (max-width: 600px) {
+  .rich-text {
+    :where(p) { letter-spacing: -.028rem; }
+    :where(h2) { font-size: 2rem; line-height: 2.4rem; letter-spacing: -.12rem; }
+    :where(h3) { font-size: 1.8rem; line-height: 2.2rem; letter-spacing: -.072rem; }
+    :where(h4) { font-size: 1.6rem; line-height: 2rem; letter-spacing: -.064rem; }
+    :where(h4):has(+ :where(ul, ol)) { letter-spacing: -.032rem; }
+  }
+}

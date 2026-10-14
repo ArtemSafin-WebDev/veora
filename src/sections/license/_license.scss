@@ -10,7 +10,7 @@
   &__title { margin: 0; color: #495249; font-size: 4.8rem; font-weight: 400; line-height: 5rem; letter-spacing: -.288rem; }
   &__title-mobile { display: none; }
   &__download { display: inline-flex; flex: none; align-items: center; gap: .8rem; color: #7f8a80; font-size: 1.4rem; font-weight: 500; line-height: 1.2rem; letter-spacing: -.056rem; text-decoration: none; }
-  &__download:hover, &__download:focus-visible { color: #495249; text-decoration: underline; text-underline-offset: .3rem; }
+  &__download:hover, &__download:focus-visible { color: #495249; }
 
   // Match the visible scan width in Figma, keeping every image's intrinsic proportions.
   &__image { display: block; width: 45.5rem; max-width: 100%; height: auto; margin: 6rem auto 0; border-radius: 1.2rem; }

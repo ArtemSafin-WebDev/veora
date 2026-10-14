@@ -1,4 +1,4 @@
+{% from "components/rich-text/rich-text.njk" import richText %}
 <section class="news-content container" aria-label="{{ page.newsContent.label }}">
-  {# Trusted HTML from the Bitrix visual editor; its elements need no component classes. #}
-  <div class="news-content__body">{{ page.newsContent.html | safe }}</div>
+  {{ richText(page.newsContent.html, 'news-content__body') }}
 </section>

@@ -9,7 +9,12 @@ interface YandexMap extends MapEntity {
 }
 
 interface MapTheme {
-  YMapDefaultMarker: new (props: { coordinates: Coordinates }) => MapEntity;
+  YMapDefaultMarker: new (props: {
+    coordinates: Coordinates;
+    iconName: 'building';
+    size: 'normal';
+    color: { day: string; night: string };
+  }) => MapEntity;
   YMapZoomControl: new (props: Record<string, never>) => MapEntity;
 }
 
@@ -84,7 +89,12 @@ async function initContactsMap(section: HTMLElement) {
     });
     map.addChild(new api.YMapDefaultSchemeLayer({}));
     map.addChild(new api.YMapDefaultFeaturesLayer({}));
-    map.addChild(new theme.YMapDefaultMarker({ coordinates }));
+    map.addChild(new theme.YMapDefaultMarker({
+      coordinates,
+      iconName: 'building',
+      size: 'normal',
+      color: { day: '#ff2828', night: '#ff2828' },
+    }));
     map.addChild(new api.YMapControls({ position: 'right' }).addChild(new theme.YMapZoomControl({})));
     fallback.hidden = true;
     section.dataset.mapState = 'ready';

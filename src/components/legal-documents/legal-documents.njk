@@ -10,8 +10,10 @@
   <ul class="legal-documents__list">
     {% for document in group.documents %}
     <li class="legal-documents__item">
-      <p class="legal-documents__name">{{ document.title }}</p>
-      <a class="button button--muted legal-documents__link" href="{{ document.href }}" aria-label="{{ moreLabel }}: {{ document.title }}">{{ moreLabel }}</a>
+      <a class="legal-documents__link" href="{{ document.href }}" aria-label="{{ moreLabel }}: {{ document.title }}">
+        <span class="legal-documents__name">{{ document.title }}</span>
+        <span class="button button--muted legal-documents__button">{{ moreLabel }}</span>
+      </a>
     </li>
     {% endfor %}
   </ul>
