@@ -25,8 +25,8 @@
     "printLabel": "Распечатать новость",
     "copiedMessage": "Ссылка на новость скопирована.",
     "shareError": "Не удалось поделиться ссылкой. Скопируйте адрес страницы из браузера.",
-    "image": "/assets/news-detail/hero-desktop.png",
-    "mobileImage": "/assets/news-detail/hero-mobile.png",
+    "image": "/assets/news-detail/hero-desktop.webp",
+    "mobileImage": "/assets/news-detail/hero-mobile.webp",
     "imageAlt": "Отдых в бассейне с видом на море"
   },
   "newsContent": {

@@ -75,7 +75,7 @@
       },
       {
         "title": "Ресторан",
-        "image": "/assets/gallery-catalog/restaurant.png",
+        "image": "/assets/gallery-catalog/restaurant.webp",
         "alt": "Светлый зал ресторана",
         "size": "medium",
         "catalog": true,
@@ -86,7 +86,7 @@
       },
       {
         "title": "Детский клуб",
-        "image": "/assets/gallery-catalog/kids-club.png",
+        "image": "/assets/gallery-catalog/kids-club.webp",
         "alt": "Детская игровая площадка среди деревьев",
         "size": "medium",
         "catalog": true,
@@ -97,7 +97,7 @@
       },
       {
         "title": "Пляж",
-        "image": "/assets/gallery-catalog/beach.png",
+        "image": "/assets/gallery-catalog/beach.webp",
         "alt": "Песчаный пляж на берегу моря",
         "size": "wide",
         "catalog": true,

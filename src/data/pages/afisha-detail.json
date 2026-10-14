@@ -26,7 +26,7 @@
     "printLabel": "Распечатать мероприятие",
     "copiedMessage": "Ссылка на мероприятие скопирована.",
     "shareError": "Не удалось поделиться ссылкой. Скопируйте адрес страницы из браузера.",
-    "image": "/assets/afisha-detail/picnic.jpg",
+    "image": "/assets/afisha-detail/picnic.webp",
     "imageAlt": "Корзина и продукты для пикника на песчаном пляже у моря"
   },
   "eventContent": {
@@ -51,7 +51,7 @@
       },
       {
         "type": "image",
-        "image": "/assets/service-detail/running.jpg",
+        "image": "/assets/service-detail/running.webp",
         "imageAlt": "Пробежка по дорожке среди деревьев на закате"
       }
     ]
@@ -102,7 +102,7 @@
       {
         "title": "Wellness неделя в Солнечном городке",
         "place": "Солнечный городок",
-        "image": "/assets/afisha/wellness.png",
+        "image": "/assets/afisha/wellness.webp",
         "href": "/events/wellness-week/",
         "date": "2026-05-16T12:00",
         "dateLabel": "16 мая | Начало в 12:00",
@@ -113,7 +113,7 @@
       {
         "title": "Золотые пески: Кавказская семейная трапеза",
         "place": "Золотые пески",
-        "image": "/assets/afisha/family-hike.png",
+        "image": "/assets/afisha/family-hike.webp",
         "href": "/events/family-meal/",
         "date": "2026-05-18T12:00",
         "dateLabel": "18 мая | Начало в 12:00",
@@ -124,7 +124,7 @@
       {
         "title": "Первая смена в детском лагере Полюс 7 июня",
         "place": "Полюс",
-        "image": "/assets/afisha/camp.png",
+        "image": "/assets/afisha/camp.webp",
         "href": "/events/camp-first-session/",
         "date": "2026-05-28T12:00",
         "dateLabel": "28 мая | Начало в 12:00",
@@ -137,7 +137,7 @@
       {
         "title": "«Девичник» в Солнечном городке",
         "place": "Активный отдых",
-        "image": "/assets/offer-catalog/bachelorette.jpg",
+        "image": "/assets/offer-catalog/bachelorette.webp",
         "href": "/offers/bachelorette/",
         "date": "2026-09-09",
         "dateLabel": "9 сентября 2026",
@@ -147,7 +147,7 @@
       {
         "title": "Золотые пески: экскурсия в Абрау-Дюрсо, дегустация в подарок!",
         "place": "Активный отдых",
-        "image": "/assets/offer-catalog/abrau.jpg",
+        "image": "/assets/offer-catalog/abrau.webp",
         "href": "/offers/abrau/",
         "date": "2026-09-09",
         "dateLabel": "9 сентября 2026",

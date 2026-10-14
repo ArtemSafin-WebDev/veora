@@ -5,7 +5,7 @@
   "hero": {
     "title": "Наслаждение оздоровлением",
     "image": "/assets/hero/wellness.webp",
-    "mobileImage": "/assets/hero/wellness-mobile.png",
+    "mobileImage": "/assets/hero/wellness-mobile.webp",
     "brandMark": "/assets/hero/brand-mark.svg",
     "brandMarkMobile": "/assets/hero/brand-mark-mobile.svg",
     "divider": "/assets/hero/divider.svg",
@@ -154,13 +154,13 @@
     ],
     "items": [
       { "title": "Бассейн", "label": "Активный отдых", "paid": true, "image": "/assets/services/pool.webp", "href": "/services/pool/", "categories": ["family", "entertainment"] },
-      { "title": "Пейнтбол", "label": "Активный отдых", "image": "/assets/services/paintball.jpg", "href": "/services/paintball/", "categories": ["entertainment"] },
-      { "title": "Детская площадка", "label": "Активный отдых", "image": "/assets/services/playground.jpg", "href": "/services/playground/", "categories": ["family"] },
-      { "title": "Терренкур", "label": "Активный отдых", "paid": true, "image": "/assets/services/trail.jpg", "href": "/services/trail/", "categories": ["excursions"] },
-      { "title": "Тренажерный зал", "label": "Активный отдых", "image": "/assets/services/gym.jpg", "href": "/service.html", "categories": ["entertainment"] },
-      { "title": "Караоке", "label": "Активный отдых", "paid": true, "image": "/assets/services/karaoke.jpg", "href": "/services/karaoke/", "categories": ["entertainment"] },
-      { "title": "Теннисный корт", "label": "Активный отдых", "image": "/assets/services/tennis.jpg", "href": "/services/tennis/", "categories": ["family", "entertainment"] },
-      { "title": "Сауна", "label": "Спокойный отдых", "image": "/assets/services/sauna.jpg", "href": "/services/sauna/", "categories": ["family"] }
+      { "title": "Пейнтбол", "label": "Активный отдых", "image": "/assets/services/paintball.webp", "href": "/services/paintball/", "categories": ["entertainment"] },
+      { "title": "Детская площадка", "label": "Активный отдых", "image": "/assets/services/playground.webp", "href": "/services/playground/", "categories": ["family"] },
+      { "title": "Терренкур", "label": "Активный отдых", "paid": true, "image": "/assets/services/trail.webp", "href": "/services/trail/", "categories": ["excursions"] },
+      { "title": "Тренажерный зал", "label": "Активный отдых", "image": "/assets/services/gym.webp", "href": "/service.html", "categories": ["entertainment"] },
+      { "title": "Караоке", "label": "Активный отдых", "paid": true, "image": "/assets/services/karaoke.webp", "href": "/services/karaoke/", "categories": ["entertainment"] },
+      { "title": "Теннисный корт", "label": "Активный отдых", "image": "/assets/services/tennis.webp", "href": "/services/tennis/", "categories": ["family", "entertainment"] },
+      { "title": "Сауна", "label": "Спокойный отдых", "image": "/assets/services/sauna.webp", "href": "/services/sauna/", "categories": ["family"] }
     ]
   },
   "specialOffers": {
@@ -168,9 +168,9 @@
     "allLink": { "href": "/offers.html", "label": "Смотреть все" },
     "readMoreLabel": "Подробнее",
     "items": [
-      { "title": "Здравница «Золотые Пески» открывает SPA-комплекс под открытым небом", "place": "Золотые пески", "date": "2026-09-09", "dateLabel": "9 сентября 2026", "image": "/assets/offers/spa.jpg", "href": "/offers/spa-complex/" },
-      { "title": "«Светлогорск» приглашает на летние заезды: отдых у моря с пользой для здоровья", "place": "Светлогорск", "date": "2026-09-09", "dateLabel": "9 сентября 2026", "image": "/assets/offers/summer.jpg", "href": "/offers/summer-arrivals/" },
-      { "title": "«Бриз» запускает курс дыхательной терапии — дышите свободно!", "place": "Бриз", "date": "2026-09-09", "dateLabel": "9 сентября 2026", "image": "/assets/offers/breathing.jpg", "href": "/offers/breathing-therapy/" }
+      { "title": "Здравница «Золотые Пески» открывает SPA-комплекс под открытым небом", "place": "Золотые пески", "date": "2026-09-09", "dateLabel": "9 сентября 2026", "image": "/assets/offers/spa.webp", "href": "/offers/spa-complex/" },
+      { "title": "«Светлогорск» приглашает на летние заезды: отдых у моря с пользой для здоровья", "place": "Светлогорск", "date": "2026-09-09", "dateLabel": "9 сентября 2026", "image": "/assets/offers/summer.webp", "href": "/offers/summer-arrivals/" },
+      { "title": "«Бриз» запускает курс дыхательной терапии — дышите свободно!", "place": "Бриз", "date": "2026-09-09", "dateLabel": "9 сентября 2026", "image": "/assets/offers/breathing.webp", "href": "/offers/breathing-therapy/" }
     ]
   },
   "resorts": {

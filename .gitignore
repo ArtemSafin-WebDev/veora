@@ -4,4 +4,7 @@ dist/
 
 # Playwright snapshots, logs, and screenshots
 /.playwright-cli/
-/output/playwright/
+/.playwright-mcp/
+/output/
+/test-results/
+/playwright-report/

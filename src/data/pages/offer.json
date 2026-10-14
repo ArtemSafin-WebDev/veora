@@ -37,7 +37,7 @@
         "variant": "secondary"
       }
     ],
-    "image": "/assets/offer-catalog/wellness.jpg",
+    "image": "/assets/offer-catalog/wellness.webp",
     "imageAlt": "Отдых в бассейне с видом на море"
   },
   "offerContent": {
@@ -61,7 +61,7 @@
       },
       {
         "type": "image",
-        "image": "/assets/service-detail/running.jpg",
+        "image": "/assets/service-detail/running.webp",
         "imageAlt": "Пробежка по дорожке среди деревьев на закате"
       }
     ]
@@ -116,7 +116,7 @@
       {
         "title": "«Девичник» в Солнечном городке",
         "place": "Солнечный городок",
-        "image": "/assets/offer-catalog/bachelorette.jpg",
+        "image": "/assets/offer-catalog/bachelorette.webp",
         "href": "/offers/bachelorette/",
         "date": "2026-09-09",
         "dateLabel": "9 сентября 2026",
@@ -128,7 +128,7 @@
       {
         "title": "Золотые пески: экскурсия в Абрау-Дюрсо, дегустация в подарок!",
         "place": "Золотые пески",
-        "image": "/assets/offer-catalog/abrau.jpg",
+        "image": "/assets/offer-catalog/abrau.webp",
         "href": "/offers/abrau/",
         "date": "2026-09-09",
         "dateLabel": "9 сентября 2026",
@@ -140,7 +140,7 @@
       {
         "title": "При покупке СПА-услуги «Альфа-капсула» дарим биоимпедансометрию",
         "place": "Золотые пески",
-        "image": "/assets/offer-catalog/capsule.jpg",
+        "image": "/assets/offer-catalog/capsule.webp",
         "href": "/offers/capsule/",
         "date": "2026-09-09",
         "dateLabel": "9 сентября 2026",

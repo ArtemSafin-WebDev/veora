@@ -177,28 +177,28 @@
       {
         "href": "/services/paintball/",
         "title": "Пейнтбол",
-        "image": "/assets/services/paintball.jpg",
+        "image": "/assets/services/paintball.webp",
         "label": "Активный отдых",
         "paid": false
       },
       {
         "href": "/services/playground/",
         "title": "Детская площадка",
-        "image": "/assets/services/playground.jpg",
+        "image": "/assets/services/playground.webp",
         "label": "Активный отдых",
         "paid": false
       },
       {
         "href": "/services/trail/",
         "title": "Терренкур",
-        "image": "/assets/services/trail.jpg",
+        "image": "/assets/services/trail.webp",
         "label": "Активный отдых",
         "paid": false
       },
       {
         "href": "/service.html",
         "title": "Тренажерный зал",
-        "image": "/assets/services/gym.jpg",
+        "image": "/assets/services/gym.webp",
         "label": "Активный отдых",
         "paid": false,
         "titleLines": [
@@ -209,21 +209,21 @@
       {
         "href": "/services/karaoke/",
         "title": "Караоке",
-        "image": "/assets/services/karaoke.jpg",
+        "image": "/assets/services/karaoke.webp",
         "label": "Активный отдых",
         "paid": true
       },
       {
         "href": "/services/tennis/",
         "title": "Теннисный корт",
-        "image": "/assets/services/tennis.jpg",
+        "image": "/assets/services/tennis.webp",
         "label": "Активный отдых",
         "paid": false
       },
       {
         "href": "/services/sauna/",
         "title": "Сауна",
-        "image": "/assets/services/sauna.jpg",
+        "image": "/assets/services/sauna.webp",
         "label": "Спокойный отдых",
         "paid": false
       },
@@ -237,35 +237,35 @@
       {
         "href": "/services/paintball/",
         "title": "Пейнтбол",
-        "image": "/assets/services/paintball.jpg",
+        "image": "/assets/services/paintball.webp",
         "label": "Активный отдых",
         "paid": false
       },
       {
         "href": "/services/playground/",
         "title": "Детская площадка",
-        "image": "/assets/services/playground.jpg",
+        "image": "/assets/services/playground.webp",
         "label": "Активный отдых",
         "paid": false
       },
       {
         "href": "/services/trail/",
         "title": "Терренкур",
-        "image": "/assets/services/trail.jpg",
+        "image": "/assets/services/trail.webp",
         "label": "Активный отдых",
         "paid": false
       },
       {
         "href": "/services/tennis/",
         "title": "Теннисный корт",
-        "image": "/assets/services/tennis.jpg",
+        "image": "/assets/services/tennis.webp",
         "label": "Активный отдых",
         "paid": false
       },
       {
         "href": "/service.html",
         "title": "Тренажерный зал",
-        "image": "/assets/services/gym.jpg",
+        "image": "/assets/services/gym.webp",
         "label": "Активный отдых",
         "paid": false,
         "titleLines": [
@@ -276,14 +276,14 @@
       {
         "href": "/services/karaoke/",
         "title": "Караоке",
-        "image": "/assets/services/karaoke.jpg",
+        "image": "/assets/services/karaoke.webp",
         "label": "Активный отдых",
         "paid": true
       },
       {
         "href": "/services/sauna/",
         "title": "Сауна",
-        "image": "/assets/services/sauna.jpg",
+        "image": "/assets/services/sauna.webp",
         "label": "Спокойный отдых",
         "paid": false
       }

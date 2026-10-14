@@ -8,7 +8,7 @@
     "id": "faq-banner",
     "variant": "faq",
     "title": "Часто задаваемые вопросы",
-    "image": "/assets/faq/hero.jpg",
+    "image": "/assets/faq/hero.webp",
     "breadcrumbsLabel": "Хлебные крошки",
     "breadcrumbs": [
       {

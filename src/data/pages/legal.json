@@ -7,7 +7,7 @@
     "id": "legal-banner",
     "variant": "legal",
     "title": "Правовая информация",
-    "image": "/assets/legal/hero.jpg",
+    "image": "/assets/legal/hero.webp",
     "breadcrumbsLabel": "Хлебные крошки",
     "breadcrumbs": [
       {

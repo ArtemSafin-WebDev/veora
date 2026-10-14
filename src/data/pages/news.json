@@ -6,7 +6,7 @@
   "banner": {
     "id": "news-banner",
     "title": "Новости",
-    "image": "/assets/news-catalog/hero.jpg",
+    "image": "/assets/news-catalog/hero.webp",
     "breadcrumbsLabel": "Хлебные крошки",
     "breadcrumbs": [
       { "label": "Главная", "href": "/" },

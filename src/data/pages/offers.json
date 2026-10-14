@@ -6,8 +6,8 @@
   "banner": {
     "id": "offers-banner",
     "title": "Спецпредложе­ния",
-    "image": "/assets/offer-catalog/hero-desktop.jpg",
-    "mobileImage": "/assets/offer-catalog/hero-mobile.jpg",
+    "image": "/assets/offer-catalog/hero-desktop.webp",
+    "mobileImage": "/assets/offer-catalog/hero-mobile.webp",
     "breadcrumbsLabel": "Хлебные крошки",
     "breadcrumbs": [
       {
@@ -65,7 +65,7 @@
         "resorts": [
           "all"
         ],
-        "image": "/assets/offer-catalog/wellness.jpg",
+        "image": "/assets/offer-catalog/wellness.webp",
         "href": "/offer.html",
         "date": "2026-09-09",
         "dateLabel": "9 сентября 2026",
@@ -79,7 +79,7 @@
         "resorts": [
           "sunny"
         ],
-        "image": "/assets/offer-catalog/bachelorette.jpg",
+        "image": "/assets/offer-catalog/bachelorette.webp",
         "href": "/offers/bachelorette/",
         "date": "2026-09-09",
         "dateLabel": "9 сентября 2026",
@@ -93,7 +93,7 @@
         "resorts": [
           "golden"
         ],
-        "image": "/assets/offer-catalog/abrau.jpg",
+        "image": "/assets/offer-catalog/abrau.webp",
         "href": "/offers/abrau/",
         "date": "2026-09-09",
         "dateLabel": "9 сентября 2026",
@@ -107,7 +107,7 @@
         "resorts": [
           "golden"
         ],
-        "image": "/assets/offer-catalog/capsule.jpg",
+        "image": "/assets/offer-catalog/capsule.webp",
         "href": "/offers/capsule/",
         "date": "2026-09-09",
         "dateLabel": "9 сентября 2026",
@@ -121,7 +121,7 @@
         "resorts": [
           "sunny"
         ],
-        "image": "/assets/offer-catalog/yoga.jpg",
+        "image": "/assets/offer-catalog/yoga.webp",
         "href": "/offers/yoga/",
         "date": "2026-09-09",
         "dateLabel": "9 сентября 2026",

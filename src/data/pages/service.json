@@ -30,8 +30,8 @@
   },
   "serviceHero": {
     "label": "Тренажерный зал: расположение и режим работы",
-    "image": "/assets/service-detail/gym.png",
-    "mobileImage": "/assets/service-detail/gym-hero.png",
+    "image": "/assets/service-detail/gym.webp",
+    "mobileImage": "/assets/service-detail/gym-hero.webp",
     "imageAlt": "Тренажеры в просторном зале здравницы «Южный»",
     "info": {
       "fields": [
@@ -79,7 +79,7 @@
         "description": "По вашему запросу инструктор поможет подобрать упражнения для эффективной тренировки. Регулярные занятия укрепят мышечный корсет, разовьют выносливость и сделают здоровый образ жизни неотъемлемой частью вашего дня."
       }
     ],
-    "image": "/assets/service-detail/running.jpg",
+    "image": "/assets/service-detail/running.webp",
     "imageAlt": "Пробежка по дорожке среди деревьев на закате"
   },
   "relatedServices": {
@@ -100,14 +100,14 @@
       {
         "href": "/services/paintball/",
         "title": "Пейнтбол",
-        "image": "/assets/services/paintball.jpg",
+        "image": "/assets/services/paintball.webp",
         "label": "Активный отдых",
         "paid": false
       },
       {
         "href": "/services/tennis/",
         "title": "Теннисный корт",
-        "image": "/assets/services/tennis.jpg",
+        "image": "/assets/services/tennis.webp",
         "label": "Активный отдых",
         "paid": false,
         "desktopOnly": true
@@ -115,7 +115,7 @@
       {
         "href": "/services/sauna/",
         "title": "Сауна",
-        "image": "/assets/services/sauna.jpg",
+        "image": "/assets/services/sauna.webp",
         "label": "Спокойный отдых",
         "paid": false,
         "desktopOnly": true
@@ -123,7 +123,7 @@
       {
         "href": "/services/playground/",
         "title": "Детская площадка",
-        "image": "/assets/services/playground.jpg",
+        "image": "/assets/services/playground.webp",
         "label": "Активный отдых",
         "paid": false,
         "mobileOnly": true
@@ -131,7 +131,7 @@
       {
         "href": "/services/trail/",
         "title": "Терренкур",
-        "image": "/assets/services/trail.jpg",
+        "image": "/assets/services/trail.webp",
         "label": "Активный отдых",
         "paid": true,
         "mobileOnly": true
