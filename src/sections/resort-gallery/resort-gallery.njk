@@ -1,0 +1,18 @@
+{% from "components/slider-arrows/slider-arrows.njk" import sliderArrows %}
+<section class="resort-gallery" data-resort-gallery aria-label="{{ page.resortGallery.label }}" tabindex="0">
+  <div class="resort-gallery__slider swiper">
+    <div class="resort-gallery__track swiper-wrapper">
+      {% for photo in page.resortGallery.items %}
+        <div class="resort-gallery__slide swiper-slide">
+          <img class="resort-gallery__image" src="{{ photo.src }}" alt="{{ photo.alt }}" loading="lazy" />
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="resort-gallery__controls">
+    <p class="resort-gallery__counter" aria-live="polite" aria-atomic="true" data-resort-gallery-counter>
+      <span data-resort-gallery-current>01</span> /{{ page.resortGallery.items | length }}
+    </p>
+    {{ sliderArrows(page.resortGallery.previousLabel, page.resortGallery.nextLabel, 'resort-gallery__arrows') }}
+  </div>
+</section>

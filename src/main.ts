@@ -2,11 +2,13 @@ import '@fontsource-variable/inter/wght.css';
 import '@fontsource-variable/golos-text/wght.css';
 import './styles/main.scss';
 import './components/site-header/site-header';
+import './components/room-card/room-card';
 import './components/accordion/accordion';
 import './sections/resorts/resorts';
 import './components/custom-select/custom-select';
 import './components/booking-search/booking-search';
 import './sections/gallery/gallery';
+import './sections/resort-gallery/resort-gallery';
 import './components/gallery-modal/gallery-modal';
 import './components/filters/filters';
 import './sections/service-catalog/service-catalog';
@@ -24,16 +26,25 @@ import './sections/contacts-map/contacts-map';
 import './components/search-form/search-form';
 import './sections/search-results/search-results';
 import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 
 const newsSlider = document.querySelector<HTMLElement>('[data-news] .news__slider');
 
 if (newsSlider) {
-  const mobile = window.matchMedia('(max-width: 600px)');
+  const mobile = window.matchMedia('(max-width: 900px)');
   let newsSwiper: Swiper | undefined;
 
   const syncNewsSlider = () => {
     if (mobile.matches && !newsSwiper) {
-      newsSwiper = new Swiper(newsSlider, { slidesPerView: 'auto', spaceBetween: 8 });
+      newsSwiper = new Swiper(newsSlider, {
+        modules: [Navigation],
+        slidesPerView: 'auto',
+        spaceBetween: 8,
+        navigation: {
+          prevEl: newsSlider.closest('[data-news]')?.querySelector<HTMLElement>('[data-slider-prev]'),
+          nextEl: newsSlider.closest('[data-news]')?.querySelector<HTMLElement>('[data-slider-next]'),
+        },
+      });
     } else if (!mobile.matches && newsSwiper) {
       newsSwiper.destroy(true, true);
       newsSwiper = undefined;
@@ -82,7 +93,7 @@ if (services) {
 const offersSlider = document.querySelector<HTMLElement>('[data-offers-slider]');
 
 if (offersSlider) {
-  const mobile = window.matchMedia('(max-width: 600px)');
+  const mobile = window.matchMedia('(max-width: 900px)');
   let offersSwiper: Swiper | undefined;
 
   const syncOffersSlider = () => {

@@ -1,8 +1,8 @@
 .accordion {
   padding: 2.4rem;
   border-radius: 1.2rem;
-  background: #fff;
-  color: #495249;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
 
   &__heading { margin: 0; font: inherit; }
   &__toggle {

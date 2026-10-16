@@ -1,7 +1,7 @@
 const header = document.querySelector<HTMLElement>('[data-site-header]');
 
 if (header) {
-  const mobile = window.matchMedia('(max-width: 600px)');
+  const mobile = window.matchMedia('(max-width: 1200px)');
   const toggles = Array.from(header.querySelectorAll<HTMLButtonElement>('[data-header-toggle]'));
   const panels = Array.from(header.querySelectorAll<HTMLElement>('[data-header-panel]'));
   const accordions = Array.from(header.querySelectorAll<HTMLElement>('[data-header-accordion]'));

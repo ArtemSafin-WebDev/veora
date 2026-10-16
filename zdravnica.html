@@ -1,0 +1,12 @@
+{% extends "layout.njk" %}
+{% block content %}
+  {% include "sections/hero/hero.njk" %}
+  {% include "sections/resort-gallery/resort-gallery.njk" %}
+  <div class="services-area services-area--resort">
+    {% include "sections/services/services.njk" %}
+    {% include "sections/rooms/rooms.njk" %}
+  </div>
+  {% include "sections/special-offers/special-offers.njk" %}
+  {% include "sections/gallery/gallery.njk" %}
+  {% include "sections/news/news.njk" %}
+{% endblock %}

@@ -1,9 +1,9 @@
 .related-offers {
   margin-bottom: 8rem;
-  color: #495249;
+  color: var(--color-text-primary);
 
   &__header { display: flex; align-items: center; gap: 3.2rem; margin-bottom: 3.2rem; }
-  &__header::after { order: 1; flex: 1; min-width: 0; height: 1px; background: #c8cdc8; content: ''; }
+  &__header::after { order: 1; flex: 1; min-width: 0; height: 1px; background: var(--color-border); content: ''; }
   &__title { flex: 0 1 auto; max-width: 78rem; }
   &__all-link { order: 2; flex: none; white-space: normal; text-align: center; }
   &__mobile-link { display: none; }
@@ -12,7 +12,11 @@
   &__slide { min-width: 0; width: auto; height: auto; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 380px) {
+  .related-offers__title { font-size: 3.2rem; line-height: 3.4rem; letter-spacing: -.192rem; }
+}
+
+@media (max-width: 900px) {
   .related-offers {
     margin-bottom: 8rem;
     &__header { margin-bottom: 2.2rem; }

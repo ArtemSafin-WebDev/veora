@@ -5,7 +5,7 @@
   &__grid { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 1rem; }
   .gallery-card { grid-column: span 4; }
   .gallery-card--wide { grid-column: span 5; }
-  &__empty { margin: 0; color: #576258; font-size: 1.6rem; line-height: 2.4rem; }
+  &__empty { margin: 0; color: var(--color-text-secondary); font-size: 1.6rem; line-height: 2.4rem; }
 }
 
 @media (max-width: 600px) {

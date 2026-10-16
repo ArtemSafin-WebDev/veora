@@ -1,5 +1,5 @@
 .rich-text {
-  color: #7f8a80;
+  color: var(--color-text-muted);
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.6rem;
@@ -9,7 +9,7 @@
   > * { margin-block: 0; }
   > * + * { margin-top: 1rem; }
   :where(p) { letter-spacing: -.04rem; }
-  :where(h2, h3, h4) { color: #495249; font-weight: 400; }
+  :where(h2, h3, h4) { color: var(--color-text-primary); font-weight: 400; }
   :where(h2) { font-size: 3.2rem; line-height: 3.4rem; letter-spacing: -.128rem; }
   :where(h3) { font-size: 2.4rem; line-height: 2.8rem; letter-spacing: -.096rem; }
   :where(h4) { font-size: 2rem; line-height: 2.4rem; letter-spacing: -.08rem; }
@@ -23,7 +23,7 @@
   :where(a) { text-underline-offset: .2rem; }
   :where(img) { display: block; width: 100%; height: auto; border-radius: 1.2rem; }
   :where(video) { max-width: 100%; height: auto; }
-  :where(blockquote) { margin-inline: 0; padding-left: 2rem; border-left: 1px solid #c8cdc8; }
+  :where(blockquote) { margin-inline: 0; padding-left: 2rem; border-left: 1px solid var(--color-border); }
 }
 
 @media (max-width: 600px) {

@@ -22,16 +22,16 @@
     height: 5rem;
     padding: 1rem 3.5rem 1rem 1.4rem;
     border-radius: 1rem;
-    background: rgba(31, 32, 39, .88);
+    background: var(--color-field-background);
     backdrop-filter: blur(1.5rem);
-    color: #fff;
+    color: var(--color-text-inverse);
     font-family: 'Inter Variable', sans-serif;
     cursor: pointer;
   }
 
   &__label {
     display: block;
-    color: #b5b5b5;
+    color: var(--color-field-caption);
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.4rem;
@@ -44,7 +44,7 @@
     padding: 0;
     border: 0;
     background: transparent;
-    color: #fff;
+    color: var(--color-text-inverse);
     font: inherit;
     font-size: 1.2rem;
     line-height: 1.6rem;
@@ -74,8 +74,8 @@
     text-decoration: none;
   }
 
-  &__action--staff { background: #fff; color: #657266; }
-  &__action--guest { background: #657266; color: #fff; }
+  &__action--staff { background: var(--color-surface); color: var(--color-accent); }
+  &__action--guest { background: var(--color-accent); color: var(--color-text-inverse); }
 
   &__action-title {
     display: block;
@@ -94,33 +94,46 @@
     letter-spacing: -.02rem;
   }
 
-  &__action--staff &__action-cta { color: #99a29a; }
-  &__action--guest &__action-cta { color: #f9f5e9; }
+  &__action--staff &__action-cta { color: var(--color-text-subtle); }
+  &__action--guest &__action-cta { color: var(--color-booking-guest-caption); }
 
-  &__dates:focus-within,
   &__action:hover &__action-cta { text-decoration: underline; }
 }
 
 .air-datepicker.booking-calendar {
-  --adp-color: #495249;
-  --adp-accent-color: #657266;
-  --adp-day-name-color: #99a29a;
-  --adp-day-name-color-hover: #657266;
-  --adp-color-current-date: #657266;
-  --adp-cell-background-color-selected: #657266;
-  --adp-cell-background-color-selected-hover: #495249;
-  --adp-cell-background-color-in-range: #e8ebe6;
-  --adp-cell-background-color-in-range-hover: #dce2d9;
-  --adp-cell-border-color-in-range: #657266;
-  --adp-background-color-in-range: #e8ebe6;
-  --adp-border-color: #c8cdc8;
+  --adp-background-color: var(--color-surface);
+  --adp-background-color-hover: var(--calendar-background-hover);
+  --adp-background-color-active: var(--calendar-background-active);
+  --adp-color-secondary: var(--calendar-secondary-color);
+  --adp-color-other-month: var(--calendar-other-month-color);
+  --adp-color-other-month-hover: var(--calendar-other-month-hover-color);
+  --adp-color-disabled: var(--calendar-disabled-color);
+  --adp-color-disabled-in-range: var(--calendar-disabled-range-color);
+  --adp-border-color-inner: var(--calendar-inner-border);
+  --adp-background-color-in-range-focused: var(--calendar-range-focused);
+  --adp-background-color-selected-other-month: var(--calendar-selected-other-month);
+  --adp-background-color-selected-other-month-focused: var(--calendar-selected-other-month-hover);
+  --adp-color: var(--color-text-primary);
+  --adp-accent-color: var(--color-accent);
+  --adp-day-name-color: var(--color-text-subtle);
+  --adp-day-name-color-hover: var(--color-accent);
+  --adp-color-current-date: var(--color-accent);
+  --adp-cell-background-color-selected: var(--color-accent);
+  --adp-cell-background-color-selected-hover: var(--color-text-primary);
+  --adp-cell-background-color-in-range: var(--color-range-background);
+  --adp-cell-background-color-in-range-hover: var(--color-range-hover);
+  --adp-cell-border-color-in-range: var(--color-accent);
+  --adp-background-color-in-range: var(--color-range-background);
+  --adp-border-color: var(--color-border);
   --adp-border-radius: 1rem;
   --adp-cell-border-radius: .6rem;
   --adp-font-size: 1.2rem;
   --adp-width: 25rem;
   --adp-font-family: 'Golos Text Variable', sans-serif;
-  border: 1px solid #c8cdc8;
-  box-shadow: 0 .8rem 2.4rem rgba(0, 0, 0, .18);
+  max-height: calc(100dvh - 2.4rem);
+  overflow-y: auto;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 .8rem 2.4rem var(--color-shadow-dropdown);
 }
 
 @media (max-width: 600px) {
@@ -135,6 +148,6 @@
     &__action { height: 4.4rem; }
     &__action-title { font-size: 1rem; line-height: 1.2rem; }
     &__action-cta { font-size: .8rem; line-height: 1rem; }
-    &__action--staff &__action-cta { color: #ba9166; }
+    &__action--staff &__action-cta { color: var(--color-booking-caption-mobile); }
   }
 }

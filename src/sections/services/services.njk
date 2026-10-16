@@ -1,11 +1,12 @@
+{% from "components/icon/icon.njk" import icon %}
 {% from "components/button/button.njk" import button %}
 {% from "components/section-title/section-title.njk" import sectionTitle %}
-<section class="services container" id="services" data-services aria-labelledby="services-title">
+<section class="services{% if page.services.variant %} services--{{ page.services.variant }}{% endif %} container" id="services" data-services aria-labelledby="services-title">
   <div class="services__header">
     <div class="services__ornament" aria-hidden="true">
       <span class="services__rule"></span>
-      <span class="services__mark services__mark--desktop"><img src="/assets/services/brand-mark.svg" alt="" /></span>
-      <span class="services__mark services__mark--mobile"><img src="/assets/services/brand-mark-mobile.svg" alt="" /></span>
+      <span class="services__mark services__mark--desktop">{{ icon(page.services.brandMark or 'services-brand-mark', '', 13.1, 12.3) }}</span>
+      <span class="services__mark services__mark--mobile">{{ icon(page.services.brandMarkMobile or 'services-brand-mark-mobile', '', 7.22518, 6.81231) }}</span>
       <span class="services__rule"></span>
     </div>
     {{ sectionTitle(page.services.title, 'services-title', 'services__title') }}
@@ -28,5 +29,5 @@
     </div>
   {% endfor %}
 
-  {{ button(page.services.allLink.label, page.services.allLink.href, 'services__all-link', 'dark') }}
+  {{ button(page.services.allLink.label, page.services.allLink.href, 'services__all-link', 'dark', page.services.variant == 'resort', page.services.variant == 'resort') }}
 </section>

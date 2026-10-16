@@ -1,10 +1,10 @@
-@use 'tokens' as *;
+@use 'tokens';
 
 :root {
   font-size: 10px;
   font-family: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: $ink;
-  background: $surface;
+  color: var(--color-text-body);
+  background: var(--color-page-background);
   overflow-x: clip;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,9 +17,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-body { min-width: 32rem; min-height: 100vh; margin: 0; display: flex; flex-direction: column; overflow-x: clip; }
-body.theme-beige { background: #fefefc; color: $ink; }
-body.theme-dark-blue { background: #182641; color: #fff; }
+body { background: var(--color-page-background); color: var(--color-text-body); min-width: 32rem; min-height: 100vh; margin: 0; display: flex; flex-direction: column; overflow-x: clip; }
 a { color: inherit; }
 .container {
   width: 100%;
@@ -27,9 +25,9 @@ a { color: inherit; }
   padding-inline: 4rem;
   margin-inline: auto;
 }
-.page { flex: 1; }
+// Contain the intentional overflow of full-width decorations and carousels.
+.page { flex: 1; overflow-x: clip; }
 
 @media (max-width: 600px) {
   .container { padding-inline: 1.2rem; }
-  .page { overflow-x: clip; }
 }

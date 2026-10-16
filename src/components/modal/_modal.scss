@@ -10,7 +10,7 @@
   padding: 6.2rem 2rem;
   border: 0;
   background: transparent;
-  color: #fff;
+  color: var(--color-text-inverse);
   opacity: 0;
   transition: opacity .25s ease;
 
@@ -18,7 +18,7 @@
   &[data-modal-visible] { opacity: 1; }
 
   &::backdrop {
-    background: rgb(0 0 0 / 60%);
+    background: var(--color-overlay-backdrop);
     backdrop-filter: blur(1.5rem);
     opacity: 0;
     transition: opacity .25s ease;

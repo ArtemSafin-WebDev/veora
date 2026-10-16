@@ -36,7 +36,7 @@ document.querySelectorAll<HTMLInputElement>('[data-booking-dates]').forEach((inp
       const rem = Number.parseFloat(getComputedStyle(document.documentElement).fontSize);
 
       $datepicker.style.position = 'fixed';
-      $datepicker.style.top = `${Math.max(padding, top) / rem}rem`;
+      $datepicker.style.top = `${Math.max(padding, Math.min(top, window.innerHeight - calendarHeight - padding)) / rem}rem`;
       $datepicker.style.left = `${Math.max(padding, left) / rem}rem`;
       $pointer.style.display = 'none';
     },

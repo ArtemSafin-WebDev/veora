@@ -1,12 +1,12 @@
-body.theme-beige.page-search,
-body.theme-beige.page-search-results,
-body.theme-beige.page-search-empty { background: #fff; }
+body.page-search,
+body.page-search-results,
+body.page-search-empty { background: var(--search-page-background); }
 
 .search {
   min-height: 67.6rem;
   margin-bottom: 0;
   padding-top: 2rem;
-  color: #657266;
+  color: var(--color-accent);
 
   &__breadcrumbs { margin-inline: -1rem; }
   &__form { margin-top: 3.7rem; }
@@ -15,9 +15,9 @@ body.theme-beige.page-search-empty { background: #fff; }
 }
 
 @media (max-width: 600px) {
-  body.theme-beige.page-search,
-  body.theme-beige.page-search-results,
-  body.theme-beige.page-search-empty { background: #fefefc; }
+  body.page-search,
+  body.page-search-results,
+  body.page-search-empty { background: var(--color-page-background); }
 
   .search {
     min-height: 70.2rem;

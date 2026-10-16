@@ -1,6 +1,6 @@
 .service-content {
   margin-bottom: 13.3rem;
-  color: #495249;
+  color: var(--color-text-primary);
 
   &__inner { display: flex; flex-direction: column; gap: 7rem; max-width: 85.4rem; margin-inline: auto; }
   &__lead { margin: 0; font-size: 3.2rem; line-height: 3.4rem; letter-spacing: -.128rem; }

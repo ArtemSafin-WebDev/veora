@@ -1,0 +1,13 @@
+{% from "components/icon/icon.njk" import icon %}
+{% macro sliderArrows(previousLabel, nextLabel, className='') %}
+<div class="slider-arrows{% if className %} {{ className }}{% endif %}">
+  <button class="slider-arrows__button slider-arrows__button--prev" type="button" data-slider-prev aria-label="{{ previousLabel }}">
+    {{ icon('gallery-next', 'slider-arrows__icon slider-arrows__icon--enabled', 3) }}
+    {{ icon('gallery-disabled', 'slider-arrows__icon slider-arrows__icon--disabled', 3) }}
+  </button>
+  <button class="slider-arrows__button slider-arrows__button--next" type="button" data-slider-next aria-label="{{ nextLabel }}">
+    {{ icon('gallery-next', 'slider-arrows__icon slider-arrows__icon--enabled', 3) }}
+    {{ icon('gallery-disabled', 'slider-arrows__icon slider-arrows__icon--disabled', 3) }}
+  </button>
+</div>
+{% endmacro %}

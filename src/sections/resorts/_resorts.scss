@@ -1,6 +1,6 @@
 .resorts {
   margin-bottom: 9.6rem;
-  color: #495249;
+  color: var(--color-text-primary);
 
   &__heading {
     display: flex;
@@ -9,7 +9,7 @@
     gap: 4rem;
     margin-bottom: 2.4rem;
 
-    &::after { width: 30rem; height: 1px; background: #c8cdc8; content: ''; }
+    &::after { width: 30rem; height: 1px; background: var(--color-border); content: ''; }
   }
 
   &__header {
@@ -18,10 +18,10 @@
     justify-content: space-between;
     gap: 2.4rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid #c8cdc8;
+    border-bottom: 1px solid var(--color-border);
   }
 
-  &__description { max-width: 63.8rem; margin: 0; color: #7f8a80; font-size: 1.6rem; line-height: 2rem; letter-spacing: -.032rem; }
+  &__description { max-width: 63.8rem; margin: 0; color: var(--color-text-muted); font-size: 1.6rem; line-height: 2rem; letter-spacing: -.032rem; }
   &__modes { display: flex; flex: 0 0 auto; }
   &__control {
     flex: 0 0 auto;
@@ -30,7 +30,7 @@
     border: 0;
     border-radius: 1.2rem;
     background: transparent;
-    color: #576258;
+    color: var(--color-text-secondary);
     font: inherit;
     font-size: 1.4rem;
     font-weight: 500;
@@ -39,8 +39,8 @@
     white-space: nowrap;
     cursor: pointer;
 
-    &:hover { background: #eff0ef; }
-    &[aria-selected='true'], &[aria-pressed='true'] { background: #576258; color: #fff; }
+    &:hover { background: var(--color-surface-soft); }
+    &[aria-selected='true'], &[aria-pressed='true'] { background: var(--color-text-secondary); color: var(--color-text-inverse); }
   }
 
   &__body { position: relative; display: flow-root; padding-top: 3.1rem; }
@@ -72,12 +72,12 @@
     padding: 0;
     border: 0;
     background: transparent;
-    color: #484848;
+    color: var(--color-map-pin-text);
     font: inherit;
     cursor: pointer;
     transform: translate(-50%, calc(-100% + 1rem));
 
-    &:hover .resorts__pin-label { background: #eff0ef; }
+    &:hover .resorts__pin-label { background: var(--color-surface-soft); }
     &[aria-expanded='true'] .resorts__pin-label { visibility: hidden; }
   }
 
@@ -85,9 +85,9 @@
     display: block;
     min-height: 3.2rem;
     padding: .9rem 1.1rem;
-    border: 1px solid #b2b8b2;
+    border: 1px solid var(--color-text-faint);
     border-radius: 1.2rem;
-    background: #fff;
+    background: var(--color-surface);
     font-size: 1.2rem;
     line-height: 1.2rem;
     letter-spacing: -.048rem;
@@ -99,7 +99,7 @@
   & [hidden] { display: none; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .resorts {
     margin-bottom: 8rem;
 

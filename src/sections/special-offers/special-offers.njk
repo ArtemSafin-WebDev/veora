@@ -1,7 +1,8 @@
 {% from "components/button/button.njk" import button %}
 {% from "components/section-title/section-title.njk" import sectionTitle %}
-<section class="special-offers container" id="special-offers" aria-labelledby="special-offers-title">
+<section class="special-offers{% if page.specialOffers.variant %} special-offers--{{ page.specialOffers.variant }}{% endif %} container" id="special-offers" aria-labelledby="special-offers-title">
   {% set specialOffers = page.specialOffers %}
+  {% set offerCardVariant = specialOffers.variant %}
   <div class="special-offers__header">
     {{ sectionTitle(specialOffers.title, 'special-offers-title', 'special-offers__title') }}
     {{ button(specialOffers.allLink.label, specialOffers.allLink.href, 'special-offers__all-link', 'dark') }}

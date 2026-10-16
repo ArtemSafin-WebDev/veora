@@ -89,11 +89,12 @@ async function initContactsMap(section: HTMLElement) {
     });
     map.addChild(new api.YMapDefaultSchemeLayer({}));
     map.addChild(new api.YMapDefaultFeaturesLayer({}));
+    const markerColor = getComputedStyle(section).getPropertyValue('--color-map-marker').trim();
     map.addChild(new theme.YMapDefaultMarker({
       coordinates,
       iconName: 'building',
       size: 'normal',
-      color: { day: '#ff2828', night: '#ff2828' },
+      color: { day: markerColor, night: markerColor },
     }));
     map.addChild(new api.YMapControls({ position: 'right' }).addChild(new theme.YMapZoomControl({})));
     fallback.hidden = true;

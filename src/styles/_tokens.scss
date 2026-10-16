@@ -1,5 +1,205 @@
-$ink: #202a37;
-$muted: #637181;
-$accent: #345ce8;
-$surface: #fefefc;
-$line: #e4e9f0;
+// Theme ramps and semantic roles are declared on the theme owner so aliases
+// resolve again when its palette changes. Components consume roles, not hex values.
+:root,
+body.theme-beige,
+body.theme-dark-blue {
+  --theme-50: #fefefc;
+  --theme-100: #eff0ef;
+  --theme-200: #dee1df;
+  --theme-300: #b2b8b2;
+  --theme-400: #99a29a;
+  --theme-500: #7f8a80;
+  --theme-600: #657266;
+  --theme-700: #576258;
+  --theme-800: #495249;
+
+  --color-page-background: var(--theme-50);
+  --color-surface: #fff;
+  --color-surface-soft: var(--theme-100);
+  --color-surface-strong: var(--theme-700);
+  --color-surface-warm: #faf7ee;
+  --color-surface-control: #ebede8;
+  --color-surface-selected: #f2f3ef;
+  --color-text-primary: var(--theme-800);
+  --color-text-secondary: var(--theme-700);
+  --color-text-muted: var(--theme-500);
+  --color-text-subtle: var(--theme-400);
+  --color-text-faint: var(--theme-300);
+  --color-text-inverse: #fff;
+  --color-text-inverse-soft: var(--theme-100);
+  --color-text-note: #909991;
+  --color-accent: var(--theme-600);
+  --color-border: #c8cdc8;
+  --color-border-subtle: var(--theme-200);
+  --color-border-card: #ddd7d4;
+  --color-border-control: #e4e4e7;
+  --color-border-panel: #e6e8e6;
+  --color-border-inverse: #5b645c;
+  --color-control-border-hover: #a1a1aa;
+  --color-control-background-hover: #f4f4f5;
+  --color-label-background: #fdfbf6;
+  --color-error: #ff5c5c;
+  --color-map-marker: #ff2828;
+  --color-black: #000;
+
+  // Preserve the existing generic content and page-directory palette.
+  --color-text-body: #202a37;
+  --color-text-body-muted: #637181;
+  --color-link-accent: #345ce8;
+  --color-border-body: #e4e9f0;
+
+  --color-field-background: rgba(31, 32, 39, .88);
+  --color-field-caption: #b5b5b5;
+  --color-booking-guest-caption: #f9f5e9;
+  --color-booking-caption-mobile: #ba9166;
+  --color-range-background: #e8ebe6;
+  --color-range-hover: #dce2d9;
+  --color-search-border: #cfcfcf;
+  --color-search-border-mobile: rgb(207 207 207 / 60%);
+  --color-search-icon: #8e8e8e;
+  --color-popover-region-text: #24292f;
+  --color-resort-label-background: #5c6c89;
+  --color-resort-label-sea: #5c6c89;
+  --color-resort-label-mountains: #73484d;
+  --color-resort-label-camp: #bb683d;
+  --color-service-badge-mobile-text: #3f4d72;
+  --color-related-services-border: #98a6b7;
+  --color-map-pin-text: #484848;
+  --color-media-fallback: #1d302b;
+  --color-icon-accent: #617365;
+  --color-icon-close: #57606a;
+  --header-menu-close-background: var(--color-glass-dark);
+  --header-menu-close-color: var(--color-black);
+
+  // Overlays stay neutral over photographs in both themes.
+  --color-overlay-media: rgb(0 0 0 / 40%);
+  --color-overlay-media-inverse: rgb(255 255 255 / 40%);
+  --color-hero-resort-shade: rgb(0 0 0 / 50%);
+  --hero-mark-background: #fefefc;
+  --color-overlay-backdrop: rgb(0 0 0 / 60%);
+  --color-glass-light: rgb(255 255 255 / 20%);
+  --color-glass-dark: rgb(0 0 0 / 20%);
+  --color-hover-inverse: rgb(255 255 255 / 10%);
+  --color-hover-overlay: rgb(0 0 0 / 15%);
+  --color-shadow-dropdown: rgb(0 0 0 / 18%);
+  --color-shadow-popover-7: rgb(0 0 0 / 7%);
+  --color-shadow-popover-5: rgb(0 0 0 / 5%);
+  --color-shadow-popover-4: rgb(0 0 0 / 4%);
+  --color-shadow-popover-3: rgb(0 0 0 / 3%);
+  --color-shadow-popover-2: rgb(0 0 0 / 2%);
+  --color-hero-shade-top: rgb(0 0 0 / 32%);
+  --color-hero-shade-light: rgb(0 0 0 / 4%);
+  --color-hero-shade-middle: rgb(0 0 0 / 25%);
+  --color-hero-shade-bottom: rgb(0 0 0 / 38%);
+
+  // Calendar roles preserve the current vendor states in the beige theme.
+  --calendar-background-hover: #f0f0f0;
+  --calendar-background-active: #eaeaea;
+  --calendar-secondary-color: #9c9c9c;
+  --calendar-other-month-color: #dedede;
+  --calendar-other-month-hover-color: #c5c5c5;
+  --calendar-disabled-color: #aeaeae;
+  --calendar-disabled-range-color: #939393;
+  --calendar-inner-border: #efefef;
+  --calendar-range-focused: rgba(92, 196, 239, .2);
+  --calendar-selected-other-month: #a2ddf6;
+  --calendar-selected-other-month-hover: #8ad5f4;
+
+  // Section roles distinguish a page surface from a card or an inverse section.
+  --section-background: var(--color-surface);
+  --footer-surround-background: var(--color-surface);
+  --footer-background: var(--color-text-primary);
+  --footer-border-color: var(--color-border-inverse);
+  --hero-description-color: var(--color-text-secondary);
+  --services-background: var(--color-surface-strong);
+  --services-tab-color: var(--color-label-background);
+  --services-tab-active-background: var(--color-label-background);
+  --services-tab-active-color: var(--color-text-muted);
+  --service-badge-color: var(--color-text-primary);
+  --services-decoration: url('/assets/services/glow-right.svg'), url('/assets/services/glow-left.svg');
+  --special-offers-background: var(--color-surface-strong);
+  --special-offers-color: var(--color-text-inverse);
+  --special-offers-backdrop-display: none;
+  --button-inverse-color: var(--color-text-inverse);
+  --search-page-background: var(--color-surface);
+  --faq-page-background: var(--color-surface-soft);
+}
+
+// Figma: territory/sea, homepage of the health resort (2114:1182).
+// The theme name describes the blue palette; its page canvas is light.
+body.theme-dark-blue {
+  --theme-50: #e9ecf0;
+  --theme-100: #d4dae1;
+  --theme-200: #b6c0cc;
+  --theme-300: #98a6b7;
+  --theme-400: #788aa0;
+  --theme-500: #5c6c89;
+  --theme-600: #3f4d72;
+  --theme-700: #364262;
+  --theme-800: #2d3752;
+
+  --color-surface-strong: var(--theme-600);
+  --color-surface-soft: var(--theme-100);
+  --color-surface-warm: var(--theme-100);
+  --color-surface-control: var(--theme-100);
+  --color-surface-selected: var(--theme-100);
+  --color-text-inverse-soft: var(--theme-50);
+  --color-text-note: var(--theme-400);
+  --color-border: var(--theme-300);
+  --color-border-card: var(--theme-300);
+  --color-border-control: var(--theme-200);
+  --color-border-panel: var(--theme-100);
+  --color-border-inverse: var(--theme-600);
+  --color-control-border-hover: var(--theme-400);
+  --color-control-background-hover: var(--theme-50);
+  --color-text-body: var(--theme-800);
+  --color-text-body-muted: var(--theme-500);
+  --color-link-accent: var(--theme-600);
+  --color-border-body: var(--theme-100);
+  --color-booking-guest-caption: var(--theme-200);
+  --color-booking-caption-mobile: var(--theme-400);
+  --color-range-background: var(--theme-50);
+  --color-range-hover: var(--theme-100);
+  --color-search-border: var(--theme-300);
+  --color-search-border-mobile: var(--theme-200);
+  --color-search-icon: var(--theme-400);
+  --color-popover-region-text: var(--theme-800);
+  --color-service-badge-mobile-text: var(--theme-600);
+  --color-related-services-border: var(--theme-300);
+  --color-map-pin-text: var(--theme-800);
+  --color-media-fallback: var(--theme-800);
+  --color-icon-accent: var(--theme-600);
+  --color-icon-close: var(--theme-700);
+  --header-menu-close-background: var(--theme-50);
+  --header-menu-close-color: var(--theme-800);
+
+  --calendar-background-hover: var(--theme-50);
+  --calendar-background-active: var(--theme-100);
+  --calendar-secondary-color: var(--theme-400);
+  --calendar-other-month-color: var(--theme-200);
+  --calendar-other-month-hover-color: var(--theme-300);
+  --calendar-disabled-color: var(--theme-300);
+  --calendar-disabled-range-color: var(--theme-400);
+  --calendar-inner-border: var(--theme-100);
+  --calendar-range-focused: var(--theme-100);
+  --calendar-selected-other-month: var(--theme-400);
+  --calendar-selected-other-month-hover: var(--theme-500);
+
+  --section-background: var(--color-page-background);
+  --footer-surround-background: var(--color-page-background);
+  --footer-border-color: var(--theme-700);
+  --hero-description-color: var(--color-text-primary);
+  --services-decoration: none;
+  --services-tab-color: var(--color-text-inverse);
+  --services-tab-active-background: var(--color-surface);
+  --services-tab-active-color: var(--color-accent);
+  --services-tab-active-color-mobile: #7f8a80;
+  --services-mark-mobile-background: #fefefc;
+  --services-resort-decoration: url('/assets/services/glow-resort-left.svg'), url('/assets/services/glow-resort-right.svg');
+  --service-badge-color: var(--color-accent);
+  --special-offers-background: var(--color-page-background);
+  --special-offers-color: var(--color-text-primary);
+  --special-offers-backdrop-display: block;
+  --search-page-background: var(--color-page-background);
+  --faq-page-background: var(--color-page-background);
+}

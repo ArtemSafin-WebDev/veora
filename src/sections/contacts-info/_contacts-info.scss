@@ -1,15 +1,22 @@
 .contacts-info {
   margin-bottom: 5rem;
-  color: #576258;
+  color: var(--color-text-secondary);
 
   &__container { display: grid; grid-template-columns: 59% minmax(0, 1fr) auto; align-items: start; }
   &__office { max-width: 63.7rem; }
-  &__label { margin: 0 0 1rem; color: #7f8a80; font-size: 1.6rem; font-weight: 400; line-height: 2rem; letter-spacing: -.032rem; }
+  &__label { margin: 0 0 1rem; color: var(--color-text-muted); font-size: 1.6rem; font-weight: 400; line-height: 2rem; letter-spacing: -.032rem; }
   &__value { display: block; margin: 0; font-size: 2rem; font-weight: 500; font-style: normal; line-height: 2.4rem; letter-spacing: -.08rem; text-decoration: none; }
   &__communication { display: flex; flex-direction: column; align-items: flex-end; gap: 2rem; text-align: right; }
   &__communication &__label { margin-bottom: 0; }
-  &__callback { display: block; color: #7f8a80; font-size: 1.6rem; line-height: 2rem; letter-spacing: -.032rem; text-decoration: none; }
+  &__callback { display: block; color: var(--color-text-muted); font-size: 1.6rem; line-height: 2rem; letter-spacing: -.032rem; text-decoration: none; }
   a:hover, a:focus-visible { text-decoration: underline; }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  .contacts-info {
+    &__container { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.4rem; }
+    &__office { grid-column: 1 / -1; }
+  }
 }
 
 @media (max-width: 600px) {

@@ -6,18 +6,30 @@
   row-gap: 2.5rem;
   padding-bottom: 1.9rem;
   margin-bottom: 1.9rem;
-  border-bottom: 1px solid #c8cdc8;
+  border-bottom: 1px solid var(--color-border);
 
   &:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
   &__image { grid-column: 1; grid-row: 1 / 3; width: 16.4rem; height: 16.4rem; border-radius: 2.4rem; object-fit: cover; }
   &__heading { grid-column: 2; grid-row: 1; padding-top: 2rem; }
-  &__title { margin: 0; color: #576258; font-size: 3.6rem; font-weight: 400; line-height: 4rem; letter-spacing: -.216rem; }
+  &__title { margin: 0; color: var(--color-text-secondary); font-size: 3.6rem; font-weight: 400; line-height: 4rem; letter-spacing: -.216rem; }
   &__title span { display: block; }
   &__labels { grid-column: 3; grid-row: 1 / 3; display: flex; flex-direction: column; align-items: flex-start; gap: .6rem; padding-top: 2rem; }
-  &__label { display: inline-flex; align-items: center; min-height: 2.8rem; padding: 0 1.4rem; border-radius: .6rem; background: var(--resort-label-color, #5c6c89); color: #eff0ef; font-size: 1.2rem; font-weight: 500; line-height: 1.2rem; letter-spacing: -.048rem; }
-  &__description { grid-column: 4; grid-row: 1 / 3; margin: 0; padding-top: 2rem; color: #495249; font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; }
+  &__label { display: inline-flex; align-items: center; min-height: 2.8rem; padding: 0 1.4rem; border-radius: .6rem; background: var(--resort-label-color, var(--color-resort-label-background)); color: var(--color-text-inverse-soft); font-size: 1.2rem; font-weight: 500; line-height: 1.2rem; letter-spacing: -.048rem; }
+  &__description { grid-column: 4; grid-row: 1 / 3; margin: 0; padding-top: 2rem; color: var(--color-text-primary); font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; }
   &__mobile-description { display: none; }
-  &__link { grid-column: 2; grid-row: 2; align-self: start; justify-self: start; margin-bottom: 2rem; color: #7f8a80; border-color: #b2b8b2; }
+  &__link { grid-column: 2; grid-row: 2; align-self: start; justify-self: start; margin-bottom: 2rem; color: var(--color-text-muted); border-color: var(--color-text-faint); }
+}
+
+@media (min-width: 601px) and (max-width: 1100px) {
+  .resort-card {
+    grid-template-columns: 16.4rem minmax(0, 1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 1.6rem 2.4rem;
+    &__heading { grid-column: 2; grid-row: 1; padding-top: 0; }
+    &__labels { grid-column: 2; grid-row: 2; padding-top: 0; }
+    &__description { grid-column: 1 / -1; grid-row: 3; padding-top: 0; }
+    &__link { grid-column: 1 / -1; grid-row: 4; margin-bottom: 0; }
+  }
 }
 
 @media (max-width: 600px) {
@@ -32,12 +44,12 @@
 
     &__image { width: 100%; height: 23rem; margin-bottom: 1rem; border-radius: 1.2rem; }
     &__heading { padding: 0; }
-    &__title { color: #495249; font-size: 2rem; line-height: 2.4rem; letter-spacing: -.12rem; }
+    &__title { color: var(--color-text-primary); font-size: 2rem; line-height: 2.4rem; letter-spacing: -.12rem; }
     &__title span { display: inline; }
     &__labels { position: absolute; top: 1rem; left: 1rem; max-width: calc(100% - 2rem); padding: 0; }
-    &__description { padding: 0; color: #7f8a80; font-size: 1.2rem; line-height: 1.6rem; letter-spacing: -.024rem; }
+    &__description { padding: 0; color: var(--color-text-muted); font-size: 1.2rem; line-height: 1.6rem; letter-spacing: -.024rem; }
     &__desktop-description { display: none; }
     &__mobile-description { display: inline; }
-    &__link { align-self: flex-start; margin: 0; border-color: #c8cdc8; color: #576258; }
+    &__link { align-self: flex-start; margin: 0; border-color: var(--color-border); color: var(--color-text-secondary); }
   }
 }

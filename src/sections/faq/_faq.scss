@@ -1,7 +1,7 @@
-body.theme-beige.page-faq {
-  background: #eff0ef;
+body.page-faq {
+  background: var(--faq-page-background);
 
-  .site-footer { background: #eff0ef; }
+  .site-footer { background: var(--faq-page-background); }
 }
 
 .faq {

@@ -1,23 +1,21 @@
-<footer class="site-footer">
+{% from "components/icon/icon.njk" import icon %}
+{% set footerPage = page.footer or {} %}
+<footer class="site-footer{% if footerPage.variant %} site-footer--{{ footerPage.variant }}{% endif %}">
   <div class="site-footer__surface">
     <div class="site-footer__inner container">
-      <a class="site-footer__mark" href="/" aria-label="{{ site.brand.ariaLabel }}">
-        <picture>
-          <source media="(max-width: 600px)" srcset="/assets/footer/brand-mark-mobile.svg">
-          <img src="/assets/footer/brand-mark.svg" alt="" width="65" height="62">
-        </picture>
+      <a class="site-footer__mark" href="{{ footerPage.homeHref or '/' }}" aria-label="{{ site.brand.ariaLabel }}">
+        {{ icon('footer-brand-mark', 'site-footer__mark-desktop', 6.5, 6.2) }}
+        {{ icon(footerPage.mobileMark or 'footer-brand-mark-mobile', 'site-footer__mark-mobile', 4.81678, 4.54154) }}
       </a>
 
       <div class="site-footer__brand" aria-label="Веора">
-        <picture>
-          <source media="(max-width: 600px)" srcset="/assets/footer/wordmark.svg">
-          <img src="/assets/footer/brand-heading.svg" alt="" width="1284" height="32">
-        </picture>
+        {{ icon('footer-brand-heading', 'site-footer__brand-desktop', 128.4, 3.2) }}
+        {{ icon(footerPage.mobileWordmark or 'footer-wordmark', 'site-footer__brand-mobile', 11.1, 3.2) }}
       </div>
 
       <div class="site-footer__main">
         <nav class="site-footer__navigation" aria-label="Навигация в подвале">
-          {% for group in site.footer.navigation %}
+          {% for group in footerPage.navigation or site.footer.navigation %}
             <div class="site-footer__nav-group">
               <h2 class="site-footer__label">{{ group.title }}</h2>
               <ul class="site-footer__links">
@@ -34,7 +32,7 @@
             {% for item in site.footer.booking %}
               <a class="site-footer__booking-card site-footer__booking-card--{{ item.variant }}" href="{{ item.href }}">
                 <span class="site-footer__booking-title">{{ item.title }}</span>
-                <span class="site-footer__booking-cta">{{ item.cta }}</span>
+                <span class="site-footer__booking-cta">{{ footerPage.bookingLabel or item.cta }}</span>
               </a>
             {% endfor %}
           </div>
@@ -70,10 +68,10 @@
       </div>
 
       <div class="site-footer__bottom">
-        <p class="site-footer__copyright">© <span data-current-year>{{ currentYear }}</span> — {{ site.footer.copyrightIntro }} <span>{{ site.footer.copyrightOrganization }}</span></p>
+        <p class="site-footer__copyright">© <span{% if not footerPage.copyrightYear %} data-current-year{% endif %}>{{ footerPage.copyrightYear or currentYear }}</span> — {{ site.footer.copyrightIntro }} <span>{{ site.footer.copyrightOrganization }}</span></p>
         <a class="site-footer__privacy" href="{{ site.footer.privacy.href }}">{{ site.footer.privacy.label }}</a>
         <span class="site-footer__credit">
-          <img src="/assets/footer/creative-team.svg" alt="{{ site.footer.credit.label }}" width="120" height="26">
+          <img src="{{ footerPage.creditImage or '/assets/footer/creative-team.svg' }}" alt="{{ site.footer.credit.label }}" width="120" height="26">
         </span>
       </div>
     </div>

@@ -1,26 +1,19 @@
 {% from "components/button/button.njk" import button %}
+{% from "components/slider-arrows/slider-arrows.njk" import sliderArrows %}
 {% from "components/section-title/section-title.njk" import sectionTitle %}
-<section class="gallery container" id="gallery" data-gallery data-gallery-modal="{{ page.gallery.modal.id }}" aria-labelledby="gallery-title">
+<section class="gallery{% if page.gallery.variant %} gallery--{{ page.gallery.variant }}{% endif %} container" id="gallery" data-gallery data-gallery-modal="{{ page.gallery.modal.id }}" aria-labelledby="gallery-title">
   <div class="gallery__header">
     {{ sectionTitle(page.gallery.title, 'gallery-title', 'gallery__title') }}
     <span class="gallery__divider" aria-hidden="true"></span>
     <div class="gallery__controls">
       {{ button(page.gallery.allLink.label, page.gallery.allLink.href, 'gallery__all-link', 'gallery') }}
-      <div class="gallery__arrows">
-        <button class="gallery__arrow gallery__arrow--prev" type="button" aria-label="Предыдущие фотографии">
-          <svg class="gallery__arrow-icon gallery__arrow-icon--enabled" aria-hidden="true" focusable="false" viewBox="0 0 30 30"><use href="#icon-gallery-next"></use></svg>
-          <svg class="gallery__arrow-icon gallery__arrow-icon--disabled" aria-hidden="true" focusable="false" viewBox="0 0 30 30"><use href="#icon-gallery-disabled"></use></svg>
-        </button>
-        <button class="gallery__arrow gallery__arrow--next" type="button" aria-label="Следующие фотографии">
-          <svg class="gallery__arrow-icon gallery__arrow-icon--enabled" aria-hidden="true" focusable="false" viewBox="0 0 30 30"><use href="#icon-gallery-next"></use></svg>
-          <svg class="gallery__arrow-icon gallery__arrow-icon--disabled" aria-hidden="true" focusable="false" viewBox="0 0 30 30"><use href="#icon-gallery-disabled"></use></svg>
-        </button>
-      </div>
+      {{ sliderArrows(page.gallery.modal.previousLabel, page.gallery.modal.nextLabel, 'gallery__arrows') }}
     </div>
   </div>
 
   <div class="gallery__slider swiper">
     <div class="gallery__track swiper-wrapper">
+      {% set galleryCardVariant = page.gallery.variant %}
       {% for card in page.gallery.items %}
         <div class="gallery__slide swiper-slide">
           {% include "components/gallery-card/gallery-card.njk" %}

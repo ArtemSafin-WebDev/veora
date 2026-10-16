@@ -1,5 +1,5 @@
 .services {
-  color: #fff;
+  color: var(--color-text-inverse);
   margin-bottom: 12rem;
 
   &__header {
@@ -18,7 +18,7 @@
     height: 13rem;
   }
 
-  &__rule { width: 40rem; height: 1px; background: #c8cdc8; }
+  &__rule { width: 40rem; height: 1px; background: var(--color-border); }
 
   &__mark {
     display: grid;
@@ -27,9 +27,8 @@
     height: 13rem;
     flex: 0 0 auto;
     border-radius: 50%;
-    background: #576258;
+    background: var(--services-background);
 
-    img { display: block; }
   }
   &__mark--mobile { display: none; }
 
@@ -42,7 +41,7 @@
     border: 1px solid transparent;
     border-radius: 1.2rem;
     background: transparent;
-    color: #fdfbf6;
+    color: var(--services-tab-color);
     font: inherit;
     font-size: 1.4rem;
     font-weight: 500;
@@ -51,11 +50,11 @@
     white-space: nowrap;
     cursor: pointer;
 
-    &:hover { background: rgb(255 255 255 / 10%); }
+    &:hover { background: var(--color-hover-inverse); }
   }
 
   &__tab--active,
-  &__tab--active:hover { border-color: #fdfbf6; background: #fdfbf6; color: #7f8a80; }
+  &__tab--active:hover { border-color: var(--services-tab-color); background: var(--color-label-background); color: var(--color-text-muted); }
 
   &__panel[hidden] { display: none; }
   &__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
@@ -67,6 +66,22 @@
   }
 }
 
+@media (min-width: 601px) and (max-width: 1100px) {
+  .services:not(.services--resort) .services__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.services--resort {
+  margin-bottom: 9rem;
+  .services__header { margin-bottom: 4.6rem; }
+  .services__tab--active,
+  .services__tab--active:hover {
+    border-color: var(--services-tab-active-background);
+    background: var(--services-tab-active-background);
+    color: var(--services-tab-active-color);
+  }
+  .services__all-link { margin-top: 3.7rem; border-color: var(--color-text-inverse); }
+}
+
 @media (max-width: 600px) {
   .services {
     margin-bottom: 8.5rem;
@@ -75,7 +90,7 @@
     &__ornament { height: 7.2rem; }
     &__rule { width: 8rem; }
     &__mark--desktop { display: none; }
-    &__mark--mobile { display: grid; width: 7.8rem; height: 7.2rem; background: #fefefc; }
+    &__mark--mobile { display: grid; width: 7.8rem; height: 7.2rem; background: var(--color-page-background); }
     &__tabs {
       align-self: stretch;
       max-width: none;
@@ -85,5 +100,14 @@
     &__tab { flex: 0 0 auto; }
     &__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
     &__all-link { margin-top: 3rem; }
+  }
+
+  .services--resort {
+    margin-bottom: 7.1rem;
+    .services__header { margin-bottom: 2.4rem; }
+    .services__mark--mobile { background: var(--services-mark-mobile-background); }
+    .services__tab--active,
+    .services__tab--active:hover { color: var(--services-tab-active-color-mobile); }
+    .services__all-link { margin-top: 3.1rem; }
   }
 }

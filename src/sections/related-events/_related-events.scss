@@ -1,9 +1,9 @@
 .related-events {
   margin-bottom: 8rem;
-  color: #495249;
+  color: var(--color-text-primary);
 
   &__header { display: flex; align-items: center; gap: 3.2rem; margin-bottom: 3.2rem; }
-  &__header::after { order: 1; flex: 0 1 30rem; min-width: 0; height: 1px; background: #c8cdc8; content: ''; }
+  &__header::after { order: 1; flex: 0 1 30rem; min-width: 0; height: 1px; background: var(--color-border); content: ''; }
   &__title { flex: 1; }
   &__all-link { order: 2; flex: none; padding: 1.4rem 1.8rem; border-radius: 1.2rem; font-size: 1.4rem; line-height: 1.2rem; letter-spacing: -.056rem; }
   &__grid, &__track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: .9rem; }
@@ -18,7 +18,7 @@
   .offer-card__link { min-height: 4rem; padding: 1.1rem 2.4rem; line-height: 1.6rem; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .related-events {
     margin-bottom: 8rem;
     &__header { margin-bottom: 2.2rem; }

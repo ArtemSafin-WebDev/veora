@@ -1,10 +1,11 @@
-<a class="service-card" href="{{ card.href }}" aria-label="{{ card.title }}">
+<a class="service-card{% if page.services.variant %} service-card--{{ page.services.variant }}{% endif %}" href="{{ card.href }}" aria-label="{{ card.title }}">
   <img class="service-card__image" src="{{ card.image }}" alt="" loading="lazy" />
   <span class="service-card__shade" aria-hidden="true"></span>
   <span class="service-card__content">
     <span class="service-card__badges">
-      <span class="service-card__badge">{{ card.label }}</span>
-      {% if card.paid %}<span class="service-card__badge service-card__badge--price" aria-label="Платная услуга">₽</span>{% endif %}
+      <span class="service-card__badge{% if card.mobileLabel %} service-card__badge--desktop-only{% endif %}">{{ card.label }}</span>
+      {% if card.mobileLabel %}<span class="service-card__badge service-card__badge--mobile-only">{{ card.mobileLabel }}</span>{% endif %}
+      {% if card.paid or card.mobilePaid %}<span class="service-card__badge service-card__badge--price{% if not card.paid %} service-card__badge--mobile-only{% elif card.mobilePaid == false %} service-card__badge--desktop-only{% endif %}" aria-label="Платная услуга">₽</span>{% endif %}
     </span>
     <span class="service-card__title">{% if card.titleLines %}{% for line in card.titleLines %}{{ line }}{% if not loop.last %}<br />{% endif %}{% endfor %}{% else %}{{ card.title }}{% endif %}</span>
   </span>

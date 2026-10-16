@@ -1,34 +1,34 @@
 .request-form {
   padding: 4rem;
   border-radius: 1.2rem;
-  background: #657266;
-  color: #fff;
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
   overflow-wrap: anywhere;
 
   &__intro { max-width: 69.6rem; margin-bottom: 2.4rem; }
   &__title { margin: 0 0 1.9rem; font-size: 3.2rem; font-weight: 400; line-height: 3.4rem; letter-spacing: -.128rem; }
-  &__description { margin: 0; color: #b2b8b2; font-size: 1.4rem; font-weight: 600; line-height: 1.6rem; letter-spacing: -.028rem; }
+  &__description { margin: 0; color: var(--color-text-faint); font-size: 1.4rem; font-weight: 600; line-height: 1.6rem; letter-spacing: -.028rem; }
   &__form { max-width: 58.6rem; }
   &__fields { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 2rem; }
   &__field { display: block; min-width: 0; }
   &__field-label { position: absolute; width: .1rem; height: .1rem; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-  &__input { display: block; width: 100%; padding: 0 0 1rem; border: 0; border-bottom: 1px solid #7f8a80; border-radius: 0; background: transparent; color: inherit; font: inherit; font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; }
-  &__input::placeholder { color: #fff; opacity: 1; }
-  &__input:focus { border-bottom-color: #fff; }
-  &__input[aria-invalid='true'] { border-bottom-color: #ff5c5c; }
-  &__error { display: block; margin: .8rem 0 0; color: #ff5c5c; font-size: 1.2rem; line-height: 1.6rem; }
+  &__input { display: block; width: 100%; padding: 0 0 1rem; border: 0; border-bottom: 1px solid var(--color-text-muted); border-radius: 0; background: transparent; color: inherit; font: inherit; font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; }
+  &__input::placeholder { color: var(--color-text-inverse); opacity: 1; }
+  &__input:focus { border-bottom-color: var(--color-text-inverse); }
+  &__input[aria-invalid='true'] { border-bottom-color: var(--color-error); }
+  &__error { display: block; margin: .8rem 0 0; color: var(--color-error); font-size: 1.2rem; line-height: 1.6rem; }
   &__error--consent { margin: -1.6rem 0 2.4rem; }
   &__consent { display: flex; align-items: center; gap: 1rem; margin-bottom: 2.4rem; font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; cursor: pointer; }
   &__control { position: relative; display: grid; place-items: center; flex: none; width: 2rem; height: 2rem; }
   &__checkbox { position: absolute; z-index: 1; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
-  &__mark { display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; border: 1px solid #e4e4e7; border-radius: 50%; background: #fff; transition: background-color .2s ease, border-color .2s ease; }
-  &__dot { color: #657266; opacity: 0; transition: opacity .2s ease; }
-  &__consent:hover &__mark, &__checkbox:focus-visible + &__mark { border-color: #a1a1aa; background: #f4f4f5; }
-  &__checkbox:checked + &__mark { background: #fff; }
+  &__mark { display: flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; border: 1px solid var(--color-border-control); border-radius: 50%; background: var(--color-surface); transition: background-color .2s ease, border-color .2s ease; }
+  &__dot { color: var(--color-accent); opacity: 0; transition: opacity .2s ease; }
+  &__consent:hover &__mark, &__checkbox:focus-visible + &__mark { border-color: var(--color-control-border-hover); background: var(--color-control-background-hover); }
+  &__checkbox:checked + &__mark { background: var(--color-surface); }
   &__checkbox:checked + &__mark &__dot { opacity: 1; }
-  &__checkbox[aria-invalid='true'] + &__mark { border-color: #ff5c5c; }
-  &__submit { min-height: 4rem; border-color: #fff; border-radius: .8rem; background: #fff; color: #576258; font-family: inherit; font-size: 1.4rem; line-height: 1.6rem; letter-spacing: -.056rem; cursor: pointer; white-space: normal; }
-  &__submit:hover, &__submit:focus-visible { background: #eff0ef; }
+  &__checkbox[aria-invalid='true'] + &__mark { border-color: var(--color-error); }
+  &__submit { min-height: 4rem; border-color: var(--color-text-inverse); border-radius: .8rem; background: var(--color-surface); color: var(--color-text-secondary); font-family: inherit; font-size: 1.4rem; line-height: 1.6rem; letter-spacing: -.056rem; cursor: pointer; white-space: normal; }
+  &__submit:hover, &__submit:focus-visible { background: var(--color-surface-soft); }
   &__submit:disabled { opacity: .65; cursor: wait; }
   &__status { margin: 2rem 0 0; font-size: 1.4rem; line-height: 1.8rem; }
   [hidden] { display: none; }

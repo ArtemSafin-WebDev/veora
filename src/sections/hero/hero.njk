@@ -1,4 +1,5 @@
-<section class="hero" aria-labelledby="hero-title">
+{% from "components/icon/icon.njk" import icon %}
+<section class="hero{% if page.hero.variant %} hero--{{ page.hero.variant }}{% endif %}" aria-labelledby="hero-title">
   <div class="hero__stage">
     <div class="hero__visual" aria-hidden="true">
       <picture class="hero__picture">
@@ -6,19 +7,32 @@
         <img class="hero__image" src="{{ page.hero.image }}" alt="" />
       </picture>
     </div>
+    {% if page.hero.backLink %}
+      <a class="hero__back-link" href="{{ page.hero.backLink.href }}">
+        {{ icon(page.hero.backLink.icon, '', 1.3) }}
+        <span>{{ page.hero.backLink.label }}</span>
+      </a>
+    {% endif %}
     <div class="hero__lead container">
-      <h1 class="hero__title" id="hero-title">{{ page.hero.title }}</h1>
+      <h1 class="hero__title" id="hero-title">{% if page.hero.titleLines %}{% for line in page.hero.titleLines %}<span class="hero__title-line">{{ line }}</span>{% if not loop.last %} {% endif %}{% endfor %}{% else %}{{ page.hero.title }}{% endif %}</h1>
+      {% if page.hero.features %}
+        <ul class="hero__features">
+          {% for feature in page.hero.features %}<li>{{ feature }}</li>{% endfor %}
+        </ul>
+      {% endif %}
       {% from "components/booking-search/booking-search.njk" import bookingSearch %}
       {{ bookingSearch(page.hero.booking, site.footer.booking) }}
     </div>
   </div>
   <div class="hero__details">
     <div class="hero__brand-row container" aria-hidden="true">
-      <picture class="hero__divider"><source media="(max-width: 600px)" srcset="{{ page.hero.dividerMobile }}" /><img src="{{ page.hero.divider }}" alt="" /></picture>
-      <span class="hero__mark"><picture><source media="(max-width: 600px)" srcset="{{ page.hero.brandMarkMobile }}" /><img src="{{ page.hero.brandMark }}" alt="" /></picture></span>
-      <picture class="hero__divider"><source media="(max-width: 600px)" srcset="{{ page.hero.dividerMobile }}" /><img src="{{ page.hero.divider }}" alt="" /></picture>
+      <span class="hero__divider">{{ icon(page.hero.divider, 'hero__divider-desktop', 40, 0.1) }}{{ icon(page.hero.dividerMobile, 'hero__divider-mobile', 8, 0.1) }}</span>
+      <span class="hero__mark">{{ icon(page.hero.brandMark, 'hero__mark-desktop', 13.1, 12.3) }}{{ icon(page.hero.brandMarkMobile, 'hero__mark-mobile', 7.22518, 6.81231) }}</span>
+      <span class="hero__divider">{{ icon(page.hero.divider, 'hero__divider-desktop', 40, 0.1) }}{{ icon(page.hero.dividerMobile, 'hero__divider-mobile', 8, 0.1) }}</span>
     </div>
     <p class="hero__description">{{ page.hero.description }}</p>
+    {% if page.hero.text %}<p class="hero__text">{{ page.hero.text }}</p>{% endif %}
+    {% if page.hero.stats %}
     <div class="hero__stats" aria-label="{{ page.hero.statsLabel }}">
       {% for stat in page.hero.stats %}
         <div class="hero__stat">
@@ -27,5 +41,6 @@
         </div>
       {% endfor %}
     </div>
+    {% endif %}
   </div>
 </section>

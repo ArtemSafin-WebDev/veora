@@ -1,10 +1,12 @@
 @use 'swiper/css';
+@use 'swiper/css/effect-fade';
 @use 'base';
 @use 'home';
 @use '../components/button/button';
 @use '../components/section-title/section-title';
 @use '../components/icon-sprite/icon-sprite';
 @use '../components/icon/icon';
+@use '../components/slider-arrows/slider-arrows';
 @use '../components/rich-text/rich-text';
 @use '../components/breadcrumbs/breadcrumbs';
 @use '../components/site-footer/site-footer';
@@ -19,8 +21,11 @@
 @use '../sections/news/news';
 @use '../sections/news-catalog/news-catalog';
 @use '../sections/services/services';
+@use '../components/room-card/room-card';
+@use '../sections/rooms/rooms';
 @use '../sections/special-offers/special-offers';
 @use '../sections/intro/intro';
+@use '../sections/resort-gallery/resort-gallery';
 @use '../sections/content/content';
 @use '../components/resort-card/resort-card';
 @use '../components/resort-popover/resort-popover';

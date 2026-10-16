@@ -5,7 +5,7 @@
   height: 76.8rem;
   margin-bottom: 10rem;
   overflow: hidden;
-  background: #1d302b;
+  background: var(--color-media-fallback);
 
   &__image,
   &__overlay,
@@ -25,7 +25,7 @@
   }
 
   &__overlay {
-    background: #000;
+    background: var(--color-black);
     opacity: var(--intro-overlay-opacity);
     pointer-events: none;
   }

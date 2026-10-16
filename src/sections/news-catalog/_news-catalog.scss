@@ -21,7 +21,15 @@
   .resort-navigation__option { max-width: none; }
   .resort-navigation__text { white-space: nowrap; }
   &__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .9rem; }
-  &__empty { grid-column: 1 / -1; margin: 0; color: #576258; font-size: 1.6rem; line-height: 2.4rem; }
+  &__empty { grid-column: 1 / -1; margin: 0; color: var(--color-text-secondary); font-size: 1.6rem; line-height: 2.4rem; }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .news-catalog {
+    &__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .resort-navigation__option { max-width: 100%; }
+    .resort-navigation__text { white-space: normal; }
+  }
 }
 
 @media (max-width: 600px) {

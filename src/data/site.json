@@ -118,11 +118,11 @@
       "href": "/personal/"
     },
     "assets": {
-      "logoLight": "/assets/header/logo-light.svg",
-      "logoDark": "/assets/header/logo-dark.svg",
-      "logoMobile": "/assets/header/logo-mobile.svg",
-      "logoSurface": "/assets/header/logo-surface.svg",
-      "logoMobileSurface": "/assets/header/logo-mobile-surface.svg",
+      "logoLight": "header-logo-light",
+      "logoDark": "header-logo-dark",
+      "logoMobile": "header-logo-mobile",
+      "logoSurface": "header-logo-surface",
+      "logoMobileSurface": "header-logo-mobile-surface",
       "chevronSurface": "header-chevron-surface",
       "chevronDirectionsSurface": "header-chevron-directions-surface",
       "searchSurface": "header-search-surface",

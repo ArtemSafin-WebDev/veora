@@ -12,7 +12,12 @@
   [hidden] { display: none; }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 901px) and (max-width: 1200px) {
+  .catalog-layout,
+  .catalog-layout--compact { grid-template-columns: 22rem minmax(0, 1fr); column-gap: 2.4rem; }
+}
+
+@media (max-width: 900px) {
   .catalog-layout {
     display: block;
 

@@ -2,7 +2,7 @@
   position: relative;
   isolation: isolate;
   margin-bottom: 7rem;
-  color: #495249;
+  color: var(--color-text-primary);
 
   &::before {
     position: absolute;
@@ -10,7 +10,7 @@
     inset-block: 0;
     left: 50%;
     width: 100vw;
-    background: #fff;
+    background: var(--section-background);
     content: '';
     transform: translateX(-50%);
   }
@@ -19,47 +19,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 2rem;
     margin-bottom: 3.7rem;
   }
 
   &__title {
-    flex: 0 0 78rem;
+    flex: 0 1 78rem;
   }
 
   &__divider {
-    flex: 0 0 24.6rem;
+    flex: 0 1 24.6rem;
     height: 1px;
-    background: #99a29a;
+    background: var(--color-text-subtle);
   }
 
   &__controls,
   &__arrows { display: flex; align-items: center; }
-  &__controls { gap: 1.6rem; }
+  &__controls { flex: none; gap: 1.6rem; }
   &__arrows { gap: .2rem; }
-
-  &__arrow {
-    display: grid;
-    place-items: center;
-    width: 3rem;
-    height: 3rem;
-    padding: 0;
-    border: 0;
-    border-radius: 50%;
-    background: #fff;
-    cursor: pointer;
-
-    &-icon { display: block; width: 3rem; height: 3rem; }
-    &-icon--disabled { display: none; }
-
-    &--prev .gallery__arrow-icon--enabled,
-    &--next .gallery__arrow-icon--disabled { transform: rotate(180deg); }
-
-    &.swiper-button-disabled {
-      cursor: default;
-      .gallery__arrow-icon--enabled { display: none; }
-      .gallery__arrow-icon--disabled { display: block; }
-    }
-  }
 
   &__slider { overflow: visible; }
   &__slide { width: auto; }
@@ -81,5 +58,20 @@
       width: max-content;
       margin: 4rem auto 0;
     }
+  }
+}
+
+.gallery--resort {
+  margin-bottom: 12rem;
+  .gallery__divider { background: var(--color-border); }
+  .gallery__all-link { border-color: var(--color-border); }
+}
+
+@media (max-width: 600px) {
+  .gallery--resort {
+    margin-bottom: 7.8rem;
+    .gallery__controls { display: flex; }
+    .gallery__all-link { display: none; }
+    .gallery__mobile-link { border-color: var(--color-border-control); }
   }
 }

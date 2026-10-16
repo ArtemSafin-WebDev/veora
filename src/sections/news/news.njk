@@ -1,12 +1,15 @@
 {% from "components/button/button.njk" import button %}
+{% from "components/slider-arrows/slider-arrows.njk" import sliderArrows %}
 {% from "components/section-title/section-title.njk" import sectionTitle %}
-<section class="news container" id="news" data-news aria-labelledby="news-title">
+<section class="news{% if page.news.variant %} news--{{ page.news.variant }}{% endif %} container" id="news" data-news aria-labelledby="news-title">
   <div class="news__header">
     {{ sectionTitle(page.news.title, 'news-title', 'news__title') }}
-    {{ button(page.news.allLink.label, page.news.allLink.href, 'news__all-link', 'light', true, true) }}
+    {{ button(page.news.allLink.label, page.news.allLink.href, 'news__all-link', 'light', page.news.variant != 'resort', page.news.variant != 'resort') }}
+    {% if page.news.variant == 'resort' %}{{ sliderArrows(page.news.previousLabel, page.news.nextLabel, 'news__arrows') }}{% endif %}
   </div>
   <div class="news__slider swiper">
     <div class="news__track swiper-wrapper">
+      {% set newsCardVariant = page.news.variant %}
       {% for card in page.news.items %}
         <div class="news__slide swiper-slide">
           {% include "components/news-card/news-card.njk" %}
@@ -14,5 +17,5 @@
       {% endfor %}
     </div>
   </div>
-  {{ button(page.news.allLink.label, page.news.allLink.href, 'news__mobile-link', 'light', true, true) }}
+  {{ button(page.news.allLink.label, page.news.allLink.href, 'news__mobile-link', 'light', page.news.variant != 'resort', page.news.variant != 'resort') }}
 </section>

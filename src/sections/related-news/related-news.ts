@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import { A11y, Keyboard } from 'swiper/modules';
 
 document.querySelectorAll<HTMLElement>('[data-related-news-slider]').forEach((slider) => {
-  const mobile = window.matchMedia('(max-width: 600px)');
+  const mobile = window.matchMedia('(max-width: 900px)');
   let swiper: Swiper | undefined;
 
   const sync = () => {

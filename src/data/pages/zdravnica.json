@@ -1,0 +1,625 @@
+{
+  "title": "Главная здравницы",
+  "description": "Отдых и оздоровление в здравнице Веора.",
+  "activePage": "home",
+  "directoryGroup": "resort",
+  "theme": "dark-blue",
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/rooms/single-comfort/",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/wellness/programs/",
+            "label": "Готовые комплексы услуг/программы"
+          },
+          {
+            "href": "/wellness/additional-services/",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/wellness/cosmetology/",
+            "label": "Косметология"
+          },
+          {
+            "href": "/wellness/spa/",
+            "label": "СПА"
+          },
+          {
+            "href": "/wellness/medicine/",
+            "label": "Медицина"
+          },
+          {
+            "href": "/wellness/prices/",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness/club/",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers/",
+            "label": "Путевки"
+          },
+          {
+            "href": "/offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities/",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining/",
+            "label": "Питание"
+          },
+          {
+            "href": "/legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ]
+  },
+  "specialOffers": {
+    "title": "Специальные предложения",
+    "allLink": {
+      "href": "/offers.html",
+      "label": "Смотреть все"
+    },
+    "readMoreLabel": "Подробнее",
+    "items": [
+      {
+        "title": "Здравница «Золотые Пески» открывает SPA-комплекс под открытым небом",
+        "place": "Южный",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "image": "/assets/offers/spa.webp",
+        "href": "/offers/spa-complex/"
+      },
+      {
+        "title": "«Светлогорск» приглашает на летние заезды: отдых у моря с пользой для здоровья",
+        "place": "Южный",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "image": "/assets/offers/summer.webp",
+        "href": "/offers/summer-arrivals/"
+      },
+      {
+        "title": "«Бриз» запускает курс дыхательной терапии — дышите свободно!",
+        "place": "Южный",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "image": "/assets/offers/breathing.webp",
+        "href": "/offers/breathing-therapy/"
+      }
+    ],
+    "variant": "resort"
+  },
+  "gallery": {
+    "title": "Галерея",
+    "modal": {
+      "id": "gallery-modal",
+      "openLabel": "Открыть фотографию",
+      "previousLabel": "Предыдущая фотография",
+      "nextLabel": "Следующая фотография"
+    },
+    "allLink": {
+      "href": "/gallery.html",
+      "label": "Вся галерея"
+    },
+    "items": [
+      {
+        "image": "/assets/gallery/resort-night.png",
+        "alt": "Вечерняя подсветка корпуса здравницы у бассейна",
+        "size": "wide"
+      },
+      {
+        "image": "/assets/gallery/resort-pool.png",
+        "alt": "Открытый бассейн и шезлонги здравницы",
+        "size": "medium"
+      },
+      {
+        "image": "/assets/gallery/resort-building.png",
+        "alt": "Корпус здравницы и зона отдыха у бассейна",
+        "size": "narrow"
+      },
+      {
+        "image": "/assets/gallery/resort-pool.png",
+        "alt": "Терраса с шезлонгами у открытого бассейна",
+        "size": "medium"
+      }
+    ],
+    "variant": "resort"
+  },
+  "news": {
+    "title": "Новости",
+    "readMoreLabel": "Подробнее",
+    "allLink": {
+      "href": "/news.html",
+      "label": "Все новости"
+    },
+    "items": [
+      {
+        "category": "Южный",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "Здравница «Золотые Пески» открывает SPA-комплекс под открытым небом",
+        "href": "/news/spa-procedure/",
+        "mobileTitle": "Солнечный городок предлагает новую СПА – процедуру",
+        "mobileCategory": "Золотые пески"
+      },
+      {
+        "category": "Южный",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "«Светлогорск» приглашает на летние заезды: отдых у моря с пользой для здоровья",
+        "href": "/news-detail.html",
+        "mobileTitle": "Открытие летней веранды в ресторане «Южного»",
+        "mobileCategory": "Светлогорск"
+      },
+      {
+        "category": "Южный",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "«Бриз» запускает курс дыхательной терапии — дышите свободно!",
+        "href": "/news/children-camp/",
+        "mobileTitle": "«Полюс» готовится к приему детей в детский лагерь",
+        "mobileCategory": "Бриз"
+      }
+    ],
+    "variant": "resort",
+    "previousLabel": "Предыдущие новости",
+    "nextLabel": "Следующие новости"
+  },
+  "services": {
+    "title": "Услуги",
+    "allLink": {
+      "href": "/services.html",
+      "label": "Все услуги"
+    },
+    "tabs": [
+      {
+        "id": "all",
+        "label": "Все"
+      },
+      {
+        "id": "family",
+        "label": "Семейные и детские"
+      },
+      {
+        "id": "entertainment",
+        "label": "Развлечения"
+      },
+      {
+        "id": "excursions",
+        "label": "Экскурсии"
+      },
+      {
+        "id": "medicine",
+        "label": "Медицина"
+      },
+      {
+        "id": "spa",
+        "label": "СПА"
+      }
+    ],
+    "items": [
+      {
+        "title": "Бассейн",
+        "label": "Активный отдых",
+        "paid": true,
+        "image": "/assets/services/pool.webp",
+        "href": "/services/pool/",
+        "categories": [
+          "family",
+          "entertainment",
+          "medicine",
+          "spa"
+        ]
+      },
+      {
+        "title": "Пейнтбол",
+        "label": "Активный отдых",
+        "image": "/assets/services/paintball.webp",
+        "href": "/services/paintball/",
+        "categories": [
+          "entertainment"
+        ]
+      },
+      {
+        "title": "Детская площадка",
+        "label": "Активный отдых",
+        "image": "/assets/services/playground.webp",
+        "href": "/services/playground/",
+        "categories": [
+          "family"
+        ]
+      },
+      {
+        "title": "Терренкур",
+        "label": "Активный отдых",
+        "image": "/assets/services/trail.webp",
+        "href": "/services/trail/",
+        "categories": [
+          "excursions",
+          "medicine"
+        ],
+        "mobilePaid": true
+      },
+      {
+        "title": "Тренажерный зал",
+        "label": "Активный отдых",
+        "image": "/assets/services/gym.webp",
+        "href": "/service.html",
+        "categories": [
+          "entertainment"
+        ],
+        "titleLines": [
+          "Тренажерный",
+          "зал"
+        ]
+      },
+      {
+        "title": "Караоке",
+        "label": "Активный отдых",
+        "paid": true,
+        "image": "/assets/services/karaoke.webp",
+        "href": "/services/karaoke/",
+        "categories": [
+          "entertainment"
+        ],
+        "mobilePaid": false
+      },
+      {
+        "title": "Теннисный корт",
+        "label": "Активный отдых",
+        "image": "/assets/services/tennis.webp",
+        "href": "/services/tennis/",
+        "categories": [
+          "family",
+          "entertainment"
+        ]
+      },
+      {
+        "title": "Сауна",
+        "label": "Спокойный отдых",
+        "image": "/assets/services/sauna.webp",
+        "href": "/services/sauna/",
+        "categories": [
+          "family",
+          "spa"
+        ],
+        "mobileLabel": "Активный отдых"
+      }
+    ],
+    "variant": "resort",
+    "brandMark": "services-brand-mark-resort",
+    "brandMarkMobile": "services-brand-mark-mobile-resort"
+  },
+  "rooms": {
+    "title": "Номера",
+    "allLink": {
+      "label": "Все номера",
+      "href": "/rooms/"
+    },
+    "bookingLabel": "Забронировать",
+    "detailsLabel": "Подробнее",
+    "previousLabel": "Предыдущая фотография номера",
+    "nextLabel": "Следующая фотография номера",
+    "items": [
+      {
+        "id": "single-comfort",
+        "title": "Одноместный комфорт",
+        "titleLines": [
+          "Одноместный",
+          "комфорт"
+        ],
+        "stats": [
+          "Площадь 16 - 18м2",
+          "Вместимость – 2 человек",
+          "5 номеров"
+        ],
+        "mobileStats": [
+          "Площадь 16 - 18м2",
+          "Вместимость – 2 человек",
+          "5 номеров"
+        ],
+        "images": [
+          {
+            "src": "/assets/rooms/single-comfort.png",
+            "alt": "Одноместный комфорт: кровать с белым постельным бельём"
+          }
+        ],
+        "href": "/rooms/single-comfort/",
+        "bookingHref": "mailto:sozvezdie@s.ru?subject=%D0%91%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%20%C2%AB%D0%9E%D0%B4%D0%BD%D0%BE%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BE%D0%BC%D1%84%D0%BE%D1%80%D1%82%C2%BB"
+      },
+      {
+        "id": "standard",
+        "title": "Стандарт",
+        "titleLines": [
+          "Стандарт"
+        ],
+        "stats": [
+          "Площадь 18 - 20 м2",
+          "Вместимость – 3 человека",
+          "175 номеров"
+        ],
+        "mobileStats": [
+          "Площадь 16 - 18м2",
+          "Вместимость – 2 человек",
+          "5 номеров"
+        ],
+        "images": [
+          {
+            "src": "/assets/rooms/standard.png",
+            "alt": "Номер Стандарт: кровать, диван и панорамные окна"
+          }
+        ],
+        "href": "/rooms/standard/",
+        "bookingHref": "mailto:sozvezdie@s.ru?subject=%D0%91%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%20%C2%AB%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%C2%BB"
+      },
+      {
+        "id": "comfort",
+        "title": "Комфорт",
+        "titleLines": [
+          "Комфорт"
+        ],
+        "stats": [
+          "Площадь 27 - 36 м2",
+          "Вместимость – 4 человека",
+          "6 номеров"
+        ],
+        "mobileStats": [
+          "Площадь 16 - 18м2",
+          "Вместимость – 2 человек",
+          "5 номеров"
+        ],
+        "images": [
+          {
+            "src": "/assets/rooms/comfort.png",
+            "alt": "Номер Комфорт: просторная спальня с балконом"
+          }
+        ],
+        "href": "/rooms/comfort/",
+        "bookingHref": "mailto:sozvezdie@s.ru?subject=%D0%91%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%20%C2%AB%D0%9A%D0%BE%D0%BC%D1%84%D0%BE%D1%80%D1%82%C2%BB"
+      }
+    ]
+  },
+  "hero": {
+    "variant": "resort",
+    "title": "Возьмите лучшее: классический южный отдых и современный подход к оздоровлению.",
+    "image": "/assets/hero/resort.png",
+    "mobileImage": "/assets/hero/resort-mobile.png",
+    "brandMark": "hero-brand-mark-resort",
+    "brandMarkMobile": "hero-brand-mark-mobile-resort",
+    "divider": "hero-divider",
+    "dividerMobile": "hero-divider-mobile",
+    "backLink": {
+      "label": "Перейти на основной сайт",
+      "href": "/index.html",
+      "icon": "hero-back-resort"
+    },
+    "features": [
+      "medical & SPA курорт «Красота и долголетие»",
+      "подходит для семейного отдыха",
+      "морские и горные экскурсии"
+    ],
+    "description": "Классический южный отдых в современном прочтении: баланс качественных оздоровительных программ и ярких впечатлений.",
+    "text": "Расположенная в живописном уголке, вдали от городской суеты, здравница уже более полувека принимает гостей со всей России, предлагая индивидуальные программы оздоровления и отдыха.",
+    "booking": {
+      "label": "Подбор отдыха",
+      "resortSelect": {
+        "id": "booking-resort",
+        "label": "Размещение",
+        "groups": [
+          {
+            "label": "Здравница",
+            "name": "resort",
+            "options": [
+              {
+                "value": "",
+                "label": "Выберите здравницу",
+                "summary": "Выберите здравницу"
+              },
+              {
+                "value": "Балтийские пески",
+                "label": "Балтийские пески",
+                "summary": "Балтийские пески"
+              },
+              {
+                "value": "Золотые пески",
+                "label": "Золотые пески",
+                "summary": "Золотые пески"
+              },
+              {
+                "value": "Полюс",
+                "label": "Полюс",
+                "summary": "Полюс"
+              },
+              {
+                "value": "Солнечный городок",
+                "label": "Солнечный городок",
+                "summary": "Солнечный городок"
+              },
+              {
+                "value": "Южный",
+                "label": "Южный",
+                "summary": "Южный",
+                "selected": true
+              }
+            ]
+          }
+        ]
+      },
+      "datesLabel": "Заезд и выезд",
+      "datesValue": "01.05.25 - 02.05.25",
+      "arrivalValue": "2025-05-01",
+      "departureValue": "2025-05-02",
+      "guestSelect": {
+        "id": "booking-guests",
+        "label": "Гости",
+        "keepOpen": true,
+        "groups": [
+          {
+            "label": "Взрослые",
+            "name": "adults",
+            "options": [
+              {
+                "value": "1",
+                "label": "1 взрослый",
+                "summary": "1 взрослый"
+              },
+              {
+                "value": "2",
+                "label": "2 взрослых",
+                "summary": "2 взрослых",
+                "selected": true
+              },
+              {
+                "value": "3",
+                "label": "3 взрослых",
+                "summary": "3 взрослых"
+              },
+              {
+                "value": "4",
+                "label": "4 взрослых",
+                "summary": "4 взрослых"
+              }
+            ]
+          },
+          {
+            "label": "Дети",
+            "name": "children",
+            "options": [
+              {
+                "value": "0",
+                "label": "Без детей",
+                "summary": ""
+              },
+              {
+                "value": "1",
+                "label": "1 ребенок",
+                "summary": "1 ребенок",
+                "selected": true
+              },
+              {
+                "value": "2",
+                "label": "2 ребенка",
+                "summary": "2 ребенка"
+              },
+              {
+                "value": "3",
+                "label": "3 ребенка",
+                "summary": "3 ребенка"
+              }
+            ]
+          }
+        ]
+      },
+      "chevron": "hero-chevron"
+    },
+    "titleLines": [
+      "Возьмите лучшее:",
+      "классический южный отдых",
+      "и современный подход",
+      "к оздоровлению."
+    ]
+  },
+  "resortGallery": {
+    "label": "Фотографии здравницы",
+    "previousLabel": "Предыдущая фотография здравницы",
+    "nextLabel": "Следующая фотография здравницы",
+    "items": [
+      {
+        "src": "/assets/intro/resort-landscape.png",
+        "alt": "Река в лесной долине на фоне гор в утреннем тумане"
+      },
+      {
+        "src": "/assets/gallery/resort-night.png",
+        "alt": "Вечерняя подсветка корпуса здравницы у бассейна"
+      },
+      {
+        "src": "/assets/gallery/resort-pool.png",
+        "alt": "Открытый бассейн и шезлонги здравницы"
+      },
+      {
+        "src": "/assets/gallery/resort-building.png",
+        "alt": "Корпус здравницы и зона отдыха у бассейна"
+      },
+      {
+        "src": "/assets/rooms/single-comfort.png",
+        "alt": "Одноместный комфорт: кровать с белым постельным бельём"
+      },
+      {
+        "src": "/assets/rooms/standard.png",
+        "alt": "Номер Стандарт: кровать, диван и панорамные окна"
+      },
+      {
+        "src": "/assets/rooms/comfort.png",
+        "alt": "Номер Комфорт: просторная спальня с балконом"
+      },
+      {
+        "src": "/assets/services/pool.webp",
+        "alt": "Бассейн"
+      },
+      {
+        "src": "/assets/services/trail.webp",
+        "alt": "Терренкур"
+      },
+      {
+        "src": "/assets/services/gym.webp",
+        "alt": "Тренажерный зал"
+      }
+    ]
+  }
+}

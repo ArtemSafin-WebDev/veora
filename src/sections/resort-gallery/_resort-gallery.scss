@@ -1,0 +1,66 @@
+.resort-gallery {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1366 / 768;
+  margin-bottom: 6.2rem;
+  background: var(--color-media-fallback);
+  color: var(--color-text-inverse);
+
+  &__slider,
+  &__slide { height: 100%; }
+
+  &__slider { position: absolute; inset: 0; }
+
+  &__slide {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      inset: 0;
+      background: var(--color-overlay-media);
+      pointer-events: none;
+      content: '';
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__controls {
+    position: absolute;
+    z-index: 1;
+    inset: auto 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    pointer-events: none;
+  }
+
+  &__counter {
+    margin: 0;
+    padding: 1.4rem 1.8rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    letter-spacing: -.056rem;
+  }
+
+  &__arrows {
+    pointer-events: auto;
+
+    .swiper-button-disabled { background: transparent; opacity: .4; }
+  }
+}
+
+@media (max-width: 600px) {
+  .resort-gallery {
+    aspect-ratio: 360 / 768;
+    margin-bottom: 4.8rem;
+    &__controls { bottom: 2rem; }
+  }
+}

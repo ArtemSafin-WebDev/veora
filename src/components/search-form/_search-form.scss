@@ -3,7 +3,7 @@
   align-items: flex-start;
   gap: 2rem;
   padding-bottom: 1.7rem;
-  border-bottom: 1px solid #cfcfcf;
+  border-bottom: 1px solid var(--color-search-border);
 
   &__input {
     flex: 1;
@@ -16,7 +16,7 @@
     border-radius: 0;
     appearance: none;
     background: transparent;
-    color: #495249;
+    color: var(--color-text-primary);
     font: inherit;
     font-size: 4.8rem;
     font-weight: 400;
@@ -24,7 +24,7 @@
     letter-spacing: -.288rem;
   }
 
-  &__input::placeholder { color: #c8cdc8; opacity: 1; }
+  &__input::placeholder { color: var(--color-border); opacity: 1; }
   &__input::-webkit-search-decoration,
   &__input::-webkit-search-cancel-button { appearance: none; }
 
@@ -48,7 +48,7 @@
   .search-form {
     gap: 1rem;
     padding-bottom: 1rem;
-    border-bottom-color: rgb(207 207 207 / 60%);
+    border-bottom-color: var(--color-search-border-mobile);
 
     &__input { height: 2.8rem; font-size: 2.4rem; line-height: 2.8rem; letter-spacing: -.144rem; }
     &__submit { width: 2.8rem; height: 2.8rem; }

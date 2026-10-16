@@ -6,22 +6,30 @@
   </div>
   <p class="page-directory__description">{{ page.directory.description }}</p>
   <nav aria-label="{{ page.directory.navigationLabel }}">
-    <ul class="page-directory__list">
-      {% for item in page.directory.pages %}
-        <li class="page-directory__item">
-          <a class="page-directory__link" href="{{ item.href }}"{% if item.current %} aria-current="page"{% endif %}>
-            <span class="page-directory__text">
-              <span class="page-directory__name">{{ item.title }}</span>
-              <span class="page-directory__path">{{ item.href }}</span>
-            </span>
-            {% if item.current %}
-              <span class="page-directory__current">{{ page.directory.currentLabel }}</span>
-            {% else %}
-              {{ icon('pagination-next', 'page-directory__arrow', 2) }}
-            {% endif %}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+    {% for group in page.directory.groups %}
+      <div class="page-directory__group" role="group" aria-labelledby="page-directory-{{ group.id }}">
+        <div class="page-directory__group-heading">
+          <h2 class="page-directory__group-title" id="page-directory-{{ group.id }}">{{ group.title }}</h2>
+          <p class="page-directory__count">{{ group.countLabel }} <strong>{{ group.pages | length }}</strong></p>
+        </div>
+        <ul class="page-directory__list">
+          {% for item in group.pages %}
+            <li class="page-directory__item">
+              <a class="page-directory__link" href="{{ item.href }}"{% if item.current %} aria-current="page"{% endif %}>
+                <span class="page-directory__text">
+                  <span class="page-directory__name">{{ item.title }}</span>
+                  <span class="page-directory__path">{{ item.href }}</span>
+                </span>
+                {% if item.current %}
+                  <span class="page-directory__current">{{ page.directory.currentLabel }}</span>
+                {% else %}
+                  {{ icon('pagination-next', 'page-directory__arrow', 2) }}
+                {% endif %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
   </nav>
 </section>

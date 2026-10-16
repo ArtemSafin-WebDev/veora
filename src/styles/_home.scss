@@ -3,7 +3,7 @@
   isolation: isolate;
   display: flow-root;
 
-  .special-offers::before { display: none; }
+  .special-offers::before { display: var(--special-offers-backdrop-display); }
 
   &::before {
     --arch-left: calc(50% - 100.75rem);
@@ -14,8 +14,8 @@
     bottom: 10rem;
     left: 50%;
     width: max(100vw, 201.5rem);
-    background-color: #576258;
-    background-image: url('/assets/services/glow-right.svg'), url('/assets/services/glow-left.svg');
+    background-color: var(--services-background);
+    background-image: var(--services-decoration);
     background-position: calc(50% + 45.65rem) -15.5rem, calc(50% - 68.3rem) 12.2rem;
     background-repeat: no-repeat;
     background-size: 173.1rem 173.1rem, 219.1rem 219.1rem;
@@ -40,13 +40,22 @@
   }
 }
 
+.services-area--resort {
+  &::before {
+    bottom: 10.8rem;
+    background-image: var(--services-resort-decoration);
+    background-position: calc(50% - 68.35rem) 100rem, calc(50% + 45.65rem) 52.3rem;
+    background-size: 79.1rem 79.1rem, 73.1rem 73.1rem;
+  }
+}
+
 @media (max-width: 600px) {
   .services-area {
     &::before {
       top: 3.6rem;
       bottom: 6.6rem;
       width: 100%;
-      background: #576258;
+      background: var(--services-background);
       clip-path: shape(
         from 0 7.1rem,
         curve to 50% 0 with 13.1% 2.69479rem / 30.7% 0,
@@ -57,4 +66,5 @@
       );
     }
   }
+  .services-area--resort::before { bottom: 6rem; }
 }

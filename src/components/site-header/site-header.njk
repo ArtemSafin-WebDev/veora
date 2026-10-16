@@ -1,6 +1,6 @@
 {% from "components/icon/icon.njk" import icon %}
 {% set header = site.header %}
-{% set headerOnLight = page.theme != 'dark-blue' and not (page.hero or page.banner) %}
+{% set headerOnLight = not (page.hero or page.banner) %}
 {% macro navigationGroup(group) %}
   <div class="site-header__group">
     <h3 class="site-header__group-title">{{ group.title }}</h3>
@@ -24,7 +24,8 @@
   <div class="site-header__bar">
     <div class="site-header__primary">
       <a class="site-header__logo" href="/" aria-label="{{ header.logoLabel }}">
-        <picture><source media="(max-width: 600px)" srcset="{{ header.assets.logoMobileSurface if headerOnLight else header.assets.logoMobile }}"{% if headerOnLight %} data-header-open-srcset="{{ header.assets.logoMobile }}"{% endif %} /><img src="{{ header.assets.logoSurface if headerOnLight else header.assets.logoLight }}"{% if headerOnLight %} data-header-open-src="{{ header.assets.logoLight }}"{% endif %} alt="" /></picture>
+        <span class="site-header__logo-desktop"{% if headerOnLight %} data-header-open-icon="{{ header.assets.logoLight }}"{% endif %}>{{ icon(header.assets.logoSurface if headerOnLight else header.assets.logoLight, '', 10.4, 3.2) }}</span>
+        <span class="site-header__logo-mobile"{% if headerOnLight %} data-header-open-icon="{{ header.assets.logoMobile }}"{% endif %}>{{ icon(header.assets.logoMobileSurface if headerOnLight else header.assets.logoMobile, '', 3.4, 3.2) }}</span>
       </a>
       <nav class="site-header__navigation" aria-label="{{ site.navigationLabel }}">
         <button class="site-header__nav-toggle site-header__nav-toggle--directions" type="button" data-header-toggle="directions" aria-expanded="false" aria-controls="header-directions">
@@ -52,7 +53,7 @@
   </nav>
   <div class="site-header__panel site-header__panel--menu" id="header-menu" data-header-panel="menu" aria-label="{{ header.menuLabel }}" hidden>
     <div class="site-header__mobile-top">
-      <a href="/" aria-label="{{ header.logoLabel }}"><img src="{{ header.assets.logoDark }}" alt="" /></a>
+      <a href="/" aria-label="{{ header.logoLabel }}">{{ icon(header.assets.logoDark, '', 10.4, 3.2) }}</a>
       <button class="site-header__close" type="button" data-header-close aria-label="{{ header.closeMenuLabel }}">{{ icon(header.assets.closeMobile, '', 4) }}</button>
     </div>
     <nav class="site-header__menu-navigation" aria-label="{{ header.menuLabel }}">

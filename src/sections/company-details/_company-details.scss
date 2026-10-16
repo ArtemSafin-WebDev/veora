@@ -1,8 +1,8 @@
 .company-details {
   margin-bottom: 7.6rem;
-  color: #576258;
+  color: var(--color-text-secondary);
 
-  &__title { margin: 0 0 1rem; color: #7f8a80; font-size: 1.6rem; font-weight: 400; line-height: 2rem; letter-spacing: -.032rem; }
+  &__title { margin: 0 0 1rem; color: var(--color-text-muted); font-size: 1.6rem; font-weight: 400; line-height: 2rem; letter-spacing: -.032rem; }
   &__content { max-width: 63.7rem; font-size: 2rem; font-weight: 500; line-height: 2.4rem; letter-spacing: -.08rem; }
   &__content p { margin: 0; }
 }

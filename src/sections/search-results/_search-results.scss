@@ -7,11 +7,15 @@
 
   &__content { min-width: 0; }
   &__list { display: flex; flex-direction: column; gap: 1rem; }
-  &__empty { margin: 0; color: #7f8a80; font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; }
+  &__empty { margin: 0; color: var(--color-text-muted); font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; }
   [hidden] { display: none; }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 901px) and (max-width: 1200px) {
+  .search-results { grid-template-columns: 22rem minmax(0, 1fr); gap: 2.4rem; }
+}
+
+@media (max-width: 900px) {
   .search-results {
     display: flex;
     flex-direction: column;

@@ -1,20 +1,20 @@
 .offer-content {
   margin-bottom: 7rem;
-  color: #495249;
+  color: var(--color-text-primary);
   overflow-wrap: anywhere;
 
   &__body { max-width: 85.5rem; margin-inline: auto; }
   &__body > * { margin: 0 0 7rem; }
   &__body > :last-child { margin-bottom: 0; }
   &__lead { margin: 0; font-size: 3.2rem; line-height: 3.4rem; letter-spacing: -.128rem; }
-  &__description { margin: 1rem 0 0; color: #7f8a80; font-size: 1.4rem; font-weight: 600; line-height: 1.6rem; letter-spacing: -.028rem; }
+  &__description { margin: 1rem 0 0; color: var(--color-text-muted); font-size: 1.4rem; font-weight: 600; line-height: 1.6rem; letter-spacing: -.028rem; }
   &__heading { margin: 0 0 2rem; font-size: 2rem; font-weight: 500; line-height: 2.4rem; letter-spacing: -.08rem; }
   &__benefits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; margin: 0; padding: 0; list-style: none; }
-  &__benefit { display: flex; align-items: center; min-height: 5rem; padding: 0 2rem; border-left: 1px dashed #c8cdc8; color: #7f8a80; font-size: 1.6rem; line-height: 2rem; letter-spacing: -.032rem; }
+  &__benefit { display: flex; align-items: center; min-height: 5rem; padding: 0 2rem; border-left: 1px dashed var(--color-border); color: var(--color-text-muted); font-size: 1.6rem; line-height: 2rem; letter-spacing: -.032rem; }
   &__benefit span { max-width: 24rem; }
   &__media { display: block; overflow: hidden; border-radius: 1.2rem; }
   &__image { display: block; width: 100%; height: auto; }
-  &__caption { margin-top: 1.2rem; color: #7f8a80; font-size: 1.4rem; line-height: 1.8rem; }
+  &__caption { margin-top: 1.2rem; color: var(--color-text-muted); font-size: 1.4rem; line-height: 1.8rem; }
 }
 
 @media (max-width: 600px) {

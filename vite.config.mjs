@@ -38,15 +38,23 @@ function htmlTemplates() {
         const pageDataFile = resolve(dataDir, 'pages', relative(root, context.filename).replace(/\.html$/, '.json'));
         const page = readJson(pageDataFile);
         if (page.activePage === 'all-pages') {
-          page.directory.pages = pages(root).map((file) => ({
-            title: readJson(resolve(dataDir, 'pages', file.replace(/\.html$/, '.json'))).title,
-            href: `/${file}`,
-            current: file === relative(root, context.filename),
-          })).sort((a, b) => {
+          page.directory.pages = pages(root).map((file) => {
+            const item = readJson(resolve(dataDir, 'pages', file.replace(/\.html$/, '.json')));
+            return {
+              title: item.title,
+              group: item.directoryGroup ?? 'main',
+              href: `/${file}`,
+              current: file === relative(root, context.filename),
+            };
+          }).sort((a, b) => {
             if (a.href === '/index.html') return -1;
             if (b.href === '/index.html') return 1;
             return a.title.localeCompare(b.title, 'ru');
           });
+          page.directory.groups = page.directory.groups.map((group) => ({
+            ...group,
+            pages: page.directory.pages.filter((item) => item.group === group.id),
+          }));
         }
         return nunjucksEnv.renderString(html, {
           site: readJson(resolve(dataDir, 'site.json')),

@@ -7,7 +7,7 @@ document.querySelectorAll<HTMLElement>('[data-resort-navigation]').forEach((root
   const dialog = root.querySelector<HTMLDialogElement>('dialog');
   if (!form || !desktop || !mobile || !dialog) return;
 
-  const breakpoint = window.matchMedia('(max-width: 600px)');
+  const breakpoint = window.matchMedia('(max-width: 900px)');
   const modal = getModal(dialog);
   const syncLayout = () => {
     if (!breakpoint.matches && dialog.open) void modal.close();

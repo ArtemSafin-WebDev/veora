@@ -1,6 +1,6 @@
 .afisha-catalog {
   &__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 2.4rem .9rem; }
-  &__empty { grid-column: 1 / -1; margin: 0; color: #576258; font-size: 1.6rem; line-height: 2.4rem; }
+  &__empty { grid-column: 1 / -1; margin: 0; color: var(--color-text-secondary); font-size: 1.6rem; line-height: 2.4rem; }
   &.catalog-layout .catalog-layout__sidebar { padding-top: 0; }
 }
 
