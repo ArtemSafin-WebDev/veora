@@ -6,9 +6,13 @@
   margin: 0;
 
   &__row,
-  &__actions { display: flex; gap: .4rem; }
+  &__actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .4rem;
+  }
   &__row > *,
-  &__actions > * { flex: 1 1 0; min-width: 0; }
+  &__actions > * { min-width: 0; }
 
   &__dates {
     position: relative;
