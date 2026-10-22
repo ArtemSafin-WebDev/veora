@@ -65,8 +65,8 @@
   &__actions { display: flex; flex: none; align-items: center; gap: 1rem; }
   &__account { display: flex; align-items: center; gap: 3rem; margin-right: 1.2rem; color: var(--header-account-color, inherit); font-size: 1.4rem; font-weight: 500; line-height: 1.2rem; letter-spacing: -.056rem; white-space: nowrap; }
   &__account-actions, &__login { display: flex; align-items: center; gap: .6rem; }
-  &__booking { position: relative; width: 20rem; height: 4.8rem; padding: 1rem !important; border-radius: .8rem; background: var(--header-booking-background, var(--color-surface)); color: var(--header-booking-color, var(--color-accent)) !important; font-family: 'Golos Text Variable', sans-serif !important; font-size: 1.4rem !important; font-weight: 600 !important; letter-spacing: -.028rem; text-align: left; align-self: stretch; }
-  &__booking { display: flex; align-items: flex-start; }
+  &__booking { position: relative; width: 20rem; height: 4.8rem; padding: 1rem !important; border-radius: .8rem; background: var(--header-booking-background, var(--color-surface)); color: var(--header-booking-color, var(--color-accent)); font-family: 'Golos Text Variable', sans-serif !important; font-size: 1.4rem !important; font-weight: 600 !important; line-height: normal; letter-spacing: -.028rem; text-align: left; align-self: stretch; }
+  &__booking { display: flex; align-items: flex-start; justify-content: flex-start; }
   &__booking > svg { position: absolute; right: .4rem; bottom: .4rem; transform: rotate(var(--header-booking-arrow-rotation, 0deg)); transition: transform .28s ease; }
   &__booking[aria-expanded='true'] > svg { transform: rotate(calc(var(--header-booking-arrow-rotation, 0deg) + 180deg)); }
   &__burger { display: grid; place-items: center; width: 4.8rem; height: 4.8rem; border-radius: .8rem; background: var(--header-burger-background, var(--color-glass-dark)); backdrop-filter: blur(1rem); }

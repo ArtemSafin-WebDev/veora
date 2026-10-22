@@ -1,4 +1,11 @@
 .button {
+  --button-hover-background: var(--button-neutral-hover-background);
+  --button-hover-color: var(--color-accent);
+  --button-hover-border: var(--color-border);
+  --button-active-background: var(--button-primary-active-background);
+  --button-active-color: var(--button-primary-active-color);
+  --button-active-border: var(--color-border);
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -15,20 +22,63 @@
   white-space: nowrap;
   transition: background-color .2s ease, color .2s ease, border-color .2s ease;
 
-  &:is(a):not(.button--disabled):hover { background: var(--color-surface-soft); color: var(--color-accent); }
+  &:is(a, button) { cursor: pointer; }
+
+  &:is(a, button):not(.button--disabled, :disabled, [aria-disabled='true']):is(:hover, :focus-visible),
+  :where(a):is(:hover, :focus-visible) &:not(.button--disabled, :disabled, [aria-disabled='true']) {
+    border-color: var(--button-hover-border);
+    background: var(--button-hover-background);
+    color: var(--button-hover-color);
+  }
+
+  &:is(a, button):not(.button--disabled, :disabled, [aria-disabled='true']):active,
+  :where(a):active &:not(.button--disabled, :disabled, [aria-disabled='true']) {
+    border-color: var(--button-active-border);
+    background: var(--button-active-background);
+    color: var(--button-active-color);
+  }
 
   &--dark {
     color: var(--button-inverse-color);
   }
 
-  &--primary { border-color: var(--color-accent); background: var(--color-accent); color: var(--color-text-inverse); }
+  &--primary {
+    --button-hover-background: var(--button-primary-hover-background);
+    --button-hover-color: var(--color-text-inverse);
+    --button-hover-border: var(--button-primary-hover-background);
+    --button-active-border: var(--button-primary-active-background);
+
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+    color: var(--color-text-inverse);
+  }
+
+  &--base {
+    --button-hover-background: var(--color-surface);
+    --button-hover-border: var(--color-surface);
+    --button-active-background: var(--button-base-active-background);
+    --button-active-border: var(--button-base-active-background);
+
+    border-color: var(--color-surface);
+    background: var(--color-surface);
+    color: var(--color-accent);
+  }
+
+  &--detail {
+    --button-hover-border: transparent;
+    --button-active-border: transparent;
+
+    border-color: transparent;
+    background: transparent;
+    color: var(--color-text-muted);
+  }
 
   &--muted { color: var(--color-text-secondary); }
   &--gallery { border-color: var(--color-text-faint); }
-  &.button--disabled {
-    border-color: var(--color-border);
-    background: var(--color-border-subtle);
-    color: var(--color-text-subtle);
+  &.button--disabled, &:disabled, &[aria-disabled='true'] {
+    border-color: var(--button-active-border);
+    background: var(--button-active-background);
+    color: var(--button-active-color);
     cursor: not-allowed;
   }
   &--rounded { border-radius: 1.2rem; }

@@ -17,9 +17,11 @@
   }
 
   &__icon { display: block; width: 3rem; height: 3rem; }
+  &__button.swiper-button-lock { display: none; }
   &__icon--disabled { display: none; }
   &__button--prev &__icon--enabled,
   &__button--next &__icon--disabled { transform: rotate(180deg); }
+  &__button:disabled,
   &__button.swiper-button-disabled {
     cursor: default;
     .slider-arrows__icon--enabled { display: none; }

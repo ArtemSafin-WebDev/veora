@@ -1,0 +1,28 @@
+{% from "components/menu-link/menu-link.njk" import menuLink %}
+{% from "components/slider-arrows/slider-arrows.njk" import sliderArrows %}
+<section class="dining-menus container" aria-label="{{ page.diningMenus.label }}">
+  {% for menu in page.diningMenus.items %}
+  <article class="dining-menus__item" aria-labelledby="dining-menu-{{ menu.id }}">
+    <div class="dining-menus__content">
+      <div class="dining-menus__text">
+        <h2 class="dining-menus__title" id="dining-menu-{{ menu.id }}">{{ menu.title }}</h2>
+        <div class="dining-menus__description">{{ menu.description | safe }}</div>
+        <div class="dining-menus__note">{{ menu.note | safe }}</div>
+      </div>
+      {{ menuLink(menu.document) }}
+    </div>
+    <div class="dining-menus__gallery" data-dining-gallery>
+      <div class="dining-menus__slider swiper">
+        <div class="swiper-wrapper">
+          {% for image in menu.images %}
+          <div class="dining-menus__slide swiper-slide">
+            <img class="dining-menus__image" src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy" />
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {{ sliderArrows(page.diningMenus.previousLabel, page.diningMenus.nextLabel, 'dining-menus__arrows') }}
+    </div>
+  </article>
+  {% endfor %}
+</section>

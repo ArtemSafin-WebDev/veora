@@ -1,0 +1,284 @@
+{
+  "title": "Питание",
+  "description": "Питание в здравнице «Южный»: шведский стол, детское меню, бары и рестораны, праздничные комплименты и ланч-боксы.",
+  "activePage": "dining",
+  "directoryGroup": "resort",
+  "theme": "dark-blue",
+  "bodyClass": "page-dining",
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities/"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/wellness/programs/",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/wellness/additional-services/",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/wellness/cosmetology/",
+            "label": "Косметология"
+          },
+          {
+            "href": "/wellness/spa/",
+            "label": "СПА"
+          },
+          {
+            "href": "/wellness/medicine/",
+            "label": "Медицина"
+          },
+          {
+            "href": "/wellness/prices/",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness/club/",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers/",
+            "label": "Путевки"
+          },
+          {
+            "href": "/offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities/",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  },
+  "banner": {
+    "id": "dining-banner",
+    "title": "Питание",
+    "variant": "dining",
+    "image": "/assets/dining/restaurant.png",
+    "imageAlt": "Светлый зал ресторана здравницы «Южный»",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Питание"
+      }
+    ]
+  },
+  "diningMenus": {
+    "label": "Питание в здравнице",
+    "previousLabel": "Предыдущая фотография питания",
+    "nextLabel": "Следующая фотография питания",
+    "items": [
+      {
+        "id": "buffet",
+        "title": "Питание по путевкам",
+        "description": "Сбалансированное 3-х разовое питание по системе «Шведский стол» предлагает блюда как для гостей на диете и вегетарианцев, так и для любителей сытно поесть.",
+        "note": "Полноценный шведский стол с салат-баром, холодными закусками, мясными, рыбными и овощными горячими блюдами.",
+        "document": {
+          "label": "Скачать меню",
+          "href": null
+        },
+        "images": [
+          {
+            "src": "/assets/dining/buffet.png",
+            "alt": "Завтрак со свежими фруктами, выпечкой и кофе"
+          },
+          {
+            "src": "/assets/dining/buffet.png",
+            "alt": "Завтрак со свежими фруктами, выпечкой и кофе"
+          }
+        ]
+      },
+      {
+        "id": "children",
+        "title": "Детское питание",
+        "description": "Забота о маленьких гостях: меню шведского стола полностью адаптировано для детского рациона, а залы оборудованы специальными детскими стульчиками",
+        "note": "Полноценный шведский стол с салат-баром, холодными закусками, мясными, рыбными и овощными горячими блюдами.",
+        "document": {
+          "label": "Скачать меню",
+          "href": null
+        },
+        "images": [
+          {
+            "src": "/assets/dining/children.png",
+            "alt": "Сбалансированный детский обед с фруктами, овощами и выпечкой"
+          },
+          {
+            "src": "/assets/dining/children.png",
+            "alt": "Сбалансированный детский обед с фруктами, овощами и выпечкой"
+          }
+        ]
+      }
+    ]
+  },
+  "diningVenues": {
+    "titleLines": [
+      "Бары",
+      "и рестораны"
+    ],
+    "brandMark": "services-brand-mark-resort",
+    "mobileBrandMark": "services-brand-mark-mobile-resort",
+    "items": [
+      {
+        "title": "Бар в бильярдной",
+        "image": "/assets/dining/billiard-bar.png",
+        "imageAlt": "Вечерняя терраса с видом на горы и море",
+        "description": "Находится на смотровой площадке девятого этажа основного корпуса для красивых и романтичных вечеров.",
+        "documents": [
+          {
+            "label": "Скачать меню",
+            "href": null
+          },
+          {
+            "label": "Барная карта",
+            "href": null
+          }
+        ]
+      },
+      {
+        "title": "Ресторан а-ля карт «Крыша»",
+        "image": "/assets/dining/restaurant.png",
+        "imageAlt": "Ресторан «Крыша»: панорамные окна, столики и мягкие кресла",
+        "description": "Находится на смотровой площадке девятого этажа основного корпуса для красивых и романтичных вечеров.",
+        "documents": [
+          {
+            "label": "Скачать меню",
+            "href": null
+          },
+          {
+            "label": "Барная карта",
+            "href": null
+          }
+        ]
+      },
+      {
+        "title": "Лобби-бар «Атриум»",
+        "image": "/assets/dining/lobby-bar.png",
+        "imageAlt": "Коктейль в бокале с кубиками льда и цитрусовой цедрой",
+        "description": "Находится на смотровой площадке девятого этажа основного корпуса для красивых и романтичных вечеров.",
+        "documents": [
+          {
+            "label": "Скачать меню",
+            "href": null
+          },
+          {
+            "label": "Барная карта",
+            "href": null
+          }
+        ]
+      }
+    ]
+  },
+  "diningExtras": {
+    "title": "Дополнительный сервис",
+    "description": "Поздравление именинников и ланч-бокс для тех, кто проводит день вне курорта.",
+    "previousLabel": "Предыдущий дополнительный сервис",
+    "nextLabel": "Следующий дополнительный сервис",
+    "items": [
+      {
+        "title": "Для именинников",
+        "image": "/assets/dining/birthday.png",
+        "imageAlt": "Праздничный десерт с поздравлением Happy Birthday на фоне заката",
+        "description": "включает традиционный праздничный комплимент от здравницы в день рождения — фирменный десерт «Медовик»."
+      },
+      {
+        "title": "Ланч бокс",
+        "image": "/assets/dining/lunch-box.png",
+        "imageAlt": "Ланч-бокс с овощами, фруктами и готовым обедом",
+        "description": "если гость пропускает прием пищи из-за экскурсии или раннего отъезда. Включает питьевую воду, фруктовый сок, свежее яблоко, несладкие булочки, порционный плавленый сыр, паштет, печенье и комплект одноразовых приборов."
+      },
+      {
+        "title": "Для именинников",
+        "image": "/assets/dining/birthday.png",
+        "imageAlt": "Праздничный десерт с поздравлением Happy Birthday на фоне заката",
+        "description": "включает традиционный праздничный комплимент от здравницы в день рождения — фирменный десерт «Медовик»."
+      }
+    ]
+  }
+}

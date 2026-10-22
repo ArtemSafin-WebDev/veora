@@ -1,0 +1,17 @@
+.dining-venue {
+  text-align: center;
+
+  &__image { display: block; width: 100%; height: 42.2rem; border-radius: 1.2rem; object-fit: cover; }
+  &__content { display: flex; flex-direction: column; align-items: center; margin-top: 2.8rem; }
+  &__title { margin: 0 0 1.4rem; color: var(--color-text-inverse); font-size: 3.2rem; font-weight: 400; line-height: 3.4rem; letter-spacing: -.128rem; }
+  &__description { max-width: 64rem; margin: 0 0 1.6rem; color: var(--theme-200); font-size: 1.6rem; line-height: 2rem; letter-spacing: -.032rem; }
+  &__documents { display: flex; justify-content: center; }
+}
+
+@media (max-width: 600px) {
+  .dining-venue {
+    &__image { height: auto; aspect-ratio: 1; }
+    &__title { font-size: 2rem; line-height: 2.4rem; letter-spacing: -.12rem; }
+    &__description { font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.014rem; }
+  }
+}

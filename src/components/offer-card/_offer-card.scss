@@ -5,9 +5,6 @@
   color: var(--color-text-inverse);
   text-decoration: none;
 
-  &:hover .offer-card__link,
-  &:focus-visible .offer-card__link { background: var(--color-surface-soft); color: var(--color-accent); }
-
   &__media {
     display: grid;
     grid-template-areas: 'stack';

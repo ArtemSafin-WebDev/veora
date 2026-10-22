@@ -47,7 +47,7 @@
     </div>
     <div class="site-header__actions">
       {{ account(header, site.footer.contacts, false, headerOnLight) }}
-      <button class="site-header__booking" type="button" data-header-toggle="booking" aria-expanded="false" aria-controls="header-booking">{{ header.bookingLabel }}{{ icon(header.assets.bookingArrowSurface if headerOnLight else header.assets.bookingArrow, '', 2) }}</button>
+      <button class="button button--{{ 'primary' if headerOnLight else 'base' }} site-header__booking" type="button" data-header-toggle="booking" aria-expanded="false" aria-controls="header-booking">{{ header.bookingLabel }}{{ icon(header.assets.bookingArrowSurface if headerOnLight else header.assets.bookingArrow, '', 2) }}</button>
       <button class="site-header__burger" type="button" data-header-toggle="menu" aria-expanded="false" aria-controls="header-menu" aria-label="{{ header.openMenuLabel }}" data-open-label="{{ header.openMenuLabel }}" data-close-label="{{ header.closeMenuLabel }}">
         <span{% if headerOnLight %} data-header-open-icon="{{ header.assets.burger }}"{% endif %}>{{ icon(header.assets.burgerSurface if headerOnLight else header.assets.burger, 'site-header__burger-icon site-header__burger-icon--desktop', 3.6) }}</span><span{% if headerOnLight %} data-header-open-icon="{{ header.assets.burgerMobile }}"{% endif %}>{{ icon(header.assets.burgerMobileSurface if headerOnLight else header.assets.burgerMobile, 'site-header__burger-icon site-header__burger-icon--mobile', 4) }}</span>
       </button>

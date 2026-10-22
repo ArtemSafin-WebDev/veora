@@ -26,6 +26,9 @@ import './sections/related-events/related-events';
 import './sections/contacts-map/contacts-map';
 import './components/search-form/search-form';
 import './sections/search-results/search-results';
+import './sections/dining-menus/dining-menus';
+import './sections/dining-venues/dining-venues';
+import './sections/dining-extras/dining-extras';
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 

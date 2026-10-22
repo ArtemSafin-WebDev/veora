@@ -1,0 +1,18 @@
+{% from "components/dining-extra/dining-extra.njk" import diningExtra %}
+{% from "components/slider-arrows/slider-arrows.njk" import sliderArrows %}
+<section class="dining-extras container" aria-labelledby="dining-extras-title" data-dining-extras>
+  <div class="dining-extras__header">
+    <div class="dining-extras__heading">
+      <h2 class="dining-extras__title" id="dining-extras-title">{{ page.diningExtras.title }}</h2>
+      <p class="dining-extras__description">{{ page.diningExtras.description }}</p>
+    </div>
+    {{ sliderArrows(page.diningExtras.previousLabel, page.diningExtras.nextLabel, 'dining-extras__arrows') }}
+  </div>
+  <div class="dining-extras__slider swiper" data-dining-extras-slider>
+    <div class="swiper-wrapper">
+      {% for item in page.diningExtras.items %}
+      <div class="dining-extras__slide swiper-slide">{{ diningExtra(item) }}</div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

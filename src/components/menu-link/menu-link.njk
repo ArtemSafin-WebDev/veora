@@ -1,0 +1,5 @@
+{% from "components/icon/icon.njk" import icon %}
+{% macro menuLink(document, inline=false) %}
+  {% set classes = 'menu-link menu-link--inline button button--detail' if inline else 'menu-link button button--primary' %}
+  <a class="{{ classes }}" href="{{ document.href or '#' }}"{% if document.href %} download{% endif %}>{{ document.label }}{% if inline %}{{ icon('legal-download', '', 1.8) }}{% endif %}</a>
+{% endmacro %}

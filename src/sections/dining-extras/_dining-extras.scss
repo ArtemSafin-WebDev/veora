@@ -1,0 +1,22 @@
+.dining-extras {
+  margin-bottom: 10.4rem;
+
+  &__header { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; margin-bottom: 4rem; }
+  &__heading { max-width: 88rem; }
+  &__title { margin: 0 0 2rem; color: var(--color-text-primary); font-size: 6.4rem; font-weight: 400; line-height: 6.4rem; letter-spacing: -.448rem; }
+  &__description { max-width: 38.8rem; margin: 0; color: var(--color-text-muted); font-size: 1.6rem; line-height: 2rem; letter-spacing: -.032rem; }
+  &__slider { overflow: visible; }
+  &__slide { width: 53rem; }
+}
+
+@media (max-width: 600px) {
+  .dining-extras {
+    margin-bottom: 8rem;
+
+    &__header { margin-bottom: 2.4rem; }
+    &__title { margin-bottom: 1.2rem; font-size: 4rem; line-height: 4rem; letter-spacing: -.24rem; }
+    &__description { font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.014rem; }
+    &__arrows { display: none; }
+    &__slide { width: 25rem; }
+  }
+}

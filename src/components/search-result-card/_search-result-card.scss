@@ -18,7 +18,6 @@
   &__label { display: flex; flex: none; align-items: center; justify-content: center; min-height: 2.8rem; padding-inline: 1.4rem; border-radius: .6rem; background: var(--color-text-muted); color: var(--color-text-inverse-soft); font-size: 1.2rem; font-weight: 500; line-height: 1.2rem; letter-spacing: -.048rem; }
   &__description { width: 100%; max-width: 65.6rem; margin: 0; color: var(--color-text-muted); font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; }
   &:is(:hover, :focus-visible) { border-color: var(--color-text-subtle); }
-  &:is(:hover, :focus-visible) &__button { background: var(--color-surface-soft); }
 }
 
 @media (max-width: 600px) {

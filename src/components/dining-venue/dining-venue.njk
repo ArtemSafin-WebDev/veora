@@ -1,0 +1,13 @@
+{% from "components/menu-link/menu-link.njk" import menuLink %}
+{% macro diningVenue(venue) %}
+<article class="dining-venue">
+  <img class="dining-venue__image" src="{{ venue.image }}" alt="{{ venue.imageAlt }}" loading="lazy" />
+  <div class="dining-venue__content">
+    <h3 class="dining-venue__title">{{ venue.title }}</h3>
+    <p class="dining-venue__description">{{ venue.description }}</p>
+    <div class="dining-venue__documents">
+      {% for document in venue.documents %}{{ menuLink(document, true) }}{% endfor %}
+    </div>
+  </div>
+</article>
+{% endmacro %}

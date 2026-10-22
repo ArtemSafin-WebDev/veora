@@ -1,0 +1,22 @@
+{% from "components/icon/icon.njk" import icon %}
+{% from "components/dining-venue/dining-venue.njk" import diningVenue %}
+<section class="dining-venues services-area" aria-labelledby="dining-venues-title" data-dining-venues>
+  <div class="dining-venues__header container">
+    <div class="dining-venues__ornament" aria-hidden="true">
+      <span class="dining-venues__rule"></span>
+      <span class="dining-venues__mark dining-venues__mark--desktop">{{ icon(page.diningVenues.brandMark, '', 13.1, 12.3) }}</span>
+      <span class="dining-venues__mark dining-venues__mark--mobile">{{ icon(page.diningVenues.mobileBrandMark, '', 7.22518, 6.81231) }}</span>
+      <span class="dining-venues__rule"></span>
+    </div>
+    <h2 class="dining-venues__title" id="dining-venues-title">{% for line in page.diningVenues.titleLines %}<span>{{ line }}</span>{% endfor %}</h2>
+  </div>
+  <div class="dining-venues__carousel">
+    <div class="dining-venues__slider swiper" data-dining-venues-slider>
+      <div class="dining-venues__list swiper-wrapper">
+        {% for venue in page.diningVenues.items %}
+        <div class="dining-venues__slide swiper-slide">{{ diningVenue(venue) }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

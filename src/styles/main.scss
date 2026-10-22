@@ -79,3 +79,9 @@
 @use '../sections/search-results/search-results';
 @use '../sections/search-empty/search-empty';
 @use '../sections/page-directory/page-directory';
+@use '../components/menu-link/menu-link';
+@use '../components/dining-venue/dining-venue';
+@use '../components/dining-extra/dining-extra';
+@use '../sections/dining-menus/dining-menus';
+@use '../sections/dining-venues/dining-venues';
+@use '../sections/dining-extras/dining-extras';

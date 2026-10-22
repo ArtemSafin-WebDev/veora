@@ -29,7 +29,13 @@ body.theme-dark-blue {
   --color-text-inverse-soft: var(--theme-100);
   --color-text-note: #909991;
   --color-accent: var(--theme-600);
+  --button-primary-hover-background: var(--theme-500);
+  --button-primary-active-background: var(--theme-200);
+  --button-primary-active-color: var(--theme-400);
+  --button-neutral-hover-background: var(--theme-100);
+  --button-base-active-background: #e0e3e0;
   --color-border: #c8cdc8;
+  --slider-arrow-disabled-color: var(--color-border);
   --color-border-subtle: var(--theme-200);
   --color-border-card: #ddd7d4;
   --color-border-control: #e4e4e7;
@@ -137,6 +143,9 @@ body.theme-dark-blue {
   --theme-600: #3f4d72;
   --theme-700: #364262;
   --theme-800: #2d3752;
+  --button-primary-active-background: var(--theme-100);
+  --button-neutral-hover-background: var(--theme-50);
+  --button-base-active-background: var(--theme-100);
 
   --color-surface-strong: var(--theme-600);
   --color-surface-soft: var(--theme-100);
@@ -146,6 +155,7 @@ body.theme-dark-blue {
   --color-text-inverse-soft: var(--theme-50);
   --color-text-note: var(--theme-400);
   --color-border: var(--theme-300);
+  --slider-arrow-disabled-color: var(--theme-200);
   --color-border-card: var(--theme-300);
   --color-border-control: var(--theme-200);
   --color-border-panel: var(--theme-100);

@@ -1,0 +1,9 @@
+{% macro diningExtra(item) %}
+<article class="dining-extra">
+  <img class="dining-extra__image" src="{{ item.image }}" alt="{{ item.imageAlt }}" loading="lazy" />
+  <div class="dining-extra__content">
+    <h3 class="dining-extra__title">{{ item.title }}</h3>
+    <p class="dining-extra__description">{{ item.description }}</p>
+  </div>
+</article>
+{% endmacro %}

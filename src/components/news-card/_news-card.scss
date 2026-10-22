@@ -7,9 +7,6 @@
   color: var(--color-text-secondary);
   text-decoration: none;
 
-  &:hover .news-card__link { background: var(--color-surface-soft); color: var(--color-accent); }
-  &:focus-visible .news-card__link { background: var(--color-surface-soft); color: var(--color-accent); }
-
   &--catalog { min-height: 40.4rem; border-color: var(--color-border-subtle); }
   &--catalog::before { display: none; }
 

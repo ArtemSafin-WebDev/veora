@@ -12,8 +12,8 @@
       </div>{% endif %}
     </div>
     <div class="room-card__actions">
-      {{ button(page.rooms.bookingLabel, room.bookingHref, 'room-card__booking', 'light', true, true) }}
-      {{ button(page.rooms.detailsLabel, room.href, 'room-card__details', 'dark', true, true) }}
+      {{ button(page.rooms.bookingLabel, room.bookingHref, 'room-card__booking', 'primary' if page.rooms.cardVariant in ['catalog', 'related'] else 'base', true, true) }}
+      {{ button(page.rooms.detailsLabel, room.href, 'room-card__details', 'detail', true, true) }}
     </div>
   </div>
   <div class="room-card__gallery{% if not loop.first and not page.rooms.mobileGalleryControls %} room-card__gallery--desktop-controls{% endif %}" data-room-gallery>

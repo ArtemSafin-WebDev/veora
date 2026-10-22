@@ -17,7 +17,7 @@
     {% if intro.actions.length %}
     <div class="offer-intro__actions">
       {% for action in intro.actions %}
-        {{ button(action.label, action.href, 'offer-intro__action offer-intro__action--' + action.variant) }}
+        {{ button(action.label, action.href, 'offer-intro__action offer-intro__action--' + action.variant, 'primary' if action.variant == 'primary' else 'base') }}
       {% endfor %}
     </div>
     {% endif %}

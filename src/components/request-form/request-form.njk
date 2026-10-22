@@ -26,7 +26,7 @@
       <span>{{ config.consent.label }}{% if config.consent.link %} <a href="{{ config.consent.link.href }}">{{ config.consent.link.label }}</a>{% endif %}</span>
     </label>
     <p class="request-form__error request-form__error--consent" id="{{ config.id }}-consent-error" data-validation-error-for="consent" aria-live="polite" hidden></p>
-    <button class="button request-form__submit" type="submit">{{ config.submitLabel }}</button>
+    <button class="button button--base request-form__submit" type="submit">{{ config.submitLabel }}</button>
     <p class="request-form__status" role="status" data-request-status hidden></p>
   </form>
 </div>
