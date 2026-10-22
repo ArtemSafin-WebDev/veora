@@ -1,0 +1,7 @@
+<section class="room-catalog container" aria-label="{{ page.rooms.label }}">
+  <div class="room-catalog__list">
+    {% for room in page.rooms.items %}
+      {% include "components/room-card/room-card.njk" %}
+    {% endfor %}
+  </div>
+</section>

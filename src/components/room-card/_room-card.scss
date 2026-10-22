@@ -18,6 +18,13 @@
   &__slider, &__slide { height: 100%; }
   &__image { display: block; width: 100%; height: 100%; object-fit: cover; }
   &__arrows { position: absolute; z-index: 1; right: 2rem; bottom: 2rem; }
+
+  &--catalog { color: var(--color-text-primary); }
+  &--catalog &__stats { color: var(--color-text-subtle); }
+  &--catalog &__booking { border-color: var(--color-accent); background: var(--color-accent); color: var(--color-text-inverse); }
+  &--catalog &__details { color: var(--color-accent); }
+  &--catalog &__actions .button { padding-inline: 2.4rem; border-radius: .8rem; line-height: 1.6rem; }
+  &--catalog &__booking:hover { border-color: var(--color-text-secondary); background: var(--color-text-secondary); color: var(--color-text-inverse); }
 }
 
 @media (max-width: 600px) {
@@ -30,5 +37,6 @@
     &__stats--desktop { display: none; }
     &__stats--mobile { display: flex; }
     &__gallery--desktop-controls &__arrows { display: none; }
+    &--catalog &__actions .button { padding-inline: 1.6rem; border-radius: .6rem; line-height: 1.4rem; }
   }
 }

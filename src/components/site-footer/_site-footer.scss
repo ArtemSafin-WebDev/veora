@@ -20,6 +20,8 @@
   }
 
   &__mark-mobile, &__brand-mobile { display: none; }
+  &__mobile-label { display: none; }
+  &--compact-navigation &__navigation { max-width: 66.4rem; }
   &__brand { display: flex; justify-content: center; margin-top: 2.8rem; }
   &__brand-desktop { width: 128.4rem; max-width: 100%; height: auto; aspect-ratio: 1284 / 32; }
 
@@ -184,6 +186,8 @@
     &__inner { padding-bottom: 1.8rem; }
     &__mark { width: 5.2rem; height: 4.8rem; margin-top: -2.4rem; background: var(--color-page-background); }
     &__mark-desktop, &__brand-desktop { display: none; }
+    &__desktop-label { display: none; }
+    &__mobile-label { display: inline; }
     &__mark-mobile { display: block; width: 4.817rem; height: 4.542rem; }
     &__brand { align-items: center; gap: 2.8rem; margin-top: 3rem; }
     &__brand::before, &__brand::after { content: ''; flex: 1; border-top: 1px solid var(--footer-border-color); }

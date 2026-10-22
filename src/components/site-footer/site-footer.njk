@@ -1,6 +1,6 @@
 {% from "components/icon/icon.njk" import icon %}
 {% set footerPage = page.footer or {} %}
-<footer class="site-footer{% if footerPage.variant %} site-footer--{{ footerPage.variant }}{% endif %}">
+<footer class="site-footer{% if footerPage.variant %} site-footer--{{ footerPage.variant }}{% endif %}{% if footerPage.compactNavigation %} site-footer--compact-navigation{% endif %}">
   <div class="site-footer__surface">
     <div class="site-footer__inner container">
       <a class="site-footer__mark" href="{{ footerPage.homeHref or '/' }}" aria-label="{{ site.brand.ariaLabel }}">
@@ -20,7 +20,7 @@
               <h2 class="site-footer__label">{{ group.title }}</h2>
               <ul class="site-footer__links">
                 {% for link in group.links %}
-                  <li><a href="{{ link.href }}">{{ link.label }}</a></li>
+                  <li><a href="{{ link.href }}">{% if link.mobileLabel %}<span class="site-footer__desktop-label">{{ link.label }}</span><span class="site-footer__mobile-label">{{ link.mobileLabel }}</span>{% else %}{{ link.label }}{% endif %}</a></li>
                 {% endfor %}
               </ul>
             </div>
@@ -32,7 +32,7 @@
             {% for item in site.footer.booking %}
               <a class="site-footer__booking-card site-footer__booking-card--{{ item.variant }}" href="{{ item.href }}">
                 <span class="site-footer__booking-title">{{ item.title }}</span>
-                <span class="site-footer__booking-cta">{{ footerPage.bookingLabel or item.cta }}</span>
+                <span class="site-footer__booking-cta">{% if footerPage.mobileBookingLabel %}<span class="site-footer__desktop-label">{{ footerPage.bookingLabel or item.cta }}</span><span class="site-footer__mobile-label">{{ footerPage.mobileBookingLabel }}</span>{% else %}{{ footerPage.bookingLabel or item.cta }}{% endif %}</span>
               </a>
             {% endfor %}
           </div>

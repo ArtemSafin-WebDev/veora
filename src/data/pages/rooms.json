@@ -1,0 +1,252 @@
+{
+  "title": "Размещение",
+  "description": "Номера здравницы «Южный»: одноместный комфорт, стандарт и комфорт. Фотографии и бронирование.",
+  "activePage": "rooms",
+  "directoryGroup": "resort",
+  "theme": "dark-blue",
+  "bodyClass": "page-rooms",
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities/"
+      }
+    ]
+  },
+  "banner": {
+    "id": "rooms-banner",
+    "title": "Размещение",
+    "variant": "rooms",
+    "image": "/assets/room-catalog/hero.png",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Размещение"
+      }
+    ]
+  },
+  "rooms": {
+    "title": "Номера",
+    "bookingLabel": "Забронировать",
+    "detailsLabel": "Подробнее",
+    "previousLabel": "Предыдущая фотография номера",
+    "nextLabel": "Следующая фотография номера",
+    "items": [
+      {
+        "id": "single-comfort",
+        "title": "Одноместный комфорт",
+        "titleLines": [
+          "Одноместный",
+          "комфорт"
+        ],
+        "stats": [
+          "Площадь 16 - 18м2",
+          "Вместимость – 2 человек",
+          "5 номеров"
+        ],
+        "mobileStats": [
+          "Площадь 16 - 18м2",
+          "Вместимость – 2 человек",
+          "5 номеров"
+        ],
+        "images": [
+          {
+            "src": "/assets/rooms/single-comfort.png",
+            "alt": "Одноместный комфорт: кровать с белым постельным бельём"
+          },
+          {
+            "src": "/assets/rooms/single-comfort.png",
+            "alt": "Одноместный комфорт: кровать с белым постельным бельём"
+          }
+        ],
+        "href": "/rooms/single-comfort/",
+        "bookingHref": "mailto:sozvezdie@s.ru?subject=%D0%91%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%20%C2%AB%D0%9E%D0%B4%D0%BD%D0%BE%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BE%D0%BC%D1%84%D0%BE%D1%80%D1%82%C2%BB"
+      },
+      {
+        "id": "standard",
+        "title": "Стандарт",
+        "titleLines": [
+          "Стандарт"
+        ],
+        "stats": [
+          "Площадь 18 - 20 м2",
+          "Вместимость – 3 человека",
+          "175 номеров"
+        ],
+        "mobileStats": [
+          "Площадь 16 - 18м2",
+          "Вместимость – 2 человек",
+          "5 номеров"
+        ],
+        "images": [
+          {
+            "src": "/assets/rooms/standard.png",
+            "alt": "Номер Стандарт: кровать, диван и панорамные окна"
+          },
+          {
+            "src": "/assets/rooms/standard.png",
+            "alt": "Номер Стандарт: кровать, диван и панорамные окна"
+          }
+        ],
+        "href": "/rooms/standard/",
+        "bookingHref": "mailto:sozvezdie@s.ru?subject=%D0%91%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%20%C2%AB%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%C2%BB"
+      },
+      {
+        "id": "comfort",
+        "title": "Комфорт",
+        "titleLines": [
+          "Комфорт"
+        ],
+        "stats": [
+          "Площадь 27 - 36 м2",
+          "Вместимость – 4 человека",
+          "6 номеров"
+        ],
+        "mobileStats": [
+          "Площадь 16 - 18м2",
+          "Вместимость – 2 человек",
+          "5 номеров"
+        ],
+        "images": [
+          {
+            "src": "/assets/rooms/comfort.png",
+            "alt": "Номер Комфорт: просторная спальня с балконом"
+          },
+          {
+            "src": "/assets/rooms/comfort.png",
+            "alt": "Номер Комфорт: просторная спальня с балконом"
+          }
+        ],
+        "href": "/rooms/comfort/",
+        "bookingHref": "mailto:sozvezdie@s.ru?subject=%D0%91%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%20%C2%AB%D0%9A%D0%BE%D0%BC%D1%84%D0%BE%D1%80%D1%82%C2%BB"
+      }
+    ],
+    "label": "Номера здравницы «Южный»",
+    "cardVariant": "catalog",
+    "mobileGalleryControls": true
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/rooms/single-comfort/",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/wellness/programs/",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/wellness/additional-services/",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/wellness/cosmetology/",
+            "label": "Косметология"
+          },
+          {
+            "href": "/wellness/spa/",
+            "label": "СПА"
+          },
+          {
+            "href": "/wellness/medicine/",
+            "label": "Медицина"
+          },
+          {
+            "href": "/wellness/prices/",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness/club/",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers/",
+            "label": "Путевки"
+          },
+          {
+            "href": "/offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities/",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining/",
+            "label": "Питание"
+          },
+          {
+            "href": "/legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  }
+}

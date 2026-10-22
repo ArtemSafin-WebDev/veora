@@ -1,6 +1,6 @@
 {% from "components/button/button.njk" import button %}
 {% from "components/slider-arrows/slider-arrows.njk" import sliderArrows %}
-<article class="room-card" aria-labelledby="room-{{ room.id }}-title">
+<article class="room-card{% if page.rooms.cardVariant %} room-card--{{ page.rooms.cardVariant }}{% endif %}" aria-labelledby="room-{{ room.id }}-title">
   <div class="room-card__content">
     <div class="room-card__description">
       <h3 class="room-card__title" id="room-{{ room.id }}-title">{% for line in room.titleLines %}{{ line }}{% if not loop.last %}<br />{% endif %}{% endfor %}</h3>
@@ -16,12 +16,14 @@
       {{ button(page.rooms.detailsLabel, room.href, 'room-card__details', 'dark', true, true) }}
     </div>
   </div>
-  <div class="room-card__gallery{% if not loop.first %} room-card__gallery--desktop-controls{% endif %}" data-room-gallery>
+  <div class="room-card__gallery{% if not loop.first and not page.rooms.mobileGalleryControls %} room-card__gallery--desktop-controls{% endif %}" data-room-gallery>
     <div class="room-card__slider swiper" aria-label="{{ room.title }}">
       <div class="swiper-wrapper">
         {% for photo in room.images %}<div class="room-card__slide swiper-slide"><img class="room-card__image" src="{{ photo.src }}" alt="{{ photo.alt }}" loading="lazy" /></div>{% endfor %}
       </div>
     </div>
-    {{ sliderArrows(page.rooms.previousLabel, page.rooms.nextLabel, 'room-card__arrows') }}
+    {% if room.images.length > 1 %}
+      {{ sliderArrows(page.rooms.previousLabel, page.rooms.nextLabel, 'room-card__arrows') }}
+    {% endif %}
   </div>
 </article>

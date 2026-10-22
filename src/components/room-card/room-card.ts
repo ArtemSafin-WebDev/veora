@@ -12,7 +12,7 @@ document.querySelectorAll<HTMLElement>('[data-room-gallery]').forEach((gallery) 
     slidesPerView: 1,
     effect: 'fade',
     fadeEffect: { crossFade: true },
-    watchOverflow: false,
+    watchOverflow: true,
     a11y: {
       prevSlideMessage: previous?.getAttribute('aria-label') ?? undefined,
       nextSlideMessage: next?.getAttribute('aria-label') ?? undefined,

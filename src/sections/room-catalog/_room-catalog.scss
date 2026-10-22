@@ -1,0 +1,13 @@
+body.page-rooms {
+  --color-page-background: var(--hero-mark-background);
+}
+
+.room-catalog {
+  margin-bottom: 8rem;
+
+  &__list { display: flex; flex-direction: column; gap: 2.4rem; }
+}
+
+@media (max-width: 600px) {
+  .room-catalog { margin-bottom: 7.5rem; }
+}

@@ -112,6 +112,18 @@
 
 .site-header-scroll-locked { overflow: hidden; }
 
+.site-header--resort {
+  .site-header__bar { gap: 1rem; }
+  .site-header__primary { flex-shrink: 1; min-width: 0; border-radius: 1.2rem; }
+  .site-header__logo { display: flex; align-items: center; gap: 1rem; width: 11.5rem; max-width: 100%; }
+  .site-header__resort-name { font-size: 1rem; font-weight: 500; line-height: 1.2rem; letter-spacing: -.02rem; text-transform: uppercase; }
+  .site-header__navigation { gap: 1.2rem; }
+  .site-header__nav-toggle--directions { gap: .4rem; padding: 0; background: transparent; color: inherit; line-height: 1.8rem; letter-spacing: -.024rem; }
+  .site-header__nav-toggle--directions .site-header__chevron-default { display: block; }
+  .site-header__nav-toggle--directions .site-header__chevron-active { display: none; }
+  .site-header__nav-toggle--directions[aria-expanded='true'] { color: var(--color-text-inverse); }
+}
+
 @media (min-width: 1201px) and (max-width: 1366px) {
   .site-header__menu-navigation { gap: 3.2rem; }
 }

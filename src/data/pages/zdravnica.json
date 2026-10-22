@@ -350,7 +350,7 @@
     "title": "Номера",
     "allLink": {
       "label": "Все номера",
-      "href": "/rooms/"
+      "href": "/rooms.html"
     },
     "bookingLabel": "Забронировать",
     "detailsLabel": "Подробнее",
@@ -375,6 +375,10 @@
           "5 номеров"
         ],
         "images": [
+          {
+            "src": "/assets/rooms/single-comfort.png",
+            "alt": "Одноместный комфорт: кровать с белым постельным бельём"
+          },
           {
             "src": "/assets/rooms/single-comfort.png",
             "alt": "Одноместный комфорт: кровать с белым постельным бельём"
@@ -403,6 +407,10 @@
           {
             "src": "/assets/rooms/standard.png",
             "alt": "Номер Стандарт: кровать, диван и панорамные окна"
+          },
+          {
+            "src": "/assets/rooms/standard.png",
+            "alt": "Номер Стандарт: кровать, диван и панорамные окна"
           }
         ],
         "href": "/rooms/standard/",
@@ -425,6 +433,10 @@
           "5 номеров"
         ],
         "images": [
+          {
+            "src": "/assets/rooms/comfort.png",
+            "alt": "Номер Комфорт: просторная спальня с балконом"
+          },
           {
             "src": "/assets/rooms/comfort.png",
             "alt": "Номер Комфорт: просторная спальня с балконом"
