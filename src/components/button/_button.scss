@@ -21,6 +21,8 @@
     color: var(--button-inverse-color);
   }
 
+  &--primary { border-color: var(--color-accent); background: var(--color-accent); color: var(--color-text-inverse); }
+
   &--muted { color: var(--color-text-secondary); }
   &--gallery { border-color: var(--color-text-faint); }
   &.button--disabled {

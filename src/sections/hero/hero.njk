@@ -1,5 +1,5 @@
 {% from "components/icon/icon.njk" import icon %}
-<section class="hero{% if page.hero.variant %} hero--{{ page.hero.variant }}{% endif %}" aria-labelledby="hero-title">
+<section class="hero{% if page.hero.variant %} hero--{{ page.hero.variant }}{% endif %}{% if page.hero.detailVariant %} hero--{{ page.hero.detailVariant }}{% endif %}" aria-labelledby="hero-title">
   <div class="hero__stage">
     <div class="hero__visual" aria-hidden="true">
       <picture class="hero__picture">
@@ -14,6 +14,10 @@
       </a>
     {% endif %}
     <div class="hero__lead container">
+      {% if page.hero.breadcrumbs %}
+        {% from "components/breadcrumbs/breadcrumbs.njk" import breadcrumbs %}
+        <div class="hero__breadcrumbs">{{ breadcrumbs(page.hero.breadcrumbs, page.hero.breadcrumbsLabel) }}</div>
+      {% endif %}
       <h1 class="hero__title" id="hero-title">{% if page.hero.titleLines %}{% for line in page.hero.titleLines %}<span class="hero__title-line">{{ line }}</span>{% if not loop.last %} {% endif %}{% endfor %}{% else %}{{ page.hero.title }}{% endif %}</h1>
       {% if page.hero.features %}
         <ul class="hero__features">
@@ -41,6 +45,16 @@
         </div>
       {% endfor %}
     </div>
+    {% endif %}
+    {% if page.hero.specifications %}
+      <dl class="hero__specifications">
+        {% for spec in page.hero.specifications %}
+          <div class="hero__specification">
+            <dt><img class="hero__specification-icon" src="{{ spec.icon }}" alt="" /><span>{{ spec.label }}</span></dt>
+            <dd>{{ spec.value }}</dd>
+          </div>
+        {% endfor %}
+      </dl>
     {% endif %}
   </div>
 </section>

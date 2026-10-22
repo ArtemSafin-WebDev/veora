@@ -6,7 +6,7 @@
     {{ sectionTitle(page.gallery.title, 'gallery-title', 'gallery__title') }}
     <span class="gallery__divider" aria-hidden="true"></span>
     <div class="gallery__controls">
-      {{ button(page.gallery.allLink.label, page.gallery.allLink.href, 'gallery__all-link', 'gallery') }}
+      {% if page.gallery.allLink %}{{ button(page.gallery.allLink.label, page.gallery.allLink.href, 'gallery__all-link', 'gallery') }}{% endif %}
       {{ sliderArrows(page.gallery.modal.previousLabel, page.gallery.modal.nextLabel, 'gallery__arrows') }}
     </div>
   </div>
@@ -21,6 +21,7 @@
       {% endfor %}
     </div>
   </div>
-  {{ button(page.gallery.allLink.label, page.gallery.allLink.href, 'gallery__mobile-link', 'gallery') }}
+  {% if page.gallery.allLink %}{{ button(page.gallery.allLink.label, page.gallery.allLink.href, 'gallery__mobile-link', 'gallery') }}{% endif %}
+  {% if page.gallery.booking %}{{ button(page.gallery.booking.label, page.gallery.booking.href, 'gallery__booking', 'primary') }}{% endif %}
 </section>
 {% include "components/gallery-modal/gallery-modal.njk" %}

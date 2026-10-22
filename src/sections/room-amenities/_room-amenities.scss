@@ -1,0 +1,28 @@
+.room-amenities {
+  margin-bottom: 14rem;
+  padding-block: 10rem;
+  background: var(--theme-500);
+  color: var(--color-text-inverse);
+
+  &__container { padding-inline: 6rem; }
+  &__title { margin: 0 0 4rem; font-size: 4.8rem; font-weight: 400; line-height: 5rem; letter-spacing: -.288rem; }
+  &__groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  &__group { display: flex; flex-direction: column; align-items: flex-start; gap: 1.9rem; min-width: 0; padding: 2rem; }
+  &__icon { display: block; flex: none; width: 4rem; height: 4rem; object-fit: contain; }
+  &__heading { margin: 0; font-size: 3.2rem; font-weight: 400; line-height: 3.4rem; letter-spacing: -.128rem; }
+  &__list { margin: 0; padding-left: 2.1rem; color: var(--theme-100); font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; }
+}
+
+@media (max-width: 600px) {
+  .room-amenities {
+    margin-bottom: 8rem;
+    padding-block: 6rem;
+
+    &__container { padding-inline: 1.2rem; }
+    &__title { font-size: 2.4rem; line-height: 2.8rem; letter-spacing: -.144rem; }
+    &__groups { grid-template-columns: minmax(0, 1fr); }
+    &__group { padding: 2rem 0; }
+    &__heading { font-size: 2rem; line-height: 2.4rem; letter-spacing: -.12rem; }
+    &__heading span { display: block; }
+  }
+}

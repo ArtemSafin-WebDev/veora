@@ -1,0 +1,484 @@
+{
+  "title": "Одноместный комфорт",
+  "description": "Одноместный комфорт в здравнице «Южный»: фотографии, оснащение, удобства и бронирование номера.",
+  "activePage": "rooms",
+  "directoryGroup": "resort",
+  "theme": "dark-blue",
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities/"
+      }
+    ]
+  },
+  "hero": {
+    "variant": "resort",
+    "title": "Одноместный комфорт",
+    "image": "/assets/rooms/standard.png",
+    "brandMark": "hero-brand-mark-resort",
+    "brandMarkMobile": "hero-brand-mark-mobile-resort",
+    "divider": "hero-divider",
+    "dividerMobile": "hero-divider-mobile",
+    "backLink": {
+      "label": "Назад на основной сайт",
+      "href": "/zdravnica.html",
+      "icon": "hero-back-resort"
+    },
+    "description": "Уютный номер для одного гостя.",
+    "text": "Подходит, чтобы спокойно отдохнуть после оздоровительных процедур или побыть в тишине. Включает спальню с полутораспальной кроватью и ванную комнату с душевой зоной.",
+    "booking": {
+      "label": "Подбор отдыха",
+      "resortSelect": {
+        "id": "booking-resort",
+        "label": "Размещение",
+        "groups": [
+          {
+            "label": "Здравница",
+            "name": "resort",
+            "options": [
+              {
+                "value": "",
+                "label": "Выберите здравницу",
+                "summary": "Выберите здравницу"
+              },
+              {
+                "value": "Балтийские пески",
+                "label": "Балтийские пески",
+                "summary": "Балтийские пески"
+              },
+              {
+                "value": "Золотые пески",
+                "label": "Золотые пески",
+                "summary": "Золотые пески"
+              },
+              {
+                "value": "Полюс",
+                "label": "Полюс",
+                "summary": "Полюс"
+              },
+              {
+                "value": "Солнечный городок",
+                "label": "Солнечный городок",
+                "summary": "Солнечный городок"
+              },
+              {
+                "value": "Южный",
+                "label": "Южный",
+                "summary": "Южный",
+                "selected": true
+              }
+            ]
+          }
+        ]
+      },
+      "datesLabel": "Заезд и выезд",
+      "datesValue": "01.05.25 - 02.05.25",
+      "arrivalValue": "2025-05-01",
+      "departureValue": "2025-05-02",
+      "guestSelect": {
+        "id": "booking-guests",
+        "label": "Гости",
+        "keepOpen": true,
+        "groups": [
+          {
+            "label": "Взрослые",
+            "name": "adults",
+            "options": [
+              {
+                "value": "1",
+                "label": "1 взрослый",
+                "summary": "1 взрослый"
+              },
+              {
+                "value": "2",
+                "label": "2 взрослых",
+                "summary": "2 взрослых",
+                "selected": true
+              },
+              {
+                "value": "3",
+                "label": "3 взрослых",
+                "summary": "3 взрослых"
+              },
+              {
+                "value": "4",
+                "label": "4 взрослых",
+                "summary": "4 взрослых"
+              }
+            ]
+          },
+          {
+            "label": "Дети",
+            "name": "children",
+            "options": [
+              {
+                "value": "0",
+                "label": "Без детей",
+                "summary": ""
+              },
+              {
+                "value": "1",
+                "label": "1 ребенок",
+                "summary": "1 ребенок",
+                "selected": true
+              },
+              {
+                "value": "2",
+                "label": "2 ребенка",
+                "summary": "2 ребенка"
+              },
+              {
+                "value": "3",
+                "label": "3 ребенка",
+                "summary": "3 ребенка"
+              }
+            ]
+          }
+        ]
+      },
+      "chevron": "hero-chevron"
+    },
+    "detailVariant": "room",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Размещение",
+        "href": "/rooms.html"
+      },
+      {
+        "label": "Однокомнатный одноместный номер"
+      }
+    ],
+    "specifications": [
+      {
+        "icon": "/assets/room/area.svg",
+        "label": "Площадь:",
+        "value": "19-22 кв. м."
+      },
+      {
+        "icon": "/assets/room/guests.svg",
+        "label": "Вместимость:",
+        "value": "до 2 гостей"
+      },
+      {
+        "icon": "/assets/room/bed.svg",
+        "label": "Кровать:",
+        "value": "King size"
+      },
+      {
+        "icon": "/assets/room/sofa.svg",
+        "label": "Доп. место:",
+        "value": "Диван"
+      }
+    ]
+  },
+  "roomAmenities": {
+    "title": "Удобства в номере",
+    "groups": [
+      {
+        "titleLines": [
+          "Оснащение",
+          "номера"
+        ],
+        "icon": "/assets/room/equipment.svg",
+        "items": [
+          "Две односпальные или двуспальная кровать",
+          "Диван",
+          "Гипоаллергенное белье",
+          "Система безопасности",
+          "Чайная станция",
+          "Набор для приготовления чая/кофе",
+          "Гладильная доска",
+          "Утюг",
+          "Мини-холодильник",
+          "Сейф",
+          "Фанкойл",
+          "Фен",
+          "Wi-Fi"
+        ]
+      },
+      {
+        "titleLines": [
+          "Оснащение",
+          "ванны"
+        ],
+        "icon": "/assets/room/bathroom.svg",
+        "items": [
+          "Банные полотенца",
+          "Ванная с джакузи",
+          "Душ",
+          "Тёплый пол",
+          "Косметические средства",
+          "Халат",
+          "Тапочки"
+        ]
+      },
+      {
+        "titleLines": [
+          "Прочее"
+        ],
+        "icon": "/assets/room/other.svg",
+        "items": [
+          "Вид на реку",
+          "Отопление",
+          "Гостиная зона",
+          "Набор посуды",
+          "Ковровое покрытие",
+          "Бутилированная вода",
+          "Обслуживание номеров",
+          "Звуконепроницаемые стены и окна"
+        ]
+      }
+    ]
+  },
+  "gallery": {
+    "variant": "room",
+    "title": "Галерея номера",
+    "modal": {
+      "id": "gallery-modal",
+      "openLabel": "Открыть фотографию",
+      "previousLabel": "Предыдущая фотография",
+      "nextLabel": "Следующая фотография"
+    },
+    "booking": {
+      "label": "Забронировать",
+      "href": "mailto:sozvezdie@s.ru?subject=Бронирование%20номера%20«Одноместный%20комфорт»"
+    },
+    "items": [
+      {
+        "image": "/assets/rooms/standard.png",
+        "alt": "Светлый номер с двуспальной кроватью и диваном у окна",
+        "size": "wide"
+      },
+      {
+        "image": "/assets/rooms/standard.png",
+        "alt": "Светлый номер с двуспальной кроватью и диваном у окна",
+        "size": "medium"
+      },
+      {
+        "image": "/assets/rooms/standard.png",
+        "alt": "Светлый номер с двуспальной кроватью и диваном у окна",
+        "size": "narrow",
+        "mobileImage": "/assets/gallery/resort-building.png"
+      },
+      {
+        "image": "/assets/rooms/standard.png",
+        "alt": "Светлый номер с двуспальной кроватью и диваном у окна",
+        "size": "medium",
+        "mobileImage": "/assets/gallery/resort-pool.png"
+      }
+    ]
+  },
+  "rooms": {
+    "title": "Другие номера",
+    "bookingLabel": "Забронировать",
+    "detailsLabel": "Подробнее",
+    "previousLabel": "Предыдущая фотография номера",
+    "nextLabel": "Следующая фотография номера",
+    "items": [
+      {
+        "id": "single-comfort",
+        "title": "Одноместный комфорт",
+        "titleLines": [
+          "Одноместный",
+          "комфорт"
+        ],
+        "stats": [
+          "Площадь 16 - 18м2",
+          "Вместимость – 2 человек",
+          "5 номеров"
+        ],
+        "mobileStats": [
+          "Площадь 16 - 18м2",
+          "Вместимость – 2 человек",
+          "5 номеров"
+        ],
+        "images": [
+          {
+            "src": "/assets/rooms/single-comfort.png",
+            "alt": "Одноместный комфорт: кровать с белым постельным бельём"
+          },
+          {
+            "src": "/assets/rooms/single-comfort.png",
+            "alt": "Одноместный комфорт: кровать с белым постельным бельём"
+          }
+        ],
+        "href": "/room.html",
+        "bookingHref": "mailto:sozvezdie@s.ru?subject=%D0%91%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%20%C2%AB%D0%9E%D0%B4%D0%BD%D0%BE%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BE%D0%BC%D1%84%D0%BE%D1%80%D1%82%C2%BB",
+        "mobileOnly": true
+      },
+      {
+        "id": "standard",
+        "title": "Стандарт",
+        "titleLines": [
+          "Стандарт"
+        ],
+        "stats": [
+          "Площадь 18 - 20 м2",
+          "Вместимость – 3 человека",
+          "175 номеров"
+        ],
+        "images": [
+          {
+            "src": "/assets/rooms/standard.png",
+            "alt": "Номер Стандарт: кровать, диван и панорамные окна"
+          },
+          {
+            "src": "/assets/rooms/standard.png",
+            "alt": "Номер Стандарт: кровать, диван и панорамные окна"
+          }
+        ],
+        "href": "/rooms/standard/",
+        "bookingHref": "mailto:sozvezdie@s.ru?subject=%D0%91%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%20%C2%AB%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%C2%BB"
+      },
+      {
+        "id": "comfort",
+        "title": "Комфорт",
+        "titleLines": [
+          "Комфорт"
+        ],
+        "stats": [
+          "Площадь 27 - 36 м2",
+          "Вместимость – 4 человека",
+          "6 номеров"
+        ],
+        "images": [
+          {
+            "src": "/assets/rooms/comfort.png",
+            "alt": "Номер Комфорт: просторная спальня с балконом"
+          },
+          {
+            "src": "/assets/rooms/comfort.png",
+            "alt": "Номер Комфорт: просторная спальня с балконом"
+          }
+        ],
+        "href": "/rooms/comfort/",
+        "bookingHref": "mailto:sozvezdie@s.ru?subject=%D0%91%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%20%C2%AB%D0%9A%D0%BE%D0%BC%D1%84%D0%BE%D1%80%D1%82%C2%BB"
+      }
+    ],
+    "cardVariant": "related",
+    "mobileGalleryControls": true
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/wellness/programs/",
+            "label": "Готовые комплексы услуг/программы"
+          },
+          {
+            "href": "/wellness/additional-services/",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/wellness/cosmetology/",
+            "label": "Косметология"
+          },
+          {
+            "href": "/wellness/spa/",
+            "label": "СПА"
+          },
+          {
+            "href": "/wellness/medicine/",
+            "label": "Медицина"
+          },
+          {
+            "href": "/wellness/prices/",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness/club/",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers/",
+            "label": "Путевки"
+          },
+          {
+            "href": "/offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities/",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining/",
+            "label": "Питание"
+          },
+          {
+            "href": "/legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ]
+  }
+}

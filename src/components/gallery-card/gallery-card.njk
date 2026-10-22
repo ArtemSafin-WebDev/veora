@@ -13,5 +13,5 @@
     {% if card.mobileImage %}<source media="(max-width: 600px)" srcset="{{ card.mobileImage }}" />{% endif %}
     <img class="gallery-card__image" src="{{ card.image }}" alt="{{ card.alt }}" loading="lazy" />
   </picture>
-  {% if not photo and not resort %}<span class="gallery-card__label">{{ card.title }}{% if card.catalog %}{{ icon('gallery-catalog-arrow', 'gallery-card__arrow', 2.4) }}{% endif %}</span>{% endif %}
+  {% if not photo and not resort and card.title %}<span class="gallery-card__label">{{ card.title }}{% if card.catalog %}{{ icon('gallery-catalog-arrow', 'gallery-card__arrow', 2.4) }}{% endif %}</span>{% endif %}
 {% if card.catalog %}</a>{% else %}</button>{% endif %}

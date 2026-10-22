@@ -19,6 +19,7 @@ import './sections/afisha-catalog/afisha-catalog';
 import './sections/offer-intro/offer-intro';
 import './components/request-form/request-form';
 import './sections/related-offers/related-offers';
+import './sections/related-rooms/related-rooms';
 import './sections/news-intro/news-intro';
 import './sections/related-news/related-news';
 import './sections/related-events/related-events';

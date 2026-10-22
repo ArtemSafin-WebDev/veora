@@ -1,0 +1,16 @@
+{% from "components/section-title/section-title.njk" import sectionTitle %}
+<section class="related-rooms container" aria-labelledby="related-rooms-title">
+  <div class="related-rooms__header">
+    {{ sectionTitle(page.rooms.title, 'related-rooms-title', 'related-rooms__title') }}
+    <span class="related-rooms__divider" aria-hidden="true"></span>
+  </div>
+  <div class="related-rooms__slider swiper" data-related-rooms-slider>
+    <div class="related-rooms__track swiper-wrapper">
+      {% for room in page.rooms.items %}
+        <div class="related-rooms__slide{% if room.mobileOnly %} related-rooms__slide--mobile-only{% endif %} swiper-slide">
+          {% include "components/room-card/room-card.njk" %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

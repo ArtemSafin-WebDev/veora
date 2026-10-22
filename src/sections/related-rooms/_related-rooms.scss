@@ -1,0 +1,25 @@
+.related-rooms {
+  margin-bottom: 8rem;
+  color: var(--color-text-primary);
+
+  &__header { display: flex; align-items: center; justify-content: space-between; gap: 3.2rem; margin-bottom: 3.7rem; }
+  &__title { flex: 0 1 78rem; }
+  &__divider { flex: 0 1 30rem; height: 1px; background: var(--color-border); }
+  &__slider { overflow: visible; }
+  &__track { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .9rem; }
+  &__slide { min-width: 0; height: auto; }
+  &__slide--mobile-only { display: none; }
+}
+
+@media (max-width: 600px) {
+  .related-rooms {
+    margin-bottom: 8rem;
+
+    &__header { margin-bottom: 2.4rem; }
+    &__title { flex: 1; }
+    &__divider { display: none; }
+    &__track { display: flex; gap: 0; }
+    &__slide { flex: 0 0 100%; width: 100%; }
+    &__slide--mobile-only { display: block; }
+  }
+}

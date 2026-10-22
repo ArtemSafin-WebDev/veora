@@ -1,0 +1,16 @@
+<section class="room-amenities" aria-labelledby="room-amenities-title">
+  <div class="room-amenities__container container">
+    <h2 class="room-amenities__title" id="room-amenities-title">{{ page.roomAmenities.title }}</h2>
+    <div class="room-amenities__groups">
+      {% for group in page.roomAmenities.groups %}
+        <div class="room-amenities__group">
+          <img class="room-amenities__icon" src="{{ group.icon }}" alt="" loading="lazy" />
+          <h3 class="room-amenities__heading">{% for line in group.titleLines %}<span>{{ line }}</span>{% if not loop.last %} {% endif %}{% endfor %}</h3>
+          <ul class="room-amenities__list">
+            {% for item in group.items %}<li>{{ item }}</li>{% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
