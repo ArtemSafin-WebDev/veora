@@ -1,0 +1,292 @@
+{
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities/"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/wellness/programs/",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/wellness/additional-services/",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/wellness/cosmetology/",
+            "label": "Косметология"
+          },
+          {
+            "href": "/wellness/spa/",
+            "label": "СПА"
+          },
+          {
+            "href": "/wellness/medicine/",
+            "label": "Медицина"
+          },
+          {
+            "href": "/wellness/prices/",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness/club/",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities/",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  },
+  "title": "Путевки",
+  "description": "Путевки в здравницу «Южный»: Здоровье, Здоровье+, Отдых и Гостевой визит.",
+  "activePage": "vouchers",
+  "directoryGroup": "resort",
+  "theme": "dark-blue",
+  "bodyClass": "page-vouchers",
+  "banner": {
+    "id": "vouchers-banner",
+    "title": "Путевки",
+    "variant": "vouchers",
+    "image": "/assets/vouchers/hero.png",
+    "imageAlt": "Солнечный свет сквозь зелёную листву деревьев",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Путевки"
+      }
+    ]
+  },
+  "vouchers": {
+    "label": "Путевки здравницы",
+    "bookLabel": "Забронировать",
+    "detailsLabel": "Подробнее",
+    "modalId": "voucher-booking",
+    "items": [
+      {
+        "id": "health",
+        "title": "Здоровье",
+        "description": "Базовый курс для восстановления и профилактики. Подходит для тех, кто хочет мягко укрепить иммунитет, улучшить самочувствие и снизить уровень стресса.",
+        "defaultOpen": false,
+        "programsLabel": "Виды программ Здоровье"
+      },
+      {
+        "id": "health-plus",
+        "title": "Здоровье+",
+        "description": "Базовый курс для восстановления и профилактики. Подходит для тех, кто хочет мягко укрепить иммунитет, улучшить самочувствие и снизить уровень стресса.",
+        "defaultOpen": false
+      },
+      {
+        "id": "rest",
+        "title": "Отдых",
+        "description": "Базовый курс для восстановления и профилактики. Подходит для тех, кто хочет мягко укрепить иммунитет, улучшить самочувствие и снизить уровень стресса.",
+        "defaultOpen": false
+      },
+      {
+        "id": "guest",
+        "title": "Гостевой визит",
+        "description": "Базовый курс для восстановления и профилактики. Подходит для тех, кто хочет мягко укрепить иммунитет, улучшить самочувствие и снизить уровень стресса.",
+        "defaultOpen": false
+      }
+    ],
+    "services": [
+      {
+        "title": "Первичная консультация врача-терапевта / курортолога"
+      },
+      {
+        "title": "Индивидуальное составление программы оздоровления"
+      },
+      {
+        "title": "Водолечение (душ Шарко, циркулярный душ, подводный массаж)"
+      },
+      {
+        "title": "Физиотерапия (магнитотерапия, лазеротерапия, электрофорез)"
+      },
+      {
+        "title": "Лечебная физкультура (групповая и индивидуальная)"
+      }
+    ],
+    "photos": [
+      {
+        "src": "/assets/vouchers/meadow.png",
+        "alt": "Девушка отдыхает на цветущем лугу"
+      },
+      {
+        "src": "/assets/vouchers/running.png",
+        "alt": "Пробежка по загородной дорожке"
+      }
+    ]
+  },
+  "bookingModal": {
+    "id": "voucher-booking",
+    "label": "Заявка на бронирование",
+    "closeLabel": "Закрыть заявку на бронирование",
+    "image": "/assets/vouchers/running.png",
+    "imageAlt": "Пробежка по загородной дорожке",
+    "duration": "60 минут",
+    "title": "Чистка лица гигиеническая аппаратная ультразвуковая на профессиональной косметике Selvert Thermal Швейцария",
+    "description": "Мягкая косметологическая процедура, использующая высокочастотные звуковые волны (через скрабер-лопатку) для очищения кожи от ороговевших клеток, комедонов и себума, сопровождаемая использованием глубоко очищающих и ухаживающих профессиональных средств (гели, сыворотки, маски",
+    "form": {
+      "id": "voucher-request",
+      "title": "Оставить заявку",
+      "variant": "booking",
+      "action": null,
+      "hiddenFields": [
+        {
+          "name": "voucher_title",
+          "value": ""
+        },
+        {
+          "name": "service_title",
+          "value": ""
+        }
+      ],
+      "fields": [
+        {
+          "name": "name",
+          "label": "Ваше имя",
+          "autocomplete": "given-name",
+          "required": true,
+          "maxLength": 100,
+          "minLength": 2,
+          "pattern": "[\\p{L}\\p{M}][\\p{L}\\p{M}\\s’'\\-]*",
+          "errorMessage": "Введите имя буквами, без цифр и специальных символов."
+        },
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "text",
+          "autocomplete": "tel",
+          "required": true,
+          "pattern": "\\+7 \\([0-9]{3}\\) [0-9]{3}-[0-9]{2}-[0-9]{2}",
+          "maxLength": 18,
+          "mask": "phone",
+          "inputMode": "tel",
+          "errorMessage": "Введите телефон полностью: +7 (999) 123-45-67."
+        },
+        {
+          "name": "time",
+          "label": "Время",
+          "pattern": "([01][0-9]|2[0-3]):[0-5][0-9]",
+          "maxLength": 5,
+          "hint": "Время в формате ЧЧ:ММ, например 12:30",
+          "mask": "time",
+          "inputMode": "numeric",
+          "errorMessage": "Введите время от 00:00 до 23:59."
+        },
+        {
+          "name": "date",
+          "label": "Дата",
+          "pattern": "(0[1-9]|[12][0-9]|3[01])\\.(0[1-9]|1[0-2])\\.[0-9]{4}",
+          "maxLength": 10,
+          "hint": "Дата в формате ДД.ММ.ГГГГ, например 25.10.2026",
+          "mask": "date",
+          "inputMode": "numeric",
+          "errorMessage": "Введите существующую дату в формате ДД.ММ.ГГГГ."
+        },
+        {
+          "name": "wishes",
+          "label": "Пожелания",
+          "maxLength": 1000
+        }
+      ],
+      "consent": {
+        "label": "Принимаю условия обработки персональных данных"
+      },
+      "submitLabel": "Оставить заявку"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.voucher-card {
+  padding: 2.4rem;
+  border-radius: 1.2rem;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+
+  &__heading { margin: 0 0 2rem; font: inherit; }
+  &__toggle { display: flex; align-items: center; justify-content: space-between; gap: 2rem; width: 100%; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; font-size: 3.6rem; line-height: 4rem; letter-spacing: -.216rem; text-align: left; cursor: pointer; }
+  &__toggle:focus-visible > span:first-child { text-decoration: underline; text-underline-offset: .4rem; }
+  &__icons { display: grid; flex: none; width: 4rem; height: 4rem; }
+  &__icon { grid-area: 1 / 1; transform: rotate(-90deg); }
+  &__icon--vertical { transform: scaleY(1); transform-origin: center; transition: transform .3s ease; }
+  &--open &__icon--vertical { transform: scaleY(0); }
+  &__description { max-width: 61.4rem; margin: 0 0 2rem; color: var(--color-text-muted); font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; }
+  &__actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+  .button { font-family: inherit; }
+  &__programs, &__service .button { background: transparent; }
+  &__panel { display: grid; grid-template-rows: 0fr; visibility: hidden; transition: grid-template-rows .6s ease, visibility .6s; }
+  &--open &__panel { grid-template-rows: 1fr; visibility: visible; }
+  &__clip { min-height: 0; overflow: hidden; }
+  &__details { padding-top: 4rem; }
+  &__services { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .9rem; margin-bottom: 1rem; }
+  &__service { display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; gap: 1rem; min-height: 20rem; padding: 2rem; border: 1px solid var(--theme-100); border-radius: 1.2rem; }
+  &__service-title { margin: 0; font-size: 1.4rem; font-weight: 600; line-height: 1.6rem; letter-spacing: -.028rem; }
+  &__photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+  &__photo { display: block; width: 100%; height: 42rem; border-radius: 1rem; object-fit: cover; }
+}
+
+@media (max-width: 600px) {
+  .voucher-card {
+    padding: 1.2rem;
+    &__toggle { font-size: 2.4rem; line-height: 2.8rem; letter-spacing: -.144rem; }
+    &__icons { width: 3rem; height: 3rem; }
+    &__icon { place-self: center; width: 3rem; height: 3rem; }
+    &__services { grid-template-columns: minmax(0, 1fr); }
+    &__service { min-height: 11.64rem; }
+    &__photos { grid-template-columns: minmax(0, 1fr); }
+    &__photo { height: 31.3rem; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .voucher-card__panel, .voucher-card__icon { transition: none; }
+}

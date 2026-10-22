@@ -1,6 +1,6 @@
 {% from "components/icon/icon.njk" import icon %}
 {% macro requestForm(config) %}
-<div class="request-form">
+<div class="request-form{% if config.variant %} request-form--{{ config.variant }}{% endif %}">
   <div class="request-form__intro">
     <h2 class="request-form__title" id="{{ config.id }}-title">{{ config.title }}</h2>
     {% if config.description %}<p class="request-form__description">{{ config.description }}</p>{% endif %}
@@ -11,7 +11,7 @@
       {% for field in config.fields %}
       <label class="request-form__field">
         <span class="request-form__field-label">{{ field.label }}</span>
-        <input class="request-form__input" type="{{ field.type or 'text' }}" name="{{ field.name }}" placeholder="{{ field.label }}"{% if field.autocomplete %} autocomplete="{{ field.autocomplete }}"{% endif %}{% if field.required %} required{% endif %}{% if field.minLength %} minlength="{{ field.minLength }}"{% endif %}{% if field.maxLength %} maxlength="{{ field.maxLength }}"{% endif %}{% if field.pattern %} pattern="{{ field.pattern }}"{% endif %} />
+        <input class="request-form__input" type="{{ field.type or 'text' }}" name="{{ field.name }}" placeholder="{{ field.label }}"{% if field.autocomplete %} autocomplete="{{ field.autocomplete }}"{% endif %}{% if field.mask %} data-mask="{{ field.mask }}"{% endif %}{% if field.inputMode %} inputmode="{{ field.inputMode }}"{% endif %}{% if field.errorMessage %} data-validation-pattern="{{ field.errorMessage }}" data-validation-invalid="{{ field.errorMessage }}"{% endif %}{% if field.hint %} title="{{ field.hint }}"{% endif %}{% if field.required %} required{% endif %}{% if field.minLength %} minlength="{{ field.minLength }}"{% endif %}{% if field.maxLength and not field.mask %} maxlength="{{ field.maxLength }}"{% endif %}{% if field.pattern %} pattern="{{ field.pattern }}"{% endif %} />
         <span class="request-form__error" id="{{ config.id }}-{{ loop.index }}-error" data-validation-error-for="{{ field.name }}" aria-live="polite" hidden></span>
       </label>
       {% endfor %}

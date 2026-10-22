@@ -1,0 +1,6 @@
+{% from "components/voucher-card/voucher-card.njk" import voucherCard %}
+<section class="vouchers container" aria-label="{{ page.vouchers.label }}">
+  {% for item in page.vouchers.items %}
+    {{ voucherCard(item, page.vouchers) }}
+  {% endfor %}
+</section>

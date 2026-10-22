@@ -1,0 +1,10 @@
+body.page-vouchers {
+  --color-page-background: var(--vouchers-page-background);
+  --footer-surround-background: var(--color-page-background);
+}
+
+.vouchers { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 8rem; }
+
+@media (max-width: 600px) {
+  .vouchers { margin-bottom: 6rem; }
+}

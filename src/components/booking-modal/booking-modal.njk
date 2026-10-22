@@ -1,0 +1,18 @@
+{% from "components/modal/modal.njk" import modal %}
+{% from "components/icon/icon.njk" import icon %}
+{% from "components/request-form/request-form.njk" import requestForm with context %}
+{% set booking = page.bookingModal %}
+{% call modal(booking.id, booking.label, booking.closeLabel, 'booking-modal') %}
+  <div class="booking-modal__card">
+    <div class="booking-modal__media">
+      <img class="booking-modal__image" src="{{ booking.image }}" alt="{{ booking.imageAlt }}" loading="lazy" />
+      <span class="booking-modal__duration">{{ booking.duration }}</span>
+      <button class="booking-modal__desktop-close" type="button" aria-label="{{ booking.closeLabel }}" data-modal-close>{{ icon('booking-close', '', 3.6) }}</button>
+    </div>
+    <div class="booking-modal__intro">
+      <h2 class="booking-modal__title">{{ booking.title }}</h2>
+      <p class="booking-modal__description">{{ booking.description }}</p>
+    </div>
+    {{ requestForm(booking.form) }}
+  </div>
+{% endcall %}

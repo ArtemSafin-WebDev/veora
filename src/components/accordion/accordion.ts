@@ -6,7 +6,7 @@ document.querySelectorAll<HTMLElement>('[data-accordion]').forEach((root) => {
   toggle.addEventListener('click', () => {
     const open = toggle.getAttribute('aria-expanded') !== 'true';
     toggle.setAttribute('aria-expanded', String(open));
-    root.classList.toggle('accordion--open', open);
+    root.classList.toggle(root.dataset.accordionClass || 'accordion--open', open);
     panel.inert = !open;
   });
 });

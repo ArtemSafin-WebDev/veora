@@ -1,4 +1,5 @@
 import { FormValidator } from '../../utils/form-validator';
+import { initInputMasks } from '../../utils/input-mask';
 
 declare global {
   interface Window {
@@ -10,5 +11,6 @@ declare global {
 window.FormValidator = FormValidator;
 
 document.querySelectorAll<HTMLFormElement>('.request-form__form').forEach((form) => {
+  initInputMasks(form);
   if (!FormValidator.getInstance(form)) new FormValidator(form);
 });

@@ -62,6 +62,11 @@ html.modal-scroll-locked { scrollbar-gutter: stable; }
 @media (max-width: 600px) {
   .modal {
     padding-inline: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior: none;
+
+    &[open] { display: flex; flex-direction: column; align-items: center; }
+    &__content { flex: none; max-height: none; margin-block: auto; overflow: visible; }
 
     &__close { right: calc(50% - 1.5rem); }
   }

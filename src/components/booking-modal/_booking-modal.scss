@@ -1,0 +1,31 @@
+.booking-modal {
+  padding: 3rem;
+  overflow: auto;
+  color: var(--color-text-primary);
+  &[open] { display: block; }
+  .modal__content { width: min(100%, 75.6rem); max-height: none; margin-left: auto; overflow: visible; }
+  .modal__close { display: none; }
+  &__card { display: flex; flex-direction: column; gap: 4rem; padding: 1rem 1rem 3rem; border-radius: 1.2rem; background: var(--color-surface); }
+  &__media { position: relative; }
+  &__image { display: block; width: 100%; height: 42rem; border-radius: 1rem; object-fit: cover; }
+  &__duration { position: absolute; bottom: 2rem; left: 2rem; padding: .8rem 1.2rem; border-radius: 1.2rem; background: var(--color-surface); color: var(--color-accent); font-size: 1.2rem; line-height: 1.6rem; letter-spacing: -.024rem; }
+  &__desktop-close { position: absolute; top: 1rem; right: 1rem; display: grid; place-items: center; width: 3.6rem; height: 3.6rem; padding: 0; border: 0; background: transparent; color: var(--color-text-inverse); cursor: pointer; }
+  &__intro { padding-inline: 2rem; }
+  &__title { margin: 0 0 2rem; font-size: 3.6rem; font-weight: 400; line-height: 4rem; letter-spacing: -.216rem; }
+  &__description { margin: 0; color: var(--color-text-muted); font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; }
+}
+
+@media (max-width: 600px) {
+  .booking-modal {
+    padding: 11.3rem 0 0;
+    .modal__content { width: 100%; }
+    .modal__close { display: grid; }
+    &__card { padding: 1.2rem 1.2rem 4rem; border-radius: 1.2rem 1.2rem 0 0; }
+    &__image { height: 23.2rem; }
+    &__duration { bottom: 1rem; left: 1rem; }
+    &__desktop-close { display: none; }
+    &__intro { padding: 0; }
+    &__title { font-size: 2.4rem; line-height: 2.8rem; letter-spacing: -.144rem; }
+    &__description { font-size: 1.2rem; line-height: 1.6rem; letter-spacing: -.024rem; }
+  }
+}

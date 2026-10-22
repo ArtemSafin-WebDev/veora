@@ -97,9 +97,20 @@ export class FormValidator {
     const textField = field instanceof HTMLTextAreaElement || (field instanceof HTMLInputElement && ['text', 'search', 'tel', 'url', 'email', 'password'].includes(field.type));
 
     if (validity.customError) return field.validationMessage;
+    if (field instanceof HTMLInputElement && field.dataset.mask) {
+      const digits = field.value.replace(/\D/g, '');
+      const empty = field.dataset.mask === 'phone' ? !digits.replace(/^7/, '') : !digits;
+      if (empty) return field.required ? message('Required') : '';
+    }
     if (validity.valueMissing || (textField && field.required && !field.value.trim())) return message('Required');
     if (validity.typeMismatch) return message(field instanceof HTMLInputElement && field.type === 'email' ? 'Email' : 'Invalid');
     if (validity.patternMismatch) return message('Pattern');
+    if (field instanceof HTMLInputElement && field.dataset.mask === 'date' && field.value) {
+      const [day, month, year] = field.value.split('.').map(Number);
+      const date = new Date(0);
+      date.setUTCFullYear(year, month - 1, day);
+      if (date.getUTCFullYear() !== year || date.getUTCMonth() !== month - 1 || date.getUTCDate() !== day) return message('Invalid');
+    }
     // Native length checks do not cover values assigned programmatically by a CMS.
     if (textField && field.value && field.minLength > 0 && field.value.length < field.minLength) return message('TooShort');
     if (textField && field.maxLength >= 0 && field.value.length > field.maxLength) return message('TooLong');

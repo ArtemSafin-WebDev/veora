@@ -129,6 +129,7 @@ body.theme-dark-blue {
   --button-inverse-color: var(--color-text-inverse);
   --search-page-background: var(--color-surface);
   --faq-page-background: var(--color-surface-soft);
+  --vouchers-page-background: var(--theme-50);
 }
 
 // Figma: territory/sea, homepage of the health resort (2114:1182).
@@ -212,4 +213,5 @@ body.theme-dark-blue {
   --special-offers-backdrop-display: block;
   --search-page-background: var(--color-page-background);
   --faq-page-background: var(--color-page-background);
+  --vouchers-page-background: #f1f3f5;
 }

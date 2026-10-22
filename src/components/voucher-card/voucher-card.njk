@@ -1,0 +1,36 @@
+{% from "components/icon/icon.njk" import icon %}
+{% macro voucherCard(item, config) %}
+<article class="voucher-card{% if item.defaultOpen %} voucher-card--open{% endif %}" data-accordion data-accordion-class="voucher-card--open">
+  <h2 class="voucher-card__heading">
+    <button class="voucher-card__toggle" id="{{ item.id }}-toggle" type="button" aria-expanded="{{ 'true' if item.defaultOpen else 'false' }}" aria-controls="{{ item.id }}-panel" data-accordion-toggle>
+      <span>{{ item.title }}</span>
+      <span class="voucher-card__icons">
+        {{ icon('accordion-minus', 'voucher-card__icon voucher-card__icon--vertical', 4) }}
+        {{ icon('accordion-minus', 'voucher-card__icon voucher-card__icon--horizontal', 4) }}
+      </span>
+    </button>
+  </h2>
+  <p class="voucher-card__description">{{ item.description }}</p>
+  <div class="voucher-card__actions">
+    <button class="button button--primary" type="button" data-modal-open="{{ config.modalId }}" data-booking-voucher="{{ item.title }}">{{ config.bookLabel }}</button>
+    {% if item.programsLabel %}<button class="button button--muted voucher-card__programs" type="button" data-voucher-programs>{{ item.programsLabel }}</button>{% endif %}
+  </div>
+  <div class="voucher-card__panel" id="{{ item.id }}-panel" role="region" aria-labelledby="{{ item.id }}-toggle"{% if not item.defaultOpen %} inert{% endif %} data-accordion-panel>
+    <div class="voucher-card__clip">
+      <div class="voucher-card__details">
+        <div class="voucher-card__services">
+          {% for service in item.services or config.services %}
+          <div class="voucher-card__service">
+            <h3 class="voucher-card__service-title">{{ service.title }}</h3>
+            <button class="button button--muted" type="button" data-modal-open="{{ config.modalId }}" data-booking-voucher="{{ item.title }}" data-booking-service="{{ service.title }}">{{ config.detailsLabel }}</button>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="voucher-card__photos">
+          {% for photo in item.photos or config.photos %}<img class="voucher-card__photo" src="{{ photo.src }}" alt="{{ photo.alt }}" loading="lazy" />{% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{% endmacro %}
