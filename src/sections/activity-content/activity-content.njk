@@ -1,0 +1,6 @@
+{% from "components/editor-content/editor-content.njk" import editorContent %}
+<section class="activity-content{% if page.content.variant %} activity-content--{{ page.content.variant }}{% endif %}" aria-label="{{ page.content.label }}">
+  <div class="activity-content__container container">
+    {{ editorContent(page.content) }}
+  </div>
+</section>

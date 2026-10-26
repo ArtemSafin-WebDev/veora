@@ -1,0 +1,275 @@
+{
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/wellness/additional-services/",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/wellness/cosmetology/",
+            "label": "Косметология"
+          },
+          {
+            "href": "/wellness/spa/",
+            "label": "СПА"
+          },
+          {
+            "href": "/wellness/medicine/",
+            "label": "Медицина"
+          },
+          {
+            "href": "/wellness/prices/",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness/club/",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  },
+  "title": "Оздоровление",
+  "description": "Программы оздоровления, медицинские и СПА услуги здравницы «Южный». Ваш путь к гармонии тела и духа начинается здесь.",
+  "activePage": "wellness",
+  "directoryGroup": "resort",
+  "theme": "dark-blue",
+  "bodyClass": "page-wellness",
+  "hero": {
+    "variant": "resort",
+    "detailVariant": "wellness",
+    "title": "Оздоровление",
+    "image": "/assets/wellness/hero.webp",
+    "mobileImage": "/assets/wellness/hero-mobile.webp",
+    "brandMark": "wellness-brand-mark",
+    "brandMarkMobile": "wellness-brand-mark-mobile",
+    "divider": "hero-divider",
+    "dividerMobile": "hero-divider-mobile",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Оздоровление"
+      }
+    ],
+    "description": "Ваш путь к гармонии тела и духа начинается здесь",
+    "text": "Здесь собраны лучшие практики и программы для укрепления иммунитета, восстановления сил и заботы о себе. Независимо от целей — профилактика, релакс или полное обновление — вы найдёте подходящее решение под руководством опытных специалистов."
+  },
+  "wellnessServices": {
+    "label": "Направления оздоровления",
+    "items": [
+      {
+        "title": "Программы «Здоровье»",
+        "description": "Профессиональный уход за кожей лица и тела. Антиэйдж, восстановление после стрессов, интенсивное увлажнение, а также эстетические процедуры.",
+        "link": {
+          "label": "Подробнее",
+          "href": "/programs.html"
+        }
+      },
+      {
+        "title": "Готовый комплекс услуг",
+        "description": "Комплексные решения для восстановления организма, снижения стресса, нормализации сна и профилактики хронических заболеваний. Программы разрабатываются индивидуально, с учётом рекомендаций врачей и диагностики.",
+        "link": {
+          "label": "Подробнее о комплексе услуг",
+          "href": "/programs.html"
+        }
+      },
+      {
+        "title": "Медицинские услуги",
+        "description": "Комплексные решения для восстановления организма, снижения стресса, нормализации сна и профилактики хронических заболеваний. Программы разрабатываются индивидуально, с учётом рекомендаций врачей и диагностики.",
+        "link": {
+          "label": "Подробнее о медицинских услугах",
+          "href": "/wellness/medicine/"
+        }
+      },
+      {
+        "title": "СПА услуги",
+        "description": "Комплексные решения для восстановления организма, снижения стресса, нормализации сна и профилактики хронических заболеваний. Программы разрабатываются индивидуально, с учётом рекомендаций врачей и диагностики.",
+        "link": {
+          "label": "Подробнее о SPA услугах",
+          "href": "/wellness/spa/"
+        }
+      },
+      {
+        "title": "Косметология",
+        "description": "Профессиональный уход за кожей лица и тела. Антиэйдж, восстановление после стрессов, интенсивное увлажнение, а также эстетические процедуры.",
+        "link": {
+          "label": "Каталог косметологических услуг",
+          "href": "/wellness/cosmetology/"
+        }
+      },
+      {
+        "title": "Welness клуб",
+        "description": "Профессиональный уход за кожей лица и тела. Антиэйдж, восстановление после стрессов, интенсивное увлажнение, а также эстетические процедуры.",
+        "link": {
+          "label": "Подробнее",
+          "href": "/wellness/club/"
+        }
+      },
+      {
+        "title": "Карта здоровья",
+        "description": "Профессиональный уход за кожей лица и тела. Антиэйдж, восстановление после стрессов, интенсивное увлажнение, а также эстетические процедуры.",
+        "link": {
+          "label": "Подробнее",
+          "href": "/wellness/health-card/"
+        }
+      }
+    ]
+  },
+  "guestJourney": {
+    "title": "Путь гостя",
+    "image": "/assets/wellness/guest-journey.webp",
+    "brandMark": "wellness-journey-mark",
+    "brandMarkMobile": "wellness-journey-mark-mobile",
+    "scrollLabel": "Этапы пути гостя — прокручивайте горизонтально",
+    "steps": [
+      "Выбор программы и запрос бронирования",
+      "Бронирование",
+      "Предварительная консультация врача для обсуждения программы",
+      "Предварительная консультация персонального ассистента для составления расписания",
+      "Трансфер и размещение",
+      "Экскурсия по здравнице",
+      "Первичные консультации со специалистом",
+      "Разработка персонализированной программы питания",
+      "Консультации врачей, медицинские и СПА процедуры",
+      "Подведение итогов и рекомендации"
+    ]
+  },
+  "gallery": {
+    "title": "Галерея",
+    "modal": {
+      "id": "gallery-modal",
+      "openLabel": "Открыть фотографию",
+      "previousLabel": "Предыдущая фотография",
+      "nextLabel": "Следующая фотография"
+    },
+    "allLink": {
+      "href": "/gallery.html",
+      "label": "Вся галерея"
+    },
+    "items": [
+      {
+        "image": "/assets/gallery/resort-night.png",
+        "alt": "Вечерняя подсветка корпуса здравницы у бассейна",
+        "size": "wide"
+      },
+      {
+        "image": "/assets/gallery/resort-pool.png",
+        "alt": "Открытый бассейн и шезлонги здравницы",
+        "size": "medium"
+      },
+      {
+        "image": "/assets/gallery/resort-building.png",
+        "alt": "Корпус здравницы и зона отдыха у бассейна",
+        "size": "narrow"
+      },
+      {
+        "image": "/assets/gallery/resort-pool.png",
+        "alt": "Терраса с шезлонгами у открытого бассейна",
+        "size": "medium"
+      }
+    ],
+    "variant": "wellness"
+  }
+}

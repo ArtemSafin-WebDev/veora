@@ -10,7 +10,7 @@
         <div class="filters__panel" id="{{ config.id }}-{{ group.id }}-panel" role="group" aria-labelledby="{{ config.id }}-{{ group.id }}-toggle"{% if not group.defaultOpen %} inert{% endif %}>
           <div class="filters__clip"><div class="filters__options">
             {% for option in group.options %}
-            <label class="filters__option"><input class="filters__checkbox" type="checkbox" name="{{ group.id }}" value="{{ option.value }}"{% if option.all %} data-filter-all{% endif %} /><span class="filters__box" aria-hidden="true">{{ icon(config.assets.check, 'filters__check', 1.6) }}</span><span>{{ option.label }}</span></label>
+            <label class="filters__option"><input class="filters__checkbox" type="checkbox" name="{{ group.id }}" value="{{ option.value }}"{% if option.all %} data-filter-all{% endif %}{% if option.checked %} checked{% endif %} /><span class="filters__box" aria-hidden="true">{{ icon(config.assets.check, 'filters__check', 1.6) }}</span><span>{{ option.label }}</span></label>
             {% endfor %}
           </div></div>
         </div>

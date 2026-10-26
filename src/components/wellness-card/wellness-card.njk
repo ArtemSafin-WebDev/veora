@@ -1,0 +1,10 @@
+{% from "components/button/button.njk" import button %}
+{% macro wellnessCard(card) %}
+<article class="wellness-card">
+  <div class="wellness-card__content">
+    <h2 class="wellness-card__title">{{ card.title }}</h2>
+    <p class="wellness-card__description">{{ card.description }}</p>
+  </div>
+  {{ button(card.link.label, card.link.href, 'wellness-card__link') }}
+</article>
+{% endmacro %}

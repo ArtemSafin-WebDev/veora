@@ -1,0 +1,15 @@
+{% from "components/button/button.njk" import button %}
+{% macro programCard(card) %}
+<article class="program-card" data-program-card data-program-min-days="{{ card.minDays }}" data-program-types="{{ card.types | join(' ') }}">
+  <div class="program-card__content">
+    <div class="program-card__heading">
+      <h2 class="program-card__title">{{ card.title }}</h2>
+      <ul class="program-card__tags">
+        {% for tag in card.tags %}<li class="program-card__tag">{{ tag }}</li>{% endfor %}
+      </ul>
+    </div>
+    <p class="program-card__description{% if card.wideDescription %} program-card__description--wide{% endif %}">{{ card.description }}</p>
+  </div>
+  {{ button(card.link.label, card.link.href, 'program-card__link', 'muted') }}
+</article>
+{% endmacro %}

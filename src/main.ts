@@ -31,6 +31,10 @@ import './sections/dining-venues/dining-venues';
 import './sections/dining-extras/dining-extras';
 import './components/voucher-card/voucher-card';
 import './components/booking-modal/booking-modal';
+import './components/activity-dialogs/activity-dialogs';
+import './components/event-media/event-media';
+import './sections/program-catalog/program-catalog';
+import './sections/related-programs/related-programs';
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
@@ -79,6 +83,13 @@ if (services) {
 
     if (moveFocus) tab.focus();
   };
+
+  if (services.classList.contains('services--additional') && !services.classList.contains('services--desktop-tabs')) {
+    const mobileServices = window.matchMedia('(max-width: 600px)');
+    mobileServices.addEventListener('change', () => {
+      if (!mobileServices.matches && tabs[0]) activateTab(tabs[0]);
+    });
+  }
 
   tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => activateTab(tab));

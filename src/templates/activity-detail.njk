@@ -1,0 +1,10 @@
+{% extends "layout.njk" %}
+{% from "sections/page-banner/page-banner.njk" import pageBanner %}
+{% block content %}
+  {{ pageBanner(page.banner) }}
+  {% include "sections/activity-facts/activity-facts.njk" %}
+  {% include "sections/activity-content/activity-content.njk" %}
+  {% include "sections/services/services.njk" %}
+  {% include "sections/gallery/gallery.njk" %}
+  {% if page.request %}{% include "components/activity-dialogs/activity-dialogs.njk" %}{% endif %}
+{% endblock %}

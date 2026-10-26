@@ -1,0 +1,13 @@
+{% macro eventContacts(snippet) %}
+<aside class="event-contacts">
+  <p class="event-contacts__title">{{ snippet.title }}</p>
+  <dl class="event-contacts__list">
+    {% for contact in snippet.items %}
+    <div class="event-contacts__item">
+      <dt>{{ contact.label }}</dt>
+      <dd>{% if contact.href %}<a href="{{ contact.href }}">{{ contact.value }}</a>{% else %}{{ contact.value }}{% endif %}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+</aside>
+{% endmacro %}

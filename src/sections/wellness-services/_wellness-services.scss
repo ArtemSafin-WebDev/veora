@@ -1,0 +1,25 @@
+.wellness-services {
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 8rem;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    inset: -8rem -24rem -20rem;
+    background: url('/assets/wellness/glow-left.svg') left center / 219.1rem 219.1rem no-repeat, url('/assets/wellness/glow-right.svg') right top / 173.1rem 173.1rem no-repeat;
+    content: '';
+    pointer-events: none;
+  }
+
+  &__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 0; padding: 0; list-style: none; }
+  &__item { min-width: 0; }
+}
+
+@media (max-width: 600px) {
+  .wellness-services {
+    margin-bottom: 2rem;
+    &::before { display: none; }
+    &__list { grid-template-columns: minmax(0, 1fr); }
+  }
+}

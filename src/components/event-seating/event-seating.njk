@@ -1,0 +1,21 @@
+{% from "components/icon/icon.njk" import icon %}
+{% macro eventSeating(snippet) %}
+<div class="event-seating">
+  <h2 class="event-seating__title" id="{{ snippet.id }}-title">{{ snippet.title }}</h2>
+  <table class="event-seating__table" aria-labelledby="{{ snippet.id }}-title">
+    <thead class="event-seating__head">
+      <tr>{% for label in snippet.columns %}<th scope="col">{{ label }}</th>{% endfor %}</tr>
+    </thead>
+    <tbody>
+      {% for item in snippet.items %}
+      <tr class="event-seating__row">
+        <td class="event-seating__diagram"><span class="event-seating__scheme">{{ icon(item.icon, '', item.iconWidth, item.iconHeight) }}</span></td>
+        <th class="event-seating__type" scope="row">{{ item.title }}</th>
+        <td class="event-seating__description">{{ item.description }}</td>
+        <td class="event-seating__capacity">{{ item.capacity }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endmacro %}

@@ -1,0 +1,8 @@
+.event-action {
+  margin-top: 6rem;
+  &__button { font-family: inherit; }
+}
+
+@media (max-width: 600px) {
+  .event-action { margin-top: 4rem; text-align: center; }
+}

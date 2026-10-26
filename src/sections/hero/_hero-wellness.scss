@@ -1,0 +1,26 @@
+.hero--wellness {
+  margin-bottom: 4rem;
+
+  &::before,
+  &::after { display: none; }
+  .hero__visual { clip-path: none; }
+  .hero__visual::after { display: none; }
+  .hero__lead { display: flex; flex-direction: column; justify-content: flex-end; padding-top: 0; padding-bottom: 28.3rem; }
+  .hero__breadcrumbs { position: absolute; top: 11.2rem; left: 4rem; right: 4rem; }
+  .hero__title { width: 100%; }
+  .hero__details { padding-bottom: 0; }
+  .hero__mark { background: var(--color-accent); }
+  .hero__description { margin-top: 8rem; }
+  .hero__text { width: 96.2rem; margin-top: 1.2rem; color: var(--color-text-subtle); }
+}
+
+@media (max-width: 600px) {
+  .hero--wellness {
+    margin-bottom: 2.8rem;
+    .hero__lead { padding-top: 0; padding-bottom: 12.2rem; }
+    .hero__breadcrumbs { top: 9.2rem; left: 1.2rem; right: 1.2rem; }
+    .hero__mark { background: var(--color-text-secondary); }
+    .hero__description { margin-top: 4rem; }
+    .hero__text { margin-top: 2rem; }
+  }
+}

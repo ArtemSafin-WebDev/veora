@@ -1,0 +1,15 @@
+{% from "components/slider-arrows/slider-arrows.njk" import sliderArrows %}
+{% macro eventMedia(snippet) %}
+<div class="event-media" data-event-media role="region" aria-label="{{ snippet.label }}" aria-roledescription="{{ snippet.carouselLabel }}">
+  <div class="event-media__slider swiper">
+    <div class="event-media__track swiper-wrapper">
+      {% for item in snippet.items %}
+      <div class="event-media__slide swiper-slide">
+        <img class="event-media__image" src="{{ item.src }}" alt="{{ item.alt }}" loading="lazy" />
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {{ sliderArrows(snippet.previousLabel, snippet.nextLabel, 'event-media__arrows') }}
+</div>
+{% endmacro %}

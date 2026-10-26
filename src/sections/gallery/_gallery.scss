@@ -67,6 +67,16 @@
   .gallery__all-link { border-color: var(--color-border); }
 }
 
+.gallery--wellness {
+  margin-bottom: 8rem;
+  .gallery__divider { flex-basis: 30rem; background: var(--color-border); }
+  .gallery__arrows { display: none; }
+}
+
+@media (max-width: 600px) {
+  .gallery--wellness { margin-bottom: 7.8rem; }
+}
+
 @media (max-width: 600px) {
   .gallery--resort {
     margin-bottom: 7.8rem;
@@ -76,15 +86,21 @@
   }
 }
 
-.gallery--room {
+.gallery--room,
+.gallery--activity,
+.gallery--hall {
   margin-bottom: 14rem;
 
   .gallery__divider { flex-basis: 30rem; background: var(--color-border); }
   .gallery__booking { display: flex; width: fit-content; min-height: 4rem; margin: 4rem auto 0; padding-inline: 2.4rem; border-radius: .8rem; font-size: 1.4rem; line-height: 1.6rem; letter-spacing: -.056rem; }
 }
 
+.gallery--hall { margin-bottom: 6rem; }
+
 @media (max-width: 600px) {
-  .gallery--room {
+  .gallery--room,
+  .gallery--activity,
+  .gallery--hall {
     margin-bottom: 8rem;
     .gallery__controls { display: none; }
   }

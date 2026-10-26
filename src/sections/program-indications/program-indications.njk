@@ -1,0 +1,15 @@
+{% set indications = page.programIndications %}
+<section class="program-indications" aria-labelledby="program-indications-title">
+  <div class="program-indications__card">
+    <h2 class="program-indications__title" id="program-indications-title">{{ indications.indicationsTitle }}</h2>
+    <div class="program-indications__groups">
+      {% for group in indications.indications %}
+        <ul class="program-indications__list">{% for item in group %}<li>{{ item }}</li>{% endfor %}</ul>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="program-indications__card program-indications__card--contraindications">
+    <h2 class="program-indications__title">{{ indications.contraindicationsTitle }}</h2>
+    <ul class="program-indications__list">{% for item in indications.contraindications %}<li>{{ item }}</li>{% endfor %}</ul>
+  </div>
+</section>

@@ -1,7 +1,8 @@
 {% from "components/resort-navigation/resort-navigation.njk" import resortNavigation %}
-{% macro catalogLayout(navigation, className='', label='', variant='') %}
+{% from "components/filters/filters.njk" import filters %}
+{% macro catalogLayout(navigation, className='', label='', variant='', filterConfig=none) %}
 <section class="catalog-layout container{% if variant %} catalog-layout--{{ variant }}{% endif %}{% if className %} {{ className }}{% endif %}" aria-label="{{ label }}" data-catalog-layout>
-  <aside class="catalog-layout__sidebar">{{ resortNavigation(navigation) }}</aside>
+  <aside class="catalog-layout__sidebar">{% if filterConfig %}{{ filters(filterConfig) }}{% else %}{{ resortNavigation(navigation) }}{% endif %}</aside>
   <div class="catalog-layout__content">{{ caller() }}</div>
 </section>
 {% endmacro %}

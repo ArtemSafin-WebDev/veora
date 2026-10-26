@@ -1,0 +1,13 @@
+{% macro eventEquipment(snippet) %}
+<div class="event-equipment">
+  <h2 class="event-equipment__title">{{ snippet.title }}</h2>
+  <dl class="event-equipment__list">
+    {% for item in snippet.items %}
+    <div class="event-equipment__item">
+      <dt class="event-equipment__label">{{ item.title }}</dt>
+      <dd class="event-equipment__description">{{ item.description }}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+</div>
+{% endmacro %}

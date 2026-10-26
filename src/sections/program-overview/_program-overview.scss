@@ -1,0 +1,28 @@
+.program-overview {
+  margin-bottom: 8.9rem;
+  color: var(--color-text-primary);
+
+  &__intro { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+  &__audience { display: flex; flex-direction: column; justify-content: space-between; gap: 3rem; min-height: 32rem; padding: 2.4rem; border-radius: 1.2rem; background: var(--color-surface); }
+  &__title { margin: 0; font-size: 3.2rem; font-weight: 400; line-height: 3.4rem; letter-spacing: -.128rem; }
+  &__text, &__effects { margin: 0; color: var(--color-text-muted); font-size: 1.6rem; line-height: 2rem; letter-spacing: -.032rem; }
+  &__consultation { position: relative; overflow: hidden; min-height: 32rem; border-radius: 1.2rem; }
+  &__image { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
+  &__effect { position: relative; display: flex; align-items: flex-end; min-height: 63.8rem; padding: 2rem; overflow: hidden; border-radius: 1.2rem; }
+  &__result { position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 3rem; width: 63.8rem; max-width: 100%; min-height: 26.3rem; padding: 2.4rem; border-radius: 1.2rem; background: var(--color-surface); }
+  &__effects { display: grid; gap: 1rem; padding: 0; list-style: none; }
+}
+
+@media (max-width: 600px) {
+  .program-overview {
+    margin-bottom: 8rem;
+
+    &__intro { grid-template-columns: minmax(0, 1fr); }
+    &__consultation { grid-row: 1; }
+    &__audience { justify-content: flex-start; gap: 1rem; min-height: 0; }
+    &__title { font-size: 2rem; line-height: 2.4rem; letter-spacing: -.12rem; }
+    &__text, &__effects { font-size: 1.2rem; line-height: 1.6rem; letter-spacing: -.024rem; }
+    &__effect { padding: 1rem; }
+    &__result { min-height: 0; }
+  }
+}

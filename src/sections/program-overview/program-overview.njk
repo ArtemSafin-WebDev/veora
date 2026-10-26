@@ -1,0 +1,21 @@
+{% set overview = page.programOverview %}
+<section class="program-overview container" aria-labelledby="program-audience-title">
+  <div class="program-overview__intro">
+    <div class="program-overview__audience">
+      <h2 class="program-overview__title" id="program-audience-title">{{ overview.audienceTitle }}</h2>
+      <p class="program-overview__text">{{ overview.audienceText }}</p>
+    </div>
+    <div class="program-overview__consultation">
+      <img class="program-overview__image" src="{{ overview.image }}" alt="{{ overview.imageAlt }}" loading="lazy" />
+    </div>
+  </div>
+  <div class="program-overview__effect">
+    <img class="program-overview__image" src="{{ overview.effectImage }}" alt="{{ overview.effectImageAlt }}" loading="lazy" />
+    <div class="program-overview__result">
+      <h2 class="program-overview__title">{{ overview.effectTitle }}</h2>
+      <ul class="program-overview__effects">
+        {% for effect in overview.effects %}<li>{{ effect }}</li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+.program-indications {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  max-width: 136.6rem;
+  margin: 0 auto 19.3rem;
+  color: var(--color-text-primary);
+
+  &__card { display: flex; flex-direction: column; justify-content: space-between; gap: 4rem; min-height: 36.2rem; padding: 4rem; border-radius: 1.2rem; background: var(--color-surface-soft); }
+  &__card--contraindications { min-height: 74.3rem; }
+  &__title { margin: 0; font-size: 3.6rem; font-weight: 400; line-height: 4rem; letter-spacing: -.216rem; }
+  &__groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6.8rem; }
+  &__list { display: grid; align-content: start; gap: 1.2rem; margin: 0; padding: 0; color: var(--color-text-secondary); font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; list-style: none; }
+}
+
+@media (max-width: 600px) {
+  .program-indications {
+    grid-template-columns: minmax(0, 1fr);
+    width: calc(100% - 2.4rem);
+    margin-bottom: 8rem;
+
+    &__card { gap: 2rem; min-height: 0; padding: 4rem 1rem; }
+    &__card--contraindications { min-height: 74.4rem; }
+    &__title { font-size: 2.4rem; line-height: 2.8rem; letter-spacing: -.144rem; }
+    &__groups { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+    &__list { font-size: 1.2rem; line-height: 1.6rem; letter-spacing: -.024rem; }
+  }
+}

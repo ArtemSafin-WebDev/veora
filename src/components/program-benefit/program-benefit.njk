@@ -1,0 +1,10 @@
+{% macro programBenefit(card) %}
+<article class="program-benefit program-benefit--{{ card.variant }}">
+  <h3 class="program-benefit__title">{{ card.title }}</h3>
+  <div class="program-benefit__text">
+    {% for paragraph in card.paragraphs %}
+      <p>{% if paragraph.lead %}<strong{% if paragraph.separateLead %} class="program-benefit__lead"{% endif %}>{{ paragraph.lead }}</strong> {% endif %}{% if paragraph.lines %}{% for line in paragraph.lines %}<span class="program-benefit__line">{{ line }}</span>{% if not loop.last %} {% endif %}{% endfor %}{% else %}{{ paragraph.text }}{% endif %}</p>
+    {% endfor %}
+  </div>
+</article>
+{% endmacro %}

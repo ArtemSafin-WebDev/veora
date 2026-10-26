@@ -1,0 +1,17 @@
+{% from "components/modal/modal.njk" import modal %}
+{% from "components/request-form/request-form.njk" import requestForm with context %}
+{% call modal(page.request.id, page.request.label, site.modal.closeLabel, 'activity-dialogs activity-dialogs--request') %}
+  {{ requestForm(page.request.form) }}
+{% endcall %}
+{% for activity in page.catalog.items %}
+  {% call modal('activity-details-' + activity.id, activity.title, site.modal.closeLabel, 'activity-dialogs') %}
+    <div class="activity-dialogs__details">
+      <img class="activity-dialogs__image" src="{{ activity.image }}" alt="{{ activity.imageAlt }}" loading="lazy" />
+      <div class="activity-dialogs__body">
+        <h2 class="activity-dialogs__title">{{ activity.title }}</h2>
+        <p class="activity-dialogs__description">{{ activity.description }}</p>
+        <button class="button button--primary activity-dialogs__request" type="button" data-modal-open="{{ page.request.id }}" data-activity-title="{{ activity.title }}" aria-haspopup="dialog">{{ page.catalog.requestLabel }}</button>
+      </div>
+    </div>
+  {% endcall %}
+{% endfor %}

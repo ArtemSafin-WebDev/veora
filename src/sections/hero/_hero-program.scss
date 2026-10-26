@@ -1,0 +1,35 @@
+.hero--program {
+  margin-bottom: 5rem;
+
+  &::before, &::after { display: none; }
+  .hero__visual { clip-path: none; }
+  .hero__lead { display: flex; flex-direction: column; justify-content: flex-end; padding-top: 0; padding-bottom: 28.3rem; }
+  .hero__breadcrumbs { position: absolute; top: 11.2rem; right: 4rem; left: 4rem; }
+  .hero__title { width: 100%; }
+  .hero__details { padding-bottom: 0; }
+  .hero__mark { background: var(--color-accent); }
+  .hero__description { margin-top: 8rem; }
+  .hero__text { width: 96.2rem; margin-top: 1.2rem; color: var(--color-text-subtle); }
+  .hero__text-line { display: block; }
+  .booking-search { gap: .4rem; }
+  .booking-search__dates, .booking-search__row .custom-select__trigger { height: 5.2rem; }
+}
+
+@media (max-width: 600px) {
+  .hero--program {
+    margin-bottom: 3.2rem;
+
+    .hero__visual::after {
+      display: block;
+      background: url('/assets/program/hero-shade-mobile.svg') center / 100% 100% no-repeat;
+      transform: rotate(180deg);
+    }
+    .hero__lead { padding-top: 0; padding-bottom: 27.9rem; }
+    .hero__breadcrumbs { top: 9.2rem; right: 1.2rem; left: 1.2rem; overflow: hidden; }
+    .breadcrumbs__list { flex-wrap: nowrap; justify-content: flex-end; width: max-content; min-width: 100%; }
+    .hero__mark { background: var(--color-text-secondary); }
+    .hero__description { margin-top: 4rem; }
+    .hero__text { margin-top: 2rem; }
+    .booking-search { bottom: 8.9rem; }
+  }
+}

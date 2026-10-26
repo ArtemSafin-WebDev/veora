@@ -1,0 +1,243 @@
+{
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/wellness/additional-services/",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/wellness/cosmetology/",
+            "label": "Косметология"
+          },
+          {
+            "href": "/wellness/spa/",
+            "label": "СПА"
+          },
+          {
+            "href": "/wellness/medicine/",
+            "label": "Медицина"
+          },
+          {
+            "href": "/wellness/prices/",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness/club/",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  },
+  "title": "Мероприятия",
+  "description": "Мероприятия в здравнице «Южный»: деловые встречи, спортивные события, тимбилдинги и торжества.",
+  "activePage": "activities",
+  "directoryGroup": "resort",
+  "theme": "dark-blue",
+  "bodyClass": "page-activities",
+  "banner": {
+    "id": "activities-banner",
+    "title": "Мероприятия",
+    "variant": "activities",
+    "image": "/assets/activities/hero.jpg",
+    "imageAlt": "Ряды кресел в конференц-зале",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Мероприятия"
+      }
+    ],
+    "action": {
+      "label": "Оставить заявку",
+      "variant": "base",
+      "modalId": "activity-request-modal"
+    }
+  },
+  "catalog": {
+    "label": "Каталог мероприятий",
+    "intro": [
+      "Планируете корпоратив, спортивное событие или торжество?",
+      "Сеть здравниц предлагает гибкие форматы размещения, природные локации, оздоровительную инфраструктуру и опыт организации мероприятий любого масштаба."
+    ],
+    "requestLabel": "Оставить заявку",
+    "detailsLabel": "Подробнее",
+    "items": [
+      {
+        "id": "business",
+        "title": "Деловые мероприятия",
+        "image": "/assets/activities/business.png",
+        "imageAlt": "Участники похода на горной тропе",
+        "description": "Расскажите о целях деловой встречи, количестве участников и желаемых датах. Мы поможем подобрать формат размещения и организации мероприятия.",
+        "href": "/activity-detail.html"
+      },
+      {
+        "id": "sports",
+        "title": "Спортивные мероприятия",
+        "image": "/assets/activities/sports.png",
+        "imageAlt": "Занятие йогой на природе на закате",
+        "description": "Планируете спортивное событие? Укажите вид активности, количество участников и даты — обсудим подходящий формат мероприятия в здравнице."
+      },
+      {
+        "id": "team-building",
+        "title": "Тимбилдинги",
+        "image": "/assets/activities/team-building.png",
+        "imageAlt": "Пикник на морском берегу",
+        "description": "Обсудим цели командной встречи, количество участников и пожелания к программе, чтобы подобрать формат совместного отдыха на природе."
+      },
+      {
+        "id": "celebrations",
+        "title": "Торжественные мероприятия",
+        "image": "/assets/activities/celebrations.png",
+        "imageAlt": "Ребёнок с воздушными шарами",
+        "description": "Расскажите о поводе, количестве гостей и пожеланиях к торжеству. Поможем обсудить формат события и размещение участников."
+      }
+    ]
+  },
+  "request": {
+    "id": "activity-request-modal",
+    "label": "Заявка на организацию мероприятия",
+    "form": {
+      "id": "activity-request",
+      "title": "Оставить заявку",
+      "description": "Укажите контакты и пожелания к мероприятию.",
+      "action": null,
+      "hiddenFields": [
+        {
+          "name": "activity_title",
+          "value": ""
+        }
+      ],
+      "fields": [
+        {
+          "name": "name",
+          "label": "Ваше имя",
+          "autocomplete": "given-name",
+          "required": true,
+          "maxLength": 100,
+          "minLength": 2
+        },
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "autocomplete": "tel",
+          "required": true,
+          "mask": "phone",
+          "inputMode": "tel",
+          "pattern": "\\+7 \\([0-9]{3}\\) [0-9]{3}-[0-9]{2}-[0-9]{2}",
+          "errorMessage": "Введите телефон полностью: +7 (999) 123-45-67."
+        },
+        {
+          "name": "wishes",
+          "label": "Пожелания к мероприятию",
+          "maxLength": 1000
+        }
+      ],
+      "consent": {
+        "label": "Принимаю условия обработки персональных данных"
+      },
+      "submitLabel": "Оставить заявку"
+    }
+  }
+}

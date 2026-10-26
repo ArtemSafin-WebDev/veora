@@ -1,0 +1,46 @@
+// Only plain editorial children are styled here. BEM snippets own their internals.
+.editor-content {
+  color: var(--color-text-secondary);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: -.032rem;
+  overflow-wrap: anywhere;
+
+  > :where(h2, h3, h4),
+  > header > :where(h2, h3, h4) { margin: 6rem 0 0; color: var(--color-text-primary); font-weight: 400; }
+  > :where(h2), > header > h2 { font-size: 3.2rem; line-height: 3.4rem; letter-spacing: -.128rem; }
+  > :where(h3), > header > h3 { font-size: 2.4rem; line-height: 2.8rem; letter-spacing: -.096rem; }
+  > :where(h4), > header > h4 { font-size: 2rem; line-height: 2.4rem; letter-spacing: -.08rem; }
+  > :where(p), > header > p { margin: 2rem 0 0; }
+  > header { margin-top: 6rem; color: var(--color-text-muted); }
+  > header > :first-child { margin-top: 0; }
+  > :where(ul, ol) { margin: 2rem 0 0; padding-left: 2rem; font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; }
+  > ul { padding-left: 0; list-style: none; }
+  > :where(ul, ol) > li { margin-top: 1rem; }
+  > :where(ul, ol) > li:first-child { margin-top: 0; }
+  > :where(ul, ol) :where(ul, ol) { margin-top: 1rem; padding-left: 2rem; }
+  > :where(figure, picture, img, video) { display: block; width: 100%; margin: 4rem 0 0; }
+  > :where(figure, picture) img,
+  > :where(img, video) { display: block; width: 100%; height: auto; aspect-ratio: 854 / 404; border-radius: 1.2rem; object-fit: cover; }
+  > figure figcaption { margin-top: 1rem; color: var(--color-text-muted); font-size: 1.4rem; line-height: 1.8rem; }
+  > blockquote { margin: 4rem 0 0; padding-left: 2rem; border-left: 1px solid var(--color-border); }
+  > :where(p, ul, ol, blockquote, header) a { text-underline-offset: .2rem; }
+  > :first-child { margin-top: 0; }
+}
+
+@media (max-width: 600px) {
+  .editor-content {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    letter-spacing: -.014rem;
+
+    > :where(h2), > header > h2 { font-size: 2rem; line-height: 2.4rem; letter-spacing: -.12rem; }
+    > :where(h3), > header > h3 { font-size: 1.8rem; line-height: 2.2rem; letter-spacing: -.072rem; }
+    > :where(h4), > header > h4 { font-size: 1.6rem; line-height: 2rem; letter-spacing: -.064rem; }
+    > header > p { font-size: 1.2rem; line-height: 1.6rem; letter-spacing: -.024rem; }
+    > :where(ul, ol) { font-size: 1.2rem; font-weight: 600; line-height: 1.6rem; letter-spacing: -.024rem; }
+    > :where(figure, picture) img,
+    > :where(img, video) { aspect-ratio: 1; }
+  }
+}

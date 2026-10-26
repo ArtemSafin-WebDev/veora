@@ -1,0 +1,35 @@
+{% from "components/event-venues/event-venues.njk" import eventVenues %}
+{% from "components/event-contacts/event-contacts.njk" import eventContacts %}
+{% from "components/event-seating/event-seating.njk" import eventSeating %}
+{% from "components/event-equipment/event-equipment.njk" import eventEquipment %}
+{% from "components/event-media/event-media.njk" import eventMedia %}
+{% from "components/event-action/event-action.njk" import eventAction %}
+{% macro editorContent(content) %}
+<div class="editor-content">
+  {# In Bitrix, this container can receive the complete trusted editor HTML,
+     including snippet markup. Blocks only compose the static demonstration. #}
+  {% if content.html %}
+    {{ content.html | safe }}
+  {% else %}
+    {% for block in content.blocks %}
+      {% if block.type == 'html' %}
+        {{ block.html | safe }}
+      {% elif block.type == 'image' %}
+        <figure><img src="{{ block.src }}" alt="{{ block.alt }}" loading="lazy" />{% if block.caption %}<figcaption>{{ block.caption }}</figcaption>{% endif %}</figure>
+      {% elif block.type == 'venues' %}
+        {{ eventVenues(block) }}
+      {% elif block.type == 'contacts' %}
+        {{ eventContacts(block) }}
+      {% elif block.type == 'seating' %}
+        {{ eventSeating(block) }}
+      {% elif block.type == 'equipment' %}
+        {{ eventEquipment(block) }}
+      {% elif block.type == 'media' %}
+        {{ eventMedia(block) }}
+      {% elif block.type == 'action' %}
+        {{ eventAction(block) }}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+</div>
+{% endmacro %}

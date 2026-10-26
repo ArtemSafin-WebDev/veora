@@ -1,0 +1,16 @@
+.event-equipment {
+  margin-top: 6rem;
+
+  &__title { margin: 0 0 2rem; color: var(--color-text-primary); font-size: 2rem; font-weight: 500; line-height: 2.4rem; letter-spacing: -.08rem; }
+  &__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 0; }
+  &__item { padding: 2rem; border-radius: 1.2rem; background: var(--color-surface); }
+  &__label { color: var(--color-text-primary); font-size: 1.6rem; line-height: 2rem; letter-spacing: -.032rem; }
+  &__description { margin: 1.2rem 0 0; color: var(--color-text-muted); font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; }
+}
+
+@media (max-width: 600px) {
+  .event-equipment {
+    margin-top: 4rem;
+    &__list { grid-template-columns: minmax(0, 1fr); }
+  }
+}

@@ -20,7 +20,7 @@
       },
       {
         "label": "Мероприятия",
-        "href": "/activities/"
+        "href": "/activities.html"
       }
     ]
   },
@@ -170,7 +170,7 @@
         "title": "Оздоровление",
         "links": [
           {
-            "href": "/wellness/programs/",
+            "href": "/programs.html",
             "label": "Готовые комплексы услуг/программы",
             "mobileLabel": "Готовые комплексы услуг"
           },
@@ -228,7 +228,7 @@
             "label": "Галерея"
           },
           {
-            "href": "/activities/",
+            "href": "/activities.html",
             "label": "Мероприятия"
           },
           {

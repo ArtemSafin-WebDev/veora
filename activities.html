@@ -1,0 +1,7 @@
+{% extends "layout.njk" %}
+{% from "sections/page-banner/page-banner.njk" import pageBanner %}
+{% block content %}
+  {{ pageBanner(page.banner) }}
+  {% include "sections/activities-catalog/activities-catalog.njk" %}
+  {% include "components/activity-dialogs/activity-dialogs.njk" %}
+{% endblock %}

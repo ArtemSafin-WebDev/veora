@@ -1,0 +1,10 @@
+<article class="activity-card" aria-labelledby="activity-{{ activity.id }}-title">
+  <img class="activity-card__image" src="{{ activity.image }}" alt="{{ activity.imageAlt }}" loading="lazy" width="422" height="404" />
+  <div class="activity-card__body">
+    <h2 class="activity-card__title" id="activity-{{ activity.id }}-title">{{ activity.title }}</h2>
+    <div class="activity-card__actions">
+      <button class="button button--primary activity-card__request" type="button" data-modal-open="{{ page.request.id }}" data-activity-title="{{ activity.title }}" aria-haspopup="dialog" aria-label="{{ catalog.requestLabel }}: {{ activity.title }}">{{ catalog.requestLabel }}</button>
+      {% if activity.href %}<a class="button button--detail activity-card__details" href="{{ activity.href }}" aria-label="{{ catalog.detailsLabel }}: {{ activity.title }}">{{ catalog.detailsLabel }}</a>{% else %}<button class="button button--detail activity-card__details" type="button" data-modal-open="activity-details-{{ activity.id }}" aria-haspopup="dialog" aria-label="{{ catalog.detailsLabel }}: {{ activity.title }}">{{ catalog.detailsLabel }}</button>{% endif %}
+    </div>
+  </div>
+</article>

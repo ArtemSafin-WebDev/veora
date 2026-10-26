@@ -82,6 +82,38 @@
   .services__all-link { margin-top: 3.7rem; border-color: var(--color-text-inverse); }
 }
 
+.services--additional {
+  margin-bottom: 10rem;
+  color: var(--color-text-primary);
+
+  .services__header { display: block; margin-bottom: 3.7rem; }
+  .services__heading { display: flex; align-items: center; gap: 2rem; }
+  .services__title { flex: 1; }
+  .services__divider { flex: 0 1 30rem; height: 1px; background: var(--color-border); }
+  .services__catalog-link { flex: none; }
+  .services__tabs { display: none; }
+}
+
+.services--desktop-tabs {
+  .services__tabs { display: flex; margin-top: 2rem; }
+  .services__tab { color: var(--color-text-muted); }
+  .services__tab--active, .services__tab--active:hover { border-color: var(--color-text-muted); background: var(--color-text-muted); color: var(--color-text-inverse); }
+  .services__tab:not(.services__tab--active):hover { background: var(--color-surface-soft); }
+}
+
+@media (max-width: 600px) {
+  .services--additional {
+    margin-bottom: 8rem;
+    .services__header { margin-bottom: 3.2rem; }
+    .services__heading { display: block; }
+    .services__divider, .services__catalog-link { display: none; }
+    .services__tabs { display: flex; margin-top: 2.8rem; }
+    .services__tab { color: var(--color-text-muted); }
+    .services__tab--active, .services__tab--active:hover { border-color: var(--color-text-muted); background: var(--color-text-muted); color: var(--color-text-inverse); }
+    .services__tab:not(.services__tab--active):hover { background: var(--color-surface-soft); }
+  }
+}
+
 @media (max-width: 600px) {
   .services {
     margin-bottom: 8.5rem;

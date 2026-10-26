@@ -1,0 +1,11 @@
+{% set catalog = page.catalog %}
+<section class="activities-catalog container" aria-label="{{ catalog.label }}">
+  <div class="activities-catalog__intro">
+    {% for paragraph in catalog.intro %}<p>{{ paragraph }}</p>{% endfor %}
+  </div>
+  <div class="activities-catalog__grid">
+    {% for activity in catalog.items %}
+      {% include "components/activity-card/activity-card.njk" %}
+    {% endfor %}
+  </div>
+</section>

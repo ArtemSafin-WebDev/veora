@@ -1,0 +1,42 @@
+.guest-journey {
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 8rem;
+  padding-bottom: 14.5rem;
+  color: var(--color-text-inverse);
+
+  &__visual { position: absolute; z-index: -1; inset: 6.6rem 0 0; }
+  &__visual::after { position: absolute; inset: 0; background: var(--color-glass-dark); content: ''; }
+  &__image { display: block; width: 100%; height: 100%; object-fit: cover; }
+  &__brand-row { display: flex; align-items: center; justify-content: space-between; height: 13rem; }
+  &__divider { flex: 0 1 40rem; height: 1px; background: var(--color-border); }
+  &__mark { display: grid; flex: none; place-items: center; width: 14rem; height: 13rem; border-radius: 999rem; background: var(--color-surface); }
+  &__mark-mobile { display: none; }
+  &__title { margin: 4.4rem 0 11.3rem; font-size: 6.4rem; font-weight: 400; line-height: 6.4rem; letter-spacing: -.448rem; text-align: center; }
+  &__list { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-auto-rows: minmax(25rem, auto); gap: 1rem; margin: 0; padding: 0; list-style: none; }
+  &__step { display: flex; flex-direction: column; justify-content: space-between; gap: 2rem; min-width: 0; padding: 1rem; border-radius: 1.2rem; background: rgb(0 0 0 / 30%); backdrop-filter: blur(2rem); }
+  // The remaining cards follow the grid's normal placement, with no empty list items.
+  &__step:nth-child(10n + 1) { grid-column: 3; }
+  &__step:nth-child(10n + 5) { grid-column: 1; }
+  &__step:nth-child(10n + 9) { grid-column: 4; }
+  &__number { color: var(--color-border-control); font-size: 6.4rem; line-height: 6.4rem; letter-spacing: -.448rem; }
+  &__text { margin: 0; font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; }
+}
+
+@media (max-width: 600px) {
+  .guest-journey {
+    padding-bottom: 20.6rem;
+    &__visual { top: 3.6rem; }
+    &__brand-row { justify-content: center; height: 7.2rem; }
+    &__divider, &__mark-desktop { display: none; }
+    &__mark { width: 7.8rem; height: 7.2rem; }
+    &__mark-mobile { display: block; }
+    &__title { margin: 4rem 0 9.1rem; font-size: 4rem; line-height: 4rem; letter-spacing: -.24rem; }
+    &__scroll { overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding-inline: 1.2rem; scrollbar-width: none; }
+    &__scroll::-webkit-scrollbar { display: none; }
+    &__list { width: max-content; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 14.9rem; grid-auto-rows: minmax(19.4rem, auto); }
+    &__step:nth-child(n) { grid-column: auto; scroll-snap-align: start; }
+    &__number { font-size: 4rem; line-height: 4rem; letter-spacing: -.24rem; }
+    &__text { font-size: 1.2rem; font-weight: 600; line-height: 1.6rem; letter-spacing: -.024rem; }
+  }
+}

@@ -1,0 +1,490 @@
+{
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/wellness/additional-services/",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/wellness/cosmetology/",
+            "label": "Косметология"
+          },
+          {
+            "href": "/wellness/spa/",
+            "label": "СПА"
+          },
+          {
+            "href": "/wellness/medicine/",
+            "label": "Медицина"
+          },
+          {
+            "href": "/wellness/prices/",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness/club/",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  },
+  "title": "Киноконцертный зал «Южный-1»",
+  "description": "Киноконцертный зал «Южный-1»: варианты рассадки, вместимость, техническое оснащение и бронирование зала для деловых мероприятий.",
+  "activePage": "activities",
+  "directoryGroup": "resort",
+  "theme": "dark-blue",
+  "bodyClass": "page-hall",
+  "banner": {
+    "id": "hall",
+    "title": "Киноконцертный зал «Южный-1»",
+    "variant": "hall",
+    "image": "/assets/activities/hero.jpg",
+    "imageAlt": "Ряды кресел в конференц-зале",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      },
+      {
+        "label": "Деловые мероприятия",
+        "href": "/activity-detail.html"
+      },
+      {
+        "label": "Киноконцертный зал «Южный-1»"
+      }
+    ],
+    "action": {
+      "label": "Оставить заявку",
+      "variant": "base",
+      "modalId": "hall-request-modal"
+    }
+  },
+  "facts": {
+    "label": "Характеристики зала",
+    "items": [
+      {
+        "value": "до 200",
+        "description": "человек располагает вместимость наших залов"
+      },
+      {
+        "value": "3",
+        "description": "зала со всем необходимым современным оборудованием"
+      },
+      {
+        "value": "от 100 м",
+        "sup": "2",
+        "description": "площади залов для проведения мероприятий"
+      },
+      {
+        "value": "<10",
+        "description": "вариантов рассадки в залах"
+      }
+    ]
+  },
+  "content": {
+    "label": "Описание и оборудование зала",
+    "variant": "hall",
+    "blocks": [
+      {
+        "type": "html",
+        "html": "<header><h2>Просторный зал, идеально подходящий для масштабных мероприятий: конференций, семинаров, корпоративных собраний и творческих вечеров.</h2><p>К Вашим услугам оснащенные площадки для деловых встреч, конференций и презентаций. Вдохновляющая обстановка и безупречный сервис помогут сделать ваше событие продуктивным и запоминающимся.</p></header>"
+      },
+      {
+        "type": "media",
+        "label": "Фотографии площадки",
+        "carouselLabel": "Карусель",
+        "previousLabel": "Предыдущая фотография",
+        "nextLabel": "Следующая фотография",
+        "items": [
+          {
+            "src": "/assets/activity-detail/conference.png",
+            "alt": "Пикник с корзинами и угощениями на морском берегу"
+          },
+          {
+            "src": "/assets/activities/hero.jpg",
+            "alt": "Ряды кресел в конференц-зале"
+          }
+        ]
+      },
+      {
+        "type": "seating",
+        "id": "hall-seating",
+        "title": "Варианты рассадки",
+        "columns": [
+          "Схема",
+          "Тип рассадки",
+          "Описание",
+          "Кол-во гостей"
+        ],
+        "items": [
+          {
+            "icon": "seating-theater",
+            "iconWidth": 3.73029,
+            "iconHeight": 3.07201,
+            "title": "Театр",
+            "description": "Стулья рядами, без столов",
+            "capacity": "до 200"
+          },
+          {
+            "icon": "seating-classroom",
+            "iconWidth": 3.98995,
+            "iconHeight": 3.79731,
+            "title": "Класс",
+            "description": "Столы и стулья рядом",
+            "capacity": "до 50"
+          },
+          {
+            "icon": "seating-u-shape",
+            "iconWidth": 3.82252,
+            "iconHeight": 4.04594,
+            "title": "U-образная",
+            "description": "Один общий стол в форме буквы U",
+            "capacity": "до 100"
+          }
+        ]
+      },
+      {
+        "type": "contacts",
+        "title": "По вопросам бронирования залов и организации мероприятий, пожалуйста, обращайтесь к администраторам службы приема и размещения:",
+        "items": [
+          {
+            "label": "«ЮЖНЫЙ-1»:",
+            "value": "5555"
+          },
+          {
+            "label": "«ЮЖНЫЙ-2»:",
+            "value": "4444"
+          }
+        ]
+      },
+      {
+        "type": "equipment",
+        "title": "Технические характеристики и оборудование зала",
+        "items": [
+          {
+            "title": "Бесплатно",
+            "description": "экран, флипчарт, Wi-Fi, кулер, канцелярия, зона для кофе-брейков"
+          },
+          {
+            "title": "Киноконцертный зал «Южный-2»",
+            "description": "высокоскоростная линия интернета, проектор, микрофон, ноутбук, дополнительный флипчарт, лазерная указка, кликер"
+          }
+        ]
+      },
+      {
+        "type": "action",
+        "label": "Оставить заявку",
+        "modalId": "hall-request-modal"
+      }
+    ]
+  },
+  "services": {
+    "tabs": [
+      {
+        "id": "all",
+        "label": "Все"
+      },
+      {
+        "id": "family",
+        "label": "Семейные и детские"
+      },
+      {
+        "id": "entertainment",
+        "label": "Развлечения"
+      },
+      {
+        "id": "excursions",
+        "label": "Экскурсии"
+      }
+    ],
+    "items": [
+      {
+        "title": "Бассейн",
+        "label": "Активный отдых",
+        "paid": false,
+        "image": "/assets/services/pool.webp",
+        "href": "/services/pool/",
+        "categories": [
+          "family",
+          "entertainment",
+          "medicine",
+          "spa"
+        ],
+        "mobilePaid": true
+      },
+      {
+        "title": "Пейнтбол",
+        "label": "Активный отдых",
+        "image": "/assets/services/paintball.webp",
+        "href": "/services/paintball/",
+        "categories": [
+          "entertainment"
+        ],
+        "paid": false,
+        "mobilePaid": true
+      },
+      {
+        "title": "Детская площадка",
+        "label": "Активный отдых",
+        "image": "/assets/services/playground.webp",
+        "href": "/services/playground/",
+        "categories": [
+          "family"
+        ],
+        "paid": false,
+        "mobilePaid": false
+      },
+      {
+        "title": "Терренкур",
+        "label": "Активный отдых",
+        "image": "/assets/services/trail.webp",
+        "href": "/services/trail/",
+        "categories": [
+          "excursions",
+          "medicine"
+        ],
+        "mobilePaid": true,
+        "paid": false
+      },
+      {
+        "title": "Тренажерный зал",
+        "label": "Активный отдых",
+        "image": "/assets/services/gym.webp",
+        "href": "/service.html",
+        "categories": [
+          "entertainment"
+        ],
+        "titleLines": [
+          "Тренажерный",
+          "зал"
+        ],
+        "paid": false,
+        "mobilePaid": false
+      },
+      {
+        "title": "Караоке",
+        "label": "Активный отдых",
+        "paid": false,
+        "image": "/assets/services/karaoke.webp",
+        "href": "/services/karaoke/",
+        "categories": [
+          "entertainment"
+        ],
+        "mobilePaid": false
+      },
+      {
+        "title": "Теннисный корт",
+        "label": "Активный отдых",
+        "image": "/assets/services/tennis.webp",
+        "href": "/services/tennis/",
+        "categories": [
+          "family",
+          "entertainment"
+        ],
+        "paid": false,
+        "mobilePaid": false
+      },
+      {
+        "title": "Сауна",
+        "label": "Активный отдых",
+        "image": "/assets/services/sauna.webp",
+        "href": "/services/sauna/",
+        "categories": [
+          "family",
+          "spa"
+        ],
+        "mobileLabel": "Активный отдых",
+        "paid": false,
+        "mobilePaid": false
+      }
+    ],
+    "variant": "additional",
+    "title": "Дополнительные услуги",
+    "allLink": {
+      "label": "Все услуги",
+      "href": "/services.html"
+    },
+    "showDesktopTabs": true
+  },
+  "gallery": {
+    "variant": "hall",
+    "title": "Галерея",
+    "modal": {
+      "id": "hall-gallery",
+      "openLabel": "Открыть фотографию",
+      "previousLabel": "Предыдущая фотография",
+      "nextLabel": "Следующая фотография"
+    },
+    "items": [
+      {
+        "image": "/assets/gallery/resort-night.png",
+        "alt": "Вечерняя подсветка корпуса здравницы у бассейна",
+        "size": "wide"
+      },
+      {
+        "image": "/assets/gallery/resort-pool.png",
+        "alt": "Открытый бассейн и шезлонги здравницы",
+        "size": "medium"
+      },
+      {
+        "image": "/assets/gallery/resort-building.png",
+        "alt": "Корпус здравницы и зона отдыха у бассейна",
+        "size": "narrow"
+      },
+      {
+        "image": "/assets/gallery/resort-pool.png",
+        "alt": "Бассейн на территории здравницы",
+        "size": "medium"
+      }
+    ]
+  },
+  "request": {
+    "id": "hall-request-modal",
+    "label": "Заявка на бронирование зала",
+    "form": {
+      "id": "hall-request",
+      "title": "Оставить заявку",
+      "description": "Укажите контакты и пожелания к бронированию зала «Южный-1».",
+      "action": null,
+      "hiddenFields": [
+        {
+          "name": "venue_title",
+          "value": "Киноконцертный зал «Южный-1»"
+        }
+      ],
+      "fields": [
+        {
+          "name": "name",
+          "label": "Ваше имя",
+          "autocomplete": "given-name",
+          "required": true,
+          "maxLength": 100,
+          "minLength": 2
+        },
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "autocomplete": "tel",
+          "required": true,
+          "mask": "phone",
+          "inputMode": "tel",
+          "pattern": "\\+7 \\([0-9]{3}\\) [0-9]{3}-[0-9]{2}-[0-9]{2}",
+          "errorMessage": "Введите телефон полностью: +7 (999) 123-45-67."
+        },
+        {
+          "name": "wishes",
+          "label": "Пожелания к мероприятию",
+          "maxLength": 1000
+        }
+      ],
+      "consent": {
+        "label": "Принимаю условия обработки персональных данных"
+      },
+      "submitLabel": "Оставить заявку"
+    }
+  }
+}

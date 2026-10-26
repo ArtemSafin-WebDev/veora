@@ -1,0 +1,28 @@
+body.page-activity-detail {
+  --color-page-background: var(--color-surface-neutral);
+}
+
+body.page-hall { --color-page-background: var(--color-surface-neutral); }
+
+.activity-content {
+  margin-bottom: 10rem;
+  padding-block: 10rem;
+  background: var(--theme-50);
+
+  &__container { max-width: 93.4rem; }
+
+  &--hall { margin-bottom: 14rem; padding-bottom: 8.3rem; }
+}
+
+@media (max-width: 600px) {
+  .activity-content {
+    margin-bottom: 8rem;
+    padding-block: 5rem 8.3rem;
+
+    &--hall {
+      margin-bottom: 7.3rem;
+      padding-bottom: 11.3rem;
+      .event-contacts { margin-top: 4rem; }
+    }
+  }
+}

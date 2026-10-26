@@ -1,0 +1,395 @@
+{
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/wellness/additional-services/",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/wellness/cosmetology/",
+            "label": "Косметология"
+          },
+          {
+            "href": "/wellness/spa/",
+            "label": "СПА"
+          },
+          {
+            "href": "/wellness/medicine/",
+            "label": "Медицина"
+          },
+          {
+            "href": "/wellness/prices/",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness/club/",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  },
+  "title": "Готовые комплексы услуг/программы",
+  "description": "Готовые комплексы услуг и программы оздоровления здравницы «Южный»: восстановление сил и забота о здоровье взрослых и детей.",
+  "activePage": "programs",
+  "directoryGroup": "resort",
+  "theme": "dark-blue",
+  "banner": {
+    "id": "programs-banner",
+    "variant": "programs",
+    "title": "Готовые комплексы услуг/программы",
+    "image": "/assets/programs/hero.webp",
+    "imageAlt": "Консультация у врача в здравнице",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Оздоровление",
+        "href": "/wellness.html"
+      },
+      {
+        "label": "Готовые комплексы услуг/программы"
+      }
+    ]
+  },
+  "catalog": {
+    "label": "Готовые комплексы услуг и программы",
+    "filters": {
+      "id": "programs-filters",
+      "title": "Фильтры",
+      "triggerLabel": "Настроить",
+      "closeLabel": "Закрыть фильтры",
+      "assets": {
+        "chevron": "filters-chevron",
+        "check": "filters-check",
+        "close": "modal-close"
+      },
+      "groups": [
+        {
+          "id": "duration",
+          "title": "Длительность",
+          "defaultOpen": true,
+          "options": [
+            {
+              "value": "all",
+              "label": "Любая",
+              "all": true,
+              "checked": true
+            },
+            {
+              "value": "3",
+              "label": "3 дня"
+            },
+            {
+              "value": "7",
+              "label": "7 дней"
+            },
+            {
+              "value": "14",
+              "label": "14 дней"
+            }
+          ]
+        },
+        {
+          "id": "type",
+          "title": "Тип",
+          "defaultOpen": true,
+          "options": [
+            {
+              "value": "all",
+              "label": "Любой",
+              "all": true,
+              "checked": true
+            },
+            {
+              "value": "medicine",
+              "label": "Медицина"
+            },
+            {
+              "value": "spa",
+              "label": "СПА"
+            },
+            {
+              "value": "cosmetology",
+              "label": "Косметология"
+            }
+          ]
+        }
+      ]
+    },
+    "cards": [
+      {
+        "title": "Здоровье Плюс",
+        "description": "санаторно-курортное лечение в профилактических и лечебных целях на основе использования природных лечебных ресурсов. Состав программ индивидуальный, назначается лечащим врачом с учетом показаний и противопоказаний, указанных в санаторно-курортной карте",
+        "tags": [
+          "от 6 суток/14-21 день",
+          "Подмосковье"
+        ],
+        "minDays": 6,
+        "types": [
+          "medicine"
+        ],
+        "wideDescription": true,
+        "link": {
+          "label": "Подробнее",
+          "href": "/program.html"
+        }
+      },
+      {
+        "title": "Здоровье",
+        "description": "лечебно-оздоровительные программы, разработанные по семи профильным направлениям, включают комплекс медицинских услуг с целью общего оздоровления, улучшения состояния и профилактики развития различных заболеваниях.",
+        "tags": [
+          "от 6-ти дней",
+          "Подмосковье"
+        ],
+        "minDays": 6,
+        "types": [
+          "medicine"
+        ],
+        "wideDescription": true,
+        "link": {
+          "label": "Подробнее",
+          "href": "/wellness/programs/health/"
+        }
+      },
+      {
+        "title": "Антистресс-релакс",
+        "description": "Восстановление жизненных сил и укрепление нервной системы",
+        "tags": [
+          "от 6-ти дней",
+          "Подмосковье"
+        ],
+        "minDays": 6,
+        "types": [
+          "medicine"
+        ],
+        "wideDescription": false,
+        "link": {
+          "label": "Подробнее",
+          "href": "/wellness/programs/antistress-relax/"
+        }
+      },
+      {
+        "title": "Здоровый позвоночник и суставы",
+        "description": "Возвращение радости активной жизни",
+        "tags": [
+          "от 6-ти дней",
+          "Подмосковье"
+        ],
+        "minDays": 6,
+        "types": [
+          "medicine"
+        ],
+        "wideDescription": false,
+        "link": {
+          "label": "Подробнее",
+          "href": "/wellness/programs/spine-and-joints/"
+        }
+      },
+      {
+        "title": "Здоровое сердце",
+        "description": "Поддержка сердечно-сосудистой системы",
+        "tags": [
+          "от 6-ти дней",
+          "Подмосковье"
+        ],
+        "minDays": 6,
+        "types": [
+          "medicine"
+        ],
+        "wideDescription": false,
+        "link": {
+          "label": "Подробнее",
+          "href": "/wellness/programs/heart/"
+        }
+      },
+      {
+        "title": "Свободное дыхание",
+        "description": "Защита организма от сезонных простуд и восстановление после перенесенных инфекций.",
+        "tags": [
+          "от 6-ти дней",
+          "Подмосковье"
+        ],
+        "minDays": 6,
+        "types": [
+          "medicine"
+        ],
+        "wideDescription": false,
+        "link": {
+          "label": "Подробнее",
+          "href": "/wellness/programs/breathing/"
+        }
+      },
+      {
+        "title": "Снижение веса",
+        "description": "Мягкое моделирование силуэта и нормализация пищевого поведения.",
+        "tags": [
+          "от 6-ти дней",
+          "Подмосковье"
+        ],
+        "minDays": 6,
+        "types": [
+          "medicine"
+        ],
+        "wideDescription": false,
+        "link": {
+          "label": "Подробнее",
+          "href": "/wellness/programs/weight-loss/"
+        }
+      },
+      {
+        "title": "Снижение веса",
+        "description": "Мягкое моделирование силуэта и нормализация пищевого поведения",
+        "tags": [
+          "от 6-ти дней",
+          "Подмосковье"
+        ],
+        "minDays": 6,
+        "types": [
+          "medicine"
+        ],
+        "wideDescription": false,
+        "link": {
+          "label": "Подробнее",
+          "href": "/wellness/programs/weight-loss-2/"
+        }
+      },
+      {
+        "title": "Здоровый малыш",
+        "description": "Укрепление организма детей от 1 года до 4 лет",
+        "tags": [
+          "от 6-ти дней",
+          "Подмосковье"
+        ],
+        "minDays": 6,
+        "types": [
+          "medicine"
+        ],
+        "wideDescription": false,
+        "link": {
+          "label": "Подробнее",
+          "href": "/wellness/programs/healthy-baby/"
+        }
+      },
+      {
+        "title": "Здоровье детей",
+        "description": "Укрепление организма детей от 5 лет",
+        "tags": [
+          "от 6-ти дней",
+          "Подмосковье"
+        ],
+        "minDays": 6,
+        "types": [
+          "medicine"
+        ],
+        "wideDescription": false,
+        "link": {
+          "label": "Подробнее",
+          "href": "/wellness/programs/healthy-children/"
+        }
+      }
+    ],
+    "emptyLabel": "По выбранным фильтрам программы не найдены. Попробуйте изменить параметры."
+  }
+}

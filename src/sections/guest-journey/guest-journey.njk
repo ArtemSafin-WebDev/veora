@@ -1,0 +1,22 @@
+{% from "components/icon/icon.njk" import icon %}
+<section class="guest-journey" aria-labelledby="guest-journey-title">
+  <div class="guest-journey__visual" aria-hidden="true"><img class="guest-journey__image" src="{{ page.guestJourney.image }}" alt="" loading="lazy" /></div>
+  <div class="guest-journey__header container">
+    <div class="guest-journey__brand-row" aria-hidden="true">
+      <span class="guest-journey__divider"></span>
+      <span class="guest-journey__mark">{{ icon(page.guestJourney.brandMark, 'guest-journey__mark-desktop', 13.1, 12.3) }}{{ icon(page.guestJourney.brandMarkMobile, 'guest-journey__mark-mobile', 7.22518, 6.81231) }}</span>
+      <span class="guest-journey__divider"></span>
+    </div>
+    <h2 class="guest-journey__title" id="guest-journey-title">{{ page.guestJourney.title }}</h2>
+  </div>
+  <div class="guest-journey__scroll container" tabindex="0" role="region" aria-label="{{ page.guestJourney.scrollLabel }}">
+    <ol class="guest-journey__list">
+      {% for step in page.guestJourney.steps %}
+      <li class="guest-journey__step">
+        <span class="guest-journey__number" aria-hidden="true">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>
+        <p class="guest-journey__text">{{ step }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

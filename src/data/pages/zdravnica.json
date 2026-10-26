@@ -34,7 +34,7 @@
         "title": "Оздоровление",
         "links": [
           {
-            "href": "/wellness/programs/",
+            "href": "/programs.html",
             "label": "Готовые комплексы услуг/программы"
           },
           {
@@ -91,7 +91,7 @@
             "label": "Галерея"
           },
           {
-            "href": "/activities/",
+            "href": "/activities.html",
             "label": "Мероприятия"
           },
           {

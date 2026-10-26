@@ -1,6 +1,6 @@
 {% from "components/icon/icon.njk" import icon %}
 {% set photo = galleryCardVariant == 'photo' %}
-{% set resort = galleryCardVariant == 'resort' %}
+{% set resort = galleryCardVariant == 'resort' or galleryCardVariant == 'wellness' %}
 {% set columns = card.columns | default(4) | int %}
 {% if columns < 1 %}{% set columns = 1 %}{% endif %}
 {% if columns > 12 %}{% set columns = 12 %}{% endif %}

@@ -1,0 +1,17 @@
+{% from "components/section-title/section-title.njk" import sectionTitle %}
+{% from "components/slider-arrows/slider-arrows.njk" import sliderArrows %}
+{% from "components/program-card/program-card.njk" import programCard %}
+{% set related = page.relatedPrograms %}
+<section class="related-programs" aria-labelledby="related-programs-title" data-related-programs>
+  <div class="related-programs__header container">
+    {{ sectionTitle(related.title, 'related-programs-title', 'related-programs__title') }}
+    {{ sliderArrows(related.previousLabel, related.nextLabel, 'related-programs__arrows') }}
+  </div>
+  <div class="related-programs__slider swiper" data-related-programs-slider>
+    <div class="swiper-wrapper">
+      {% for card in related.items %}
+        <div class="related-programs__slide swiper-slide">{{ programCard(card) }}</div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

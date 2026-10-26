@@ -1,0 +1,5 @@
+{% macro eventAction(snippet) %}
+<div class="event-action">
+  <button class="button button--primary event-action__button" type="button" data-modal-open="{{ snippet.modalId }}" aria-haspopup="dialog">{{ snippet.label }}</button>
+</div>
+{% endmacro %}

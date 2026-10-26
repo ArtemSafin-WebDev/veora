@@ -1,8 +1,15 @@
 {% from "components/icon/icon.njk" import icon %}
 {% from "components/button/button.njk" import button %}
 {% from "components/section-title/section-title.njk" import sectionTitle %}
-<section class="services{% if page.services.variant %} services--{{ page.services.variant }}{% endif %} container" id="services" data-services aria-labelledby="services-title">
+<section class="services{% if page.services.variant %} services--{{ page.services.variant }}{% endif %}{% if page.services.showDesktopTabs %} services--desktop-tabs{% endif %} container" id="services" data-services aria-labelledby="services-title">
   <div class="services__header">
+    {% if page.services.variant == 'additional' %}
+    <div class="services__heading">
+      {{ sectionTitle(page.services.title, 'services-title', 'services__title') }}
+      <span class="services__divider" aria-hidden="true"></span>
+      {{ button(page.services.allLink.label, page.services.allLink.href, 'services__catalog-link', 'light') }}
+    </div>
+    {% else %}
     <div class="services__ornament" aria-hidden="true">
       <span class="services__rule"></span>
       <span class="services__mark services__mark--desktop">{{ icon(page.services.brandMark or 'services-brand-mark', '', 13.1, 12.3) }}</span>
@@ -10,6 +17,7 @@
       <span class="services__rule"></span>
     </div>
     {{ sectionTitle(page.services.title, 'services-title', 'services__title') }}
+    {% endif %}
     <div class="services__tabs" role="tablist" aria-label="Категории услуг">
       {% for tab in page.services.tabs %}
         <button class="services__tab{% if loop.first %} services__tab--active{% endif %}" type="button" role="tab" id="services-tab-{{ tab.id }}" aria-controls="services-panel-{{ tab.id }}" aria-selected="{% if loop.first %}true{% else %}false{% endif %}" tabindex="{% if loop.first %}0{% else %}-1{% endif %}" data-services-tab="{{ tab.id }}">{{ tab.label }}</button>
@@ -29,5 +37,5 @@
     </div>
   {% endfor %}
 
-  {{ button(page.services.allLink.label, page.services.allLink.href, 'services__all-link', 'dark', page.services.variant == 'resort', page.services.variant == 'resort') }}
+  {% if page.services.variant != 'additional' %}{{ button(page.services.allLink.label, page.services.allLink.href, 'services__all-link', 'dark', page.services.variant == 'resort', page.services.variant == 'resort') }}{% endif %}
 </section>

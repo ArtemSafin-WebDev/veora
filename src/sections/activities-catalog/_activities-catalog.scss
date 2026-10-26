@@ -1,0 +1,39 @@
+body.page-activities {
+  --color-page-background: #fefefc;
+}
+
+.activities-catalog {
+  display: grid;
+  grid-template-columns: minmax(0, 42.2rem) minmax(0, 1fr);
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 7.2rem;
+
+  &__intro { max-width: 37.8rem; color: var(--color-text-muted); font-size: 1.6rem; line-height: 2rem; letter-spacing: -.032rem; }
+  &__intro p { margin: 0; }
+  &__intro p + p { margin-top: 2rem; }
+  &__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.4rem .9rem; padding-top: .8rem; }
+}
+
+.page-banner--activities {
+  margin-bottom: 4rem;
+  .page-banner__action { font-family: inherit; }
+}
+
+@media (max-width: 600px) {
+  .activities-catalog {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 3.2rem;
+    margin-bottom: 8rem;
+
+    &__intro { max-width: none; font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.014rem; }
+    &__intro p + p { margin-top: 1.8rem; }
+    &__grid { grid-template-columns: minmax(0, 1fr); padding-top: 0; }
+  }
+
+  .page-banner--activities {
+    margin-bottom: 3.2rem;
+    .page-banner__container { padding-bottom: 1.6rem; }
+    .page-banner__heading { gap: 2rem; }
+  }
+}

@@ -1,0 +1,10 @@
+<section class="activity-facts container" aria-label="{{ page.facts.label }}">
+  <dl class="activity-facts__list">
+    {% for fact in page.facts.items %}
+    <div class="activity-facts__item">
+      <dt class="activity-facts__description">{{ fact.description }}</dt>
+      <dd class="activity-facts__value">{{ fact.value }}{% if fact.sup %}<sup>{{ fact.sup }}</sup>{% endif %}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+</section>

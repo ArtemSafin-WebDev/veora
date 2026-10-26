@@ -1,0 +1,401 @@
+{
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/wellness/additional-services/",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/wellness/cosmetology/",
+            "label": "Косметология"
+          },
+          {
+            "href": "/wellness/spa/",
+            "label": "СПА"
+          },
+          {
+            "href": "/wellness/medicine/",
+            "label": "Медицина"
+          },
+          {
+            "href": "/wellness/prices/",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness/club/",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  },
+  "title": "Деловые мероприятия",
+  "description": "Конференц-сервис здравницы «Южный»: залы для деловых встреч, конференций и презентаций, организация мероприятий и дополнительные услуги.",
+  "activePage": "activities",
+  "directoryGroup": "resort",
+  "theme": "dark-blue",
+  "bodyClass": "page-activity-detail",
+  "banner": {
+    "id": "activity-detail",
+    "title": "Деловые мероприятия",
+    "variant": "activity-detail",
+    "image": "/assets/activities/hero.jpg",
+    "imageAlt": "Ряды кресел в конференц-зале",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      },
+      {
+        "label": "Деловые мероприятия"
+      }
+    ],
+    "action": {
+      "label": "Оставить заявку",
+      "variant": "base"
+    }
+  },
+  "facts": {
+    "label": "Возможности для деловых мероприятий",
+    "items": [
+      {
+        "value": "до 300",
+        "description": "человек располагает вместимость наших залов"
+      },
+      {
+        "value": "3",
+        "description": "зала со всем необходимым современным оборудованием"
+      },
+      {
+        "value": "от 100 м",
+        "sup": "2",
+        "description": "площади залов для проведения мероприятий"
+      },
+      {
+        "value": "<10",
+        "description": "вариантов рассадки в залах"
+      }
+    ]
+  },
+  "content": {
+    "label": "Конференц-сервис и организация мероприятий",
+    "blocks": [
+      {
+        "type": "html",
+        "html": "<header><h2>Конференц-сервис</h2><p>К Вашим услугам оснащенные площадки для деловых встреч, конференций и презентаций. Вдохновляющая обстановка и безупречный сервис помогут сделать ваше событие продуктивным и запоминающимся.</p></header>"
+      },
+      {
+        "type": "image",
+        "src": "/assets/activity-detail/conference.png",
+        "alt": "Пикник с корзинами и угощениями на морском берегу"
+      },
+      {
+        "type": "venues",
+        "capacityLabel": "Вместимость",
+        "requestLabel": "Оставить заявку",
+        "detailsLabel": "Подробнее",
+        "items": [
+          {
+            "id": "yuzhny-1",
+            "title": "Киноконцертный зал «Южный-1»",
+            "description": "Просторный зал, идеально подходящий для масштабных мероприятий: конференций, семинаров, корпоративных собраний и творческих вечеров.",
+            "capacity": "до 200 человек.",
+            "href": "/hall.html"
+          },
+          {
+            "id": "yuzhny-2",
+            "title": "Киноконцертный зал «Южный-2»",
+            "description": "Главная концертная площадка комплекса, оснащенная всем необходимым для проведения крупных корпоративных событий и торжественных мероприятий.",
+            "capacity": "до 524 человек"
+          },
+          {
+            "id": "meeting-room",
+            "title": "Переговорная комната",
+            "description": "Компактное и комфортное пространство для проведения деловых переговоров, встреч с партнерами или работы малой группы.",
+            "capacity": "10 мест"
+          }
+        ]
+      },
+      {
+        "type": "html",
+        "html": "<h2>Организационные моменты</h2><p>Мы позаботились о том, чтобы вы могли сосредоточиться только на повестке вашей встречи. Все необходимое для работы предоставляется по вашему запросу.</p><p>Для комфортного проведения мероприятия на ресепшене (стойке размещения) вы всегда можете запросить:</p><ul><li>Дополнительные маркеры и бумагу для флипчата;</li><li>Канцелярские принадлежности;</li><li>Дополнительное презентационное оборудование (при наличии).</li></ul>"
+      },
+      {
+        "type": "contacts",
+        "title": "По вопросам бронирования залов и организации мероприятий, пожалуйста, обращайтесь к администраторам службы приема и размещения:",
+        "items": [
+          {
+            "label": "«ЮЖНЫЙ-1»:",
+            "value": "5555"
+          },
+          {
+            "label": "«ЮЖНЫЙ-2»:",
+            "value": "4444"
+          }
+        ]
+      }
+    ]
+  },
+  "services": {
+    "tabs": [
+      {
+        "id": "all",
+        "label": "Все"
+      },
+      {
+        "id": "family",
+        "label": "Семейные и детские"
+      },
+      {
+        "id": "entertainment",
+        "label": "Развлечения"
+      },
+      {
+        "id": "excursions",
+        "label": "Экскурсии"
+      }
+    ],
+    "items": [
+      {
+        "title": "Бассейн",
+        "label": "Активный отдых",
+        "paid": false,
+        "image": "/assets/services/pool.webp",
+        "href": "/services/pool/",
+        "categories": [
+          "family",
+          "entertainment",
+          "medicine",
+          "spa"
+        ],
+        "mobilePaid": true
+      },
+      {
+        "title": "Пейнтбол",
+        "label": "Активный отдых",
+        "image": "/assets/services/paintball.webp",
+        "href": "/services/paintball/",
+        "categories": [
+          "entertainment"
+        ],
+        "paid": false,
+        "mobilePaid": true
+      },
+      {
+        "title": "Детская площадка",
+        "label": "Активный отдых",
+        "image": "/assets/services/playground.webp",
+        "href": "/services/playground/",
+        "categories": [
+          "family"
+        ],
+        "paid": false,
+        "mobilePaid": false
+      },
+      {
+        "title": "Терренкур",
+        "label": "Активный отдых",
+        "image": "/assets/services/trail.webp",
+        "href": "/services/trail/",
+        "categories": [
+          "excursions",
+          "medicine"
+        ],
+        "mobilePaid": true,
+        "paid": false
+      },
+      {
+        "title": "Тренажерный зал",
+        "label": "Активный отдых",
+        "image": "/assets/services/gym.webp",
+        "href": "/service.html",
+        "categories": [
+          "entertainment"
+        ],
+        "titleLines": [
+          "Тренажерный",
+          "зал"
+        ],
+        "paid": false,
+        "mobilePaid": false
+      },
+      {
+        "title": "Караоке",
+        "label": "Активный отдых",
+        "paid": false,
+        "image": "/assets/services/karaoke.webp",
+        "href": "/services/karaoke/",
+        "categories": [
+          "entertainment"
+        ],
+        "mobilePaid": false
+      },
+      {
+        "title": "Теннисный корт",
+        "label": "Активный отдых",
+        "image": "/assets/services/tennis.webp",
+        "href": "/services/tennis/",
+        "categories": [
+          "family",
+          "entertainment"
+        ],
+        "paid": false,
+        "mobilePaid": false
+      },
+      {
+        "title": "Сауна",
+        "label": "Спокойный отдых",
+        "image": "/assets/services/sauna.webp",
+        "href": "/services/sauna/",
+        "categories": [
+          "family",
+          "spa"
+        ],
+        "mobileLabel": "Активный отдых",
+        "paid": false,
+        "mobilePaid": false
+      }
+    ],
+    "variant": "additional",
+    "title": "Дополнительные услуги",
+    "allLink": {
+      "label": "Все услуги",
+      "href": "/services.html"
+    }
+  },
+  "gallery": {
+    "variant": "activity",
+    "title": "Галерея",
+    "modal": {
+      "id": "activity-gallery",
+      "openLabel": "Открыть фотографию",
+      "previousLabel": "Предыдущая фотография",
+      "nextLabel": "Следующая фотография"
+    },
+    "items": [
+      {
+        "image": "/assets/gallery/resort-night.png",
+        "alt": "Вечерняя подсветка корпуса здравницы у бассейна",
+        "size": "wide"
+      },
+      {
+        "image": "/assets/gallery/resort-pool.png",
+        "alt": "Открытый бассейн и шезлонги здравницы",
+        "size": "medium"
+      },
+      {
+        "image": "/assets/gallery/resort-building.png",
+        "alt": "Корпус здравницы и зона отдыха у бассейна",
+        "size": "narrow"
+      },
+      {
+        "image": "/assets/gallery/resort-pool.png",
+        "alt": "Бассейн на территории здравницы",
+        "size": "medium"
+      }
+    ]
+  }
+}

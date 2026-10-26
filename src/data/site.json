@@ -61,7 +61,7 @@
           { "href": "/services.html", "label": "Услуги и развлечения" },
           { "href": "/afisha.html", "label": "Афиша" },
           { "href": "/gallery.html", "label": "Галерея" },
-          { "href": "/activities/", "label": "Мероприятия" },
+          { "href": "/activities.html", "label": "Мероприятия" },
           { "href": "/all-pages.html", "label": "Все страницы" }
         ]
       }
@@ -105,7 +105,7 @@
       },
       {
         "label": "Мероприятия",
-        "href": "/activities/"
+        "href": "/activities.html"
       }
     ],
     "bookingLabel": "Начать отдых",

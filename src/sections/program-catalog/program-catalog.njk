@@ -1,0 +1,8 @@
+{% from "components/catalog-layout/catalog-layout.njk" import catalogLayout %}
+{% from "components/program-card/program-card.njk" import programCard %}
+{% call catalogLayout(none, 'program-catalog', page.catalog.label, 'compact', page.catalog.filters) %}
+  <div class="program-catalog__list" aria-live="polite">
+    {% for card in page.catalog.cards %}{{ programCard(card) }}{% endfor %}
+    <p class="program-catalog__empty" hidden>{{ page.catalog.emptyLabel }}</p>
+  </div>
+{% endcall %}

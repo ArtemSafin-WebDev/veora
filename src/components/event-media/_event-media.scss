@@ -1,0 +1,15 @@
+.event-media {
+  position: relative;
+  margin-top: 4rem;
+
+  &__slider { overflow: hidden; border-radius: 1.2rem; }
+  &__image { display: block; width: 100%; height: 100%; aspect-ratio: 854 / 404; object-fit: cover; }
+  &__arrows { position: absolute; z-index: 1; right: 2rem; bottom: 2rem; }
+}
+
+@media (max-width: 600px) {
+  .event-media {
+    &__image { aspect-ratio: 1; }
+    &__arrows { display: none; }
+  }
+}

@@ -1,0 +1,21 @@
+{% from "components/button/button.njk" import button %}
+{% macro eventVenues(snippet) %}
+<div class="event-venues">
+  {% for venue in snippet.items %}
+  <article class="event-venues__card"{% if venue.id %} id="{{ venue.id }}"{% endif %}>
+    <div class="event-venues__intro">
+      <h3 class="event-venues__title">{{ venue.title }}</h3>
+      <p class="event-venues__description">{{ venue.description }}</p>
+    </div>
+    <dl class="event-venues__capacity">
+      <dt>{{ snippet.capacityLabel }}</dt>
+      <dd>{{ venue.capacity }}</dd>
+    </dl>
+    <div class="event-venues__actions">
+      <button class="button button--primary event-venues__request" type="button">{{ snippet.requestLabel }}</button>
+      {% if venue.href %}{{ button(snippet.detailsLabel, venue.href, 'event-venues__details', 'detail') }}{% else %}<button class="button button--detail event-venues__details" type="button">{{ snippet.detailsLabel }}</button>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% endmacro %}

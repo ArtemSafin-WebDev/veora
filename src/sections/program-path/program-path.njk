@@ -1,0 +1,15 @@
+{% from "components/program-benefit/program-benefit.njk" import programBenefit %}
+{% set path = page.programPath %}
+<section class="program-path container" aria-labelledby="program-path-title">
+  <h2 class="program-path__title" id="program-path-title">{% for line in path.titleLines %}<span class="program-path__title-line">{{ line }}</span>{% if not loop.last %} {% endif %}{% endfor %}</h2>
+  <div class="program-path__columns">
+    <div class="program-path__column">
+      <div class="program-path__item program-path__item--diagnostics">{{ programBenefit(path.cards[0]) }}</div>
+      <div class="program-path__item program-path__item--care">{{ programBenefit(path.cards[2]) }}</div>
+    </div>
+    <div class="program-path__column program-path__column--offset">
+      <div class="program-path__item program-path__item--recovery">{{ programBenefit(path.cards[1]) }}</div>
+      <div class="program-path__item program-path__item--conditions">{{ programBenefit(path.cards[3]) }}</div>
+    </div>
+  </div>
+</section>
