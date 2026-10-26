@@ -1,0 +1,19 @@
+.cosmetology-faq {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 10rem;
+  &__title { max-width: 60rem; }
+  &__list { display: grid; gap: 1rem; }
+  .accordion__toggle { gap: 1rem; }
+}
+
+@media (max-width: 600px) {
+  .cosmetology-faq {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 3.3rem;
+    margin-bottom: 8rem;
+    .accordion__answer { font-weight: 400; }
+  }
+}

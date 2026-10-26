@@ -56,6 +56,7 @@
 @use '../sections/offer-request/offer-request';
 @use '../sections/related-offers/related-offers';
 @use '../components/catalog-layout/catalog-layout';
+@use '../sections/additional-services-catalog/additional-services-catalog';
 @use '../sections/gallery-catalog/gallery-catalog';
 @use '../sections/gallery-album/gallery-album';
 @use '../sections/news-intro/news-intro';
@@ -112,3 +113,8 @@
 @use '../sections/program-path/program-path';
 @use '../sections/program-indications/program-indications';
 @use '../sections/related-programs/related-programs';
+@use '../sections/cosmetology-catalog/cosmetology-catalog';
+@use '../sections/cosmetology-feature/cosmetology-feature';
+@use '../sections/cosmetology-faq/cosmetology-faq';
+@use '../components/cosmetology-modal/cosmetology-modal';
+@use '../sections/medicine-catalog/medicine-catalog';

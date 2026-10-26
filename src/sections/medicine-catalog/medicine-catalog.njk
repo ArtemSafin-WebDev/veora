@@ -1,0 +1,6 @@
+{% from "components/voucher-card/voucher-card.njk" import voucherCard %}
+<section class="medicine-catalog container" id="{{ page.cosmetology.id }}" aria-label="{{ page.cosmetology.label }}">
+  {% for item in page.cosmetology.items %}
+    {{ voucherCard(item, page.cosmetology) }}
+  {% endfor %}
+</section>

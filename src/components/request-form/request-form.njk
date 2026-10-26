@@ -1,18 +1,18 @@
 {% from "components/icon/icon.njk" import icon %}
-{% macro requestForm(config) %}
+{% macro requestForm(config, id=config.id) %}
 <div class="request-form{% if config.variant %} request-form--{{ config.variant }}{% endif %}">
   <div class="request-form__intro">
-    <h2 class="request-form__title" id="{{ config.id }}-title">{{ config.title }}</h2>
+    <h2 class="request-form__title" id="{{ id }}-title">{{ config.title }}</h2>
     {% if config.description %}<p class="request-form__description">{{ config.description }}</p>{% endif %}
   </div>
-  <form class="request-form__form" id="{{ config.id }}"{% if config.action %} action="{{ config.action }}"{% endif %} method="post" aria-labelledby="{{ config.id }}-title" data-request-form data-validation-required="{{ site.formValidation.required }}" data-validation-email="{{ site.formValidation.email }}" data-validation-invalid="{{ site.formValidation.invalid }}" data-validation-pattern="{{ site.formValidation.pattern }}" data-validation-too-short="{{ site.formValidation.tooShort }}" data-validation-too-long="{{ site.formValidation.tooLong }}">
+  <form class="request-form__form" id="{{ id }}"{% if config.action %} action="{{ config.action }}"{% endif %} method="post" aria-labelledby="{{ id }}-title" data-request-form data-validation-required="{{ site.formValidation.required }}" data-validation-email="{{ site.formValidation.email }}" data-validation-invalid="{{ site.formValidation.invalid }}" data-validation-pattern="{{ site.formValidation.pattern }}" data-validation-too-short="{{ site.formValidation.tooShort }}" data-validation-too-long="{{ site.formValidation.tooLong }}">
     {% for item in config.hiddenFields %}<input type="hidden" name="{{ item.name }}" value="{{ item.value }}" />{% endfor %}
     <div class="request-form__fields">
       {% for field in config.fields %}
       <label class="request-form__field">
         <span class="request-form__field-label">{{ field.label }}</span>
         <input class="request-form__input" type="{{ field.type or 'text' }}" name="{{ field.name }}" placeholder="{{ field.label }}"{% if field.autocomplete %} autocomplete="{{ field.autocomplete }}"{% endif %}{% if field.mask %} data-mask="{{ field.mask }}"{% endif %}{% if field.inputMode %} inputmode="{{ field.inputMode }}"{% endif %}{% if field.errorMessage %} data-validation-pattern="{{ field.errorMessage }}" data-validation-invalid="{{ field.errorMessage }}"{% endif %}{% if field.hint %} title="{{ field.hint }}"{% endif %}{% if field.required %} required{% endif %}{% if field.minLength %} minlength="{{ field.minLength }}"{% endif %}{% if field.maxLength and not field.mask %} maxlength="{{ field.maxLength }}"{% endif %}{% if field.pattern %} pattern="{{ field.pattern }}"{% endif %} />
-        <span class="request-form__error" id="{{ config.id }}-{{ loop.index }}-error" data-validation-error-for="{{ field.name }}" aria-live="polite" hidden></span>
+        <span class="request-form__error" id="{{ id }}-{{ loop.index }}-error" data-validation-error-for="{{ field.name }}" aria-live="polite" hidden></span>
       </label>
       {% endfor %}
     </div>
@@ -25,7 +25,7 @@
       </span>
       <span>{{ config.consent.label }}{% if config.consent.link %} <a href="{{ config.consent.link.href }}">{{ config.consent.link.label }}</a>{% endif %}</span>
     </label>
-    <p class="request-form__error request-form__error--consent" id="{{ config.id }}-consent-error" data-validation-error-for="consent" aria-live="polite" hidden></p>
+    <p class="request-form__error request-form__error--consent" id="{{ id }}-consent-error" data-validation-error-for="consent" aria-live="polite" hidden></p>
     <button class="button button--base request-form__submit" type="submit">{{ config.submitLabel }}</button>
     <p class="request-form__status" role="status" data-request-status hidden></p>
   </form>

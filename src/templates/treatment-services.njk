@@ -1,0 +1,14 @@
+{% extends "layout.njk" %}
+{% from "sections/page-banner/page-banner.njk" import pageBanner %}
+{% block content %}
+  {{ pageBanner(page.banner) }}
+  {% if page.medicineCatalog %}
+    {% include "sections/medicine-catalog/medicine-catalog.njk" %}
+  {% else %}
+    {% include "sections/cosmetology-catalog/cosmetology-catalog.njk" %}
+  {% endif %}
+  {% include "sections/cosmetology-feature/cosmetology-feature.njk" %}
+  {% include "sections/cosmetology-faq/cosmetology-faq.njk" %}
+  {% include "sections/gallery/gallery.njk" %}
+  {% include "components/cosmetology-modal/cosmetology-modal.njk" %}
+{% endblock %}

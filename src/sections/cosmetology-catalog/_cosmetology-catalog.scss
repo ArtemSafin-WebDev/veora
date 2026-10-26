@@ -1,0 +1,11 @@
+.cosmetology-catalog {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  scroll-margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  body.page-spa { --color-page-background: #f1f3f5; }
+  .cosmetology-catalog { margin-bottom: 0; }
+}

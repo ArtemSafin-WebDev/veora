@@ -1,6 +1,6 @@
 {% from "components/icon/icon.njk" import icon %}
 {% macro voucherCard(item, config) %}
-<article class="voucher-card{% if item.defaultOpen %} voucher-card--open{% endif %}" data-accordion data-accordion-class="voucher-card--open">
+<article class="voucher-card{% if config.variant %} voucher-card--{{ config.variant }}{% endif %}{% if item.defaultOpen %} voucher-card--open{% endif %}" data-accordion data-accordion-class="voucher-card--open">
   <h2 class="voucher-card__heading">
     <button class="voucher-card__toggle" id="{{ item.id }}-toggle" type="button" aria-expanded="{{ 'true' if item.defaultOpen else 'false' }}" aria-controls="{{ item.id }}-panel" data-accordion-toggle>
       <span>{{ item.title }}</span>
@@ -10,11 +10,11 @@
       </span>
     </button>
   </h2>
-  <p class="voucher-card__description">{{ item.description }}</p>
-  <div class="voucher-card__actions">
+  <p class="voucher-card__description{% if item.compactDescription %} voucher-card__description--compact{% endif %}">{% if item.mobileDescription %}<span class="voucher-card__desktop-description">{{ item.description }}</span><span class="voucher-card__mobile-description">{{ item.mobileDescription }}</span>{% else %}{{ item.description }}{% endif %}</p>
+  {% if not config.hideActions %}<div class="voucher-card__actions">
     <button class="button button--primary" type="button" data-modal-open="{{ config.modalId }}" data-booking-voucher="{{ item.title }}">{{ config.bookLabel }}</button>
     {% if item.programsLabel %}<button class="button button--muted voucher-card__programs" type="button" data-voucher-programs>{{ item.programsLabel }}</button>{% endif %}
-  </div>
+  </div>{% endif %}
   <div class="voucher-card__panel" id="{{ item.id }}-panel" role="region" aria-labelledby="{{ item.id }}-toggle"{% if not item.defaultOpen %} inert{% endif %} data-accordion-panel>
     <div class="voucher-card__clip">
       <div class="voucher-card__details">
@@ -22,7 +22,7 @@
           {% for service in item.services or config.services %}
           <div class="voucher-card__service">
             <h3 class="voucher-card__service-title">{{ service.title }}</h3>
-            <button class="button button--muted" type="button" data-modal-open="{{ config.modalId }}" data-booking-voucher="{{ item.title }}" data-booking-service="{{ service.title }}">{{ config.detailsLabel }}</button>
+            <button class="button button--muted" type="button" data-modal-open="{{ service.modalId or config.modalId }}" data-booking-voucher="{{ item.title }}" data-booking-service="{{ service.title }}" aria-haspopup="dialog">{{ config.detailsLabel }}</button>
           </div>
           {% endfor %}
         </div>

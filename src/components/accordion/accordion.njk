@@ -1,6 +1,6 @@
 {% from "components/icon/icon.njk" import icon %}
 {% macro accordion(item) %}
-<article class="accordion{% if item.defaultOpen %} accordion--open{% endif %}" data-accordion>
+<article class="accordion{% if item.defaultOpen %} accordion--open{% endif %}" data-accordion{% if item.mobileDefaultOpen %} data-accordion-mobile-open{% endif %}>
   <h2 class="accordion__heading">
     <button class="accordion__toggle" id="{{ item.id }}-toggle" type="button" aria-expanded="{{ 'true' if item.defaultOpen else 'false' }}" aria-controls="{{ item.id }}-panel" data-accordion-toggle>
       <span class="accordion__question">{% if item.mobileQuestionLines %}<span class="accordion__desktop-question">{{ item.question }}</span><span class="accordion__mobile-question">{% for line in item.mobileQuestionLines %}<span>{{ line }}</span>{% endfor %}</span>{% else %}{{ item.question }}{% endif %}</span>

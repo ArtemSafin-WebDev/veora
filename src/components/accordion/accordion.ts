@@ -3,10 +3,16 @@ document.querySelectorAll<HTMLElement>('[data-accordion]').forEach((root) => {
   const panel = root.querySelector<HTMLElement>('[data-accordion-panel]');
   if (!toggle || !panel) return;
 
-  toggle.addEventListener('click', () => {
-    const open = toggle.getAttribute('aria-expanded') !== 'true';
+  const setOpen = (open: boolean) => {
     toggle.setAttribute('aria-expanded', String(open));
     root.classList.toggle(root.dataset.accordionClass || 'accordion--open', open);
     panel.inert = !open;
-  });
+  };
+
+  toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+  if (root.hasAttribute('data-accordion-mobile-open')) {
+    const mobile = window.matchMedia('(max-width: 600px)');
+    setOpen(mobile.matches);
+    mobile.addEventListener('change', () => setOpen(mobile.matches));
+  }
 });

@@ -42,3 +42,21 @@
 @media (prefers-reduced-motion: reduce) {
   .voucher-card__panel, .voucher-card__icon { transition: none; }
 }
+
+.voucher-card--cosmetology,
+.voucher-card--spa {
+  .voucher-card__description { margin-bottom: 0; }
+  .voucher-card__service .button { font-weight: 500; }
+}
+
+@media (max-width: 600px) {
+  .voucher-card--cosmetology,
+  .voucher-card--spa {
+    .voucher-card__toggle { gap: 0; }
+    .voucher-card__toggle > span:first-child { min-width: 0; }
+    .voucher-card__service { min-height: 0; gap: 2rem; padding: calc(2rem - 1px); }
+    .voucher-card__service-title { font-size: 1.2rem; line-height: 1.6rem; letter-spacing: -.024rem; }
+    &:not(:first-child) .voucher-card__icons,
+    &:not(:first-child) .voucher-card__icon { width: 2.6rem; height: 2.6rem; }
+  }
+}

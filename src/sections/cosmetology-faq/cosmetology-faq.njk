@@ -1,0 +1,8 @@
+{% from "components/accordion/accordion.njk" import accordion %}
+{% from "components/section-title/section-title.njk" import sectionTitle %}
+<section class="cosmetology-faq container" aria-labelledby="cosmetology-faq-title">
+  {{ sectionTitle(page.cosmetologyFaq.title, 'cosmetology-faq-title', 'cosmetology-faq__title') }}
+  <div class="cosmetology-faq__list">
+    {% for item in page.cosmetologyFaq.items %}{{ accordion(item) }}{% endfor %}
+  </div>
+</section>

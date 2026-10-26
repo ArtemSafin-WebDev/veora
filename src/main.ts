@@ -12,6 +12,7 @@ import './sections/resort-gallery/resort-gallery';
 import './components/gallery-modal/gallery-modal';
 import './components/filters/filters';
 import './sections/service-catalog/service-catalog';
+import './sections/additional-services-catalog/additional-services-catalog';
 import './components/pagination/pagination';
 import './components/resort-navigation/resort-navigation';
 import './components/catalog-layout/catalog-layout';

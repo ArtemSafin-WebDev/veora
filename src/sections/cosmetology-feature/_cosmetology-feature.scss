@@ -1,0 +1,10 @@
+.cosmetology-feature {
+  margin-bottom: 10rem;
+  &__image { display: block; width: 100%; height: 63.8rem; border-radius: 1.2rem; object-fit: cover; }
+  &--spa &__image { border-radius: 2.4rem; }
+}
+
+@media (max-width: 600px) {
+  .cosmetology-feature { margin-bottom: 8rem; }
+  .cosmetology-feature--spa .cosmetology-feature__image { border-radius: 1.2rem; }
+}

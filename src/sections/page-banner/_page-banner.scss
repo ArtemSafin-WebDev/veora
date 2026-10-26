@@ -35,3 +35,18 @@
     &__heading { flex-direction: column; align-items: flex-start; gap: 1.6rem; }
   }
 }
+
+.page-banner--cosmetology {
+  margin-bottom: 4rem;
+  .page-banner__shade { background: var(--color-overlay-media); }
+  .page-banner__action { background: var(--color-surface); color: var(--color-text-primary); }
+}
+
+@media (max-width: 600px) {
+  .page-banner--cosmetology {
+    margin-bottom: 3.2rem;
+    .page-banner__container { padding-bottom: 2.2rem; }
+    .page-banner__heading { gap: 2.2rem; }
+    .page-banner__action { min-height: 4rem; padding-inline: 2.4rem; border-radius: .8rem; font-size: 1.4rem; line-height: 1.6rem; letter-spacing: -.056rem; }
+  }
+}

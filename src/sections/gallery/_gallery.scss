@@ -105,3 +105,15 @@
     .gallery__controls { display: none; }
   }
 }
+
+.gallery--cosmetology,
+.gallery--spa { margin-bottom: 8rem; }
+.gallery--spa .gallery__title { color: #443024; }
+@media (max-width: 600px) {
+  .gallery--cosmetology,
+  .gallery--spa {
+    .gallery__controls { display: flex; }
+    .gallery__all-link { display: none; }
+  }
+  .gallery--spa .gallery__title { color: var(--color-text-primary); }
+}

@@ -1,0 +1,33 @@
+.additional-services-catalog {
+  grid-template-columns: 20.6rem minmax(0, 1fr);
+  column-gap: 11.8rem;
+
+  .catalog-layout__sidebar { padding-top: 0; }
+  .filters { color: var(--color-text-muted); }
+  .filters__form { gap: 2.4rem; }
+  .filters__toggle-icon { transform: rotate(180deg); }
+  .filters__group--open .filters__toggle-icon { transform: none; }
+  .filters__checkbox:checked + .filters__box { border-color: var(--color-accent); background: var(--color-accent); }
+  .filters__box { border-color: #e4e4e7; }
+
+  &__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  &__item { min-width: 0; }
+  &__empty { grid-column: 1 / -1; margin: 0; padding: 2.4rem; border-radius: 1.2rem; background: var(--color-surface); color: var(--color-text-muted); font-size: 1.4rem; line-height: 2rem; }
+}
+
+.page-banner--additional-services {
+  // The exported photograph layers already include the Figma media shade.
+  .page-banner__shade { background: linear-gradient(to bottom, var(--color-overlay-backdrop), transparent 16rem); }
+}
+
+@media (max-width: 600px) {
+  .additional-services-catalog {
+    .filters__trigger { background: var(--color-surface); }
+    &__grid { width: calc(100% + .2rem); grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .service-card__badge { color: #495249; }
+  }
+
+  .page-banner--additional-services {
+    .breadcrumbs__list { flex-wrap: nowrap; overflow: hidden; white-space: nowrap; }
+  }
+}

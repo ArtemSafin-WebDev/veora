@@ -1,0 +1,11 @@
+{% from "components/catalog-layout/catalog-layout.njk" import catalogLayout %}
+{% call catalogLayout(none, 'additional-services-catalog', page.catalog.label, 'compact', page.catalog.filters) %}
+  <div class="additional-services-catalog__grid" aria-live="polite">
+    {% for card in page.catalog.cards %}
+    <div class="additional-services-catalog__item" data-service-filters="{{ card.filters | dump }}">
+      {% include "components/service-card/service-card.njk" %}
+    </div>
+    {% endfor %}
+    <p class="additional-services-catalog__empty" hidden>{{ page.catalog.emptyLabel }}</p>
+  </div>
+{% endcall %}
