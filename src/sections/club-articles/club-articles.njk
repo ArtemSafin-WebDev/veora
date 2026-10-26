@@ -1,0 +1,16 @@
+{% from "components/section-title/section-title.njk" import sectionTitle %}
+{% from "components/slider-arrows/slider-arrows.njk" import sliderArrows %}
+<section class="club-articles container" aria-labelledby="club-articles-title" data-club-articles>
+  <div class="club-articles__header">
+    {{ sectionTitle(page.clubArticles.title, 'club-articles-title', 'club-articles__title') }}
+    {{ sliderArrows(page.clubArticles.previousLabel, page.clubArticles.nextLabel, 'club-articles__arrows') }}
+  </div>
+  <div class="club-articles__slider swiper" data-club-articles-slider>
+    <div class="club-articles__track swiper-wrapper">
+      {% set newsCardVariant = 'resort' %}
+      {% for card in page.clubArticles.items %}
+      <div class="club-articles__slide swiper-slide">{% include "components/news-card/news-card.njk" %}</div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

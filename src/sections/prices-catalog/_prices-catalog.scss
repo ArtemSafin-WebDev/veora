@@ -1,0 +1,18 @@
+.prices-catalog {
+  margin-bottom: 11rem;
+
+  .catalog-layout__sidebar { padding-top: 0; }
+}
+
+@media (max-width: 600px) {
+  .prices-catalog {
+    display: block;
+    margin-bottom: 8rem;
+
+    .catalog-layout__sidebar { margin-bottom: 2.9rem; }
+    .catalog-links, .price-table { margin-right: -1.2rem; }
+    .price-table__heading { padding-bottom: 2rem; }
+  }
+
+  .page-banner--prices .page-banner__container { padding-bottom: 7rem; }
+}

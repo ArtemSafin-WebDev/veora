@@ -1,0 +1,281 @@
+{
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/resort-services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/additional-services.html",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/cosmetology.html",
+            "label": "Косметология"
+          },
+          {
+            "href": "/spa.html",
+            "label": "СПА"
+          },
+          {
+            "href": "/medicine.html",
+            "label": "Медицина"
+          },
+          {
+            "href": "/prices.html",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness-club.html",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/resort-offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/resort-services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  },
+  "theme": "dark-blue",
+  "directoryGroup": "resort",
+  "title": "Цены на услуги",
+  "description": "Цены на медицинские, SPA и косметологические услуги здравницы «Южный».",
+  "activePage": "prices",
+  "bodyClass": "page-prices",
+  "banner": {
+    "id": "prices",
+    "variant": "prices",
+    "title": "Цены на услуги",
+    "image": "/assets/prices/hero.png",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Оздоровление",
+        "href": "/wellness.html"
+      },
+      {
+        "label": "Цены на услуги"
+      }
+    ]
+  },
+  "catalog": {
+    "label": "Цены на услуги",
+    "navigation": {
+      "label": "Разделы услуг",
+      "items": [
+        {
+          "label": "Все цены",
+          "href": "/prices.html",
+          "current": true
+        },
+        {
+          "label": "Медицина",
+          "href": "/medicine.html"
+        },
+        {
+          "label": "SPA",
+          "href": "/spa.html"
+        },
+        {
+          "label": "Косметология",
+          "href": "/cosmetology.html"
+        }
+      ]
+    },
+    "table": {
+      "caption": "Стоимость услуг здравницы «Южный»",
+      "scrollLabel": "Цены на услуги. Таблицу можно прокручивать по горизонтали.",
+      "headings": [
+        "Услуга",
+        "Продолжительность",
+        "Стоимость"
+      ],
+      "rows": [
+        {
+          "service": "Консультация врача-терапевта (первичная)",
+          "duration": "до 30 мин",
+          "cost": "500,00"
+        },
+        {
+          "service": "Консультация врача-специалиста (кардиолог, невролог, гастроэнтеролог)",
+          "duration": "30 мин",
+          "cost": "400,00"
+        },
+        {
+          "service": "Прием (осмотр, консультация) врача-терапевта первичный",
+          "duration": "30 мин",
+          "cost": "500,00"
+        },
+        {
+          "service": "Прием (осмотр, консультация) врача педиатра (повторный)",
+          "duration": "30 мин",
+          "cost": "400,00"
+        },
+        {
+          "service": "Осмотр  (консультация)  врача – физиотерапевта ",
+          "duration": "30 мин",
+          "cost": "500,00"
+        },
+        {
+          "service": "Прием (осмотр, консультация)  врача – невролога первичный",
+          "duration": "30 мин",
+          "cost": "500,00"
+        },
+        {
+          "service": "Прием (осмотр, консультация)  врача – невролога повторный",
+          "duration": "30 мин",
+          "cost": "400,00"
+        },
+        {
+          "service": "Прием (осмотр, консультация) врача-стоматолога-терапевта первичный",
+          "duration": "30 мин",
+          "cost": "324,00"
+        },
+        {
+          "service": "Гальванизация при заболеваниях периферической нервной системы",
+          "duration": "30 мин",
+          "cost": "162,00"
+        },
+        {
+          "service": "Электрофорез лекарственных препаратов при заболеваниях периферической нервной системы",
+          "duration": "30 мин",
+          "cost": "200,00",
+          "alignTop": true
+        },
+        {
+          "service": "Дарсонвализация при нарушениях микроциркуляции",
+          "duration": "30 мин",
+          "cost": "200,00"
+        },
+        {
+          "service": "Воздействие синусоидальными модулированными токами (СМТ-терапия) при заболеваниях периферической нервной системы",
+          "duration": "30 мин",
+          "cost": "216,00",
+          "alignTop": true
+        },
+        {
+          "service": "Электрофорез диадинамическими токами (ДДТ-форез)",
+          "duration": "30 мин",
+          "cost": "108,00"
+        },
+        {
+          "service": "Воздействие электрическим полем ультравысокой частоты (ЭП УВЧ)",
+          "duration": "30 мин",
+          "cost": "205,00"
+        },
+        {
+          "service": "Многофункциональная электростимуляция мышц (внутритканевая электростимуляция по методу Герасимова А.А.)",
+          "duration": "30 мин",
+          "cost": "1100,00",
+          "alignTop": true
+        },
+        {
+          "service": "Транскраниальная электростимуляция на аппарате \"Трансаир\"",
+          "duration": "30 мин",
+          "cost": "400,00"
+        },
+        {
+          "service": "Воздействие электромагнитным излучением миллиметрового диапазона (КВЧ-терапия)",
+          "duration": "30 мин",
+          "cost": "216,00",
+          "alignTop": true
+        }
+      ]
+    }
+  }
+}

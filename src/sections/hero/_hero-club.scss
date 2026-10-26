@@ -1,0 +1,16 @@
+body.page-wellness-club {
+  --color-page-background: var(--color-surface);
+
+  .hero { margin-bottom: 8rem; background: none; }
+  .hero__description, .hero__text { width: 85.4rem; }
+  .hero__action { margin-top: 1.2rem; }
+}
+
+@media (max-width: 600px) {
+  body.page-wellness-club {
+    .hero { margin-bottom: 4rem; }
+    .hero__divider { flex: 0 0 8rem; }
+    .hero__description, .hero__text { width: calc(100% - 2.4rem); }
+    .hero__action { margin-top: 2rem; border-color: var(--color-border); }
+  }
+}

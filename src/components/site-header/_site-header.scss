@@ -124,6 +124,10 @@
   .site-header__nav-toggle--directions[aria-expanded='true'] { color: var(--color-text-inverse); }
 }
 
+.page-service--resort .site-header:not(.site-header--overlay):not(.site-header--expanded) {
+  --header-primary-background: var(--theme-50);
+}
+
 @media (min-width: 1201px) and (max-width: 1366px) {
   .site-header__menu-navigation { gap: 3.2rem; }
 }

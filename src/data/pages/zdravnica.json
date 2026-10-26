@@ -54,11 +54,11 @@
             "label": "Медицина"
           },
           {
-            "href": "/wellness/prices/",
+            "href": "/prices.html",
             "label": "Цены на услуги"
           },
           {
-            "href": "/wellness/club/",
+            "href": "/wellness-club.html",
             "label": "Wellness клуб"
           },
           {
@@ -75,11 +75,11 @@
             "label": "Путевки"
           },
           {
-            "href": "/offers.html",
+            "href": "/resort-offers.html",
             "label": "Специальные предложения"
           },
           {
-            "href": "/services.html",
+            "href": "/resort-services.html",
             "label": "Услуги и развлечения"
           },
           {
@@ -113,7 +113,7 @@
   "specialOffers": {
     "title": "Специальные предложения",
     "allLink": {
-      "href": "/offers.html",
+      "href": "/resort-offers.html",
       "label": "Смотреть все"
     },
     "readMoreLabel": "Подробнее",
@@ -224,7 +224,7 @@
   "services": {
     "title": "Услуги",
     "allLink": {
-      "href": "/services.html",
+      "href": "/resort-services.html",
       "label": "Все услуги"
     },
     "tabs": [
@@ -300,7 +300,7 @@
         "title": "Тренажерный зал",
         "label": "Активный отдых",
         "image": "/assets/services/gym.webp",
-        "href": "/service.html",
+        "href": "/resort-service.html",
         "categories": [
           "entertainment"
         ],

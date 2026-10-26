@@ -11,7 +11,25 @@
   &__description { margin: 0; color: var(--color-text-subtle); font-size: 1.6rem; line-height: 2rem; letter-spacing: -.032rem; }
 }
 
+body.page-service--resort {
+  --color-page-background: var(--color-surface);
+  --footer-surround-background: var(--color-surface);
+  --color-surface-soft: var(--theme-50);
+  --color-border: var(--theme-200);
+}
+
+.page-service--resort .service-intro__title { color: var(--color-accent); }
+.page-service--resort .service-intro__description { color: var(--color-text-subtle-neutral); }
+
 @media (max-width: 600px) {
+  body.page-service--resort {
+    --color-page-background: var(--color-surface-neutral);
+    --footer-surround-background: var(--color-surface-neutral);
+  }
+
+  .page-service--resort .service-intro__title { color: var(--color-text-primary); }
+  .page-service--resort .service-intro__description { color: var(--color-text-subtle); }
+
   .service-intro {
     margin-bottom: 3.8rem;
     padding-top: 1.2rem;

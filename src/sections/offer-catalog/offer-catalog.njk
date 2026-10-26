@@ -1,6 +1,6 @@
 {% from "components/catalog-layout/catalog-layout.njk" import catalogLayout %}
 {% from "components/pagination/pagination.njk" import pagination %}
-{% call catalogLayout(page.catalog.navigation, 'offer-catalog', page.catalog.label) %}
+{% call catalogLayout(page.catalog.navigation, 'offer-catalog' + (' offer-catalog--' + page.catalog.variant if page.catalog.variant else ''), page.catalog.label) %}
     <div class="offer-catalog__grid" aria-live="polite">
       {% for offer in page.catalog.cards %}
         {% include "components/offer-card/offer-card.njk" %}

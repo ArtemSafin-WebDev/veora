@@ -1,0 +1,29 @@
+.club-event {
+  min-width: 0;
+  &__mobile { display: none; }
+  &__media { position: relative; display: flex; align-items: flex-end; height: 40.4rem; padding: 2rem; overflow: hidden; border-radius: 1.2rem; }
+  &__media::after { position: absolute; inset: 0; background: var(--color-overlay-media); content: ''; }
+  &__picture { position: absolute; inset: 0; }
+  &__image { display: block; width: 100%; height: 100%; object-fit: cover; }
+  &__meta { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 1rem; width: 100%; }
+  &__label { display: inline-flex; align-items: center; min-height: 2.8rem; padding-inline: 1.4rem; border-radius: .6rem; background: var(--color-surface); color: var(--color-text-muted); font-size: 1.2rem; font-weight: 500; line-height: 1.2rem; letter-spacing: -.048rem; }
+  &__date { color: var(--color-text-inverse); font-size: 1.2rem; line-height: 1.6rem; letter-spacing: -.024rem; white-space: nowrap; }
+  &__body { display: flex; flex-direction: column; gap: 2rem; margin-top: 2.8rem; padding-inline: 1.2rem; }
+  &:first-child &__body { gap: 1.6rem; }
+  &__title { margin: 0; color: var(--color-text-primary); font-size: 2rem; font-weight: 500; line-height: 2.4rem; letter-spacing: -.08rem; }
+  &__actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1.6rem; }
+  &__details { color: var(--color-text-muted); border-color: var(--color-border-panel); }
+}
+
+@media (max-width: 600px) {
+  .club-event {
+    &__desktop { display: none; }
+    &__mobile { display: inline; }
+    &__media { height: auto; aspect-ratio: 1; padding: 1rem; }
+    &__meta { align-self: stretch; flex-direction: column; align-items: flex-start; justify-content: space-between; }
+    &__label { min-height: 2.6rem; padding: .6rem 1rem; border-radius: .8rem; color: #495249; font-size: 1rem; font-weight: 400; line-height: 1.4rem; letter-spacing: -.04rem; }
+    &__body { gap: 1rem; margin-top: 1rem; padding-inline: 0; }
+    &:first-child &__body { gap: 1rem; }
+    &__title { font-size: 1.6rem; line-height: 1.8rem; letter-spacing: -.064rem; }
+  }
+}

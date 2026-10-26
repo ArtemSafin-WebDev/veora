@@ -1,0 +1,11 @@
+<section class="club-events container" aria-labelledby="club-events-title">
+  <div class="club-events__intro">
+    <h2 class="club-events__title" id="club-events-title">{{ page.clubEvents.title }}</h2>
+    <p class="club-events__description">{{ page.clubEvents.description }}</p>
+  </div>
+  <div class="club-events__grid">
+    {% for event in page.clubEvents.items %}
+      {% include "components/club-event/club-event.njk" %}
+    {% endfor %}
+  </div>
+</section>

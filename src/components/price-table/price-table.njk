@@ -1,0 +1,20 @@
+{% macro priceTable(config) %}
+<div class="price-table" role="region" aria-label="{{ config.scrollLabel }}" tabindex="0">
+  <table class="price-table__table">
+    <caption class="price-table__caption">{{ config.caption }}</caption>
+    <colgroup><col class="price-table__service-column" /><col class="price-table__duration-column" /><col class="price-table__cost-column" /></colgroup>
+    <thead class="price-table__head">
+      <tr>{% for heading in config.headings %}<th class="price-table__heading" scope="col">{{ heading }}</th>{% endfor %}</tr>
+    </thead>
+    <tbody class="price-table__body">
+      {% for row in config.rows %}
+      <tr class="price-table__row{% if row.alignTop %} price-table__row--top{% endif %}">
+        <td class="price-table__cell">{{ row.service }}</td>
+        <td class="price-table__cell">{{ row.duration }}</td>
+        <td class="price-table__cell">{{ row.cost }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endmacro %}

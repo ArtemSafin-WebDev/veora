@@ -1,0 +1,287 @@
+{
+  "title": "Спецпредложения здравницы",
+  "description": "Специальные предложения на отдых, оздоровление и СПА в здравницах Веора.",
+  "activePage": "offers",
+  "theme": "dark-blue",
+  "banner": {
+    "id": "offers-banner",
+    "title": "Спецпредложе­ния",
+    "image": "/assets/offer-catalog/hero-desktop.webp",
+    "mobileImage": "/assets/offer-catalog/hero-mobile.webp",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Спецпредложения"
+      }
+    ]
+  },
+  "catalog": {
+    "label": "Каталог спецпредложений",
+    "navigation": {
+      "id": "resort-offers-resorts",
+      "label": "Спецпредложения по здравницам",
+      "filtersLabel": "Фильтры",
+      "triggerLabel": "Настроить",
+      "closeLabel": "Закрыть фильтры",
+      "items": [
+        {
+          "value": "all",
+          "label": "Все спецпредложения"
+        },
+        {
+          "value": "south",
+          "label": "Южный"
+        },
+        {
+          "value": "golden",
+          "label": "Золотые пески"
+        },
+        {
+          "value": "baltic",
+          "label": "Балтийские Пески"
+        },
+        {
+          "value": "sunny",
+          "label": "Солнечный городок"
+        },
+        {
+          "value": "polyus",
+          "label": "Полюс"
+        },
+        {
+          "value": "polyus-camp",
+          "label": "Полюс ДОЛ"
+        }
+      ],
+      "variant": "resort-offers",
+      "selectedValue": "south"
+    },
+    "cards": [
+      {
+        "title": "Здоровье на две недели: спа-услуга в подарок во всех здравницах!",
+        "place": "",
+        "resorts": [
+          "all"
+        ],
+        "image": "/assets/offer-catalog/wellness.webp",
+        "href": "/offer.html",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "catalog": true,
+        "readMoreLabel": "Подробнее",
+        "featured": true
+      },
+      {
+        "title": "«Девичник» в Солнечном городке",
+        "place": "Солнечный городок",
+        "resorts": [
+          "sunny"
+        ],
+        "image": "/assets/offer-catalog/bachelorette.webp",
+        "href": "/offers/bachelorette/",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "catalog": true,
+        "readMoreLabel": "Подробнее",
+        "mobileLabel": "Активный отдых"
+      },
+      {
+        "title": "Золотые пески: экскурсия в Абрау-Дюрсо, дегустация в подарок!",
+        "place": "Золотые пески",
+        "resorts": [
+          "golden"
+        ],
+        "image": "/assets/offer-catalog/abrau.webp",
+        "href": "/offers/abrau/",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "catalog": true,
+        "readMoreLabel": "Подробнее",
+        "mobileLabel": "Активный отдых"
+      },
+      {
+        "title": "При покупке СПА-услуги «Альфа-капсула» дарим биоимпедансометрию",
+        "place": "Золотые пески",
+        "resorts": [
+          "golden"
+        ],
+        "image": "/assets/offer-catalog/capsule.webp",
+        "href": "/offers/capsule/",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "catalog": true,
+        "readMoreLabel": "Подробнее",
+        "mobileLabel": "Активный отдых"
+      },
+      {
+        "title": "Солнечный городок- абонемент на занятия йогой",
+        "place": "Солнечный городок",
+        "resorts": [
+          "sunny"
+        ],
+        "image": "/assets/offer-catalog/yoga.webp",
+        "href": "/offers/yoga/",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "catalog": true,
+        "readMoreLabel": "Подробнее",
+        "mobileLabel": "Активный отдых"
+      }
+    ],
+    "pagination": {
+      "label": "Страницы спецпредложений",
+      "currentPage": 2,
+      "totalPages": 9,
+      "items": [
+        1,
+        2,
+        "ellipsis",
+        8,
+        9
+      ],
+      "baseUrl": "/resort-offers.html",
+      "previousLabel": "Предыдущая страница",
+      "nextLabel": "Следующая страница",
+      "ellipsisLabel": "Перейти на страницу",
+      "assets": {
+        "previous": "pagination-previous",
+        "next": "pagination-next"
+      }
+    },
+    "variant": "resort"
+  },
+  "directoryGroup": "resort",
+  "bodyClass": "page-offer-catalog--resort",
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/resort-services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/additional-services.html",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/cosmetology.html",
+            "label": "Косметология"
+          },
+          {
+            "href": "/spa.html",
+            "label": "СПА"
+          },
+          {
+            "href": "/medicine.html",
+            "label": "Медицина"
+          },
+          {
+            "href": "/prices.html",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness-club.html",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/resort-offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/resort-services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  }
+}

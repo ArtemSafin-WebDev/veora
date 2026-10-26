@@ -1,0 +1,28 @@
+.price-table {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  color: var(--color-text-primary);
+
+  &__table { width: 100%; min-width: 96.2rem; border-collapse: collapse; table-layout: fixed; font-size: 1.4rem; line-height: 1.8rem; letter-spacing: -.028rem; }
+  &__caption { position: absolute; width: .1rem; height: .1rem; margin: -.1rem; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  &__service-column { width: auto; }
+  &__duration-column { width: 19.1rem; }
+  &__cost-column { width: 18.1rem; }
+  &__heading { padding: 1rem 0 2rem; font-weight: 600; line-height: 1.6rem; text-align: left; vertical-align: top; }
+  &__row:nth-child(odd) { background: var(--color-surface); }
+  &__cell { padding: 1rem 2rem; vertical-align: top; }
+  &__cell:not(:first-child) { white-space: nowrap; }
+}
+
+@media (max-width: 600px) {
+  .price-table {
+    &__table { min-width: 60.8rem; }
+    &__service-column { width: 23.6rem; }
+    &__duration-column { width: 19.1rem; }
+    &__cost-column { width: 18.1rem; }
+    &__heading { padding-top: 0; padding-bottom: 2rem; }
+    &__cell { padding-inline: 0 1rem; vertical-align: middle; }
+    &__cell:first-child { padding-left: 2rem; }
+    &__row--top &__cell { vertical-align: top; }
+  }
+}

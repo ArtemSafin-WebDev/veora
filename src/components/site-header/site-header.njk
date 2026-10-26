@@ -28,7 +28,7 @@
     <div class="site-header__primary">
       <a class="site-header__logo" href="{{ resortHeader.homeHref or '/' }}" aria-label="{{ resortHeader.name or header.logoLabel }}">
         {% if resortHeader %}
-        {{ icon(header.assets.logoMobile, '', 3.4, 3.2) }}<span class="site-header__resort-name">{{ resortHeader.name }}</span>
+        {{ icon(resortHeader.logo or header.assets.logoMobile, '', 3.4, 3.2) }}<span class="site-header__resort-name">{{ resortHeader.name }}</span>
         {% else %}
         <span class="site-header__logo-desktop"{% if headerOnLight %} data-header-open-icon="{{ header.assets.logoLight }}"{% endif %}>{{ icon(header.assets.logoSurface if headerOnLight else header.assets.logoLight, '', 10.4, 3.2) }}</span>
         <span class="site-header__logo-mobile"{% if headerOnLight %} data-header-open-icon="{{ header.assets.logoMobile }}"{% endif %}>{{ icon(header.assets.logoMobileSurface if headerOnLight else header.assets.logoMobile, '', 3.4, 3.2) }}</span>

@@ -14,6 +14,9 @@
   &__link:not([aria-current]):is(:hover, :focus-visible) { background: var(--color-surface-control); }
   &--horizontal &__form { flex-direction: row; flex-wrap: wrap; max-width: 107rem; }
   &--horizontal &__text { padding: 1.4rem 1.8rem; border-radius: 1.2rem; line-height: 1.2rem; }
+  &--resort-offers &__form { width: 20.8rem; max-width: 100%; }
+  &--resort-offers &__option { width: 100%; }
+  &--resort-offers &__trigger { background: var(--theme-50); color: var(--color-text-secondary); }
 
   &__modal { position: fixed; inset: 0; width: 100%; max-width: none; height: 100dvh; max-height: none; margin: 0; padding: 2rem 0 0; border: 0; background: transparent; color: inherit; overflow-y: auto; overscroll-behavior: none; opacity: 0; transition: opacity .25s ease; }
   &__modal[open] { display: flex; flex-direction: column; }
@@ -34,6 +37,7 @@
     &--horizontal &__form { flex-direction: column; }
     &--horizontal &__text { display: block; width: 100%; background: transparent; }
     &__mobile-break { display: initial; }
+    &--resort-offers &__form { width: 100%; }
     &--horizontal &__link[aria-current] { background: var(--color-text-secondary); }
   }
 }

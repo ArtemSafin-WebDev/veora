@@ -1,0 +1,16 @@
+<section class="club-benefits" aria-labelledby="club-benefits-title">
+  <img class="club-benefits__image" src="{{ page.clubBenefits.image }}" alt="" loading="lazy" />
+  <div class="club-benefits__inner container">
+    <h2 class="club-benefits__title" id="club-benefits-title">{{ page.clubBenefits.title }}</h2>
+    <div class="club-benefits__slider swiper" data-club-benefits-slider>
+      <ol class="club-benefits__list swiper-wrapper">
+        {% for item in page.clubBenefits.items %}
+        <li class="club-benefits__item swiper-slide">
+          <span class="club-benefits__number" aria-hidden="true">{{ loop.index if loop.index > 9 else '0' ~ loop.index }}</span>
+          <p class="club-benefits__text">{{ item }}</p>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>

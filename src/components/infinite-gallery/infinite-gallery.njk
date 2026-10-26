@@ -1,0 +1,13 @@
+{% macro infiniteGallery(config) %}
+<div class="infinite-gallery" data-infinite-gallery tabindex="0" role="region" aria-label="{{ config.scrollLabel }}">
+  <div class="infinite-gallery__track" data-infinite-gallery-track>
+    <div class="infinite-gallery__group" data-infinite-gallery-group>
+      {% for image in config.items %}
+      <div class="infinite-gallery__slide">
+        <img class="infinite-gallery__image" src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy" draggable="false" />
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endmacro %}

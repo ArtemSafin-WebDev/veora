@@ -2,10 +2,29 @@
   &__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 2.4rem .9rem; }
 }
 
+body.page-offer-catalog--resort {
+  --color-page-background: var(--color-surface-neutral);
+  --footer-surround-background: var(--color-surface-neutral);
+}
+
+.offer-catalog--resort {
+  --color-border-subtle: var(--theme-100);
+
+  .offer-card__title { color: var(--color-text-secondary); }
+  .offer-card--featured .offer-card__title { max-width: 40rem; color: var(--color-text-inverse); }
+  .offer-card--featured .offer-card__link { border-color: var(--theme-50); }
+}
+
 @media (max-width: 600px) {
   .offer-catalog {
     &__grid { grid-template-columns: minmax(0, 1fr); row-gap: 2.4rem; }
     .offer-card--featured { margin-bottom: -1.4rem; }
     .pagination { margin-top: 4rem; }
+  }
+
+  .offer-catalog--resort {
+    .offer-card__title { color: var(--color-text-primary); }
+    .offer-card__link { border-color: var(--theme-100); color: var(--color-text-muted); }
+    .offer-card--featured .offer-card__link { border-color: var(--theme-100); color: var(--color-text-inverse); }
   }
 }

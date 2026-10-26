@@ -1,0 +1,9 @@
+{% macro catalogLinks(config) %}
+<nav class="catalog-links" aria-label="{{ config.label }}">
+  <ul class="catalog-links__list">
+    {% for item in config.items %}
+    <li class="catalog-links__item"><a class="catalog-links__link" href="{{ item.href }}"{% if item.current %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+{% endmacro %}

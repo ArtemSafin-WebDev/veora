@@ -1,0 +1,21 @@
+{% from "components/button/button.njk" import button %}
+<article class="club-event" aria-labelledby="club-event-{{ loop.index }}-title">
+  <div class="club-event__media">
+    <picture class="club-event__picture">
+      <source media="(max-width: 600px)" srcset="{{ event.mobile.image }}" />
+      <img class="club-event__image" src="{{ event.image }}" alt="" loading="lazy" />
+    </picture>
+    <div class="club-event__meta">
+      <span class="club-event__label"><span class="club-event__desktop">{{ event.label }}</span><span class="club-event__mobile">{{ event.mobile.label }}</span></span>
+      <time class="club-event__date club-event__desktop" datetime="{{ event.date }}">{{ event.dateLabel }}</time>
+      <time class="club-event__date club-event__mobile" datetime="{{ event.mobile.date }}">{{ event.mobile.dateLabel }}</time>
+    </div>
+  </div>
+  <div class="club-event__body">
+    <h3 class="club-event__title" id="club-event-{{ loop.index }}-title"><span class="club-event__desktop">{{ event.title }}</span><span class="club-event__mobile">{{ event.mobile.title }}</span></h3>
+    <div class="club-event__actions">
+      {{ button(page.clubEvents.joinLabel, page.hero.action.href, 'club-event__join', 'primary') }}
+      {{ button(page.clubEvents.detailsLabel, event.href, 'club-event__details', 'gallery') }}
+    </div>
+  </div>
+</article>

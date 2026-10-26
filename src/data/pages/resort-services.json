@@ -1,0 +1,481 @@
+{
+  "title": "Услуги и развлечения здравницы",
+  "description": "Услуги и развлечения в здравницах Веора: активный отдых, спорт и оздоровление.",
+  "activePage": "services",
+  "theme": "dark-blue",
+  "banner": {
+    "id": "services-banner",
+    "title": "Услуги и развлечения",
+    "image": "/assets/catalog/hero.webp",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Услуги и развлечения"
+      }
+    ]
+  },
+  "catalog": {
+    "label": "Каталог услуг и развлечений",
+    "filters": {
+      "id": "resort-services-filters",
+      "title": "Фильтры",
+      "triggerLabel": "Настроить",
+      "closeLabel": "Закрыть фильтры",
+      "assets": {
+        "chevron": "filters-chevron",
+        "check": "filters-check",
+        "close": "modal-close"
+      },
+      "groups": [
+        {
+          "id": "resort",
+          "title": "Здравница",
+          "defaultOpen": true,
+          "options": [
+            {
+              "value": "all",
+              "label": "Все",
+              "all": true,
+              "checked": true
+            },
+            {
+              "value": "sunny",
+              "label": "Солнечный городок"
+            },
+            {
+              "value": "baltic",
+              "label": "Балтийские пески"
+            },
+            {
+              "value": "polyus",
+              "label": "Полюс"
+            },
+            {
+              "value": "south",
+              "label": "Южный"
+            },
+            {
+              "value": "golden",
+              "label": "Золотые пески"
+            }
+          ]
+        },
+        {
+          "id": "direction",
+          "title": "Направление услуги",
+          "defaultOpen": true,
+          "options": [
+            {
+              "value": "all",
+              "label": "Любое",
+              "all": true,
+              "checked": true
+            },
+            {
+              "value": "medicine",
+              "label": "Медицина"
+            },
+            {
+              "value": "spa",
+              "label": "СПА"
+            },
+            {
+              "value": "cosmetology",
+              "label": "Косметология"
+            }
+          ]
+        },
+        {
+          "id": "audience",
+          "title": "Кому",
+          "defaultOpen": true,
+          "options": [
+            {
+              "value": "all",
+              "label": "Всем",
+              "all": true,
+              "checked": true
+            },
+            {
+              "value": "children",
+              "label": "Дети"
+            },
+            {
+              "value": "adults",
+              "label": "Взрослые"
+            }
+          ]
+        },
+        {
+          "id": "package",
+          "title": "Пакеты",
+          "defaultOpen": true,
+          "options": [
+            {
+              "value": "all",
+              "label": "Любые",
+              "all": true,
+              "checked": true
+            },
+            {
+              "value": "package",
+              "label": "Пакетные"
+            },
+            {
+              "value": "individual",
+              "label": "Индивидуальные"
+            }
+          ]
+        },
+        {
+          "id": "activity",
+          "title": "Тип отдыха",
+          "defaultOpen": true,
+          "options": [
+            {
+              "value": "all",
+              "label": "Любой",
+              "all": true,
+              "checked": true
+            },
+            {
+              "value": "water",
+              "label": "Водный отдых"
+            },
+            {
+              "value": "entertainment",
+              "label": "Досуг и развлечения"
+            },
+            {
+              "value": "sports",
+              "label": "Спортивные активности"
+            },
+            {
+              "value": "children",
+              "label": "Отдых с детьми"
+            },
+            {
+              "value": "transport",
+              "label": "Транспортные услуги"
+            },
+            {
+              "value": "excursions",
+              "label": "Экскурсии"
+            }
+          ]
+        }
+      ]
+    },
+    "cards": [
+      {
+        "href": "/services/pool/",
+        "title": "Бассейн",
+        "image": "/assets/services/pool.webp",
+        "label": "Активный отдых",
+        "paid": true,
+        "mobileOrder": 1,
+        "mobilePaid": true
+      },
+      {
+        "href": "/services/paintball/",
+        "title": "Пейнтбол",
+        "image": "/assets/services/paintball.webp",
+        "label": "Активный отдых",
+        "paid": false,
+        "mobileOrder": 2,
+        "mobilePaid": false
+      },
+      {
+        "href": "/services/playground/",
+        "title": "Детская площадка",
+        "image": "/assets/services/playground.webp",
+        "label": "Активный отдых",
+        "paid": false,
+        "mobileOrder": 3,
+        "mobilePaid": false
+      },
+      {
+        "href": "/services/trail/",
+        "title": "Терренкур",
+        "image": "/assets/services/trail.webp",
+        "label": "Активный отдых",
+        "paid": false,
+        "mobileOrder": 4,
+        "mobilePaid": true
+      },
+      {
+        "href": "/resort-service.html",
+        "title": "Тренажерный зал",
+        "image": "/assets/services/gym.webp",
+        "label": "Активный отдых",
+        "paid": false,
+        "titleLines": [
+          "Тренажерный",
+          "зал"
+        ],
+        "mobileOrder": 5,
+        "mobilePaid": false
+      },
+      {
+        "href": "/services/karaoke/",
+        "title": "Караоке",
+        "image": "/assets/services/karaoke.webp",
+        "label": "Активный отдых",
+        "paid": true,
+        "mobileOrder": 6,
+        "mobilePaid": false
+      },
+      {
+        "href": "/services/tennis/",
+        "title": "Теннисный корт",
+        "image": "/assets/services/tennis.webp",
+        "label": "Активный отдых",
+        "paid": false,
+        "mobileOrder": 7,
+        "mobilePaid": false
+      },
+      {
+        "href": "/services/sauna/",
+        "title": "Сауна",
+        "image": "/assets/services/sauna.webp",
+        "label": "Спокойный отдых",
+        "paid": false,
+        "mobileOrder": 8,
+        "mobileLabel": "Активный отдых",
+        "mobilePaid": false
+      },
+      {
+        "href": "/services/pool/",
+        "title": "Бассейн",
+        "image": "/assets/services/pool.webp",
+        "label": "Активный отдых",
+        "paid": true,
+        "mobileOrder": 9,
+        "mobilePaid": true
+      },
+      {
+        "href": "/services/paintball/",
+        "title": "Пейнтбол",
+        "image": "/assets/services/paintball.webp",
+        "label": "Активный отдых",
+        "paid": false,
+        "mobileHidden": true,
+        "mobilePaid": false
+      },
+      {
+        "href": "/services/playground/",
+        "title": "Детская площадка",
+        "image": "/assets/services/playground.webp",
+        "label": "Активный отдых",
+        "paid": false,
+        "mobileOrder": 11,
+        "mobilePaid": false
+      },
+      {
+        "href": "/services/trail/",
+        "title": "Терренкур",
+        "image": "/assets/services/trail.webp",
+        "label": "Активный отдых",
+        "paid": false,
+        "mobileOrder": 10,
+        "mobilePaid": true
+      },
+      {
+        "href": "/services/sauna/",
+        "title": "Сауна",
+        "image": "/assets/services/sauna.webp",
+        "label": "Спокойный отдых",
+        "paid": false,
+        "mobileOrder": 14,
+        "mobileLabel": "Активный отдых",
+        "mobilePaid": false
+      },
+      {
+        "href": "/services/karaoke/",
+        "title": "Караоке",
+        "image": "/assets/services/karaoke.webp",
+        "label": "Активный отдых",
+        "paid": true,
+        "mobileOrder": 12,
+        "mobilePaid": false
+      },
+      {
+        "href": "/services/tennis/",
+        "title": "Теннисный корт",
+        "image": "/assets/services/tennis.webp",
+        "label": "Активный отдых",
+        "paid": false,
+        "mobileOrder": 13,
+        "mobilePaid": false
+      },
+      {
+        "href": "/resort-service.html",
+        "title": "Тренажерный зал",
+        "image": "/assets/services/gym.webp",
+        "label": "Активный отдых",
+        "paid": false,
+        "titleLines": [
+          "Тренажерный",
+          "зал"
+        ],
+        "mobileOrder": 15,
+        "mobilePaid": false
+      }
+    ],
+    "pagination": {
+      "label": "Страницы каталога",
+      "currentPage": 2,
+      "totalPages": 9,
+      "items": [
+        1,
+        2,
+        "ellipsis",
+        8,
+        9
+      ],
+      "baseUrl": "/resort-services.html",
+      "previousLabel": "Предыдущая страница",
+      "nextLabel": "Следующая страница",
+      "ellipsisLabel": "Перейти на страницу",
+      "assets": {
+        "previous": "pagination-previous",
+        "next": "pagination-next"
+      }
+    },
+    "variant": "resort"
+  },
+  "directoryGroup": "resort",
+  "bodyClass": "page-service-catalog--resort",
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/resort-services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/additional-services.html",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/cosmetology.html",
+            "label": "Косметология"
+          },
+          {
+            "href": "/spa.html",
+            "label": "СПА"
+          },
+          {
+            "href": "/medicine.html",
+            "label": "Медицина"
+          },
+          {
+            "href": "/prices.html",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness-club.html",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/resort-offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/resort-services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  }
+}

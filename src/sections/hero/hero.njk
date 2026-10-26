@@ -36,6 +36,10 @@
     </div>
     <p class="hero__description">{{ page.hero.description }}</p>
     {% if page.hero.text %}<p class="hero__text">{% if page.hero.textLines %}{% for line in page.hero.textLines %}<span class="hero__text-line">{{ line }}</span>{% if not loop.last %} {% endif %}{% endfor %}{% else %}{{ page.hero.text }}{% endif %}</p>{% endif %}
+    {% if page.hero.action %}
+      {% from "components/button/button.njk" import button %}
+      {{ button(page.hero.action.label, page.hero.action.href, 'hero__action', 'gallery') }}
+    {% endif %}
     {% if page.hero.stats %}
     <div class="hero__stats" aria-label="{{ page.hero.statsLabel }}">
       {% for stat in page.hero.stats %}

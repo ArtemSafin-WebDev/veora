@@ -1,10 +1,14 @@
 {% from "components/filters/filters.njk" import filters %}
 {% from "components/pagination/pagination.njk" import pagination %}
-<section class="service-catalog container" aria-label="{{ page.catalog.label }}">
+<section class="service-catalog container{% if page.catalog.variant %} service-catalog--{{ page.catalog.variant }}{% endif %}" aria-label="{{ page.catalog.label }}">
   <aside class="service-catalog__sidebar" aria-label="{{ page.catalog.filters.title }}">{{ filters(page.catalog.filters) }}</aside>
   <div class="service-catalog__content">
     <div class="service-catalog__grid">
-      {% for card in page.catalog.cards %}<div class="service-catalog__item{% if loop.index > page.catalog.mobilePageSize %} service-catalog__item--desktop{% endif %}">{% include "components/service-card/service-card.njk" %}</div>{% endfor %}
+      {% for card in page.catalog.cards %}
+      <div class="service-catalog__item{% if card.mobileHidden or (page.catalog.mobilePageSize and loop.index > page.catalog.mobilePageSize) %} service-catalog__item--desktop{% endif %}"{% if card.mobileOrder %} style="--service-catalog-mobile-order: {{ card.mobileOrder }}"{% endif %}>
+        {% include "components/service-card/service-card.njk" %}
+      </div>
+      {% endfor %}
     </div>
     {% if page.catalog.pagination %}{{ pagination(page.catalog.pagination) }}{% endif %}
   </div>

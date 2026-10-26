@@ -1,0 +1,339 @@
+{
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/resort-services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/additional-services.html",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/cosmetology.html",
+            "label": "Косметология"
+          },
+          {
+            "href": "/spa.html",
+            "label": "СПА"
+          },
+          {
+            "href": "/medicine.html",
+            "label": "Медицина"
+          },
+          {
+            "href": "/prices.html",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness-club.html",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/resort-offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/resort-services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  },
+  "theme": "dark-blue",
+  "directoryGroup": "resort",
+  "title": "Wellness клуб",
+  "description": "Wellness клуб здравницы «Южный»: здоровые привычки, полезные статьи, лекции, онлайн-программы и мероприятия.",
+  "activePage": "wellness-club",
+  "bodyClass": "page-wellness-club",
+  "hero": {
+    "variant": "resort",
+    "detailVariant": "wellness",
+    "title": "Wellness клуб",
+    "image": "/assets/wellness-club/hero.png",
+    "mobileImage": "/assets/wellness-club/hero-mobile.png",
+    "brandMark": "wellness-brand-mark",
+    "brandMarkMobile": "wellness-brand-mark-mobile",
+    "divider": "hero-divider",
+    "dividerMobile": "hero-divider-mobile",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Оздоровление",
+        "href": "/wellness.html"
+      },
+      {
+        "label": "Wellness клуб"
+      }
+    ],
+    "description": "Здоровье начинается с вас",
+    "text": "В этом разделе вы найдете все о здоровом образе жизни, чтобы чувствовать себя хорошо не только вовремя, но и после отдыха. Вместе мы создаем поддерживающее сообщество, благодаря которому забота о себе становиться увлекательным и интересным путешествием",
+    "action": {
+      "label": "Оставить заявку",
+      "href": "#club-request"
+    }
+  },
+  "clubGallery": {
+    "label": "Фотографии здравницы",
+    "scrollLabel": "Фотографии здравницы — листайте пальцем, мышью или стрелками клавиатуры",
+    "items": [
+      {
+        "src": "/assets/wellness-club/gallery-pool.png",
+        "alt": "Пальмы, шезлонги и открытый бассейн здравницы"
+      },
+      {
+        "src": "/assets/wellness-club/gallery-night.png",
+        "alt": "Вечерняя подсветка корпуса и отражение в бассейне"
+      },
+      {
+        "src": "/assets/wellness-club/gallery-building.png",
+        "alt": "Белый корпус здравницы и солнечная терраса"
+      }
+    ]
+  },
+  "clubBenefits": {
+    "title": "Что вас ждет",
+    "image": "/assets/wellness-club/benefits.png",
+    "items": [
+      "Полезные статьи",
+      "Лекции и вебинары от экспертов в сфере здорового образа жизни",
+      "Чек-листы здоровых привычек",
+      "Онлайн-программы",
+      "Групповые челленджи",
+      "и многое другое..."
+    ]
+  },
+  "clubEvents": {
+    "title": "Афиша\nмероприятий",
+    "description": "Базовый курс для восстановления и профилактики. Подходит для тех, кто хочет мягко укрепить иммунитет, улучшить самочувствие и снизить уровень стресса.",
+    "joinLabel": "Принять участие",
+    "detailsLabel": "Подробнее",
+    "items": [
+      {
+        "title": "Wellness неделя в Солнечном городке",
+        "image": "/assets/wellness-club/event-wellness.png",
+        "label": "Включено в стоимость",
+        "date": "2026-05-16T12:00",
+        "dateLabel": "16 мая | Начало в 12:00",
+        "href": "/afisha-detail.html",
+        "mobile": {
+          "title": "«Девичник» в Солнечном городке",
+          "image": "/assets/wellness-club/event-friends-mobile.png",
+          "label": "Активный отдых",
+          "date": "2026-09-09",
+          "dateLabel": "9 сентября 2026"
+        }
+      },
+      {
+        "title": "Золотые пески: Кавказская семейная трапеза",
+        "image": "/assets/wellness-club/event-walk.png",
+        "label": "5 990₽",
+        "date": "2026-05-18T12:00",
+        "dateLabel": "18 мая | Начало в 12:00",
+        "href": "/afisha-detail.html",
+        "mobile": {
+          "title": "Золотые пески: экскурсия в Абрау-Дюрсо, дегустация в подарок!",
+          "image": "/assets/wellness-club/event-yoga-mobile.png",
+          "label": "Активный отдых",
+          "date": "2026-09-09",
+          "dateLabel": "9 сентября 2026"
+        }
+      },
+      {
+        "title": "Балтийские пески: пикник на пляже 25 мая",
+        "image": "/assets/wellness-club/event-picnic.png",
+        "label": "5 990₽",
+        "date": "2026-05-25T12:00",
+        "dateLabel": "25 мая | Начало в 12:00",
+        "href": "/afisha-detail.html",
+        "mobile": {
+          "title": "При покупке СПА-услуги «Альфа-капсула» дарим биоимпедансометрию",
+          "image": "/assets/wellness-club/event-spa-mobile.png",
+          "label": "Активный отдых",
+          "date": "2026-09-09",
+          "dateLabel": "9 сентября 2026"
+        }
+      },
+      {
+        "title": "Первая смена в детском лагере Полюс 7 июня",
+        "image": "/assets/wellness-club/event-child.png",
+        "label": "Включено в стоимость",
+        "date": "2026-05-28T12:00",
+        "dateLabel": "28 мая | Начало в 12:00",
+        "href": "/afisha-detail.html",
+        "mobile": {
+          "title": "Солнечный городок- абонемент на занятия йогой",
+          "image": "/assets/wellness-club/event-class-mobile.png",
+          "label": "Активный отдых",
+          "date": "2026-09-09",
+          "dateLabel": "9 сентября 2026"
+        }
+      }
+    ]
+  },
+  "clubRequest": {
+    "id": "club-request",
+    "form": {
+      "id": "club-request-form",
+      "title": "Оставить заявку на вступление в клуб",
+      "action": "",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Ваше имя",
+          "autocomplete": "name",
+          "required": true,
+          "maxLength": 100
+        },
+        {
+          "name": "phone",
+          "type": "tel",
+          "label": "Телефон",
+          "autocomplete": "tel",
+          "inputMode": "tel",
+          "mask": "phone",
+          "required": true
+        }
+      ],
+      "hiddenFields": [
+        {
+          "name": "request_type",
+          "value": "wellness-club"
+        }
+      ],
+      "consent": {
+        "label": "Принимаю условия",
+        "link": {
+          "label": "обработки персональных данных",
+          "href": "/privacy/"
+        }
+      },
+      "submitLabel": "Отправить"
+    }
+  },
+  "clubArticles": {
+    "title": "Статьи",
+    "previousLabel": "Предыдущая статья",
+    "nextLabel": "Следующая статья",
+    "items": [
+      {
+        "category": "Золотые пески",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "Здравница «Золотые Пески» открывает SPA-комплекс под открытым небом",
+        "mobileTitle": "Солнечный городок предлагает новую СПА – процедуру",
+        "href": "/news-detail.html",
+        "readMoreLabel": "Подробнее"
+      },
+      {
+        "category": "Светлогорск",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "«Светлогорск» приглашает на летние заезды: отдых у моря с пользой для здоровья",
+        "mobileTitle": "Открытие летней веранды в ресторане «Южного»",
+        "href": "/news-detail.html",
+        "readMoreLabel": "Подробнее"
+      },
+      {
+        "category": "Бриз",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "«Бриз» запускает курс дыхательной терапии — дышите свободно!",
+        "mobileTitle": "«Полюс» готовится к приему детей в детский лагерь",
+        "href": "/news-detail.html",
+        "readMoreLabel": "Подробнее"
+      }
+    ]
+  }
+}

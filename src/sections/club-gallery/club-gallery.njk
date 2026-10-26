@@ -1,0 +1,4 @@
+{% from "components/infinite-gallery/infinite-gallery.njk" import infiniteGallery %}
+<section class="club-gallery container" aria-label="{{ page.clubGallery.label }}">
+  {{ infiniteGallery(page.clubGallery) }}
+</section>

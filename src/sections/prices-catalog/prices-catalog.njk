@@ -1,0 +1,5 @@
+{% from "components/catalog-layout/catalog-layout.njk" import catalogLayout %}
+{% from "components/price-table/price-table.njk" import priceTable %}
+{% call catalogLayout(none, 'prices-catalog', page.catalog.label, 'compact', none, page.catalog.navigation) %}
+  {{ priceTable(page.catalog.table) }}
+{% endcall %}

@@ -36,6 +36,9 @@ import './components/activity-dialogs/activity-dialogs';
 import './components/event-media/event-media';
 import './sections/program-catalog/program-catalog';
 import './sections/related-programs/related-programs';
+import './components/infinite-gallery/infinite-gallery';
+import './sections/club-benefits/club-benefits';
+import './sections/club-articles/club-articles';
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 

@@ -16,7 +16,7 @@
     "links": [
       {
         "label": "Услуги и развлечения",
-        "href": "/services.html"
+        "href": "/resort-services.html"
       },
       {
         "label": "Мероприятия",
@@ -75,11 +75,11 @@
             "label": "Медицина"
           },
           {
-            "href": "/wellness/prices/",
+            "href": "/prices.html",
             "label": "Цены на услуги"
           },
           {
-            "href": "/wellness/club/",
+            "href": "/wellness-club.html",
             "label": "Wellness клуб"
           },
           {
@@ -96,11 +96,11 @@
             "label": "Путевки"
           },
           {
-            "href": "/offers.html",
+            "href": "/resort-offers.html",
             "label": "Специальные предложения"
           },
           {
-            "href": "/services.html",
+            "href": "/resort-services.html",
             "label": "Услуги и развлечения"
           },
           {

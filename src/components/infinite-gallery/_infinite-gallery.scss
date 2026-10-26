@@ -1,0 +1,19 @@
+.infinite-gallery {
+  &__group { display: grid; grid-template-columns: 422fr 530fr 314fr; gap: 1rem; }
+  &__slide { min-width: 0; height: 36.6rem; overflow: hidden; border-radius: 1.2rem; }
+  &__image { display: block; width: 100%; height: 100%; object-fit: cover; }
+}
+
+@media (max-width: 600px) {
+  .infinite-gallery {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    cursor: grab;
+    &::-webkit-scrollbar { display: none; }
+    &--dragging { cursor: grabbing; user-select: none; }
+    &__track { display: flex; width: max-content; }
+    &__group { display: flex; flex: none; gap: 1rem; padding-right: 1rem; }
+    &__slide { flex: 0 0 28rem; width: 28rem; height: 28rem; }
+  }
+}

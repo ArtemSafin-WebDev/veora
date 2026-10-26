@@ -28,7 +28,9 @@ body.theme-dark-blue {
   --color-text-faint: var(--theme-300);
   --color-text-inverse: #fff;
   --color-text-inverse-soft: var(--theme-100);
-  --color-text-note: #909991;
+  --color-text-note-neutral: #909991;
+  --color-text-subtle-neutral: #99a29a;
+  --color-text-note: var(--color-text-note-neutral);
   --color-accent: var(--theme-600);
   --button-primary-hover-background: var(--theme-500);
   --button-primary-active-background: var(--theme-200);

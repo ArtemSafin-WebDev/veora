@@ -8,7 +8,17 @@
   &__image { display: block; width: 100%; height: auto; border-radius: 1.2rem; }
 }
 
+.page-service--resort .service-content {
+  margin-bottom: 12rem;
+  &__image { height: 40.4rem; object-fit: cover; }
+}
+
 @media (max-width: 600px) {
+  .page-service--resort .service-content {
+    margin-bottom: 7.4rem;
+    &__image { height: 22rem; }
+  }
+
   .service-content {
     margin-bottom: 7.4rem;
     &__inner { gap: 4.8rem; }
