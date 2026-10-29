@@ -1,6 +1,7 @@
 import '@fontsource-variable/inter/wght.css';
 import '@fontsource-variable/golos-text/wght.css';
 import './styles/main.scss';
+import './components/cookie-consent/cookie-consent';
 import './components/site-header/site-header';
 import './components/room-card/room-card';
 import './components/accordion/accordion';

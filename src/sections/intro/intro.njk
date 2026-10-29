@@ -1,6 +1,8 @@
 {% from "components/icon/icon.njk" import icon %}
 <section class="intro" aria-label="{{ page.intro.logoAlt }}">
-  <img class="intro__image" src="{{ page.intro.image }}" alt="" />
+  <video class="intro__video" poster="{{ page.intro.image }}" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+    <source src="{{ page.intro.video }}" type="video/mp4" />
+  </video>
   <div class="intro__overlay" aria-hidden="true"></div>
   <div class="intro__brand">
     <img class="intro__logo" src="{{ page.intro.logo }}" alt="{{ page.intro.logoAlt }}" />

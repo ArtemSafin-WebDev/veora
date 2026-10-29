@@ -1,0 +1,9 @@
+<dialog class="modal cookie-consent" id="cookie-consent" aria-label="{{ site.cookieConsent.label }}" aria-describedby="cookie-consent-description" data-modal data-cookie-consent>
+  <div class="modal__content cookie-consent__content" tabindex="-1" autofocus>
+    <div class="cookie-consent__text" id="cookie-consent-description">
+      <p>{% for line in site.cookieConsent.text %}{{ line }}<br />{% endfor %}{{ site.cookieConsent.privacyPrefix }} <a href="{{ site.cookieConsent.privacy.href }}" target="_blank" rel="noopener noreferrer">{{ site.cookieConsent.privacy.label }}</a></p>
+      <p>{{ site.cookieConsent.agreementPrefix }} <a href="{{ site.cookieConsent.agreement.href }}" target="_blank" rel="noopener noreferrer">{{ site.cookieConsent.agreement.label }}</a></p>
+    </div>
+    <button class="cookie-consent__accept" type="button" data-cookie-consent-accept>{{ site.cookieConsent.acceptLabel }}</button>
+  </div>
+</dialog>

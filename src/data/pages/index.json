@@ -61,6 +61,7 @@
     }
   },
   "intro": {
+    "video": "/assets/intro/intro.mp4",
     "image": "/assets/intro/landscape.webp",
     "logo": "/assets/intro/logo.svg",
     "logoAlt": "Веора",
