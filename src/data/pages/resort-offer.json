@@ -1,0 +1,281 @@
+{
+  "title": "Здоровье на две недели — спецпредложение здравницы",
+  "description": "При бронировании путевки от 14 суток — СПА-услуга «Альфа капсула» в подарок. Условия предложения и заявка на отдых в здравницах Веора.",
+  "activePage": "offers",
+  "theme": "dark-blue",
+  "offerIntro": {
+    "title": "«Здоровье на две недели: биоимпедансометрия в подарок»",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Спецпредложения",
+        "href": "/resort-offers.html"
+      },
+      {
+        "label": "«Здоровье на две недели: биоимпедансометрия в подарок»"
+      }
+    ],
+    "place": "Все здравницы",
+    "period": "постоянно (межсезонный период)",
+    "shareLabel": "Поделиться предложением",
+    "printLabel": "Распечатать предложение",
+    "copiedMessage": "Ссылка на предложение скопирована.",
+    "shareError": "Не удалось поделиться ссылкой. Скопируйте адрес страницы из браузера.",
+    "actions": [
+      {
+        "label": "Забронировать",
+        "href": "mailto:sozvezdie@s.ru?subject=%D0%91%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8E%20%C2%AB%D0%97%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D0%B5%20%D0%BD%D0%B0%20%D0%B4%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%C2%BB",
+        "variant": "primary"
+      },
+      {
+        "label": "Оставить заявку",
+        "href": "mailto:sozvezdie@s.ru?subject=%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8E%20%C2%AB%D0%97%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D0%B5%20%D0%BD%D0%B0%20%D0%B4%D0%B2%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%C2%BB",
+        "variant": "secondary"
+      }
+    ],
+    "image": "/assets/offer-catalog/wellness.webp",
+    "imageAlt": "Отдых в бассейне с видом на море"
+  },
+  "offerContent": {
+    "label": "Условия спецпредложения",
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "При бронировании путевки сроком от 14 суток предоставляется СПА-услуга- «Альфа капсула»"
+      },
+      {
+        "type": "benefits",
+        "title": "Преимущества длительного проживания:",
+        "items": [
+          "Более глубокая проработка лечебной программы",
+          "Возможность совместить отдых с реабилитацией"
+        ]
+      },
+      {
+        "type": "html",
+        "html": "<h4>Что входит в стоимость путевки:</h4>\n<ul>\n  <li>Проживание в номере с кондиционером, телевизором, холодильником</li>\n  <li>Трехразовое питание по системе «шведский стол» или заказное меню</li>\n  <li>Лечебная программа по профилю заболевания (назначается врачом после осмотра)</li>\n  <li>Пользование бассейном (крытым или открытым, в зависимости от сезона)</li>\n  <li>Спортивные и развлекательные мероприятия согласно графику санатория</li>\n</ul>"
+      },
+      {
+        "type": "image",
+        "image": "/assets/service-detail/running.webp",
+        "imageAlt": "Пробежка по дорожке среди деревьев на закате"
+      }
+    ]
+  },
+  "relatedOffers": {
+    "id": "related-offers",
+    "title": "Другие спецпредложения",
+    "allLink": {
+      "label": "Все спецпредложения",
+      "href": "/resort-offers.html"
+    },
+    "items": [
+      {
+        "title": "«Девичник» в Солнечном городке",
+        "place": "Солнечный городок",
+        "image": "/assets/offer-catalog/bachelorette.webp",
+        "href": "/offers/bachelorette/",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "catalog": true,
+        "related": true,
+        "readMoreLabel": "Подробнее",
+        "mobileLabel": "Активный отдых"
+      },
+      {
+        "title": "Золотые пески: экскурсия в Абрау-Дюрсо, дегустация в подарок!",
+        "place": "Золотые пески",
+        "image": "/assets/offer-catalog/abrau.webp",
+        "href": "/offers/abrau/",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "catalog": true,
+        "related": true,
+        "readMoreLabel": "Подробнее",
+        "mobileLabel": "Активный отдых"
+      },
+      {
+        "title": "При покупке СПА-услуги «Альфа-капсула» дарим биоимпедансометрию",
+        "place": "Золотые пески",
+        "image": "/assets/offer-catalog/capsule.webp",
+        "href": "/offers/capsule/",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "catalog": true,
+        "related": true,
+        "readMoreLabel": "Подробнее",
+        "mobileLabel": "Активный отдых"
+      }
+    ]
+  },
+  "bodyClass": "page-offer--resort",
+  "directoryGroup": "resort",
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/resort-services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ],
+    "logo": "header-logo-mobile-surface"
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/additional-services.html",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/cosmetology.html",
+            "label": "Косметология"
+          },
+          {
+            "href": "/spa.html",
+            "label": "СПА"
+          },
+          {
+            "href": "/medicine.html",
+            "label": "Медицина"
+          },
+          {
+            "href": "/prices.html",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness-club.html",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/resort-offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/resort-services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/resort-afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/resort-gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/resort-legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/resort-contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  },
+  "newsSubscription": {
+    "id": "offer-subscription",
+    "form": {
+      "id": "offer-subscription-form",
+      "title": "Подпишитесь на новости и будьте в курсе всех событий компании",
+      "description": "Присылаем только самое полезное",
+      "action": "",
+      "fields": [
+        {
+          "name": "email",
+          "type": "email",
+          "label": "Email",
+          "autocomplete": "email",
+          "required": true,
+          "maxLength": 254
+        }
+      ],
+      "hiddenFields": [
+        {
+          "name": "subscription_type",
+          "value": "news"
+        }
+      ],
+      "consent": {
+        "label": "Принимаю условия",
+        "link": {
+          "label": "обработки персональных данных",
+          "href": "/privacy/"
+        }
+      },
+      "submitLabel": "Отправить",
+      "successMessage": "Спасибо! Вы подписались на новости Веора.",
+      "unavailableMessage": "Сейчас оформить подписку не удалось. Попробуйте позже."
+    }
+  }
+}

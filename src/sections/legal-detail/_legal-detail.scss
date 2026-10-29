@@ -1,3 +1,15 @@
+body.page-legal-detail--resort {
+  --color-page-background: var(--color-surface-neutral);
+  --footer-surround-background: var(--color-surface-neutral);
+  --color-surface-soft: var(--theme-50);
+  --color-border: var(--theme-200);
+}
+
+.page-legal-detail--resort .legal-detail {
+  margin-bottom: 19rem;
+  color: var(--color-text-secondary);
+}
+
 .legal-detail {
   margin-bottom: 15.4rem;
   padding-top: 2rem;
@@ -38,6 +50,8 @@
 }
 
 @media (max-width: 600px) {
+  .page-legal-detail--resort .legal-detail { margin-bottom: 6.4rem; }
+
   .legal-detail {
     margin-bottom: 4.8rem;
     padding-top: 1.2rem;
@@ -60,6 +74,7 @@
   @page { size: A4; margin: 4rem; }
   body:has(.legal-detail) {
     display: block;
+    .legal-detail { margin-bottom: 0; }
     .site-header, .site-footer, .legal-detail__breadcrumbs, .legal-detail__download { display: none; }
   }
   .legal-detail {

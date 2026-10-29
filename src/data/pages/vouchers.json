@@ -98,11 +98,11 @@
             "label": "Услуги и развлечения"
           },
           {
-            "href": "/afisha.html",
+            "href": "/resort-afisha.html",
             "label": "Афиша"
           },
           {
-            "href": "/gallery.html",
+            "href": "/resort-gallery.html",
             "label": "Галерея"
           },
           {
@@ -114,11 +114,11 @@
             "label": "Питание"
           },
           {
-            "href": "/legal.html",
+            "href": "/resort-legal.html",
             "label": "Правовая информация"
           },
           {
-            "href": "/contacts.html",
+            "href": "/resort-contacts.html",
             "label": "Контакты"
           }
         ]
@@ -154,49 +154,57 @@
     "label": "Путевки здравницы",
     "bookLabel": "Забронировать",
     "detailsLabel": "Подробнее",
-    "modalId": "voucher-booking",
     "items": [
       {
         "id": "health",
         "title": "Здоровье",
         "description": "Базовый курс для восстановления и профилактики. Подходит для тех, кто хочет мягко укрепить иммунитет, улучшить самочувствие и снизить уровень стресса.",
         "defaultOpen": false,
-        "programsLabel": "Виды программ Здоровье"
+        "programsLabel": "Виды программ Здоровье",
+        "modalId": "voucher-health-booking"
       },
       {
         "id": "health-plus",
         "title": "Здоровье+",
         "description": "Базовый курс для восстановления и профилактики. Подходит для тех, кто хочет мягко укрепить иммунитет, улучшить самочувствие и снизить уровень стресса.",
-        "defaultOpen": false
+        "defaultOpen": false,
+        "modalId": "voucher-health-plus-booking"
       },
       {
         "id": "rest",
         "title": "Отдых",
         "description": "Базовый курс для восстановления и профилактики. Подходит для тех, кто хочет мягко укрепить иммунитет, улучшить самочувствие и снизить уровень стресса.",
-        "defaultOpen": false
+        "defaultOpen": false,
+        "modalId": "voucher-rest-booking"
       },
       {
         "id": "guest",
         "title": "Гостевой визит",
         "description": "Базовый курс для восстановления и профилактики. Подходит для тех, кто хочет мягко укрепить иммунитет, улучшить самочувствие и снизить уровень стресса.",
-        "defaultOpen": false
+        "defaultOpen": false,
+        "modalId": "voucher-guest-booking"
       }
     ],
     "services": [
       {
-        "title": "Первичная консультация врача-терапевта / курортолога"
+        "title": "Первичная консультация врача-терапевта / курортолога",
+        "modalId": "voucher-service-consultation"
       },
       {
-        "title": "Индивидуальное составление программы оздоровления"
+        "title": "Индивидуальное составление программы оздоровления",
+        "modalId": "voucher-service-wellness-program"
       },
       {
-        "title": "Водолечение (душ Шарко, циркулярный душ, подводный массаж)"
+        "title": "Водолечение (душ Шарко, циркулярный душ, подводный массаж)",
+        "modalId": "voucher-service-hydrotherapy"
       },
       {
-        "title": "Физиотерапия (магнитотерапия, лазеротерапия, электрофорез)"
+        "title": "Физиотерапия (магнитотерапия, лазеротерапия, электрофорез)",
+        "modalId": "voucher-service-physiotherapy"
       },
       {
-        "title": "Лечебная физкультура (групповая и индивидуальная)"
+        "title": "Лечебная физкультура (групповая и индивидуальная)",
+        "modalId": "voucher-service-exercise"
       }
     ],
     "photos": [
@@ -210,15 +218,8 @@
       }
     ]
   },
-  "bookingModal": {
-    "id": "voucher-booking",
-    "label": "Заявка на бронирование",
+  "bookingModals": {
     "closeLabel": "Закрыть заявку на бронирование",
-    "image": "/assets/vouchers/running.png",
-    "imageAlt": "Пробежка по загородной дорожке",
-    "duration": "60 минут",
-    "title": "Чистка лица гигиеническая аппаратная ультразвуковая на профессиональной косметике Selvert Thermal Швейцария",
-    "description": "Мягкая косметологическая процедура, использующая высокочастотные звуковые волны (через скрабер-лопатку) для очищения кожи от ороговевших клеток, комедонов и себума, сопровождаемая использованием глубоко очищающих и ухаживающих профессиональных средств (гели, сыворотки, маски",
     "form": {
       "id": "voucher-request",
       "title": "Оставить заявку",
@@ -287,6 +288,66 @@
         "label": "Принимаю условия обработки персональных данных"
       },
       "submitLabel": "Оставить заявку"
-    }
+    },
+    "items": [
+      {
+        "modalId": "voucher-health-booking",
+        "title": "Здоровье",
+        "description": "Базовый курс для восстановления и профилактики. Подходит для тех, кто хочет мягко укрепить иммунитет, улучшить самочувствие и снизить уровень стресса.",
+        "image": "/assets/vouchers/running.png",
+        "imageAlt": "Пробежка по загородной дорожке"
+      },
+      {
+        "modalId": "voucher-health-plus-booking",
+        "title": "Здоровье+",
+        "description": "Базовый курс для восстановления и профилактики. Подходит для тех, кто хочет мягко укрепить иммунитет, улучшить самочувствие и снизить уровень стресса.",
+        "image": "/assets/vouchers/running.png",
+        "imageAlt": "Пробежка по загородной дорожке"
+      },
+      {
+        "modalId": "voucher-rest-booking",
+        "title": "Отдых",
+        "description": "Базовый курс для восстановления и профилактики. Подходит для тех, кто хочет мягко укрепить иммунитет, улучшить самочувствие и снизить уровень стресса.",
+        "image": "/assets/vouchers/running.png",
+        "imageAlt": "Пробежка по загородной дорожке"
+      },
+      {
+        "modalId": "voucher-guest-booking",
+        "title": "Гостевой визит",
+        "description": "Базовый курс для восстановления и профилактики. Подходит для тех, кто хочет мягко укрепить иммунитет, улучшить самочувствие и снизить уровень стресса.",
+        "image": "/assets/vouchers/running.png",
+        "imageAlt": "Пробежка по загородной дорожке"
+      },
+      {
+        "modalId": "voucher-service-consultation",
+        "title": "Первичная консультация врача-терапевта / курортолога",
+        "image": "/assets/vouchers/running.png",
+        "imageAlt": "Пробежка по загородной дорожке"
+      },
+      {
+        "modalId": "voucher-service-wellness-program",
+        "title": "Индивидуальное составление программы оздоровления",
+        "image": "/assets/vouchers/running.png",
+        "imageAlt": "Пробежка по загородной дорожке"
+      },
+      {
+        "modalId": "voucher-service-hydrotherapy",
+        "title": "Водолечение (душ Шарко, циркулярный душ, подводный массаж)",
+        "image": "/assets/vouchers/running.png",
+        "imageAlt": "Пробежка по загородной дорожке"
+      },
+      {
+        "modalId": "voucher-service-physiotherapy",
+        "title": "Физиотерапия (магнитотерапия, лазеротерапия, электрофорез)",
+        "image": "/assets/vouchers/running.png",
+        "imageAlt": "Пробежка по загородной дорожке"
+      },
+      {
+        "modalId": "voucher-service-exercise",
+        "title": "Лечебная физкультура (групповая и индивидуальная)",
+        "image": "/assets/vouchers/running.png",
+        "imageAlt": "Пробежка по загородной дорожке"
+      }
+    ]
   }
 }

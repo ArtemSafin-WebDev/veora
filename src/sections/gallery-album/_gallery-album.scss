@@ -23,6 +23,23 @@
   }
 }
 
+body.page-gallery-album--resort {
+  --color-page-background: var(--color-surface-neutral);
+  --footer-surround-background: var(--color-surface-neutral);
+
+  .gallery-album__title { color: #2e2e2e; }
+
+  .site-header:not(.site-header--expanded) {
+    --header-primary-background: var(--theme-50);
+    --header-color: var(--color-text-secondary);
+    --header-burger-background: var(--theme-50);
+    --header-booking-background: var(--color-text-secondary);
+  }
+
+  .site-header__primary { border-radius: .8rem; }
+  .site-header__logo { --color-accent: var(--color-text-secondary); }
+}
+
 @media (max-width: 600px) {
   .gallery-album {
     padding-top: 1.2rem;
@@ -36,4 +53,6 @@
     &__grid { grid-template-columns: minmax(0, 1fr); }
     .gallery-card--photo { grid-column: 1 / -1; }
   }
+
+  body.page-gallery-album--resort .gallery-album__title { color: var(--color-text-primary); }
 }

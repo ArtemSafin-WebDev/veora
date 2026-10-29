@@ -10,7 +10,11 @@
     margin-bottom: 8rem;
 
     .catalog-layout__sidebar { margin-bottom: 2.9rem; }
-    .catalog-links, .price-table { margin-right: -1.2rem; }
+    .catalog-links, .price-table {
+      margin-inline: -1.2rem;
+      padding-inline: 1.2rem;
+      scroll-padding-inline: 1.2rem;
+    }
     .price-table__heading { padding-bottom: 2rem; }
   }
 

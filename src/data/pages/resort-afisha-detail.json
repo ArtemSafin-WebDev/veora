@@ -1,0 +1,293 @@
+{
+  "title": "Балтийские пески: пикник на пляже 25 мая — афиша здравницы",
+  "description": "Пикник «Балтийские пески» 25 мая: отдых на берегу, музыка под открытым небом и встречи с друзьями.",
+  "activePage": "afisha",
+  "theme": "dark-blue",
+  "eventIntro": {
+    "title": "Балтийские пески: пикник на пляже 25 мая",
+    "titleLines": [
+      "Балтийские пески: пикник",
+      "на пляже 25 мая"
+    ],
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Афиша",
+        "href": "/resort-afisha.html"
+      },
+      {
+        "label": "Балтийские пески: пикник на пляже 25 мая"
+      }
+    ],
+    "place": "Все здравницы",
+    "period": "постоянно (межсезонный период)",
+    "shareLabel": "Поделиться мероприятием",
+    "printLabel": "Распечатать мероприятие",
+    "copiedMessage": "Ссылка на мероприятие скопирована.",
+    "shareError": "Не удалось поделиться ссылкой. Скопируйте адрес страницы из браузера.",
+    "image": "/assets/afisha-detail/picnic.webp",
+    "imageAlt": "Корзина и продукты для пикника на песчаном пляже у моря"
+  },
+  "eventContent": {
+    "label": "Описание мероприятия",
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "Друзья! Проводим весну все вместе! Приглашаем вас на уютный пикник «Балтийские пески».",
+        "description": "25 мая мы встретимся на берегу, чтобы отдохнуть, послушать музыку под открытым небом и просто насладиться компанией друг друга."
+      },
+      {
+        "type": "benefits",
+        "title": "В программе вечера:",
+        "items": [
+          "Более глубокая проработка лечебной программы",
+          "Возможность совместить отдых с реабилитацией"
+        ]
+      },
+      {
+        "type": "html",
+        "html": "<h4>Что входит в стоимость путевки:</h4>\n<ul>\n  <li>Проживание в номере с кондиционером, телевизором, холодильником</li>\n  <li>Трехразовое питание по системе «шведский стол» или заказное меню</li>\n  <li>Лечебная программа по профилю заболевания (назначается врачом после осмотра)</li>\n  <li>Пользование бассейном (крытым или открытым, в зависимости от сезона)</li>\n  <li>Спортивные и развлекательные мероприятия согласно графику санатория</li>\n</ul>"
+      },
+      {
+        "type": "image",
+        "image": "/assets/service-detail/running.webp",
+        "imageAlt": "Пробежка по дорожке среди деревьев на закате"
+      }
+    ]
+  },
+  "subscription": {
+    "id": "afisha-subscription",
+    "form": {
+      "id": "afisha-subscription-form",
+      "title": "Подпишитесь на новости и будьте в курсе всех событий компании",
+      "description": "Присылаем только самое полезное",
+      "action": "",
+      "fields": [
+        {
+          "name": "email",
+          "type": "email",
+          "label": "Email",
+          "autocomplete": "email",
+          "required": true,
+          "maxLength": 254
+        }
+      ],
+      "hiddenFields": [
+        {
+          "name": "subscription_type",
+          "value": "news"
+        }
+      ],
+      "consent": {
+        "label": "Принимаю условия",
+        "link": {
+          "label": "обработки персональных данных",
+          "href": "/privacy/"
+        }
+      },
+      "submitLabel": "Отправить",
+      "successMessage": "Спасибо! Вы подписались на новости Веора.",
+      "unavailableMessage": "Сейчас оформить подписку не удалось. Попробуйте позже."
+    }
+  },
+  "relatedEvents": {
+    "id": "related-events",
+    "title": "Другие мероприятия",
+    "allLink": {
+      "label": "Все мероприятия",
+      "href": "/resort-afisha.html"
+    },
+    "items": [
+      {
+        "title": "Wellness неделя в Солнечном городке",
+        "place": "Солнечный городок",
+        "image": "/assets/afisha/wellness.webp",
+        "href": "/events/wellness-week/",
+        "date": "2026-05-16T12:00",
+        "dateLabel": "16 мая | Начало в 12:00",
+        "catalog": true,
+        "event": true,
+        "readMoreLabel": "Подробнее"
+      },
+      {
+        "title": "Золотые пески: Кавказская семейная трапеза",
+        "place": "Золотые пески",
+        "image": "/assets/afisha/family-hike.webp",
+        "href": "/events/family-meal/",
+        "date": "2026-05-18T12:00",
+        "dateLabel": "18 мая | Начало в 12:00",
+        "catalog": true,
+        "event": true,
+        "readMoreLabel": "Подробнее"
+      },
+      {
+        "title": "Первая смена в детском лагере Полюс 7 июня",
+        "place": "Полюс",
+        "image": "/assets/afisha/camp.webp",
+        "href": "/events/camp-first-session/",
+        "date": "2026-05-28T12:00",
+        "dateLabel": "28 мая | Начало в 12:00",
+        "catalog": true,
+        "event": true,
+        "readMoreLabel": "Подробнее"
+      }
+    ],
+    "mobileItems": [
+      {
+        "title": "«Девичник» в Солнечном городке",
+        "place": "Активный отдых",
+        "image": "/assets/offer-catalog/bachelorette.webp",
+        "href": "/offers/bachelorette/",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "catalog": true,
+        "readMoreLabel": "Подробнее"
+      },
+      {
+        "title": "Золотые пески: экскурсия в Абрау-Дюрсо, дегустация в подарок!",
+        "place": "Активный отдых",
+        "image": "/assets/offer-catalog/abrau.webp",
+        "href": "/offers/abrau/",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "catalog": true,
+        "readMoreLabel": "Подробнее"
+      }
+    ]
+  },
+  "bodyClass": "page-afisha-detail--resort",
+  "directoryGroup": "resort",
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/resort-services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ],
+    "logo": "header-logo-mobile-surface"
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/additional-services.html",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/cosmetology.html",
+            "label": "Косметология"
+          },
+          {
+            "href": "/spa.html",
+            "label": "СПА"
+          },
+          {
+            "href": "/medicine.html",
+            "label": "Медицина"
+          },
+          {
+            "href": "/prices.html",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness-club.html",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/resort-offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/resort-services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/resort-afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/resort-gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/resort-legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/resort-contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  }
+}

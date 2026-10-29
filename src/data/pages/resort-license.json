@@ -1,0 +1,164 @@
+{
+  "title": "Лицензия №1 — здравница «Южный»",
+  "description": "Лицензия №1 здравницы «Южный»: изображение документа и PDF для скачивания.",
+  "activePage": "legal",
+  "theme": "dark-blue",
+  "license": {
+    "title": "Лицензия №1",
+    "mobileTitle": "Лицензия",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Правовая информация",
+        "href": "/resort-legal.html"
+      },
+      {
+        "label": "Лицензия №1"
+      }
+    ],
+    "image": {
+      "src": "/assets/license/license.webp",
+      "alt": "Скан лицензии №1"
+    },
+    "download": {
+      "label": "Скачать pdf",
+      "href": "/assets/license/license.pdf",
+      "filename": "license-1.pdf"
+    }
+  },
+  "bodyClass": "page-license--resort",
+  "directoryGroup": "resort",
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/resort-services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ],
+    "logo": "header-logo-mobile-surface"
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/additional-services.html",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/cosmetology.html",
+            "label": "Косметология"
+          },
+          {
+            "href": "/spa.html",
+            "label": "СПА"
+          },
+          {
+            "href": "/medicine.html",
+            "label": "Медицина"
+          },
+          {
+            "href": "/prices.html",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness-club.html",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/resort-offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/resort-services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/resort-afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/resort-gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/resort-legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/resort-contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  }
+}

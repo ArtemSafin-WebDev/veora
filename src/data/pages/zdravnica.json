@@ -87,7 +87,7 @@
             "label": "Афиша"
           },
           {
-            "href": "/gallery.html",
+            "href": "/resort-gallery.html",
             "label": "Галерея"
           },
           {
@@ -99,11 +99,11 @@
             "label": "Питание"
           },
           {
-            "href": "/legal.html",
+            "href": "/resort-legal.html",
             "label": "Правовая информация"
           },
           {
-            "href": "/contacts.html",
+            "href": "/resort-contacts.html",
             "label": "Контакты"
           }
         ]
@@ -154,7 +154,7 @@
       "nextLabel": "Следующая фотография"
     },
     "allLink": {
-      "href": "/gallery.html",
+      "href": "/resort-gallery.html",
       "label": "Вся галерея"
     },
     "items": [
@@ -185,7 +185,7 @@
     "title": "Новости",
     "readMoreLabel": "Подробнее",
     "allLink": {
-      "href": "/news.html",
+      "href": "/resort-news.html",
       "label": "Все новости"
     },
     "items": [
@@ -203,7 +203,7 @@
         "date": "2026-09-09",
         "dateLabel": "9 сентября 2026",
         "title": "«Светлогорск» приглашает на летние заезды: отдых у моря с пользой для здоровья",
-        "href": "/news-detail.html",
+        "href": "/resort-news-detail.html",
         "mobileTitle": "Открытие летней веранды в ресторане «Южного»",
         "mobileCategory": "Светлогорск"
       },

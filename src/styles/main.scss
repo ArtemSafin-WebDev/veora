@@ -73,6 +73,7 @@
 @use '../sections/contacts-info/contacts-info';
 @use '../sections/contacts-map/contacts-map';
 @use '../sections/company-details/company-details';
+@use '../sections/contacts-transfer/contacts-transfer';
 @use '../components/search-form/search-form';
 @use '../sections/search/search';
 @use '../components/search-result-card/search-result-card';
@@ -116,7 +117,6 @@
 @use '../sections/cosmetology-catalog/cosmetology-catalog';
 @use '../sections/cosmetology-feature/cosmetology-feature';
 @use '../sections/cosmetology-faq/cosmetology-faq';
-@use '../components/cosmetology-modal/cosmetology-modal';
 @use '../sections/medicine-catalog/medicine-catalog';
 @use '../components/catalog-links/catalog-links';
 @use '../components/price-table/price-table';

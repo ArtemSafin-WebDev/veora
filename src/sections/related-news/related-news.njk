@@ -15,4 +15,5 @@
       {% endfor %}
     </div>
   </div>
+  {% if related.allLink and related.showMobileAllLink %}{{ button(related.allLink.label, related.allLink.href, 'related-news__mobile-link') }}{% endif %}
 </section>

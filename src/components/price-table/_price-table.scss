@@ -21,8 +21,7 @@
     &__duration-column { width: 19.1rem; }
     &__cost-column { width: 18.1rem; }
     &__heading { padding-top: 0; padding-bottom: 2rem; }
-    &__cell { padding-inline: 0 1rem; vertical-align: middle; }
+    &__cell { padding-inline: 0 1rem; }
     &__cell:first-child { padding-left: 2rem; }
-    &__row--top &__cell { vertical-align: top; }
   }
 }

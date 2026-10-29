@@ -38,6 +38,31 @@
   }
 }
 
+body.page-news-detail--resort,
+body.page-afisha-detail--resort {
+  --color-page-background: var(--color-surface-neutral);
+  --footer-surround-background: var(--color-surface-neutral);
+  --color-surface-soft: var(--theme-50);
+  --color-border: var(--theme-200);
+}
+
+.page-news-detail--resort .news-intro,
+.page-afisha-detail--resort .news-intro {
+  &__period, &__tool { color: var(--color-text-secondary); }
+  &__media { height: 40.4rem; }
+  &__image { height: 100%; }
+}
+
+@media (max-width: 600px) {
+  .page-news-detail--resort .news-intro {
+    color: var(--color-text-faint);
+  }
+  .page-afisha-detail--resort .news-intro {
+    margin-bottom: 9.5rem;
+    color: var(--color-text-faint);
+  }
+}
+
 @media print {
   .news-intro__tools { display: none; }
 }

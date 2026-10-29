@@ -1,0 +1,300 @@
+{
+  "title": "Новости здравницы",
+  "description": "Новости здравницы «Южный»: события, новые услуги и возможности отдыха.",
+  "activePage": "news",
+  "theme": "dark-blue",
+  "banner": {
+    "id": "resort-news-banner",
+    "title": "Новости",
+    "image": "/assets/news-catalog/hero.webp",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Новости"
+      }
+    ]
+  },
+  "catalog": {
+    "label": "Каталог новостей",
+    "emptyLabel": "В этой категории пока нет новостей.",
+    "navigation": {
+      "id": "resort-news-resorts",
+      "label": "Новости по здравницам",
+      "filtersLabel": "Фильтры",
+      "triggerLabel": "Настроить",
+      "closeLabel": "Закрыть фильтры",
+      "items": [
+        {
+          "value": "all",
+          "label": "Все новости"
+        },
+        {
+          "value": "brand",
+          "label": "Новости Веора/новости бренда",
+          "desktopOnly": true
+        },
+        {
+          "value": "south",
+          "label": "Южный"
+        },
+        {
+          "value": "golden",
+          "label": "Золотые пески"
+        },
+        {
+          "value": "baltic",
+          "label": "Балтийские Пески"
+        },
+        {
+          "value": "sunny",
+          "label": "Солнечный городок"
+        },
+        {
+          "value": "polyus",
+          "label": "Полюс"
+        },
+        {
+          "value": "polyus-camp",
+          "label": "Полюс ДОЛ"
+        }
+      ],
+      "selectedValue": "south"
+    },
+    "cards": [
+      {
+        "category": "Золотые пески",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "Солнечный городок предлагает новую СПА – процедуру",
+        "href": "/news/spa-procedure/",
+        "resorts": [
+          "sunny"
+        ],
+        "catalog": true,
+        "readMoreLabel": "Подробнее"
+      },
+      {
+        "category": "Светлогорск",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "Открытие летней веранды в ресторане «Южного»",
+        "titleLines": [
+          "Открытие летней веранды",
+          "в ресторане «Южного»"
+        ],
+        "href": "/resort-news-detail.html",
+        "resorts": [
+          "south"
+        ],
+        "catalog": true,
+        "readMoreLabel": "Подробнее"
+      },
+      {
+        "category": "Бриз",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "«Полюс» готовится к приему детей в детский лагерь",
+        "href": "/news/children-camp/",
+        "resorts": [
+          "polyus"
+        ],
+        "catalog": true,
+        "readMoreLabel": "Подробнее"
+      },
+      {
+        "category": "Бриз",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "В «Золотых песках» открылся уличный бассейн",
+        "href": "/news/outdoor-pool/",
+        "resorts": [
+          "golden"
+        ],
+        "catalog": true,
+        "readMoreLabel": "Подробнее",
+        "mobileTitle": "«Полюс» готовится к приему детей в детский лагерь"
+      },
+      {
+        "category": "Бриз",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "«Бриз» запускает курс дыхательной терапии — дышите свободно!",
+        "href": "/news/breathing-therapy/",
+        "resorts": [
+          "brand"
+        ],
+        "catalog": true,
+        "readMoreLabel": "Подробнее",
+        "mobileTitle": "«Полюс» готовится к приему детей в детский лагерь"
+      },
+      {
+        "category": "Бриз",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "title": "«Бриз» запускает курс дыхательной терапии — дышите свободно!",
+        "href": "/news/breathing-therapy/",
+        "resorts": [
+          "brand"
+        ],
+        "catalog": true,
+        "readMoreLabel": "Оставить заявку",
+        "mobileTitle": "«Полюс» готовится к приему детей в детский лагерь",
+        "mobileReadMoreLabel": "Подробнее"
+      }
+    ],
+    "pagination": {
+      "label": "Страницы новостей",
+      "currentPage": 2,
+      "totalPages": 9,
+      "items": [
+        1,
+        2,
+        "ellipsis",
+        8,
+        9
+      ],
+      "baseUrl": "/resort-news.html",
+      "previousLabel": "Предыдущая страница",
+      "nextLabel": "Следующая страница",
+      "ellipsisLabel": "Перейти на страницу",
+      "assets": {
+        "previous": "pagination-previous",
+        "next": "pagination-next"
+      }
+    }
+  },
+  "directoryGroup": "resort",
+  "bodyClass": "page-news-catalog--resort",
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/resort-services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/additional-services.html",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/cosmetology.html",
+            "label": "Косметология"
+          },
+          {
+            "href": "/spa.html",
+            "label": "СПА"
+          },
+          {
+            "href": "/medicine.html",
+            "label": "Медицина"
+          },
+          {
+            "href": "/prices.html",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness-club.html",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/resort-offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/resort-services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/resort-afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/resort-gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/resort-legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/resort-contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  }
+}

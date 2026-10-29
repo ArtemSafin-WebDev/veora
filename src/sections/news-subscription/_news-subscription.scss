@@ -6,11 +6,32 @@
   .request-form__submit { padding-inline: 2.4rem; }
 }
 
+.page-offer--resort .news-subscription,
+.page-news-detail--resort .news-subscription,
+.page-afisha-detail--resort .news-subscription {
+  margin-bottom: 12rem;
+  .request-form__control { width: 2.4rem; height: 2.4rem; }
+  .request-form__consent { gap: 1.3rem; }
+}
+
+.page-news-detail--resort .news-subscription {
+  margin-bottom: 14rem;
+  .request-form__input { padding-bottom: calc(1rem - 1px); }
+}
+
+.page-afisha-detail--resort .news-subscription {
+  margin-bottom: 14.4rem;
+  .request-form__input { padding-bottom: calc(1rem - 1px); }
+}
+
 @media (max-width: 600px) {
   .news-subscription {
     margin-bottom: 7.9rem;
     .request-form { border-radius: 1.2rem; }
   }
+  .page-offer--resort .news-subscription { margin-bottom: 7.9rem; }
+  .page-news-detail--resort .news-subscription { margin-bottom: 8rem; }
+  .page-afisha-detail--resort .news-subscription { margin-bottom: 8rem; }
 }
 
 @media print {

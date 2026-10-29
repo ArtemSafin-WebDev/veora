@@ -1,0 +1,286 @@
+{
+  "title": "Контакты здравницы",
+  "description": "Контакты здравницы «Южный»: адрес, время работы, карта проезда и заказ трансфера.",
+  "activePage": "contacts",
+  "theme": "dark-blue",
+  "banner": {
+    "id": "resort-contacts-banner",
+    "variant": "contacts",
+    "title": "Контакты",
+    "image": "/assets/contacts/hero.webp",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Контакты"
+      }
+    ]
+  },
+  "contacts": {
+    "label": "Контакты центрального офиса",
+    "officeLabel": "Центральный офис:",
+    "organization": "Частное учреждение \"Здоровье и отдых\"",
+    "address": "129337, Москва г, вн.тер.г. муниципальный округ Ярославский, ул. Красная Сосна, д. 7, стр. 2, помещ. 1/92",
+    "hours": {
+      "label": "Время работы:",
+      "days": "Пн–Пт:",
+      "time": "09:00 – 18:00"
+    },
+    "communication": {
+      "label": "Контакты для связи:",
+      "phone": "+7 495 123-45-67",
+      "phoneHref": "tel:+74951234567",
+      "callbackLabel": "заказать звонок",
+      "callbackHref": "tel:+74951234567",
+      "email": "sozvezdie@s.ru"
+    }
+  },
+  "map": {
+    "label": "Центральный офис на карте",
+    "apiKey": "f9c6d4db-889e-416b-9ec2-61876d055dd4",
+    "coordinates": [
+      37.686931,
+      55.848695
+    ],
+    "zoom": 15,
+    "loadingLabel": "Карта загружается…",
+    "errorLabel": "Не удалось загрузить карту.",
+    "linkLabel": "Открыть адрес в Яндекс Картах",
+    "href": "https://yandex.ru/maps/?ll=37.686931%2C55.848695&z=16&pt=37.686931%2C55.848695%2Cpm2rdm",
+    "route": {
+      "label": "Построить маршрут",
+      "href": "https://yandex.ru/maps/?rtext=~55.848695%2C37.686931&rtt=auto"
+    },
+    "previewImage": "/assets/contacts/map.png",
+    "previewAlt": "Схема расположения офиса на улице Красная Сосна, дом 7, строение 2"
+  },
+  "companyDetails": {
+    "title": "Реквизиты компании",
+    "items": [
+      "ОГРН: 1227700152239",
+      "ОКПО: 52011059",
+      "ИНН/КПП: 7716964633/771601001",
+      "Банк: ПАО «СБЕРБАНК»",
+      "Р/сч: 40503810238000000010",
+      "К/сч: 30101810400000000225",
+      "БИК: 044525225"
+    ],
+    "mobileOnly": true
+  },
+  "directoryGroup": "resort",
+  "bodyClass": "page-contacts--resort",
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/resort-services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/additional-services.html",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/cosmetology.html",
+            "label": "Косметология"
+          },
+          {
+            "href": "/spa.html",
+            "label": "СПА"
+          },
+          {
+            "href": "/medicine.html",
+            "label": "Медицина"
+          },
+          {
+            "href": "/prices.html",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness-club.html",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/resort-offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/resort-services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/resort-afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/resort-gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/resort-legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/resort-contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  },
+  "contactsTransfer": {
+    "form": {
+      "id": "contacts-transfer-form",
+      "title": "Заказать трансфер",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Ваше имя",
+          "autocomplete": "name",
+          "required": true,
+          "maxLength": 100
+        },
+        {
+          "name": "phone",
+          "type": "tel",
+          "label": "Телефон",
+          "autocomplete": "tel",
+          "inputMode": "tel",
+          "mask": "phone",
+          "required": true,
+          "pattern": "\\+7 \\([0-9]{3}\\) [0-9]{3}-[0-9]{2}-[0-9]{2}",
+          "errorMessage": "Введите телефон полностью."
+        },
+        {
+          "name": "time",
+          "label": "Время",
+          "inputMode": "numeric",
+          "mask": "time",
+          "required": true,
+          "pattern": "([01][0-9]|2[0-3]):[0-5][0-9]",
+          "errorMessage": "Введите время в формате ЧЧ:ММ от 00:00 до 23:59."
+        },
+        {
+          "name": "date",
+          "label": "Дата",
+          "inputMode": "numeric",
+          "mask": "date",
+          "required": true,
+          "pattern": "[0-9]{2}\\.[0-9]{2}\\.[0-9]{4}",
+          "errorMessage": "Введите существующую дату в формате ДД.ММ.ГГГГ."
+        },
+        {
+          "name": "passengers",
+          "label": "Количество людей",
+          "inputMode": "numeric",
+          "pattern": "[1-9][0-9]{0,2}",
+          "errorMessage": "Введите количество людей от 1 до 999.",
+          "viewport": "desktop",
+          "fullWidth": true
+        },
+        {
+          "name": "car",
+          "label": "Машина",
+          "maxLength": 100,
+          "viewport": "mobile"
+        },
+        {
+          "name": "wishes",
+          "label": "Пожелания",
+          "maxLength": 1000,
+          "fullWidth": true
+        }
+      ],
+      "hiddenFields": [
+        {
+          "name": "request_type",
+          "value": "transfer"
+        },
+        {
+          "name": "resort",
+          "value": "Южный"
+        }
+      ],
+      "consent": {
+        "label": "Принимаю условия",
+        "link": {
+          "label": "обработки персональных данных",
+          "href": "/privacy/"
+        }
+      },
+      "submitLabel": "Отправить"
+    }
+  }
+}

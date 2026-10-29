@@ -4,6 +4,7 @@
     {% include "sections/offer-intro/offer-intro.njk" %}
     {% if page.offerContent %}{% include "sections/offer-content/offer-content.njk" %}{% endif %}
     {% if page.offerRequest %}{% include "sections/offer-request/offer-request.njk" %}{% endif %}
+    {% if page.newsSubscription %}{% include "sections/news-subscription/news-subscription.njk" %}{% endif %}
   </article>
   {% if page.relatedOffers and page.relatedOffers.items.length %}
     {% include "sections/related-offers/related-offers.njk" %}

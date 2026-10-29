@@ -12,7 +12,7 @@
   </h2>
   <p class="voucher-card__description{% if item.compactDescription %} voucher-card__description--compact{% endif %}">{% if item.mobileDescription %}<span class="voucher-card__desktop-description">{{ item.description }}</span><span class="voucher-card__mobile-description">{{ item.mobileDescription }}</span>{% else %}{{ item.description }}{% endif %}</p>
   {% if not config.hideActions %}<div class="voucher-card__actions">
-    <button class="button button--primary" type="button" data-modal-open="{{ config.modalId }}" data-booking-voucher="{{ item.title }}">{{ config.bookLabel }}</button>
+    <button class="button button--primary" type="button" data-modal-open="{{ item.modalId or config.modalId }}" data-booking-voucher="{{ item.title }}">{{ config.bookLabel }}</button>
     {% if item.programsLabel %}<button class="button button--muted voucher-card__programs" type="button" data-voucher-programs>{{ item.programsLabel }}</button>{% endif %}
   </div>{% endif %}
   <div class="voucher-card__panel" id="{{ item.id }}-panel" role="region" aria-labelledby="{{ item.id }}-toggle"{% if not item.defaultOpen %} inert{% endif %} data-accordion-panel>

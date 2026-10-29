@@ -1,4 +1,3 @@
-{% from "components/icon/icon.njk" import icon %}
 {% macro eventSeating(snippet) %}
 <div class="event-seating">
   <h2 class="event-seating__title" id="{{ snippet.id }}-title">{{ snippet.title }}</h2>
@@ -9,7 +8,7 @@
     <tbody>
       {% for item in snippet.items %}
       <tr class="event-seating__row">
-        <td class="event-seating__diagram"><span class="event-seating__scheme">{{ icon(item.icon, '', item.iconWidth, item.iconHeight) }}</span></td>
+        <td class="event-seating__diagram"><span class="event-seating__scheme"><img class="event-seating__image" src="{{ item.image }}" alt="" loading="lazy" /></span></td>
         <th class="event-seating__type" scope="row">{{ item.title }}</th>
         <td class="event-seating__description">{{ item.description }}</td>
         <td class="event-seating__capacity">{{ item.capacity }}</td>

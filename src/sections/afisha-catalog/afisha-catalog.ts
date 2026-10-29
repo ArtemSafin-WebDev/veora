@@ -11,26 +11,4 @@ document.querySelectorAll<HTMLElement>('[data-afisha-catalog]').forEach((grid) =
     url.searchParams.delete('page');
     action.href = url.href;
   }
-
-  const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-catalog-resorts]'));
-  const update = (resort = 'all') => {
-    cards.forEach((card) => {
-      const resorts = card.dataset.catalogResorts?.split(' ') ?? [];
-      const matchesResort = resort === 'all' || resorts.includes('all') || resorts.includes(resort);
-      card.hidden = !matchesResort || (card.dataset.catalogArchived === 'true') !== archive;
-    });
-    const hasCards = cards.some((card) => !card.hidden);
-    const empty = grid.querySelector<HTMLElement>('[data-catalog-empty]');
-    if (empty) {
-      empty.hidden = hasCards;
-      empty.textContent = (archive ? grid.dataset.archiveEmptyLabel : grid.dataset.emptyLabel) ?? '';
-    }
-    const pagination = catalog.querySelector<HTMLElement>('[data-pagination]');
-    if (pagination) pagination.hidden = !hasCards || resort !== 'all';
-  };
-
-  update();
-  catalog.addEventListener('resort-navigation:change', (event) => {
-    update((event as CustomEvent<{ resort: string }>).detail.resort);
-  });
 });

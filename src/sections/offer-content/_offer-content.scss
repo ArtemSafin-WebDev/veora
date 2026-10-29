@@ -17,6 +17,12 @@
   &__caption { margin-top: 1.2rem; color: var(--color-text-muted); font-size: 1.4rem; line-height: 1.8rem; }
 }
 
+.page-offer--resort .offer-content,
+.page-afisha-detail--resort .offer-content {
+  &__media { height: 40.4rem; }
+  &__image { height: 100%; object-fit: cover; }
+}
+
 @media (max-width: 600px) {
   .offer-content {
     margin-bottom: 4rem;

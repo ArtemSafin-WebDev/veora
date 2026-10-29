@@ -6,10 +6,27 @@
   [hidden] { display: none; }
 }
 
+body.page-legal--resort {
+  --color-page-background: var(--color-surface-neutral);
+  --footer-surround-background: var(--color-surface-neutral);
+}
+
+body.page-legal--resort .legal-catalog {
+  .resort-navigation { color: var(--color-accent); }
+  .resort-navigation__link[aria-current] { background: var(--color-accent); }
+  .resort-navigation__trigger { background: var(--theme-50); color: var(--color-text-secondary); }
+  .legal-documents__button { border-color: #c8cdc8; color: var(--color-text-muted); }
+  .legal-documents__divider { height: 0; }
+}
+
 @media (max-width: 600px) {
   .legal-catalog {
     margin-bottom: 5.6rem;
 
     &__navigation { margin-bottom: 3.2rem; }
+  }
+
+  body.page-legal--resort .legal-catalog {
+    .legal-documents__button { border-color: var(--theme-200); color: var(--color-text-primary); }
   }
 }

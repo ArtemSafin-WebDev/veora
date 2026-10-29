@@ -1,0 +1,193 @@
+{
+  "title": "Бассейн",
+  "description": "Фотоальбом «Бассейн» в галерее здравницы «Южный».",
+  "activePage": "gallery",
+  "theme": "dark-blue",
+  "gallery": {
+    "title": "Бассейн",
+    "mobileTitle": "Галерея",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Галерея",
+        "href": "/resort-gallery.html"
+      },
+      {
+        "label": "Бассейн"
+      }
+    ],
+    "modal": {
+      "id": "resort-gallery-pool-modal",
+      "openLabel": "Открыть фотографию",
+      "previousLabel": "Предыдущая фотография",
+      "nextLabel": "Следующая фотография"
+    },
+    "items": [
+      {
+        "image": "/assets/gallery/south.webp",
+        "alt": "Зелёные холмы и солнечная долина",
+        "columns": 5
+      },
+      {
+        "image": "/assets/gallery/golden.webp",
+        "alt": "Бирюзовая река среди гор",
+        "columns": 4
+      },
+      {
+        "image": "/assets/gallery/baltic.webp",
+        "alt": "Озеро у зелёных гор",
+        "columns": 3
+      },
+      {
+        "image": "/assets/gallery/golden.webp",
+        "alt": "Река и рафты среди гор",
+        "columns": 4
+      },
+      {
+        "image": "/assets/gallery/baltic.webp",
+        "alt": "Каменная набережная у озера",
+        "columns": 3
+      },
+      {
+        "image": "/assets/gallery/south.webp",
+        "alt": "Солнечный луг и хвойный лес",
+        "columns": 5
+      }
+    ]
+  },
+  "bodyClass": "page-gallery-album--resort",
+  "directoryGroup": "resort",
+  "resortHeader": {
+    "logo": "header-logo-mobile-surface",
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/resort-services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/additional-services.html",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/cosmetology.html",
+            "label": "Косметология"
+          },
+          {
+            "href": "/spa.html",
+            "label": "СПА"
+          },
+          {
+            "href": "/medicine.html",
+            "label": "Медицина"
+          },
+          {
+            "href": "/prices.html",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness-club.html",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/resort-offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/resort-services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/resort-afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/resort-gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/resort-legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/resort-contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  }
+}

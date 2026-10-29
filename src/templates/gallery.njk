@@ -1,0 +1,6 @@
+{% extends "layout.njk" %}
+{% from "sections/page-banner/page-banner.njk" import pageBanner %}
+{% block content %}
+  {{ pageBanner(page.banner) }}
+  {% include "sections/gallery-catalog/gallery-catalog.njk" %}
+{% endblock %}

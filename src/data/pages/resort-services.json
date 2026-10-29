@@ -345,8 +345,7 @@
         "previous": "pagination-previous",
         "next": "pagination-next"
       }
-    },
-    "variant": "resort"
+    }
   },
   "directoryGroup": "resort",
   "bodyClass": "page-service-catalog--resort",
@@ -449,11 +448,11 @@
             "label": "Услуги и развлечения"
           },
           {
-            "href": "/afisha.html",
+            "href": "/resort-afisha.html",
             "label": "Афиша"
           },
           {
-            "href": "/gallery.html",
+            "href": "/resort-gallery.html",
             "label": "Галерея"
           },
           {
@@ -465,11 +464,11 @@
             "label": "Питание"
           },
           {
-            "href": "/legal.html",
+            "href": "/resort-legal.html",
             "label": "Правовая информация"
           },
           {
-            "href": "/contacts.html",
+            "href": "/resort-contacts.html",
             "label": "Контакты"
           }
         ]

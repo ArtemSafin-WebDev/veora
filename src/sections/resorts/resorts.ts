@@ -11,7 +11,6 @@ document.querySelectorAll<HTMLElement>('[data-resorts]').forEach((section) => {
   const modes = Array.from(section.querySelectorAll<HTMLButtonElement>('[data-resorts-mode]'));
   const filters = Array.from(section.querySelectorAll<HTMLButtonElement>('[data-resorts-filter]'));
   const pins = Array.from(section.querySelectorAll<HTMLButtonElement>('[data-resort-pin]'));
-  const cards = Array.from(section.querySelectorAll<HTMLElement>('[data-resort-card]'));
   const nativePopover = typeof HTMLElement.prototype.showPopover === 'function';
   const nativeAnchor = CSS.supports('anchor-name: --resort')
     && CSS.supports('left: anchor(center)')
@@ -114,16 +113,7 @@ document.querySelectorAll<HTMLElement>('[data-resorts]').forEach((section) => {
   filters.forEach((filter) => {
     filter.addEventListener('click', () => {
       closePopover();
-      const category = filter.dataset.resortsFilter;
       filters.forEach((button) => button.setAttribute('aria-pressed', String(button === filter)));
-      cards.forEach((card) => { card.hidden = category !== 'all' && card.dataset.category !== category; });
-      const visibleGroups = new Set<string>();
-      pins.forEach((pin) => {
-        const group = pin.dataset.pinGroup ?? '';
-        const matches = category === 'all' || pin.dataset.category === category;
-        pin.hidden = !matches || visibleGroups.has(group);
-        if (!pin.hidden) visibleGroups.add(group);
-      });
     });
   });
 

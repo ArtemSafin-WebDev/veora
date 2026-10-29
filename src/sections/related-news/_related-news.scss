@@ -6,6 +6,7 @@
   &__header::after { order: 1; flex: 0 1 30rem; min-width: 0; height: 1px; background: var(--color-border); content: ''; }
   &__title { flex: 1; }
   &__all-link { order: 2; flex: none; }
+  &__mobile-link { display: none; }
   &__slider { overflow: visible; }
   &__track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
   &__slide { min-width: 0; width: auto; height: auto; }
@@ -18,6 +19,18 @@
     &__title { max-width: 20rem; }
     &__track { display: flex; gap: 0; }
     &__slide { flex: 0 0 25rem; width: 25rem; }
+  }
+}
+
+.page-news-detail--resort .related-news {
+  .news-card { border-color: var(--theme-100); }
+  .news-card__content { gap: 2rem; }
+}
+
+@media (max-width: 600px) {
+  .page-news-detail--resort .related-news {
+    &__title { max-width: none; }
+    &__mobile-link { display: flex; width: fit-content; margin: 2.2rem auto 0; }
   }
 }
 

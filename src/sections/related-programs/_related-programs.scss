@@ -13,7 +13,7 @@
 
 @media (max-width: 600px) {
   .related-programs {
-    &__header { gap: 1rem; margin-bottom: 2.2rem; }
+    &__header { align-items: flex-end; gap: 1rem; margin-bottom: 2.2rem; }
     &__header::after { display: none; }
     &__title { max-width: 25rem; font-size: 4rem; line-height: 4rem; letter-spacing: -.24rem; }
     &__slide { width: calc(100% - 2.4rem); max-width: none; }

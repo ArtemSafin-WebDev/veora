@@ -41,6 +41,28 @@
   }
 }
 
+body.page-offer--resort {
+  --color-page-background: var(--color-surface-neutral);
+  --footer-surround-background: var(--color-surface-neutral);
+  --color-surface-soft: var(--theme-50);
+  --color-border: var(--theme-200);
+}
+
+.page-offer--resort .offer-intro {
+  &__meta { height: 2.8rem; }
+  &__period, &__tools { color: var(--color-text-secondary); }
+  &__tool { color: inherit; }
+}
+
+@media (max-width: 600px) {
+  .page-offer--resort .offer-intro {
+    color: var(--color-text-faint);
+    .breadcrumbs__current { color: var(--color-text-muted); }
+    &__meta { height: auto; }
+    &__action--secondary { color: var(--color-text-muted); border-color: var(--theme-100); background: transparent; }
+  }
+}
+
 @media print {
   .offer-intro__tools, .offer-intro__actions { display: none; }
 }

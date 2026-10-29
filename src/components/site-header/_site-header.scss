@@ -124,7 +124,8 @@
   .site-header__nav-toggle--directions[aria-expanded='true'] { color: var(--color-text-inverse); }
 }
 
-.page-service--resort .site-header:not(.site-header--overlay):not(.site-header--expanded) {
+.page-service--resort .site-header:not(.site-header--overlay):not(.site-header--expanded),
+.page-news-detail--resort .site-header:not(.site-header--overlay):not(.site-header--expanded) {
   --header-primary-background: var(--theme-50);
 }
 

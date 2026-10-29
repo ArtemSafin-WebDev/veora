@@ -1,3 +1,18 @@
+body.page-license--resort {
+  --color-page-background: var(--color-surface-neutral);
+  --footer-surround-background: var(--color-surface-neutral);
+  --color-surface-soft: var(--theme-50);
+}
+
+.page-license--resort .site-header:not(.site-header--overlay) {
+  --header-booking-background: var(--color-accent);
+}
+
+.page-license--resort .license {
+  margin-bottom: 8rem;
+  color: var(--color-text-secondary);
+}
+
 .license {
   margin-bottom: 8.4rem;
   padding-top: 2rem;
@@ -17,6 +32,10 @@
 }
 
 @media (max-width: 600px) {
+  .page-license--resort .site-header:not(.site-header--overlay) {
+    --header-booking-background: var(--color-text-secondary);
+  }
+
   .license {
     margin-bottom: 8rem;
     padding-top: 1.2rem;

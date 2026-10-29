@@ -24,7 +24,7 @@
     </span>
   </div>
   <div class="offer-card__body">
-    <h3 class="offer-card__title">{{ offer.title }}</h3>
+    <h3 class="offer-card__title">{% if offer.titleLines %}{% for line in offer.titleLines %}{{ line }}{% if not loop.last %}<br />{% endif %}{% endfor %}{% else %}{{ offer.title }}{% endif %}</h3>
     {{ button(readMoreLabel, '', 'offer-card__link', 'light' if offer.catalog else 'dark') }}
   </div>
   {% endif %}

@@ -1,0 +1,9 @@
+{% extends "layout.njk" %}
+{% from "sections/page-banner/page-banner.njk" import pageBanner %}
+{% block content %}
+  {{ pageBanner(page.banner) }}
+  {% include "sections/contacts-info/contacts-info.njk" %}
+  {% include "sections/contacts-map/contacts-map.njk" %}
+  {% include "sections/company-details/company-details.njk" %}
+  {% if page.contactsTransfer %}{% include "sections/contacts-transfer/contacts-transfer.njk" %}{% endif %}
+{% endblock %}

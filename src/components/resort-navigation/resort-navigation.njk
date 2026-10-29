@@ -12,7 +12,7 @@
     {% else %}
     <form class="resort-navigation__form" aria-label="{{ config.label }}" data-resort-navigation-form>
       {% for item in config.items %}
-        <label class="resort-navigation__option"><input class="resort-navigation__input" type="radio" name="resort" value="{{ item.value }}"{% if item.value == config.selectedValue or (not config.selectedValue and loop.first) %} checked{% endif %} /><span class="resort-navigation__text">{{ item.label }}</span></label>
+        <label class="resort-navigation__option{% if item.desktopOnly %} resort-navigation__option--desktop-only{% endif %}"><input class="resort-navigation__input" type="radio" name="resort" value="{{ item.value }}"{% if item.value == config.selectedValue or (not config.selectedValue and loop.first) %} checked{% endif %} /><span class="resort-navigation__text">{{ item.label }}</span></label>
       {% endfor %}
     </form>
     {% endif %}

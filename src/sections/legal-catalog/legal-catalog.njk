@@ -4,7 +4,7 @@
   <div class="legal-catalog__navigation">{{ resortNavigation(page.catalog.navigation) }}</div>
   <div class="legal-catalog__content" aria-live="polite">
     {% for group in page.catalog.groups %}
-      {{ legalDocuments(group, page.catalog.moreLabel) }}
+      {{ legalDocuments(group, page.catalog.moreLabel, page.catalog.divider) }}
     {% endfor %}
   </div>
 </div>

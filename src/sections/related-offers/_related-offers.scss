@@ -12,6 +12,14 @@
   &__slide { min-width: 0; width: auto; height: auto; }
 }
 
+.page-offer--resort .related-offers {
+  margin-bottom: 8rem;
+  &__header { gap: 2rem; }
+  &__header::after { background: var(--theme-100); }
+  &__all-link { min-height: 4rem; padding-inline: 2.4rem; border-radius: .8rem; }
+  .offer-card__link { color: var(--color-text-muted); border-color: var(--theme-50); }
+}
+
 @media (max-width: 380px) {
   .related-offers__title { font-size: 3.2rem; line-height: 3.4rem; letter-spacing: -.192rem; }
 }
@@ -24,5 +32,14 @@
     &__track { display: flex; gap: 0; }
     &__slide { flex: 0 0 24.9rem; width: 24.9rem; }
     &__mobile-link { display: flex; width: fit-content; margin: 3rem auto 0; white-space: normal; text-align: center; }
+  }
+}
+
+@media (max-width: 600px) {
+  .page-offer--resort .related-offers {
+    margin-bottom: 5rem;
+    &__title { font-size: 4rem; line-height: 4rem; letter-spacing: -.24rem; }
+    &__mobile-link { display: none; }
+    .offer-card__link { border-color: var(--theme-100); }
   }
 }

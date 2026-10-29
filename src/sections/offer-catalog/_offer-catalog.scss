@@ -7,7 +7,7 @@ body.page-offer-catalog--resort {
   --footer-surround-background: var(--color-surface-neutral);
 }
 
-.offer-catalog--resort {
+:where(.page-offer-catalog--resort) .offer-catalog {
   --color-border-subtle: var(--theme-100);
 
   .offer-card__title { color: var(--color-text-secondary); }
@@ -22,7 +22,7 @@ body.page-offer-catalog--resort {
     .pagination { margin-top: 4rem; }
   }
 
-  .offer-catalog--resort {
+  :where(.page-offer-catalog--resort) .offer-catalog {
     .offer-card__title { color: var(--color-text-primary); }
     .offer-card__link { border-color: var(--theme-100); color: var(--color-text-muted); }
     .offer-card--featured .offer-card__link { border-color: var(--theme-100); color: var(--color-text-inverse); }

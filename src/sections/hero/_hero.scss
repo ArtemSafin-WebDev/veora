@@ -40,6 +40,12 @@
     object-fit: cover;
   }
 
+  &--wellness &__image,
+  &--program &__image {
+    // These photos include the transparent bottom arc; keep it inside the stage.
+    object-position: center bottom;
+  }
+
   &__lead {
     z-index: 1;
     display: grid;

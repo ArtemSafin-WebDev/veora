@@ -98,11 +98,11 @@
             "label": "Услуги и развлечения"
           },
           {
-            "href": "/afisha.html",
+            "href": "/resort-afisha.html",
             "label": "Афиша"
           },
           {
-            "href": "/gallery.html",
+            "href": "/resort-gallery.html",
             "label": "Галерея"
           },
           {
@@ -114,11 +114,11 @@
             "label": "Питание"
           },
           {
-            "href": "/legal.html",
+            "href": "/resort-legal.html",
             "label": "Правовая информация"
           },
           {
-            "href": "/contacts.html",
+            "href": "/resort-contacts.html",
             "label": "Контакты"
           }
         ]
@@ -222,25 +222,19 @@
         ],
         "items": [
           {
-            "icon": "seating-theater",
-            "iconWidth": 3.73029,
-            "iconHeight": 3.07201,
+            "image": "/assets/hall/seating-theater.svg",
             "title": "Театр",
             "description": "Стулья рядами, без столов",
             "capacity": "до 200"
           },
           {
-            "icon": "seating-classroom",
-            "iconWidth": 3.98995,
-            "iconHeight": 3.79731,
+            "image": "/assets/hall/seating-classroom.svg",
             "title": "Класс",
             "description": "Столы и стулья рядом",
             "capacity": "до 50"
           },
           {
-            "icon": "seating-u-shape",
-            "iconWidth": 3.82252,
-            "iconHeight": 4.04594,
+            "image": "/assets/hall/seating-u-shape.svg",
             "title": "U-образная",
             "description": "Один общий стол в форме буквы U",
             "capacity": "до 100"

@@ -9,23 +9,25 @@
     {% for item in config.hiddenFields %}<input type="hidden" name="{{ item.name }}" value="{{ item.value }}" />{% endfor %}
     <div class="request-form__fields">
       {% for field in config.fields %}
-      <label class="request-form__field">
+      <label class="request-form__field{% if field.fullWidth %} request-form__field--wide{% endif %}{% if field.viewport %} request-form__field--{{ field.viewport }}{% endif %}"{% if field.viewport %} data-field-viewport="{{ field.viewport }}"{% endif %}>
         <span class="request-form__field-label">{{ field.label }}</span>
         <input class="request-form__input" type="{{ field.type or 'text' }}" name="{{ field.name }}" placeholder="{{ field.label }}"{% if field.autocomplete %} autocomplete="{{ field.autocomplete }}"{% endif %}{% if field.mask %} data-mask="{{ field.mask }}"{% endif %}{% if field.inputMode %} inputmode="{{ field.inputMode }}"{% endif %}{% if field.errorMessage %} data-validation-pattern="{{ field.errorMessage }}" data-validation-invalid="{{ field.errorMessage }}"{% endif %}{% if field.hint %} title="{{ field.hint }}"{% endif %}{% if field.required %} required{% endif %}{% if field.minLength %} minlength="{{ field.minLength }}"{% endif %}{% if field.maxLength and not field.mask %} maxlength="{{ field.maxLength }}"{% endif %}{% if field.pattern %} pattern="{{ field.pattern }}"{% endif %} />
         <span class="request-form__error" id="{{ id }}-{{ loop.index }}-error" data-validation-error-for="{{ field.name }}" aria-live="polite" hidden></span>
       </label>
       {% endfor %}
     </div>
-    <label class="request-form__consent">
-      <span class="request-form__control">
-        <input class="request-form__checkbox" type="checkbox" name="consent" value="Y" required data-validation-required="{{ site.formValidation.consent }}" />
-        <span class="request-form__mark" aria-hidden="true">
-          {{ icon('radio-dot', 'request-form__dot', 2) }}
+    <div class="request-form__consent-group">
+      <label class="request-form__consent">
+        <span class="request-form__control">
+          <input class="request-form__checkbox" type="checkbox" name="consent" value="Y" required data-validation-required="{{ site.formValidation.consent }}" />
+          <span class="request-form__mark" aria-hidden="true">
+            {{ icon('radio-dot', 'request-form__dot', 2) }}
+          </span>
         </span>
-      </span>
-      <span>{{ config.consent.label }}{% if config.consent.link %} <a href="{{ config.consent.link.href }}">{{ config.consent.link.label }}</a>{% endif %}</span>
-    </label>
-    <p class="request-form__error request-form__error--consent" id="{{ id }}-consent-error" data-validation-error-for="consent" aria-live="polite" hidden></p>
+        <span>{{ config.consent.label }}{% if config.consent.link %} <a href="{{ config.consent.link.href }}">{{ config.consent.link.label }}</a>{% endif %}</span>
+      </label>
+      <p class="request-form__error request-form__error--consent" id="{{ id }}-consent-error" data-validation-error-for="consent" aria-live="polite" hidden></p>
+    </div>
     <button class="button button--base request-form__submit" type="submit">{{ config.submitLabel }}</button>
     <p class="request-form__status" role="status" data-request-status hidden></p>
   </form>

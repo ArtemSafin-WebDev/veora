@@ -13,6 +13,12 @@
   &__heading { display: flex; align-items: center; justify-content: space-between; gap: 2.4rem; }
   &__action { flex: none; border-color: var(--color-text-inverse); }
   &--legal { margin-bottom: 3rem; }
+  :where(.page-legal--resort) & {
+    margin-bottom: 3rem;
+    .breadcrumbs { color: var(--color-text-faint); }
+    .breadcrumbs__link { color: var(--color-text-secondary); }
+    .breadcrumbs__current { opacity: 1; }
+  }
   &--faq { margin-bottom: 8rem; }
   &--contacts { margin-bottom: 5rem; }
   &--rooms { margin-bottom: 5rem; }
@@ -23,6 +29,11 @@
   .page-banner {
     margin-bottom: 3.2rem;
     &--legal { margin-bottom: 3.2rem; }
+    :where(.page-legal--resort) & {
+      margin-bottom: 3.2rem;
+      .breadcrumbs, .breadcrumbs__link { color: var(--color-text-inverse); }
+      .breadcrumbs__current { opacity: .5; }
+    }
     &--faq { margin-bottom: 3.2rem; }
     &--contacts { margin-bottom: 3.2rem; }
     &--rooms { margin-bottom: 3.2rem; }
@@ -33,6 +44,7 @@
     &__desktop-title { display: none; }
     &__mobile-title, &__mobile-title span { display: block; }
     &__heading { flex-direction: column; align-items: flex-start; gap: 1.6rem; }
+    :where(.page-afisha-catalog--resort) & &__action { display: none; }
   }
 }
 

@@ -1,4 +1,4 @@
-<section class="company-details" aria-labelledby="company-details-title">
+<section class="company-details{% if page.companyDetails.mobileOnly %} company-details--mobile-only{% endif %}" aria-labelledby="company-details-title">
   <div class="container">
     <h2 class="company-details__title" id="company-details-title">{{ page.companyDetails.title }}</h2>
     <div class="company-details__content">

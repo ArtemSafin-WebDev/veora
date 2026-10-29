@@ -1,0 +1,242 @@
+{
+  "title": "Галерея здравницы",
+  "description": "Фотогалерея здравницы «Южный»: бассейн, ресторан, детский клуб и пляж.",
+  "activePage": "gallery",
+  "theme": "dark-blue",
+  "banner": {
+    "id": "resort-gallery-banner",
+    "title": "Галерея",
+    "image": "/assets/gallery-catalog/hero.webp",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Галерея"
+      }
+    ]
+  },
+  "catalog": {
+    "label": "Фотогалерея",
+    "navigation": {
+      "id": "resort-gallery-resorts",
+      "label": "Галерея по здравницам",
+      "filtersLabel": "Фильтры",
+      "triggerLabel": "Настроить",
+      "closeLabel": "Закрыть фильтры",
+      "items": [
+        {
+          "value": "all",
+          "label": "Вся галерея"
+        },
+        {
+          "value": "south",
+          "label": "Южный"
+        },
+        {
+          "value": "golden",
+          "label": "Золотые пески"
+        },
+        {
+          "value": "baltic",
+          "label": "Балтийские Пески"
+        },
+        {
+          "value": "sunny",
+          "label": "Солнечный городок"
+        },
+        {
+          "value": "polyus",
+          "label": "Полюс"
+        },
+        {
+          "value": "polyus-camp",
+          "label": "Полюс ДОЛ"
+        }
+      ],
+      "selectedValue": "south"
+    },
+    "emptyLabel": "В этой категории пока нет фотографий."
+  },
+  "gallery": {
+    "title": "Галерея",
+    "items": [
+      {
+        "title": "Бассейн",
+        "image": "/assets/gallery-catalog/pool.webp",
+        "alt": "Крытый бассейн с панорамными окнами",
+        "size": "wide",
+        "catalog": true,
+        "resorts": [
+          "south"
+        ],
+        "href": "/resort-gallery-pool.html"
+      },
+      {
+        "title": "Ресторан",
+        "image": "/assets/gallery-catalog/restaurant.webp",
+        "alt": "Светлый зал ресторана",
+        "size": "medium",
+        "catalog": true,
+        "resorts": [
+          "south"
+        ],
+        "href": "/gallery/restaurant/"
+      },
+      {
+        "title": "Детский клуб",
+        "image": "/assets/gallery-catalog/kids-club.webp",
+        "alt": "Детская игровая площадка среди деревьев",
+        "size": "medium",
+        "catalog": true,
+        "resorts": [
+          "south"
+        ],
+        "href": "/gallery/kids-club/"
+      },
+      {
+        "title": "Пляж",
+        "image": "/assets/gallery-catalog/beach.webp",
+        "alt": "Песчаный пляж на берегу моря",
+        "size": "wide",
+        "catalog": true,
+        "resorts": [
+          "south"
+        ],
+        "href": "/gallery/beach/"
+      }
+    ]
+  },
+  "directoryGroup": "resort",
+  "bodyClass": "page-gallery-catalog--resort",
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/resort-services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/additional-services.html",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/cosmetology.html",
+            "label": "Косметология"
+          },
+          {
+            "href": "/spa.html",
+            "label": "СПА"
+          },
+          {
+            "href": "/medicine.html",
+            "label": "Медицина"
+          },
+          {
+            "href": "/prices.html",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness-club.html",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/resort-offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/resort-services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/resort-afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/resort-gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/resort-legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/resort-contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  }
+}

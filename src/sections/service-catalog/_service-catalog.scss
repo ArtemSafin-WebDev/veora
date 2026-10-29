@@ -18,7 +18,7 @@ body.page-service-catalog--resort {
   --footer-surround-background: var(--color-surface-neutral);
 }
 
-.service-catalog--resort {
+:where(.page-service-catalog--resort) .service-catalog {
   --color-border-subtle: var(--theme-100);
   margin-bottom: 7.8rem;
 
@@ -53,7 +53,7 @@ body.page-service-catalog--resort {
     .service-card__badge { min-height: 2.6rem; border: 0; border-radius: .8rem; color: var(--color-text-primary); }
   }
 
-  .service-catalog--resort {
+  :where(.page-service-catalog--resort) .service-catalog {
     .service-catalog__item { order: var(--service-catalog-mobile-order, 0); }
     .pagination { margin-top: 4rem; }
     .filters { color: var(--color-text-secondary); }

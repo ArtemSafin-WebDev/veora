@@ -1,0 +1,359 @@
+{
+  "title": "Афиша здравницы",
+  "description": "Афиша здравницы «Южный»: оздоровительные программы, семейный отдых, экскурсии и события.",
+  "activePage": "afisha",
+  "theme": "dark-blue",
+  "banner": {
+    "id": "resort-afisha-banner",
+    "title": "Афиша",
+    "image": "/assets/afisha/hero.webp",
+    "breadcrumbsLabel": "Хлебные крошки",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/zdravnica.html"
+      },
+      {
+        "label": "Афиша"
+      }
+    ],
+    "action": {
+      "label": "Прошедшие мероприятия",
+      "upcomingLabel": "Предстоящие мероприятия",
+      "href": "/resort-afisha.html?archive=1"
+    }
+  },
+  "catalog": {
+    "label": "Каталог мероприятий",
+    "emptyLabel": "В этой здравнице пока нет мероприятий.",
+    "archiveEmptyLabel": "В архиве пока нет мероприятий.",
+    "navigation": {
+      "id": "resort-afisha-resorts",
+      "label": "Мероприятия по здравницам",
+      "filtersLabel": "Фильтры",
+      "triggerLabel": "Настроить",
+      "closeLabel": "Закрыть фильтры",
+      "items": [
+        {
+          "value": "all",
+          "label": "Вся афиша"
+        },
+        {
+          "value": "south",
+          "label": "Южный"
+        },
+        {
+          "value": "golden",
+          "label": "Золотые пески"
+        },
+        {
+          "value": "baltic",
+          "label": "Балтийские Пески"
+        },
+        {
+          "value": "sunny",
+          "label": "Солнечный городок"
+        },
+        {
+          "value": "polyus",
+          "label": "Полюс"
+        },
+        {
+          "value": "polyus-camp",
+          "label": "Полюс ДОЛ"
+        }
+      ],
+      "selectedValue": "south"
+    },
+    "cards": [
+      {
+        "title": "Wellness неделя в Солнечном городке",
+        "place": "Солнечный городок",
+        "resorts": [
+          "sunny",
+          "south"
+        ],
+        "image": "/assets/afisha/wellness.webp",
+        "href": "/events/wellness-week/",
+        "date": "2026-05-16T12:00",
+        "dateLabel": "16 мая | Начало в 12:00",
+        "readMoreLabel": "Подробнее",
+        "catalog": true,
+        "event": true,
+        "archived": false
+      },
+      {
+        "title": "Золотые пески: Кавказская семейная трапеза",
+        "place": "Золотые пески",
+        "resorts": [
+          "golden",
+          "south"
+        ],
+        "image": "/assets/afisha/family-hike.webp",
+        "href": "/events/family-meal/",
+        "date": "2026-05-18T12:00",
+        "dateLabel": "18 мая | Начало в 12:00",
+        "readMoreLabel": "Подробнее",
+        "catalog": true,
+        "event": true,
+        "archived": false
+      },
+      {
+        "title": "Балтийские пески: пикник на пляже 25 мая",
+        "place": "Балтийские пески",
+        "resorts": [
+          "baltic",
+          "south"
+        ],
+        "image": "/assets/afisha/picnic.webp",
+        "href": "/resort-afisha-detail.html",
+        "date": "2026-05-25T12:00",
+        "dateLabel": "25 мая | Начало в 12:00",
+        "readMoreLabel": "Подробнее",
+        "catalog": true,
+        "event": true,
+        "archived": false
+      },
+      {
+        "title": "Первая смена в детском лагере Полюс 7 июня",
+        "place": "Полюс",
+        "resorts": [
+          "polyus",
+          "south"
+        ],
+        "image": "/assets/afisha/camp.webp",
+        "href": "/events/camp-first-session/",
+        "date": "2026-05-28T12:00",
+        "dateLabel": "28 мая | Начало в 12:00",
+        "readMoreLabel": "Подробнее",
+        "catalog": true,
+        "event": true,
+        "archived": false
+      }
+    ],
+    "pagination": {
+      "label": "Страницы мероприятий",
+      "currentPage": 2,
+      "totalPages": 9,
+      "items": [
+        1,
+        2,
+        "ellipsis",
+        8,
+        9
+      ],
+      "baseUrl": "/resort-afisha.html",
+      "previousLabel": "Предыдущая страница",
+      "nextLabel": "Следующая страница",
+      "ellipsisLabel": "Перейти на страницу",
+      "assets": {
+        "previous": "pagination-previous",
+        "next": "pagination-next"
+      }
+    },
+    "mobileCards": [
+      {
+        "title": "«Девичник» в Солнечном городке",
+        "place": "Солнечный городок",
+        "resorts": [
+          "sunny",
+          "south"
+        ],
+        "image": "/assets/offer-catalog/bachelorette.webp",
+        "href": "/offers/bachelorette/",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "catalog": true,
+        "readMoreLabel": "Подробнее",
+        "mobileLabel": "Активный отдых",
+        "event": true,
+        "archived": false
+      },
+      {
+        "title": "Золотые пески: экскурсия в Абрау-Дюрсо, дегустация в подарок!",
+        "place": "Золотые пески",
+        "resorts": [
+          "golden",
+          "south"
+        ],
+        "image": "/assets/offer-catalog/abrau.webp",
+        "href": "/offers/abrau/",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "catalog": true,
+        "readMoreLabel": "Подробнее",
+        "mobileLabel": "Активный отдых",
+        "event": true,
+        "archived": false
+      },
+      {
+        "title": "При покупке СПА-услуги «Альфа-капсула» дарим биоимпедансометрию",
+        "place": "Золотые пески",
+        "resorts": [
+          "golden",
+          "south"
+        ],
+        "image": "/assets/offer-catalog/capsule.webp",
+        "href": "/offers/capsule/",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "catalog": true,
+        "readMoreLabel": "Подробнее",
+        "mobileLabel": "Активный отдых",
+        "event": true,
+        "archived": false
+      },
+      {
+        "title": "Солнечный городок- абонемент на занятия йогой",
+        "place": "Солнечный городок",
+        "resorts": [
+          "sunny",
+          "south"
+        ],
+        "image": "/assets/offer-catalog/yoga.webp",
+        "href": "/offers/yoga/",
+        "date": "2026-09-09",
+        "dateLabel": "9 сентября 2026",
+        "catalog": true,
+        "readMoreLabel": "Подробнее",
+        "mobileLabel": "Активный отдых",
+        "event": true,
+        "archived": false,
+        "titleLines": [
+          "Солнечный городок- абонемент",
+          "на занятия йогой"
+        ]
+      }
+    ]
+  },
+  "directoryGroup": "resort",
+  "bodyClass": "page-afisha-catalog--resort",
+  "resortHeader": {
+    "name": "Южный",
+    "homeHref": "/zdravnica.html",
+    "accommodation": {
+      "label": "Размещение",
+      "href": "/rooms.html"
+    },
+    "wellnessLabel": "Оздоровление",
+    "links": [
+      {
+        "label": "Услуги и развлечения",
+        "href": "/resort-services.html"
+      },
+      {
+        "label": "Мероприятия",
+        "href": "/activities.html"
+      }
+    ]
+  },
+  "footer": {
+    "variant": "resort",
+    "homeHref": "/zdravnica.html",
+    "copyrightYear": 2025,
+    "creditImage": "/assets/footer/creative-team-resort.svg",
+    "bookingLabel": "забронировать",
+    "mobileMark": "footer-brand-mark-mobile-resort",
+    "mobileWordmark": "footer-wordmark-mobile-resort",
+    "navigation": [
+      {
+        "title": "Размещение",
+        "links": [
+          {
+            "href": "/room.html",
+            "label": "Одноместный комфорт"
+          },
+          {
+            "href": "/rooms/standard/",
+            "label": "Стандарт"
+          },
+          {
+            "href": "/rooms/comfort/",
+            "label": "Комфорт"
+          }
+        ]
+      },
+      {
+        "title": "Оздоровление",
+        "links": [
+          {
+            "href": "/programs.html",
+            "label": "Готовые комплексы услуг/программы",
+            "mobileLabel": "Готовые комплексы услуг"
+          },
+          {
+            "href": "/additional-services.html",
+            "label": "Дополнительные услуги"
+          },
+          {
+            "href": "/cosmetology.html",
+            "label": "Косметология"
+          },
+          {
+            "href": "/spa.html",
+            "label": "СПА"
+          },
+          {
+            "href": "/medicine.html",
+            "label": "Медицина"
+          },
+          {
+            "href": "/prices.html",
+            "label": "Цены на услуги"
+          },
+          {
+            "href": "/wellness-club.html",
+            "label": "Wellness клуб"
+          },
+          {
+            "href": "/wellness/health-card/",
+            "label": "Карта здоровья"
+          }
+        ]
+      },
+      {
+        "title": "Дополнительно",
+        "links": [
+          {
+            "href": "/vouchers.html",
+            "label": "Путевки"
+          },
+          {
+            "href": "/resort-offers.html",
+            "label": "Специальные предложения"
+          },
+          {
+            "href": "/resort-services.html",
+            "label": "Услуги и развлечения"
+          },
+          {
+            "href": "/resort-afisha.html",
+            "label": "Афиша"
+          },
+          {
+            "href": "/resort-gallery.html",
+            "label": "Галерея"
+          },
+          {
+            "href": "/activities.html",
+            "label": "Мероприятия"
+          },
+          {
+            "href": "/dining.html",
+            "label": "Питание"
+          },
+          {
+            "href": "/resort-legal.html",
+            "label": "Правовая информация"
+          },
+          {
+            "href": "/resort-contacts.html",
+            "label": "Контакты"
+          }
+        ]
+      }
+    ],
+    "compactNavigation": true,
+    "mobileBookingLabel": "Забронировать"
+  }
+}

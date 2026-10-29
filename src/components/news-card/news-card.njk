@@ -7,7 +7,8 @@
     </div>
     <div class="news-card__content">
       <h3 class="news-card__title">{% if card.mobileTitle %}<span class="news-card__desktop">{% endif %}{% if card.titleLines %}{% for line in card.titleLines %}{% if not loop.first %}<br />{% endif %}{{ line }}{% endfor %}{% else %}{{ card.title }}{% endif %}{% if card.mobileTitle %}</span><span class="news-card__mobile">{{ card.mobileTitle }}</span>{% endif %}</h3>
-      {{ button(card.readMoreLabel or page.news.readMoreLabel, null, 'news-card__link', 'muted') }}
+      {% set readMoreLabel %}{% if card.mobileReadMoreLabel %}<span class="news-card__desktop">{{ card.readMoreLabel }}</span><span class="news-card__mobile">{{ card.mobileReadMoreLabel }}</span>{% else %}{{ card.readMoreLabel or page.news.readMoreLabel }}{% endif %}{% endset %}
+      {{ button(readMoreLabel | safe, null, 'news-card__link', 'muted') }}
     </div>
   </div>
 </a>

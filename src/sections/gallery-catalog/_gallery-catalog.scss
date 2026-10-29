@@ -8,6 +8,17 @@
   &__empty { margin: 0; color: var(--color-text-secondary); font-size: 1.6rem; line-height: 2.4rem; }
 }
 
+body.page-gallery-catalog--resort {
+  --color-page-background: var(--color-surface-neutral);
+  --footer-surround-background: var(--color-surface-neutral);
+}
+
+:where(.page-gallery-catalog--resort) .gallery-catalog {
+  .resort-navigation__form { width: 20.8rem; max-width: 100%; }
+  .resort-navigation__option { width: 100%; }
+  .resort-navigation__trigger { background: var(--theme-50); color: var(--color-text-secondary); }
+}
+
 @media (max-width: 600px) {
   .gallery-catalog {
     margin-top: 0;
@@ -16,5 +27,10 @@
     .catalog-layout__sidebar { margin-bottom: 3.2rem; }
     &__grid { grid-template-columns: minmax(0, 1fr); }
     .gallery-card { grid-column: auto; }
+  }
+
+  :where(.page-gallery-catalog--resort) .gallery-catalog {
+    .resort-navigation__form { width: 100%; }
+    .gallery-catalog__grid { width: calc(100% + .2rem); }
   }
 }

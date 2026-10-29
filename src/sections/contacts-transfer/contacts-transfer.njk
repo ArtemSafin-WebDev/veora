@@ -1,0 +1,4 @@
+{% from "components/request-form/request-form.njk" import requestForm with context %}
+<section class="contacts-transfer container" aria-labelledby="{{ page.contactsTransfer.form.id }}-title">
+  {{ requestForm(page.contactsTransfer.form) }}
+</section>

@@ -7,7 +7,16 @@
   &__fallback[hidden] { display: none; }
   &__status { margin: 0; }
   &__status:empty { display: none; }
+  &__preview { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  &__fallback--preview { padding: 0; }
+  &__fallback--preview &__status { position: absolute; width: .1rem; height: .1rem; overflow: hidden; clip-path: inset(50%); }
+  &__fallback--preview > a { position: absolute; inset: 0; font-size: 0; }
+  &__fallback--preview > a:hover { box-shadow: inset 0 0 0 .2rem var(--color-accent); }
+  &__frame--route { border-radius: 2rem; }
+  &__route { position: absolute; right: 2rem; bottom: 2rem; background: var(--color-map-route); border-color: var(--color-map-route); }
 }
+
+.page-contacts--resort .contacts-map { --color-map-route: #576258; margin-bottom: 4rem; }
 
 @media (max-width: 600px) {
   .contacts-map {
@@ -15,5 +24,7 @@
 
     &__container { padding-inline: 0; }
     &__frame { border-radius: 0; }
+    &__route { display: none; }
   }
+  .page-contacts--resort .contacts-map { margin-bottom: 3.2rem; }
 }

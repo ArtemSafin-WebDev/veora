@@ -9,9 +9,10 @@
     top: -4.3rem;
     left: 50%;
     width: 100vw;
-    max-width: 136.6rem;
     height: 90.4rem;
     background: url('/assets/news-catalog/texture.webp') center / 100% 100% no-repeat;
+    // Trim the thin line baked into the texture's right edge.
+    clip-path: inset(0 1px 0 0);
     transform: translateX(-50%);
     pointer-events: none;
     content: '';
@@ -22,6 +23,23 @@
   .resort-navigation__text { white-space: nowrap; }
   &__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .9rem; }
   &__empty { grid-column: 1 / -1; margin: 0; color: var(--color-text-secondary); font-size: 1.6rem; line-height: 2.4rem; }
+}
+
+body.page-news-catalog--resort {
+  --color-page-background: var(--color-surface-neutral);
+  --footer-surround-background: var(--color-surface-neutral);
+}
+
+:where(.page-news-catalog--resort) .news-catalog {
+  --color-border-subtle: var(--theme-100);
+
+  .resort-navigation__form { width: 20.8rem; max-width: 100%; }
+  .resort-navigation__option { width: 100%; }
+  .resort-navigation__trigger { background: var(--theme-50); color: var(--color-text-secondary); }
+  .news-card, .news-card__date { color: var(--color-accent); }
+  .news-card__link { border-color: var(--theme-200); }
+  .pagination { height: 4rem; }
+  .pagination__link { height: 3.8rem; }
 }
 
 @media (min-width: 601px) and (max-width: 1200px) {
@@ -43,5 +61,16 @@
     .resort-navigation__text { white-space: normal; }
     &__grid { grid-template-columns: minmax(0, 1fr); gap: .8rem; }
     .pagination { margin-top: 4rem; }
+  }
+
+  :where(.page-news-catalog--resort) .news-catalog {
+    &.catalog-layout { margin-bottom: 8rem; }
+    .resort-navigation__form { width: 100%; }
+    .news-card { border-color: var(--theme-100); }
+    .news-card__date { color: var(--color-text-muted); }
+    .news-card__label { color: var(--color-text-inverse); }
+    .news-card__desktop { display: none; }
+    .news-card__mobile { display: inline; }
+    .pagination { margin-top: 3.2rem; }
   }
 }
